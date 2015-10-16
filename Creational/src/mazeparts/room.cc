@@ -7,10 +7,8 @@
 
 namespace patterns
 {
-	Room::Room(const int& room_number) :room_number_(room_number)
+	Room::Room(const int& room_number) :room_number_(room_number), enetered_(false)
 	{
-		enetered_ = false;
-
 		for (auto i = 0; i < 4; i++)
 		{
 			sides_[i] = nullptr;

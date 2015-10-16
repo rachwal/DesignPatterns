@@ -10,9 +10,8 @@
 
 namespace patterns
 {
-	StandardMazeBuilder::StandardMazeBuilder()
+	StandardMazeBuilder::StandardMazeBuilder() :current_maze_(nullptr)
 	{
-		current_maze_ = nullptr;
 	}
 
 	void StandardMazeBuilder::BuildMaze()

@@ -10,11 +10,8 @@
 
 namespace patterns
 {
-	CountingMazeBuilder::CountingMazeBuilder()
+	CountingMazeBuilder::CountingMazeBuilder() :current_maze_(nullptr), doors_(0), rooms_(0)
 	{
-		rooms_ = 0;
-		doors_ = 0;
-		current_maze_ = nullptr;
 	}
 
 	void CountingMazeBuilder::BuildMaze()
