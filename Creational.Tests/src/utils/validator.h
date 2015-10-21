@@ -16,6 +16,16 @@ namespace patternstests
 		static bool EnchantedMazeFactoryMazeConfiguration(patterns::Maze* maze);
 		static bool MazeFactoryMazeConfiguration(patterns::Maze* maze);
 		static bool StandardMazeBuilderConfiguration(patterns::Maze* maze);
+
+	private:
+		template <class east_side, class west_side, class north_side, class south_side>
+		static bool ValidateRoom(patterns::Maze* maze, int room_number);
+
+		template <class room_type>
+		static bool ValidateRoomType(patterns::Maze* maze, int room_number);
+
+		template <class side_type>
+		static bool ValidateSide(patterns::Room* room, patterns::Direction direction);
 	};
 }
 

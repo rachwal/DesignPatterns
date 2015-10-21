@@ -37,19 +37,16 @@ namespace patternstests
 			Assert::IsNotNull(room);
 		}
 
-		TEST_METHOD(ShouldThrowOutOfRangeExceptionWhenTryToGetNotAddedRoom)
+		TEST_METHOD(ReturnNullptrWhenTryToGetNotAddedRoom)
 		{
-			auto func = [this]
-				{
-					//GIVEN
-					patterns::Maze maze;
+			//GIVEN
+			patterns::Maze maze;
 
-					//WHEN
-					maze.GetRoom(1);
-				};
+			//WHEN
+			auto room = maze.GetRoom(1);
 
 			//THEN
-			Assert::ExpectException<std::out_of_range>(func);
+			Assert::IsNull(room);
 		}
 
 		TEST_METHOD(ShouldAddMultipleRooms)

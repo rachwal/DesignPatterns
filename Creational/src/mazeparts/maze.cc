@@ -27,13 +27,18 @@ namespace patterns
 
 	Room* Maze::GetRoom(const int& room_number) const
 	{
+		auto room = rooms_.find(room_number);
+		if (room == rooms_.end())
+		{
+			return nullptr;
+		}
 		return rooms_.at(room_number);
 	}
 
 	void Maze::AddRoom(Room* room)
 	{
 		auto room_number = room->room_number();
-		rooms_.insert_or_assign(room_number, room);
+		rooms_[room_number] = room;
 	}
 
 	Maze* Maze::Clone() const

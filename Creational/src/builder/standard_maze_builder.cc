@@ -22,23 +22,23 @@ namespace patterns
 
 	void StandardMazeBuilder::BuildRoom(const int& room_number)
 	{
-		auto room = Room(room_number);
-		current_maze_->AddRoom(&room);
+		auto room = new Room(room_number);
+		current_maze_->AddRoom(room);
 
-		room.SetSide(North, new Wall);
-		room.SetSide(South, new Wall);
-		room.SetSide(East, new Wall);
-		room.SetSide(West, new Wall);
+		room->SetSide(North, new Wall);
+		room->SetSide(South, new Wall);
+		room->SetSide(East, new Wall);
+		room->SetSide(West, new Wall);
 	}
 
 	void StandardMazeBuilder::BuildDoor(const int& first_room_number, const int& second_room_number)
 	{
 		auto r1 = current_maze_->GetRoom(first_room_number);
 		auto r2 = current_maze_->GetRoom(second_room_number);
-		auto d = Door(*r1, *r2);
+		auto d = new Door(*r1, *r2);
 
-		r1->SetSide(CommonWall(*r1, *r2), &d);
-		r2->SetSide(CommonWall(*r2, *r1), &d);
+		r1->SetSide(CommonWall(*r1, *r2), d);
+		r2->SetSide(CommonWall(*r2, *r1), d);
 	}
 
 	Maze* StandardMazeBuilder::GetMaze()
