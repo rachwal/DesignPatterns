@@ -7,9 +7,8 @@
 
 namespace patterns
 {
-	BombedWall::BombedWall(const bool& bombed)
+	BombedWall::BombedWall(const bool& bombed) :bombed_(bombed)
 	{
-		bombed_ = bombed;
 	}
 
 	BombedWall::BombedWall(const BombedWall& bombed_wall) : Wall(bombed_wall)

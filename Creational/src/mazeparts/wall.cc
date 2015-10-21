@@ -7,9 +7,8 @@
 
 namespace patterns
 {
-	Wall::Wall()
+	Wall::Wall() :entered_(false)
 	{
-		entered_ = false;
 	}
 
 	Wall::Wall(const Wall& wall)
