@@ -5,7 +5,7 @@
 
 #include "twisty_turny_passage.h"
 
-namespace patterns
+namespace creational
 {
 	TwistyTurnyPassage::TwistyTurnyPassage() : Room(0), entered_(false)
 	{

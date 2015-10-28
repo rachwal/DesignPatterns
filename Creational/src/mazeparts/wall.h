@@ -8,17 +8,14 @@
 
 #include "map_site_interface.h"
 
-namespace patterns
+namespace creational
 {
 	class Wall : public MapSiteInterface
 	{
 	public:
 		Wall();
 		Wall(const Wall&);
-
-		virtual ~Wall()
-		{
-		}
+		virtual ~Wall() override;
 
 		virtual Wall* Clone() const;
 		virtual void Enter() override;

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\adapter">
+      <UniqueIdentifier>{cb2b291d-4754-4f92-82c8-8943fa6b9ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bridge">
+      <UniqueIdentifier>{6a9a5ce6-51d0-4c7b-953d-285111d8d6d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\composite">
+      <UniqueIdentifier>{1d24db1f-0a2b-4f92-8212-4515b238ee44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decorator">
+      <UniqueIdentifier>{c798971d-32bb-43c5-a00f-e3bb8b81cbde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\facade">
+      <UniqueIdentifier>{c8e0595b-800e-43f3-be47-28820be4800c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proxy">
+      <UniqueIdentifier>{1981f91b-903d-4f58-a8d8-c4de1c8edf9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flyweight">
+      <UniqueIdentifier>{bd9e9f85-5a30-4a7b-8892-5b9a86de61d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adapter\adapter_test.cc">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\bridge_test.cc">
+      <Filter>Source Files\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\composite_test.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\decorator_test.cc">
+      <Filter>Source Files\decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\facade_test.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proxy\proxy_test.cc">
+      <Filter>Source Files\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adapter\text_view_test.cc">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\flyweight_test.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\btree_test.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\glyph_context_test.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

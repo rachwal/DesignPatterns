@@ -8,11 +8,13 @@
 
 #include "maze_factory_interface.h"
 
-namespace patterns
+namespace creational
 {
 	class MazeFactory : public MazeFactoryInterface
 	{
 	public:
+		~MazeFactory() override;
+
 		virtual Maze* MakeMaze() const override;
 		virtual Wall* MakeWall() const override;
 		virtual Room* MakeRoom(const int& room_number) const override;

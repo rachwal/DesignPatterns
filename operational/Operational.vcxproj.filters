@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\chain">
+      <UniqueIdentifier>{97873eff-0c4a-4418-b33f-1a306080c348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\command">
+      <UniqueIdentifier>{42306e9f-ca95-45d9-97c1-7803727549c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\interpreter">
+      <UniqueIdentifier>{b5089a4f-3700-4944-adc8-6933794576fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\iterator">
+      <UniqueIdentifier>{854994b9-298a-4674-ac8e-13c1c3d03e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mediator">
+      <UniqueIdentifier>{611a9d58-56bc-4e0c-a434-220518864884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\memento">
+      <UniqueIdentifier>{2b9bd06c-0643-44a0-962d-4fc3901ed2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\observer">
+      <UniqueIdentifier>{cc11b210-b3f8-4d1e-8a4b-8a38e1c9819e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\state">
+      <UniqueIdentifier>{749e6391-3f57-4164-9ce2-aaa99c297f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\strategy">
+      <UniqueIdentifier>{3f7a5f0d-2add-4579-b3d3-f75df47fbf1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\templatemethod">
+      <UniqueIdentifier>{4bfc398d-1e91-4fd4-a13c-61d70513779a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\visitor">
+      <UniqueIdentifier>{2b48d78e-9e19-429c-a8f0-255dd6732105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\chain">
+      <UniqueIdentifier>{3a057d37-c8bc-4409-a830-68e272c87950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command">
+      <UniqueIdentifier>{2155615b-f5ae-4494-a15c-0039ba3a9187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interpreter">
+      <UniqueIdentifier>{59b88706-689a-4753-ab28-fa3371770c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\iterator">
+      <UniqueIdentifier>{5ff10fc5-2426-49de-b759-0a7f04af5264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mediator">
+      <UniqueIdentifier>{3919afa9-9fbe-4bba-963a-a3abbe7f602a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memento">
+      <UniqueIdentifier>{62d360b4-f959-44f4-896c-64c33dd96ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\observer">
+      <UniqueIdentifier>{99e9ef74-1064-4201-8887-abdebd0a5076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\state">
+      <UniqueIdentifier>{138033a5-bb17-4ab7-ad25-754a8e64d020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\strategy">
+      <UniqueIdentifier>{6792bd6e-7d96-4c6b-afda-7b333daa11d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\templatemethod">
+      <UniqueIdentifier>{0ae17c02-d2f4-4f35-9c2b-0425638e4cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\visitor">
+      <UniqueIdentifier>{125f6c79-6f98-4f69-9a66-ddc6e38e4ff1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\iterator\employee.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\filtering_list_traverser.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\iterator_ptr.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\list.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\list_iterator.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\list_traverser.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\print_n_employees.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\reverse_list_iterator.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\skip_list.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\skip_list_iterator.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\observer\analog_clock.h">
+      <Filter>Header Files\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\observer\clock_timer.h">
+      <Filter>Header Files\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\observer\digital_clock.h">
+      <Filter>Header Files\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\observer\observer_widget_interface.h">
+      <Filter>Header Files\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\iterator_interface.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\iterator\list_interface.h">
+      <Filter>Header Files\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\observer\clock_tick_observer.h">
+      <Filter>Header Files\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\observer\clock_tick.h">
+      <Filter>Header Files\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\observer\clock_tick_interface.h">
+      <Filter>Header Files\observer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\observer\analog_clock.cc">
+      <Filter>Source Files\observer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\observer\clock_timer.cc">
+      <Filter>Source Files\observer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\observer\digital_clock.cc">
+      <Filter>Source Files\observer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\observer\subject.cc">
+      <Filter>Source Files\observer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iterator\employee.cc">
+      <Filter>Source Files\iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iterator\print_n_employees.cc">
+      <Filter>Source Files\iterator</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

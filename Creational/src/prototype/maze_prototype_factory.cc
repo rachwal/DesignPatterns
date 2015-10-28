@@ -5,7 +5,7 @@
 
 #include "maze_prototype_factory.h"
 
-namespace patterns
+namespace creational
 {
 	MazePrototypeFactory::MazePrototypeFactory(Maze* m, Wall* w, Room* r, Door* d)
 	{

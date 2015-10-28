@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A52F7575-F0DC-4E39-9F35-810D288DD477}</ProjectGuid>
+    <RootNamespace>Operational</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\iterator\employee.h" />
+    <ClInclude Include="src\iterator\filtering_list_traverser.h" />
+    <ClInclude Include="src\iterator\iterator_interface.h" />
+    <ClInclude Include="src\iterator\iterator_ptr.h" />
+    <ClInclude Include="src\iterator\list.h" />
+    <ClInclude Include="src\iterator\list_interface.h" />
+    <ClInclude Include="src\iterator\list_iterator.h" />
+    <ClInclude Include="src\iterator\list_traverser.h" />
+    <ClInclude Include="src\iterator\print_n_employees.h" />
+    <ClInclude Include="src\iterator\reverse_list_iterator.h" />
+    <ClInclude Include="src\iterator\skip_list.h" />
+    <ClInclude Include="src\iterator\skip_list_iterator.h" />
+    <ClInclude Include="src\observer\analog_clock.h" />
+    <ClInclude Include="src\observer\clock_timer.h" />
+    <ClInclude Include="src\observer\digital_clock.h" />
+    <ClInclude Include="src\observer\clock_tick_observer.h" />
+    <ClInclude Include="src\observer\clock_tick.h" />
+    <ClInclude Include="src\observer\clock_tick_interface.h" />
+    <ClInclude Include="src\observer\observer_widget_interface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\iterator\employee.cc" />
+    <ClCompile Include="src\iterator\print_n_employees.cc" />
+    <ClCompile Include="src\observer\analog_clock.cc" />
+    <ClCompile Include="src\observer\clock_timer.cc" />
+    <ClCompile Include="src\observer\digital_clock.cc" />
+    <ClCompile Include="src\observer\subject.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Foundation\Foundation.vcxproj">
+      <Project>{b0dc43c0-c3a4-41f8-8d39-8499b1510f8c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

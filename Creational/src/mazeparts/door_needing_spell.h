@@ -10,13 +10,14 @@
 #include "room.h"
 #include "spell.h"
 
-namespace patterns
+namespace creational
 {
 	class DoorNeedingSpell : public Door
 	{
 	public:
 		DoorNeedingSpell(const Room& first_room, const Room& second_room);
 		DoorNeedingSpell(const DoorNeedingSpell&);
+
 		bool TrySpell(const Spell&) const;
 	};
 }

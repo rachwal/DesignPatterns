@@ -10,7 +10,7 @@
 
 #include <map>
 
-namespace patterns
+namespace creational
 {
 	class Maze
 	{

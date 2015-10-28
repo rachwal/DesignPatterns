@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\observer">
+      <UniqueIdentifier>{bd939825-b80e-433f-a48e-90d938bb972f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\iterator">
+      <UniqueIdentifier>{c2611c0b-0eb2-4818-a450-9a78510d5ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\chain">
+      <UniqueIdentifier>{5a21542c-9100-4203-bf23-b62e4d911953}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\iterator\iterator_test.cc">
+      <Filter>Source Files\iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\observer\clock_timer_test.cc">
+      <Filter>Source Files\observer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\observer\observer_test.cc">
+      <Filter>Source Files\observer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

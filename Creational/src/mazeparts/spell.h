@@ -8,13 +8,14 @@
 
 #include <string>
 
-namespace patterns
+namespace creational
 {
 	class Spell
 	{
 	public:
 		explicit Spell(const std::string& message);
 		Spell(const Spell& spell);
+
 		std::string message() const;
 
 	private:

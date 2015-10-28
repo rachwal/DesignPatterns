@@ -5,7 +5,7 @@
 
 #include "wall.h"
 
-namespace patterns
+namespace creational
 {
 	Wall::Wall() :entered_(false)
 	{
@@ -14,6 +14,10 @@ namespace patterns
 	Wall::Wall(const Wall& wall)
 	{
 		entered_ = wall.entered_;
+	}
+
+	Wall::~Wall()
+	{
 	}
 
 	Wall* Wall::Clone() const

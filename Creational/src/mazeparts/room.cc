@@ -5,7 +5,7 @@
 
 #include "room.h"
 
-namespace patterns
+namespace creational
 {
 	Room::Room(const int& room_number) :room_number_(room_number), enetered_(false)
 	{

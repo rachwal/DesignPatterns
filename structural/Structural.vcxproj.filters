@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\adapter">
+      <UniqueIdentifier>{56d3bc6b-ee8b-4350-8042-ad493172fe02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bridge">
+      <UniqueIdentifier>{13a83faf-1b60-4ed0-b4e8-6378bfa2bef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\composite">
+      <UniqueIdentifier>{abb7d3f3-3d6f-428f-8dea-5bf57724c2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\facade">
+      <UniqueIdentifier>{1477e843-8664-42bf-a5f2-496ab4f2fa96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\proxy">
+      <UniqueIdentifier>{4176aa6b-538f-4434-89d5-0b790e1e6be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\adapter">
+      <UniqueIdentifier>{db3ba2f0-c424-447d-a391-1df4b90e86b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bridge">
+      <UniqueIdentifier>{dcad187b-ef39-4ed2-aeea-6d23a94419ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\composite">
+      <UniqueIdentifier>{49bf3e30-2594-45b4-b068-bf95c3a37055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\facade">
+      <UniqueIdentifier>{fe1788b2-9d39-4d66-9fdd-210005e54cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proxy">
+      <UniqueIdentifier>{a78b9fef-71ba-4021-bfb5-b7a7f0c0e565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\decorator">
+      <UniqueIdentifier>{f4367c7e-11ed-4df7-892a-32c25b79b2e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decorator">
+      <UniqueIdentifier>{5062bbc8-a31f-4d92-8d6f-138a6136d498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flyweight">
+      <UniqueIdentifier>{5ec96c1c-dbeb-405d-b81e-f674391959f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flyweight">
+      <UniqueIdentifier>{3ceaf74f-41d9-40a1-a95b-41a1b7373297}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\composite\bus.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\composite\cabinet.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\composite\card.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\composite\chassis.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\composite\floppy_disk.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\bytecode_stream.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\code_generator_interface.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\compiler.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\expression_node.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\expression_node_interface.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\parser.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\program_node_interface.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\risc_code_generator.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\scanner.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\statement_node.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\token.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proxy\event.h">
+      <Filter>Header Files\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proxy\graphic_interface.h">
+      <Filter>Header Files\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proxy\image.h">
+      <Filter>Header Files\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proxy\image_proxy.h">
+      <Filter>Header Files\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proxy\text_document.h">
+      <Filter>Header Files\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decorator\ascii7_stream.h">
+      <Filter>Header Files\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decorator\compressing_stream.h">
+      <Filter>Header Files\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decorator\file_stream.h">
+      <Filter>Header Files\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decorator\stream_decorator.h">
+      <Filter>Header Files\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adapter\shape_interface.h">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adapter\text_shape_object_adapter.h">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adapter\text_shape_class_adapter.h">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adapter\text_view.h">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adapter\visual_component_interface.h">
+      <Filter>Header Files\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decorator\stream_interface.h">
+      <Filter>Header Files\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\statement_node_interface.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\composite\composite_equipment.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\character.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\column.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\font.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\glyph_context.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\glyph_factory.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\row.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\window.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\application_window.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\icon_window.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\p_m_window_imp.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\x_window_imp.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\window_interface.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\bitmap.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bridge\window_imp.h">
+      <Filter>Header Files\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\glyph_interface.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\btree.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flyweight\window.h">
+      <Filter>Header Files\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proxy\virtual_image_proxy.h">
+      <Filter>Header Files\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\program_node_builder.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\variable_node.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\variable_node_interface.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facade\program_node_builder_interface.h">
+      <Filter>Header Files\facade</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\composite\bus.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\cabinet.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\card.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\chassis.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\composite_equipment.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\floppy_disk.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\ascii7_stream.cc">
+      <Filter>Source Files\decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\compressing_stream.cc">
+      <Filter>Source Files\decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\file_stream.cc">
+      <Filter>Source Files\decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decorator\stream_decorator.cc">
+      <Filter>Source Files\decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\compiler.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\expression_node.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proxy\image_proxy.cc">
+      <Filter>Source Files\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adapter\text_shape_object_adapter.cc">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adapter\text_shape_class_adapter.cc">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adapter\text_view.cc">
+      <Filter>Source Files\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\glyph_factory.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\application_window.cc">
+      <Filter>Source Files\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\icon_window.cc">
+      <Filter>Source Files\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\window.cc">
+      <Filter>Source Files\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\x_window_imp.cc">
+      <Filter>Source Files\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\p_m_window_imp.cc">
+      <Filter>Source Files\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bridge\bitmap.cc">
+      <Filter>Source Files\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\scanner.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\token.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\character.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\glyph_context.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\column.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\row.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\btree.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flyweight\font.cc">
+      <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proxy\image.cc">
+      <Filter>Source Files\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proxy\text_document.cc">
+      <Filter>Source Files\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proxy\virtual_image_proxy.cc">
+      <Filter>Source Files\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\parser.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\risc_code_generator.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\program_node_builder.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facade\variable_node.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

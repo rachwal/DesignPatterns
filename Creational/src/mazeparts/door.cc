@@ -5,7 +5,7 @@
 
 #include "door.h"
 
-namespace patterns
+namespace creational
 {
 	Door::Door(const Room& first_room, const Room& second_room)
 	{

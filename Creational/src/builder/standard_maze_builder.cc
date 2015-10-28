@@ -8,10 +8,15 @@
 #include "../mazeparts/wall.h"
 #include "../mazeparts/door.h"
 
-namespace patterns
+namespace creational
 {
 	StandardMazeBuilder::StandardMazeBuilder() :current_maze_(nullptr)
 	{
+	}
+
+	StandardMazeBuilder::~StandardMazeBuilder()
+	{
+		delete current_maze_;
 	}
 
 	void StandardMazeBuilder::BuildMaze()

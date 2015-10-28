@@ -5,7 +5,7 @@
 
 #include "maze.h"
 
-namespace patterns
+namespace creational
 {
 	Maze::Maze()
 	{

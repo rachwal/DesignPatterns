@@ -8,7 +8,7 @@
 
 #include "../abstractfactory/maze_factory.h"
 
-namespace patterns
+namespace creational
 {
 	class MazePrototypeFactory : public MazeFactoryInterface
 	{

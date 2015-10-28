@@ -5,7 +5,7 @@
 
 #include "bombed_wall.h"
 
-namespace patterns
+namespace creational
 {
 	BombedWall::BombedWall(const bool& bombed) :bombed_(bombed)
 	{

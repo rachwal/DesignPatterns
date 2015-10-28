@@ -6,7 +6,7 @@
 #ifndef CREATIONAL_MAZEPARTS_DIRECTION_H_
 #define CREATIONAL_MAZEPARTS_DIRECTION_H_
 
-namespace patterns
+namespace creational
 {
 	enum Direction
 	{

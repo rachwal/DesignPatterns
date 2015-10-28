@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BBF942F9-E2AC-42E3-8BB6-5A6B52AADA27}</ProjectGuid>
+    <RootNamespace>Structural</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\adapter\shape_interface.h" />
+    <ClInclude Include="src\adapter\text_shape_object_adapter.h" />
+    <ClInclude Include="src\adapter\text_shape_class_adapter.h" />
+    <ClInclude Include="src\adapter\text_view.h" />
+    <ClInclude Include="src\adapter\visual_component_interface.h" />
+    <ClInclude Include="src\bridge\application_window.h" />
+    <ClInclude Include="src\bridge\bitmap.h" />
+    <ClInclude Include="src\bridge\icon_window.h" />
+    <ClInclude Include="src\bridge\p_m_window_imp.h" />
+    <ClInclude Include="src\bridge\window.h" />
+    <ClInclude Include="src\bridge\window_imp.h" />
+    <ClInclude Include="src\bridge\window_interface.h" />
+    <ClInclude Include="src\bridge\x_window_imp.h" />
+    <ClInclude Include="src\composite\bus.h" />
+    <ClInclude Include="src\composite\cabinet.h" />
+    <ClInclude Include="src\composite\card.h" />
+    <ClInclude Include="src\composite\chassis.h" />
+    <ClInclude Include="src\composite\composite_equipment.h" />
+    <ClInclude Include="src\composite\floppy_disk.h" />
+    <ClInclude Include="src\decorator\ascii7_stream.h" />
+    <ClInclude Include="src\decorator\compressing_stream.h" />
+    <ClInclude Include="src\decorator\file_stream.h" />
+    <ClInclude Include="src\decorator\stream_decorator.h" />
+    <ClInclude Include="src\decorator\stream_interface.h" />
+    <ClInclude Include="src\facade\bytecode_stream.h" />
+    <ClInclude Include="src\facade\code_generator_interface.h" />
+    <ClInclude Include="src\facade\compiler.h" />
+    <ClInclude Include="src\facade\expression_node.h" />
+    <ClInclude Include="src\facade\expression_node_interface.h" />
+    <ClInclude Include="src\facade\parser.h" />
+    <ClInclude Include="src\facade\program_node_builder.h" />
+    <ClInclude Include="src\facade\program_node_builder_interface.h" />
+    <ClInclude Include="src\facade\program_node_interface.h" />
+    <ClInclude Include="src\facade\risc_code_generator.h" />
+    <ClInclude Include="src\facade\scanner.h" />
+    <ClInclude Include="src\facade\statement_node.h" />
+    <ClInclude Include="src\facade\statement_node_interface.h" />
+    <ClInclude Include="src\facade\token.h" />
+    <ClInclude Include="src\facade\variable_node.h" />
+    <ClInclude Include="src\facade\variable_node_interface.h" />
+    <ClInclude Include="src\flyweight\btree.h" />
+    <ClInclude Include="src\flyweight\character.h" />
+    <ClInclude Include="src\flyweight\column.h" />
+    <ClInclude Include="src\flyweight\font.h" />
+    <ClInclude Include="src\flyweight\glyph_interface.h" />
+    <ClInclude Include="src\flyweight\glyph_context.h" />
+    <ClInclude Include="src\flyweight\glyph_factory.h" />
+    <ClInclude Include="src\flyweight\row.h" />
+    <ClInclude Include="src\flyweight\window.h" />
+    <ClInclude Include="src\proxy\event.h" />
+    <ClInclude Include="src\proxy\graphic_interface.h" />
+    <ClInclude Include="src\proxy\image.h" />
+    <ClInclude Include="src\proxy\image_proxy.h" />
+    <ClInclude Include="src\proxy\virtual_image_proxy.h" />
+    <ClInclude Include="src\proxy\text_document.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adapter\text_shape_object_adapter.cc" />
+    <ClCompile Include="src\adapter\text_shape_class_adapter.cc" />
+    <ClCompile Include="src\adapter\text_view.cc" />
+    <ClCompile Include="src\bridge\application_window.cc" />
+    <ClCompile Include="src\bridge\bitmap.cc" />
+    <ClCompile Include="src\bridge\icon_window.cc" />
+    <ClCompile Include="src\bridge\p_m_window_imp.cc" />
+    <ClCompile Include="src\bridge\window.cc" />
+    <ClCompile Include="src\bridge\x_window_imp.cc" />
+    <ClCompile Include="src\composite\bus.cc" />
+    <ClCompile Include="src\composite\cabinet.cc" />
+    <ClCompile Include="src\composite\card.cc" />
+    <ClCompile Include="src\composite\chassis.cc" />
+    <ClCompile Include="src\composite\composite_equipment.cc" />
+    <ClCompile Include="src\composite\floppy_disk.cc" />
+    <ClCompile Include="src\decorator\ascii7_stream.cc" />
+    <ClCompile Include="src\decorator\compressing_stream.cc" />
+    <ClCompile Include="src\decorator\file_stream.cc" />
+    <ClCompile Include="src\decorator\stream_decorator.cc" />
+    <ClCompile Include="src\facade\compiler.cc" />
+    <ClCompile Include="src\facade\expression_node.cc" />
+    <ClCompile Include="src\facade\parser.cc" />
+    <ClCompile Include="src\facade\program_node_builder.cc" />
+    <ClCompile Include="src\facade\risc_code_generator.cc" />
+    <ClCompile Include="src\facade\scanner.cc" />
+    <ClCompile Include="src\facade\token.cc" />
+    <ClCompile Include="src\facade\variable_node.cc" />
+    <ClCompile Include="src\flyweight\btree.cc" />
+    <ClCompile Include="src\flyweight\character.cc" />
+    <ClCompile Include="src\flyweight\column.cc" />
+    <ClCompile Include="src\flyweight\font.cc" />
+    <ClCompile Include="src\flyweight\glyph_context.cc" />
+    <ClCompile Include="src\flyweight\glyph_factory.cc" />
+    <ClCompile Include="src\flyweight\row.cc" />
+    <ClCompile Include="src\proxy\image.cc" />
+    <ClCompile Include="src\proxy\image_proxy.cc" />
+    <ClCompile Include="src\proxy\virtual_image_proxy.cc" />
+    <ClCompile Include="src\proxy\text_document.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

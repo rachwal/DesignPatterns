@@ -10,7 +10,7 @@
 #include "../mazeparts/wall.h"
 #include "../mazeparts/door.h"
 
-namespace patterns
+namespace creational
 {
 	class MazeFactoryInterface
 	{

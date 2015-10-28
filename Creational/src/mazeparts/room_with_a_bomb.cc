@@ -5,7 +5,7 @@
 
 #include "room_with_a_bomb.h"
 
-namespace patterns
+namespace creational
 {
 	RoomWithABomb::RoomWithABomb(const int& room_number, const bool& bombed) :Room(room_number), has_bomb_(bombed)
 	{

@@ -8,7 +8,7 @@
 #include "../mazeparts/bombed_wall.h"
 #include "../mazeparts/room_with_a_bomb.h"
 
-namespace patterns
+namespace creational
 {
 	Maze* BombedMazeFactory::MakeMaze() const
 	{

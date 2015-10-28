@@ -8,12 +8,13 @@
 
 #include "room.h"
 
-namespace patterns
+namespace creational
 {
 	class TwistyTurnyPassage : public Room
 	{
 	public:
 		TwistyTurnyPassage();
+
 		virtual void Enter() override;
 		virtual bool entered() const override;
 

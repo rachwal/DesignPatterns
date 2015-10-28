@@ -9,7 +9,7 @@
 #include "room.h"
 #include "spell.h"
 
-namespace patterns
+namespace creational
 {
 	class EnchantedRoom : public Room
 	{

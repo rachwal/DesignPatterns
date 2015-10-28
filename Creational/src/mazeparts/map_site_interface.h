@@ -6,7 +6,7 @@
 #ifndef CREATIONAL_MAZEPARTS_MAP_SITE_INTERFACE_H_
 #define CREATIONAL_MAZEPARTS_MAP_SITE_INTERFACE_H_
 
-namespace patterns
+namespace creational
 {
 	class MapSiteInterface
 	{

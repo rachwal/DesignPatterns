@@ -9,17 +9,13 @@
 #include "map_site_interface.h"
 #include "direction.h"
 
-namespace patterns
+namespace creational
 {
 	class Room : public MapSiteInterface
 	{
 	public:
 		explicit Room(const int& room_number);
 		Room(const Room& room);
-
-		virtual ~Room()
-		{
-		};
 
 		virtual Room* Clone() const;
 		virtual void Enter() override;

@@ -9,14 +9,12 @@
 #include "../abstractfactory/maze_factory.h"
 #include "../builder/maze_builder_interface.h"
 
-namespace patterns
+namespace creational
 {
 	class MazeGame
 	{
 	public:
-		virtual ~MazeGame()
-		{
-		}
+		virtual ~MazeGame();
 
 		Maze* CreateMaze() const;
 		Maze* CreateSimpleMaze() const;

@@ -8,7 +8,7 @@
 
 #include "../mazegame/maze_game.h"
 
-namespace patterns
+namespace creational
 {
 	class BombedMazeGame : public MazeGame
 	{

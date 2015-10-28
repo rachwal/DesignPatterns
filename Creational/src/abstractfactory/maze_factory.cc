@@ -7,11 +7,16 @@
 
 #include <mutex>
 
-namespace patterns
+namespace creational
 {
 	MazeFactory::MazeFactory()
 	{
 		instance_ = nullptr;
+	}
+
+	MazeFactory::~MazeFactory()
+	{
+		delete instance_;
 	}
 
 	Maze* MazeFactory::MakeMaze() const

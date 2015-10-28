@@ -5,7 +5,7 @@
 
 #include "enchanted_room.h"
 
-namespace patterns
+namespace creational
 {
 	EnchantedRoom::EnchantedRoom(const int& room_number, const Spell& spell) :Room(room_number)
 	{

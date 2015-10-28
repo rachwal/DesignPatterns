@@ -8,7 +8,7 @@
 
 #include "room.h"
 
-namespace patterns
+namespace creational
 {
 	class RoomWithABomb : public Room
 	{

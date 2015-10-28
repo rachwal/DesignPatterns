@@ -8,7 +8,7 @@
 
 #include "../mazeparts/maze.h"
 
-namespace patterns
+namespace creational
 {
 	class MazeBuilderInterface
 	{

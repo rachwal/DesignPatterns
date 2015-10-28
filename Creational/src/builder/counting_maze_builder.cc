@@ -8,10 +8,15 @@
 #include "../mazeparts/wall.h"
 #include "../mazeparts/door.h"
 
-namespace patterns
+namespace creational
 {
 	CountingMazeBuilder::CountingMazeBuilder() :current_maze_(nullptr), doors_(0), rooms_(0)
 	{
+	}
+
+	CountingMazeBuilder::~CountingMazeBuilder()
+	{
+		delete current_maze_;
 	}
 
 	void CountingMazeBuilder::BuildMaze()

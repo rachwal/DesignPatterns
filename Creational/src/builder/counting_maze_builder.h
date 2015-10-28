@@ -8,12 +8,13 @@
 
 #include "maze_builder_interface.h"
 
-namespace patterns
+namespace creational
 {
 	class CountingMazeBuilder : public MazeBuilderInterface
 	{
 	public:
 		CountingMazeBuilder();
+		~CountingMazeBuilder() override;
 
 		virtual void BuildMaze() override;
 		virtual void BuildRoom(const int& room_number) override;

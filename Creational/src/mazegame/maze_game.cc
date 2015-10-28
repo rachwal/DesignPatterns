@@ -4,10 +4,15 @@
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
 #include "maze_game.h"
+
 #include <memory>
 
-namespace patterns
+namespace creational
 {
+	MazeGame::~MazeGame()
+	{
+	}
+
 	Maze* MazeGame::CreateMaze() const
 	{
 		auto maze = new Maze();

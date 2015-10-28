@@ -9,7 +9,7 @@
 #include "../mazegame/maze_game.h"
 #include "../mazeparts/spell.h"
 
-namespace patterns
+namespace creational
 {
 	class EnchantedMazeGame : public MazeGame
 	{

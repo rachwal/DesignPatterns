@@ -10,7 +10,7 @@
 
 #include "../mazeparts/spell.h"
 
-namespace patterns
+namespace creational
 {
 	class EnchantedMazeFactory : public MazeFactoryInterface
 	{

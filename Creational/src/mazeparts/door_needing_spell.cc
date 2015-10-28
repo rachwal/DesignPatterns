@@ -5,7 +5,7 @@
 
 #include "door_needing_spell.h"
 
-namespace patterns
+namespace creational
 {
 	DoorNeedingSpell::DoorNeedingSpell(const Room& first_room, const Room& second_room) :Door(first_room, second_room)
 	{

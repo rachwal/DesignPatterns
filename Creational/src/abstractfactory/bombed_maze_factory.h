@@ -8,7 +8,7 @@
 
 #include "maze_factory.h"
 
-namespace patterns
+namespace creational
 {
 	class BombedMazeFactory : public MazeFactoryInterface
 	{

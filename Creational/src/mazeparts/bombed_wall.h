@@ -8,7 +8,7 @@
 
 #include "wall.h"
 
-namespace patterns
+namespace creational
 {
 	class BombedWall : public Wall
 	{

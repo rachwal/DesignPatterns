@@ -9,7 +9,7 @@
 #include "map_site_interface.h"
 #include "room.h"
 
-namespace patterns
+namespace creational
 {
 	class Door : public MapSiteInterface
 	{

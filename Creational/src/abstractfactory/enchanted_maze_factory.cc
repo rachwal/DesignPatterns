@@ -8,7 +8,7 @@
 #include "../mazeparts/enchanted_room.h"
 #include "../mazeparts/door_needing_spell.h"
 
-namespace patterns
+namespace creational
 {
 	Maze* EnchantedMazeFactory::MakeMaze() const
 	{

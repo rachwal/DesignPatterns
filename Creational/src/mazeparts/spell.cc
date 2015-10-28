@@ -5,7 +5,7 @@
 
 #include "spell.h"
 
-namespace patterns
+namespace creational
 {
 	Spell::Spell(const std::string& message) :message_(message)
 	{
