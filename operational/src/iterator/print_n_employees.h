@@ -11,21 +11,23 @@
 
 namespace operational
 {
-	class PrintNEmployees : public ListTraverser<Employee*>
-	{
+namespace iterator
+{
+class PrintNEmployees : public ListTraverser<Employee*>
+{
 	public:
-		PrintNEmployees(List<Employee*>* aList, int n);
-		~PrintNEmployees() override;
+	PrintNEmployees(List<Employee*>* aList, int n);
+	~PrintNEmployees() override;
 
-		bool Traverse() override;
+	bool Traverse() override;
 
 	protected:
-		bool ProcessItem(Employee* const&) override;
+	bool ProcessItem(Employee* const&) override;
 
 	private:
-		int total_;
-		int count_;
-	};
-}
+	int total_;
+	int count_;
+};
+}}
 
 #endif

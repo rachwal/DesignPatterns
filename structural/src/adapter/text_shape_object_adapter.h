@@ -11,18 +11,20 @@
 
 namespace structural
 {
-	class TextShapeObjectAdapter : public ShapeInterface
-	{
+namespace adapter
+{
+class TextShapeObjectAdapter : public ShapeInterface
+{
 	public:
-		explicit TextShapeObjectAdapter(TextView*);
+	explicit TextShapeObjectAdapter(TextView*);
 
-		virtual void BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const override;
+	virtual void BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const override;
 
-		virtual bool IsEmpty() const;
+	virtual bool IsEmpty() const;
 
 	private:
-		TextView* text_view_;
-	};
-}
+	TextView* text_view_;
+};
+}}
 
 #endif

@@ -12,17 +12,17 @@
 
 namespace structural
 {
-	class CodeGeneratorInterface
-	{
+namespace facade
+{
+class CodeGeneratorInterface
+{
 	public:
-		virtual ~CodeGeneratorInterface()
-		{
-		}
+	virtual ~CodeGeneratorInterface() { }
 
-		virtual void Visit(VariableNodeInterface*) = 0;
-		virtual void Visit(ExpressionNodeInterface*) = 0;
-		virtual void Visit(StatementNodeInterface*) = 0;
-	};
-}
+	virtual void Visit(VariableNodeInterface*) = 0;
+	virtual void Visit(ExpressionNodeInterface*) = 0;
+	virtual void Visit(StatementNodeInterface*) = 0;
+};
+}}
 
 #endif

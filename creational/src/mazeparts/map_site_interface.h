@@ -8,15 +8,15 @@
 
 namespace creational
 {
-	class MapSiteInterface
-	{
+namespace commons
+{
+class MapSiteInterface
+{
 	public:
-		virtual ~MapSiteInterface()
-		{
-		}
+	virtual ~MapSiteInterface() { }
 
-		virtual void Enter() = 0;
-	};
-}
+	virtual void Enter() = 0;
+};
+}}
 
 #endif

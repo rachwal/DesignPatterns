@@ -8,23 +8,23 @@
 
 namespace structural
 {
-	Window::Window(WindowImp* imp) :imp_(imp)
-	{
-	}
+namespace bridge
+{
+Window::Window(WindowImp* imp) :imp_(imp) { }
 
-	Window::~Window()
-	{
-		delete imp_;
-	}
-
-	void Window::DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2)
-	{
-		auto imp = GetWindowImp();
-		imp->DeviceRect(p1.x(), p1.y(), p2.x(), p2.y());
-	}
-
-	WindowImp* Window::GetWindowImp() const
-	{
-		return imp_;
-	}
+Window::~Window()
+{
+	delete imp_;
 }
+
+void Window::DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2)
+{
+	auto imp = GetWindowImp();
+	imp->DeviceRect(p1.x(), p1.y(), p2.x(), p2.y());
+}
+
+WindowImp *Window::GetWindowImp() const
+{
+	return imp_;
+}
+}}

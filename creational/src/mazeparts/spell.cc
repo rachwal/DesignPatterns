@@ -7,16 +7,14 @@
 
 namespace creational
 {
-	Spell::Spell(const std::string& message) :message_(message)
-	{
-	};
+namespace commons
+{
+Spell::Spell(const std::string& message) :message_(message) { };
 
-	Spell::Spell(const Spell& spell) :message_(spell.message_)
-	{
-	};
+Spell::Spell(const Spell& spell) :message_(spell.message_) { };
 
-	std::string Spell::message() const
-	{
-		return message_;
-	};
-}
+std::string Spell::message() const
+{
+	return message_;
+};
+}}

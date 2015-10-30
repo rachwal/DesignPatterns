@@ -10,14 +10,16 @@
 
 namespace creational
 {
-	class BombedMazeGame : public MazeGame
-	{
+namespace factorymethod
+{
+class BombedMazeGame : public MazeGame
+{
 	public:
-		BombedMazeGame();
+	BombedMazeGame();
 
-		virtual Wall* MakeWall() const override;
-		virtual Room* MakeRoom(const int& room_number) const override;
-	};
-}
+	virtual commons::Wall *MakeWall() const override;
+	virtual commons::Room *MakeRoom(const int& room_number) const override;
+};
+}}
 
 #endif

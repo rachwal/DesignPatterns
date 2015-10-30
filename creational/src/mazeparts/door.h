@@ -11,25 +11,27 @@
 
 namespace creational
 {
-	class Door : public MapSiteInterface
-	{
+namespace commons
+{
+class Door : public MapSiteInterface
+{
 	public:
-		explicit Door(const Room& first_room, const Room& second_room);
-		Door(const Door&);
+	Door(const Door&);
+	explicit Door(const Room& first_room, const Room& second_room);
 
-		virtual Door* Clone() const;
-		virtual void Enter() override;
-		void Initialize(const Room& first_room, const Room& second_room);
-		bool is_open() const;
-		Room* OtherSideFrom(const Room& room) const;
-		virtual bool entered() const;
+	virtual Door *Clone() const;
+	virtual void Enter() override;
+	void Initialize(const Room& first_room, const Room& second_room);
+	bool is_open() const;
+	Room *OtherSideFrom(const Room& room) const;
+	virtual bool entered() const;
 
 	private:
-		Room* room1_;
-		Room* room2_;
-		bool is_open_;
-		bool entered_;
-	};
-}
+	Room* room1_;
+	Room* room2_;
+	bool is_open_;
+	bool entered_;
+};
+}}
 
 #endif

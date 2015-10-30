@@ -10,21 +10,23 @@
 
 namespace structural
 {
-	class ProgramNodeBuilder :public ProgramNodeBuilderInterface
-	{
+namespace facade
+{
+class ProgramNodeBuilder :public ProgramNodeBuilderInterface
+{
 	public:
-		ProgramNodeBuilder();
-		virtual ~ProgramNodeBuilder();
+	ProgramNodeBuilder();
+	virtual ~ProgramNodeBuilder();
 
-		virtual ProgramNodeInterface* NewVariable(std::string& variableName) override;
-		virtual ProgramNodeInterface* NewAssignment(ProgramNodeInterface* variable, ProgramNodeInterface* expression) override;
-		virtual ProgramNodeInterface* NewReturnStatement(ProgramNodeInterface* value) override;
-		virtual ProgramNodeInterface* NewCondition(ProgramNodeInterface* condition, ProgramNodeInterface* truePart, ProgramNodeInterface* falsePart) override;
-		virtual ProgramNodeInterface* GetRootNode() const override;
+	virtual ProgramNodeInterface *NewVariable(std::string& variableName) override;
+	virtual ProgramNodeInterface *NewAssignment(ProgramNodeInterface* variable, ProgramNodeInterface* expression) override;
+	virtual ProgramNodeInterface *NewReturnStatement(ProgramNodeInterface* value) override;
+	virtual ProgramNodeInterface *NewCondition(ProgramNodeInterface* condition, ProgramNodeInterface* truePart, ProgramNodeInterface* falsePart) override;
+	virtual ProgramNodeInterface *GetRootNode() const override;
 
 	private:
-		ProgramNodeInterface* node_;
-	};
-}
+	ProgramNodeInterface* node_;
+};
+}}
 
 #endif

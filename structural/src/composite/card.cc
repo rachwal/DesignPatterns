@@ -7,47 +7,45 @@
 
 namespace structural
 {
-	Card::Card(const std::string& name) :name_(name), power_(0), price_(0)
-	{
-	}
+namespace composite
+{
+Card::Card(const std::string& name) :name_(name), power_(0), price_(0) { }
 
-	Card::Card() : Card("")
-	{
-	}
+Card::Card() : Card("") { }
 
-	std::string Card::name() const
-	{
-		return name_;
-	}
-
-	foundation::Currency Card::price() const
-	{
-		return price_;
-	}
-
-	void Card::price(const foundation::Currency& price)
-	{
-		price_ = price;
-	}
-
-	foundation::Watt Card::power() const
-	{
-		return power_;
-	}
-
-	void Card::power(const foundation::Watt& power)
-	{
-		power_ = power;
-	}
-
-	foundation::Currency Card::NetPrice()
-	{
-		return price_;
-	}
-
-	foundation::Currency Card::DiscountPrice()
-	{
-		auto discount_price = price_.value() * 0.9;
-		return foundation::Currency(discount_price);
-	}
+std::string Card::name() const
+{
+	return name_;
 }
+
+foundation::Currency Card::price() const
+{
+	return price_;
+}
+
+void Card::price(const foundation::Currency& price)
+{
+	price_ = price;
+}
+
+foundation::Watt Card::power() const
+{
+	return power_;
+}
+
+void Card::power(const foundation::Watt& power)
+{
+	power_ = power;
+}
+
+foundation::Currency Card::NetPrice()
+{
+	return price_;
+}
+
+foundation::Currency Card::DiscountPrice()
+{
+	auto discount_price = price_.value() * 0.9;
+	return foundation::Currency(discount_price);
+}
+}}

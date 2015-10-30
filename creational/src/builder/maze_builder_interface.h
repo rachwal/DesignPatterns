@@ -10,19 +10,19 @@
 
 namespace creational
 {
-	class MazeBuilderInterface
-	{
+namespace builder
+{
+class MazeBuilderInterface
+{
 	public:
-		virtual ~MazeBuilderInterface()
-		{
-		}
+	virtual ~MazeBuilderInterface() { }
 
-		virtual void BuildMaze() = 0;
-		virtual void BuildRoom(const int& room_number) = 0;
-		virtual void BuildDoor(const int& rist_room_number, const int& second_room_number) = 0;
+	virtual void BuildMaze() = 0;
+	virtual void BuildRoom(const int& room_number) = 0;
+	virtual void BuildDoor(const int& rist_room_number, const int& second_room_number) = 0;
 
-		virtual Maze* GetMaze() = 0;
-	};
-}
+	virtual commons::Maze *GetMaze() = 0;
+};
+}}
 
 #endif

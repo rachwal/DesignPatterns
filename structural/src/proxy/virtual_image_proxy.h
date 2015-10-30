@@ -10,20 +10,22 @@
 
 namespace structural
 {
-	class VirtualImageProxy
-	{
+namespace proxy
+{
+class VirtualImageProxy
+{
 	public:
-		explicit VirtualImageProxy(const std::string& imageFile);
-		virtual ~VirtualImageProxy();
+	explicit VirtualImageProxy(const std::string& imageFile);
+	virtual ~VirtualImageProxy();
 
-		virtual Image* operator->();
-		virtual Image& operator*();
+	virtual Image *operator->();
+	virtual Image &operator*();
 
 	private:
-		Image* LoadImage();
-		Image* image_;
-		std::string image_file_;
-	};
-}
+	Image *LoadImage();
+	Image* image_;
+	std::string image_file_;
+};
+}}
 
 #endif

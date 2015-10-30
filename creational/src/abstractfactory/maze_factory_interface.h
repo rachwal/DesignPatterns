@@ -12,18 +12,18 @@
 
 namespace creational
 {
-	class MazeFactoryInterface
-	{
+namespace abstractfactory
+{
+class MazeFactoryInterface
+{
 	public:
-		virtual ~MazeFactoryInterface()
-		{
-		}
+	virtual ~MazeFactoryInterface() { }
 
-		virtual Maze* MakeMaze() const = 0;
-		virtual Wall* MakeWall() const = 0;
-		virtual Room* MakeRoom(const int& room_number) const = 0;
-		virtual Door* MakeDoor(const Room& first_room, const Room& second_room) const = 0;
-	};
-}
+	virtual commons::Maze *MakeMaze() const = 0;
+	virtual commons::Wall *MakeWall() const = 0;
+	virtual commons::Room *MakeRoom(const int& room_number) const = 0;
+	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const = 0;
+};
+}}
 
 #endif

@@ -7,27 +7,25 @@
 
 namespace structural
 {
-	TextShapeClassAdapter::TextShapeClassAdapter(const std::string& text) : TextView(text)
-	{
-	}
+namespace adapter
+{
+TextShapeClassAdapter::TextShapeClassAdapter(const std::string& text) : TextView(text) { }
 
-	TextShapeClassAdapter::TextShapeClassAdapter() : TextShapeClassAdapter("")
-	{
-	}
+TextShapeClassAdapter::TextShapeClassAdapter() : TextShapeClassAdapter("") { }
 
-	void TextShapeClassAdapter::BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const
-	{
-		float x, y, width, height;
+void TextShapeClassAdapter::BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const
+{
+	float x, y, width, height;
 
-		GetOrigin(x, y);
-		GetExtent(width, height);
+	GetOrigin(x, y);
+	GetExtent(width, height);
 
-		bottom_left = foundation::Point<float>(x, y);
-		top_right = foundation::Point<float>(x + width, y + height);
-	}
-
-	bool TextShapeClassAdapter::IsEmpty() const
-	{
-		return TextView::IsEmpty();
-	}
+	bottom_left = foundation::Point<float>(x, y);
+	top_right = foundation::Point<float>(x + width, y + height);
 }
+
+bool TextShapeClassAdapter::IsEmpty() const
+{
+	return TextView::IsEmpty();
+}
+}}

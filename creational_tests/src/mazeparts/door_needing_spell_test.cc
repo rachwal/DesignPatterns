@@ -8,47 +8,44 @@
 
 namespace creationaltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace creational::commons;
 
-	TEST_CLASS(DoorNeedingSpellTest)
-	{
+TEST_CLASS(DoorNeedingSpellTest)
+{
 	public:
-		DoorNeedingSpellTest()
-		{
-		}
+	DoorNeedingSpellTest() { }
 
-		~DoorNeedingSpellTest()
-		{
-		}
+	~DoorNeedingSpellTest() { }
 
-		TEST_METHOD(ShouldReturnFalseWhenTryEmptySpell)
-		{
-			//GIVEN
-			auto east_room = creational::Room(1);
-			auto west_room = creational::Room(2);
-			auto door_needing_spell = creational::DoorNeedingSpell(east_room, west_room);
-			creational::Spell spell("");
+	TEST_METHOD(ShouldReturnFalseWhenTryEmptySpell)
+	{
+		//GIVEN
+		auto east_room = Room(1);
+		auto west_room = Room(2);
+		auto door_needing_spell = DoorNeedingSpell(east_room, west_room);
+		Spell spell("");
 
-			//WHEN
-			auto result = door_needing_spell.TrySpell(spell);
+		//WHEN
+		auto result = door_needing_spell.TrySpell(spell);
 
-			//THEN
-			Assert::IsFalse(result);
-		}
+		//THEN
+		Assert::IsFalse(result);
+	}
 
-		TEST_METHOD(ShouldReturnTrueWhenTryNonEmptySpell)
-		{
-			//GIVEN
-			auto east_room = creational::Room(1);
-			auto west_room = creational::Room(2);
-			auto door_needing_spell = creational::DoorNeedingSpell(east_room, west_room);
-			creational::Spell spell("abracadabra");
+	TEST_METHOD(ShouldReturnTrueWhenTryNonEmptySpell)
+	{
+		//GIVEN
+		auto east_room = Room(1);
+		auto west_room = Room(2);
+		auto door_needing_spell = DoorNeedingSpell(east_room, west_room);
+		Spell spell("abracadabra");
 
-			//WHEN
-			auto result = door_needing_spell.TrySpell(spell);
+		//WHEN
+		auto result = door_needing_spell.TrySpell(spell);
 
-			//THEN
-			Assert::IsTrue(result);
-		}
-	};
+		//THEN
+		Assert::IsTrue(result);
+	}
+};
 }

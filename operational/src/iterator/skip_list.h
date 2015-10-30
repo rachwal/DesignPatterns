@@ -10,37 +10,33 @@
 
 namespace operational
 {
-	template <class Item>
-	class SkipList : public List<Item>
-	{
+namespace iterator
+{
+template<class Item>
+class SkipList : public List<Item>
+{
 	public:
-		explicit SkipList(long size);
-		explicit SkipList(List<Item>& list);
-		~SkipList() override;
+	explicit SkipList(long size);
+	explicit SkipList(List<Item>& list);
+	~SkipList() override;
 
-		virtual IteratorInterface<Item>* CreateIterator() const override;
-	};
+	virtual IteratorInterface<Item> *CreateIterator() const override;
+};
 
-	template <class Item>
-	SkipList<Item>::SkipList(long size) : List<Item>(size)
-	{
-	}
+template<class Item>
+SkipList<Item>::SkipList(long size) : List<Item>(size) { }
 
-	template <class Item>
-	SkipList<Item>::SkipList(List<Item>& list) : List<Item>(list)
-	{
-	}
+template<class Item>
+SkipList<Item>::SkipList(List<Item>& list) : List<Item>(list) { }
 
-	template <class Item>
-	SkipList<Item>::~SkipList()
-	{
-	}
+template<class Item>
+SkipList<Item>::~SkipList() { }
 
-	template <class Item>
-	IteratorInterface<Item>* SkipList<Item>::CreateIterator() const
-	{
-		return nullptr;
-	}
+template<class Item>
+IteratorInterface<Item> *SkipList<Item>::CreateIterator() const
+{
+	return nullptr;
 }
+}}
 
 #endif

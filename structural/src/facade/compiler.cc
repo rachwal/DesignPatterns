@@ -11,26 +11,24 @@
 
 namespace structural
 {
-	Compiler::Compiler()
-	{
-	}
+namespace facade
+{
+Compiler::Compiler() { }
 
-	Compiler::~Compiler()
-	{
-	}
+Compiler::~Compiler() { }
 
-	void Compiler::Compile(std::istringstream& input, BytecodeStream* output)
-	{
-		Scanner scanner(input);
-		Parser parser;
-		ProgramNodeBuilder builder;
-		RISCCodeGenerator generator(output);
+void Compiler::Compile(std::istringstream& input, BytecodeStream* output)
+{
+	Scanner scanner(input);
+	Parser parser;
+	ProgramNodeBuilder builder;
+	RISCCodeGenerator generator(output);
 
-		parser.Parse(scanner, builder);
-		auto parseTree = builder.GetRootNode();
-		if (parseTree)
-		{
-			parseTree->Traverse(generator);
-		}
+	parser.Parse(scanner, builder);
+	auto parseTree = builder.GetRootNode();
+	if (parseTree)
+	{
+		parseTree->Traverse(generator);
 	}
 }
+}}

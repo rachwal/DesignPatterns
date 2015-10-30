@@ -8,16 +8,16 @@
 
 namespace structural
 {
-	class VisualComponentInterface
-	{
+namespace adapter
+{
+class VisualComponentInterface
+{
 	public:
-		virtual ~VisualComponentInterface()
-		{
-		}
+	virtual ~VisualComponentInterface() { }
 
-		virtual void Draw() = 0;
-		virtual void Resize() = 0;
-	};
-}
+	virtual void Draw() = 0;
+	virtual void Resize() = 0;
+};
+}}
 
 #endif

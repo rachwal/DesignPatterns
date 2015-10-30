@@ -12,25 +12,27 @@
 
 namespace structural
 {
-	class Card : public foundation::EquipmentInterface
-	{
+namespace composite
+{
+class Card : public foundation::EquipmentInterface
+{
 	public:
-		explicit Card(const std::string& name);
-		Card();
+	Card();
+	explicit Card(const std::string& name);
 
-		std::string name() const override;
-		foundation::Currency price() const override;
-		void price(const foundation::Currency&) override;
-		foundation::Watt power() const override;
-		void power(const foundation::Watt&) override;
-		foundation::Currency NetPrice() override;
-		foundation::Currency DiscountPrice() override;
+	std::string name() const override;
+	foundation::Currency price() const override;
+	void price(const foundation::Currency&) override;
+	foundation::Watt power() const override;
+	void power(const foundation::Watt&) override;
+	foundation::Currency NetPrice() override;
+	foundation::Currency DiscountPrice() override;
 
 	private:
-		std::string name_;
-		foundation::Watt power_;
-		foundation::Currency price_;
-	};
-}
+	std::string name_;
+	foundation::Watt power_;
+	foundation::Currency price_;
+};
+}}
 
 #endif

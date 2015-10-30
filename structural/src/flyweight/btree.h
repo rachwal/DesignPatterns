@@ -12,20 +12,22 @@
 
 namespace structural
 {
-	class BTree
-	{
+namespace flyweight
+{
+class BTree
+{
 	public:
-		explicit BTree(long size);
-		BTree();
+	BTree();
+	explicit BTree(long size);
 
-		void Set(Font* font, const int& index, const int& span) const;
-		Font* Get(int index) const;
+	void Set(Font* font, const int& index, const int& span) const;
+	Font *Get(int index) const;
 
 	private:
-		long size_;
-		int* nodes_;
-		operational::List<Font*>* leafs_;
-	};
-}
+	long size_;
+	int* nodes_;
+	operational::iterator::List<Font*>* leafs_;
+};
+}}
 
 #endif

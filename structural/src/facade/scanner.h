@@ -13,17 +13,19 @@
 
 namespace structural
 {
-	class Scanner
-	{
+namespace facade
+{
+class Scanner
+{
 	public:
-		explicit Scanner(std::istringstream&);
-		virtual ~Scanner();
+	explicit Scanner(std::istringstream&);
+	virtual ~Scanner();
 
-		virtual std::vector<Token*> Scanner::Scan();
+	virtual std::vector<Token*> Scanner::Scan();
 
 	private:
-		std::istringstream& input_stream_;
-	};
-}
+	std::istringstream& input_stream_;
+};
+}}
 
 #endif

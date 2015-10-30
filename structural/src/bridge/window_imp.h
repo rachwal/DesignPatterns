@@ -10,16 +10,16 @@
 
 namespace structural
 {
-	class WindowImp
-	{
+namespace bridge
+{
+class WindowImp
+{
 	public:
-		virtual ~WindowImp()
-		{
-		}
+	virtual ~WindowImp() { }
 
-		virtual void DeviceRect(float, float, float, float) = 0;
-		virtual void DeviceText(const std::string& text, float, float) = 0;
-	};
-}
+	virtual void DeviceRect(float, float, float, float) = 0;
+	virtual void DeviceText(const std::string& text, float, float) = 0;
+};
+}}
 
 #endif

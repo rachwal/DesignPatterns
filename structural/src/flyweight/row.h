@@ -10,25 +10,27 @@
 
 namespace structural
 {
-	class Row : public GlyphInterface
-	{
+namespace flyweight
+{
+class Row : public GlyphInterface
+{
 	public:
-		~Row() override;
+	~Row() override;
 
-		virtual void First(GlyphContext&) override;
-		virtual void Next(GlyphContext&) override;
-		virtual bool IsDone(GlyphContext&) override;
+	virtual void First(GlyphContext&) override;
+	virtual void Next(GlyphContext&) override;
+	virtual bool IsDone(GlyphContext&) override;
 
-		virtual void SetFont(Font*, GlyphContext&) override;
-		virtual Font* GetFont(GlyphContext&) override;
+	virtual void SetFont(Font*, GlyphContext&) override;
+	virtual Font *GetFont(GlyphContext&) override;
 
-		virtual GlyphInterface* Current(GlyphContext&) override;
+	virtual GlyphInterface *Current(GlyphContext&) override;
 
-		virtual void Insert(GlyphInterface*, GlyphContext&) override;
-		virtual void Remove(GlyphContext&) override;
+	virtual void Insert(GlyphInterface*, GlyphContext&) override;
+	virtual void Remove(GlyphContext&) override;
 
-		virtual void Draw(Window*, GlyphContext&) override;
-	};
-}
+	virtual void Draw(Window*, GlyphContext&) override;
+};
+}}
 
 #endif

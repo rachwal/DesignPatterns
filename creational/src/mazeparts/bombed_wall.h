@@ -10,20 +10,22 @@
 
 namespace creational
 {
-	class BombedWall : public Wall
-	{
+namespace commons
+{
+class BombedWall : public Wall
+{
 	public:
-		explicit BombedWall(const bool& bombed);
-		BombedWall(const BombedWall&);
+	explicit BombedWall(const bool& bombed);
+	BombedWall(const BombedWall&);
 
-		virtual BombedWall* Clone() const override;
-		virtual void Enter() override;
-		void Intialize(const bool& bombed);
-		bool bombed() const;
+	virtual BombedWall *Clone() const override;
+	virtual void Enter() override;
+	void Intialize(const bool& bombed);
+	bool bombed() const;
 
 	private:
-		bool bombed_;
-	};
-}
+	bool bombed_;
+};
+}}
 
 #endif

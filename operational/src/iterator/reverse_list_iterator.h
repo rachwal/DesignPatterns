@@ -11,50 +11,44 @@
 
 namespace operational
 {
-	template <class Item>
-	class ReverseListIterator : public IteratorInterface<Item>
-	{
+namespace iterator
+{
+template<class Item>
+class ReverseListIterator : public IteratorInterface<Item>
+{
 	public:
-		explicit ReverseListIterator(const List<Item>* list);
-		virtual ~ReverseListIterator() override;
+	explicit ReverseListIterator(const List<Item>* list);
+	virtual ~ReverseListIterator() override;
 
-		virtual void First() override;
-		virtual void Next() override;
-		virtual bool IsDone() const override;
-		virtual Item CurrentItem() const override;
-	};
+	virtual void First() override;
+	virtual void Next() override;
+	virtual bool IsDone() const override;
+	virtual Item CurrentItem() const override;
+};
 
-	template <class Item>
-	ReverseListIterator<Item>::ReverseListIterator(const List<Item>* list)
-	{
-	}
+template<class Item>
+ReverseListIterator<Item>::ReverseListIterator(const List<Item>* list) { }
 
-	template <class Item>
-	ReverseListIterator<Item>::~ReverseListIterator()
-	{
-	}
+template<class Item>
+ReverseListIterator<Item>::~ReverseListIterator() { }
 
-	template <class Item>
-	void ReverseListIterator<Item>::First()
-	{
-	}
+template<class Item>
+void ReverseListIterator<Item>::First() { }
 
-	template <class Item>
-	void ReverseListIterator<Item>::Next()
-	{
-	}
+template<class Item>
+void ReverseListIterator<Item>::Next() { }
 
-	template <class Item>
-	bool ReverseListIterator<Item>::IsDone() const
-	{
-		return false;
-	}
-
-	template <class Item>
-	Item ReverseListIterator<Item>::CurrentItem() const
-	{
-		return{};
-	}
+template<class Item>
+bool ReverseListIterator<Item>::IsDone() const
+{
+	return false;
 }
+
+template<class Item>
+Item ReverseListIterator<Item>::CurrentItem() const
+{
+	return{};
+}
+}}
 
 #endif

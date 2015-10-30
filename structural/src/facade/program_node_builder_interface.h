@@ -12,19 +12,19 @@
 
 namespace structural
 {
-	class ProgramNodeBuilderInterface
-	{
+namespace facade
+{
+class ProgramNodeBuilderInterface
+{
 	public:
-		virtual ~ProgramNodeBuilderInterface()
-		{
-		}
+	virtual ~ProgramNodeBuilderInterface() { }
 
-		virtual ProgramNodeInterface* NewVariable(std::string& variableName) = 0;
-		virtual ProgramNodeInterface* NewAssignment(ProgramNodeInterface* variable, ProgramNodeInterface* expression) = 0;
-		virtual ProgramNodeInterface* NewReturnStatement(ProgramNodeInterface* value) = 0;
-		virtual ProgramNodeInterface* NewCondition(ProgramNodeInterface* condition, ProgramNodeInterface* truePart, ProgramNodeInterface* falsePart) = 0;
-		virtual ProgramNodeInterface* GetRootNode() const = 0;
-	};
-}
+	virtual ProgramNodeInterface *NewVariable(std::string& variableName) = 0;
+	virtual ProgramNodeInterface *NewAssignment(ProgramNodeInterface* variable, ProgramNodeInterface* expression) = 0;
+	virtual ProgramNodeInterface *NewReturnStatement(ProgramNodeInterface* value) = 0;
+	virtual ProgramNodeInterface *NewCondition(ProgramNodeInterface* condition, ProgramNodeInterface* truePart, ProgramNodeInterface* falsePart) = 0;
+	virtual ProgramNodeInterface *GetRootNode() const = 0;
+};
+}}
 
 #endif

@@ -12,14 +12,16 @@
 
 namespace creational
 {
-	class DoorNeedingSpell : public Door
-	{
+namespace commons
+{
+class DoorNeedingSpell : public Door
+{
 	public:
-		DoorNeedingSpell(const Room& first_room, const Room& second_room);
-		DoorNeedingSpell(const DoorNeedingSpell&);
+	DoorNeedingSpell(const DoorNeedingSpell&);
+	DoorNeedingSpell(const Room& first_room, const Room& second_room);
 
-		bool TrySpell(const Spell&) const;
-	};
-}
+	bool TrySpell(const Spell&) const;
+};
+}}
 
 #endif

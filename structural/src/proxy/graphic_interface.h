@@ -14,19 +14,19 @@
 
 namespace structural
 {
-	class GraphicInterface
-	{
+namespace proxy
+{
+class GraphicInterface
+{
 	public:
-		virtual ~GraphicInterface()
-		{
-		}
+	virtual ~GraphicInterface() { }
 
-		virtual void Draw(const foundation::Point<float>& at) = 0;
-		virtual void HandleMouse(Event& event) = 0;
-		virtual const foundation::Point<float>& GetExtent() = 0;
-		virtual void Load(std::istream& from) = 0;
-		virtual void Save(std::ostream& to) = 0;
-	};
-}
+	virtual void Draw(const foundation::Point<float>& at) = 0;
+	virtual void HandleMouse(Event& event) = 0;
+	virtual const foundation::Point<float> &GetExtent() = 0;
+	virtual void Load(std::istream& from) = 0;
+	virtual void Save(std::ostream& to) = 0;
+};
+}}
 
 #endif

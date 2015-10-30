@@ -10,12 +10,14 @@
 
 namespace structural
 {
-	class Cabinet : public CompositeEquipment
-	{
+namespace composite
+{
+class Cabinet : public CompositeEquipment
+{
 	public:
-		explicit Cabinet(const std::string& name);
-		Cabinet();
-	};
-}
+	Cabinet();
+	explicit Cabinet(const std::string& name);
+};
+}}
 
 #endif

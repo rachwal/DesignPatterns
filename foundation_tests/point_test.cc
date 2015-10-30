@@ -7,83 +7,79 @@
 
 namespace structuraltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-	TEST_CLASS(PointTest)
-	{
+TEST_CLASS(PointTest)
+{
 	public:
-		PointTest()
-		{
-		}
+	PointTest() { }
 
-		~PointTest()
-		{
-		}
+	~PointTest() { }
 
-		TEST_METHOD(ShouldCreateDefaultPoint)
-		{
-			//WHEN
-			foundation::Point<float> point;
+	TEST_METHOD(ShouldCreateDefaultPoint)
+	{
+		//WHEN
+		foundation::Point<float> point;
 
-			//THEN
-			Assert::AreEqual(0.0f, point.x());
-			Assert::AreEqual(0.0f, point.y());
-		}
+		//THEN
+		Assert::AreEqual(0.0f, point.x());
+		Assert::AreEqual(0.0f, point.y());
+	}
 
-		TEST_METHOD(ShouldAddTwoPoints)
-		{
-			//GIVEN
-			foundation::Point<float> first_point(1, 2);
-			foundation::Point<float> second_point(3, 4);
+	TEST_METHOD(ShouldAddTwoPoints)
+	{
+		//GIVEN
+		foundation::Point<float> first_point(1, 2);
+		foundation::Point<float> second_point(3, 4);
 
-			//WHEN
-			auto point = first_point + second_point;
+		//WHEN
+		auto point = first_point + second_point;
 
-			//THEN
-			Assert::AreEqual(4.0f, point.x());
-			Assert::AreEqual(6.0f, point.y());
-		}
+		//THEN
+		Assert::AreEqual(4.0f, point.x());
+		Assert::AreEqual(6.0f, point.y());
+	}
 
-		TEST_METHOD(ShouldSubstractTwoPoints)
-		{
-			//GIVEN
-			foundation::Point<float> first_point(1, 2);
-			foundation::Point<float> second_point(3, 4);
+	TEST_METHOD(ShouldSubstractTwoPoints)
+	{
+		//GIVEN
+		foundation::Point<float> first_point(1, 2);
+		foundation::Point<float> second_point(3, 4);
 
-			//WHEN
-			auto point = first_point - second_point;
+		//WHEN
+		auto point = first_point - second_point;
 
-			//THEN
-			Assert::AreEqual(-2.0f, point.x());
-			Assert::AreEqual(-2.0f, point.y());
-		}
+		//THEN
+		Assert::AreEqual(-2.0f, point.x());
+		Assert::AreEqual(-2.0f, point.y());
+	}
 
-		TEST_METHOD(ShouldAddPointToExistingOne)
-		{
-			//GIVEN
-			foundation::Point<float> first_point(1, 2);
-			foundation::Point<float> second_point(3, 4);
+	TEST_METHOD(ShouldAddPointToExistingOne)
+	{
+		//GIVEN
+		foundation::Point<float> first_point(1, 2);
+		foundation::Point<float> second_point(3, 4);
 
-			//WHEN
-			first_point += second_point;
+		//WHEN
+		first_point += second_point;
 
-			//THEN
-			Assert::AreEqual(4.0f, first_point.x());
-			Assert::AreEqual(6.0f, first_point.y());
-		}
+		//THEN
+		Assert::AreEqual(4.0f, first_point.x());
+		Assert::AreEqual(6.0f, first_point.y());
+	}
 
-		TEST_METHOD(ShouldSubstractPointFromExistingOne)
-		{
-			//GIVEN
-			foundation::Point<float> first_point(1, 2);
-			foundation::Point<float> second_point(3, 4);
+	TEST_METHOD(ShouldSubstractPointFromExistingOne)
+	{
+		//GIVEN
+		foundation::Point<float> first_point(1, 2);
+		foundation::Point<float> second_point(3, 4);
 
-			//WHEN
-			first_point -= second_point;
+		//WHEN
+		first_point -= second_point;
 
-			//THEN
-			Assert::AreEqual(-2.0f, first_point.x());
-			Assert::AreEqual(-2.0f, first_point.y());
-		}
-	};
+		//THEN
+		Assert::AreEqual(-2.0f, first_point.x());
+		Assert::AreEqual(-2.0f, first_point.y());
+	}
+};
 }

@@ -10,17 +10,19 @@
 
 namespace structural
 {
-	class StreamDecorator : public StreamInterface
-	{
+namespace decorator
+{
+class StreamDecorator : public StreamInterface
+{
 	public:
-		explicit StreamDecorator(StreamInterface*);
+	explicit StreamDecorator(StreamInterface*);
 
-		void PutInt(int) override;
-		void PutString(const std::string&) override;
+	void PutInt(int) override;
+	void PutString(const std::string&) override;
 
 	protected:
-		StreamInterface* component_;
-	};
-}
+	StreamInterface* component_;
+};
+}}
 
 #endif

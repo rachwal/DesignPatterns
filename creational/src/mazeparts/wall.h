@@ -10,20 +10,22 @@
 
 namespace creational
 {
-	class Wall : public MapSiteInterface
-	{
+namespace commons
+{
+class Wall : public MapSiteInterface
+{
 	public:
-		Wall();
-		Wall(const Wall&);
-		virtual ~Wall() override;
+	Wall();
+	Wall(const Wall&);
+	virtual ~Wall() override;
 
-		virtual Wall* Clone() const;
-		virtual void Enter() override;
-		virtual bool entered() const;
+	virtual Wall *Clone() const;
+	virtual void Enter() override;
+	virtual bool entered() const;
 
 	protected:
-		bool entered_;
-	};
-}
+	bool entered_;
+};
+}}
 
 #endif

@@ -12,19 +12,21 @@
 
 namespace structural
 {
-	class XWindowImp : public WindowImp
-	{
+namespace bridge
+{
+class XWindowImp : public WindowImp
+{
 	public:
-		XWindowImp();
+	XWindowImp();
 
-		virtual void DeviceText(const std::string& text, float, float) override;
-		virtual void DeviceRect(float, float, float, float) override;
+	virtual void DeviceText(const std::string& text, float, float) override;
+	virtual void DeviceRect(float, float, float, float) override;
 
-		std::string text() const;
+	std::string text() const;
 
 	private:
-		std::string text_;
-	};
-}
+	std::string text_;
+};
+}}
 
 #endif

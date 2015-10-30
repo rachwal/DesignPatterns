@@ -7,17 +7,17 @@
 
 namespace structural
 {
-	void StreamDecorator::PutInt(int value)
-	{
-		component_->PutInt(value);
-	}
-
-	void StreamDecorator::PutString(const std::string& string)
-	{
-		component_->PutString(string);
-	}
-
-	StreamDecorator::StreamDecorator(StreamInterface* stream) :component_(stream)
-	{
-	}
+namespace decorator
+{
+void StreamDecorator::PutInt(int value)
+{
+	component_->PutInt(value);
 }
+
+void StreamDecorator::PutString(const std::string& string)
+{
+	component_->PutString(string);
+}
+
+StreamDecorator::StreamDecorator(StreamInterface* stream) :component_(stream) { }
+}}

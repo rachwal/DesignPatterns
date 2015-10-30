@@ -7,17 +7,17 @@
 
 namespace creational
 {
-	TwistyTurnyPassage::TwistyTurnyPassage() : Room(0), entered_(false)
-	{
-	}
+namespace commons
+{
+TwistyTurnyPassage::TwistyTurnyPassage() : Room(0), entered_(false) { }
 
-	void TwistyTurnyPassage::Enter()
-	{
-		entered_ = true;
-	}
-
-	bool TwistyTurnyPassage::entered() const
-	{
-		return entered_;
-	}
+void TwistyTurnyPassage::Enter()
+{
+	entered_ = true;
 }
+
+bool TwistyTurnyPassage::entered() const
+{
+	return entered_;
+}
+}}

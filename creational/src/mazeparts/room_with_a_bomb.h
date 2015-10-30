@@ -10,19 +10,21 @@
 
 namespace creational
 {
-	class RoomWithABomb : public Room
-	{
+namespace commons
+{
+class RoomWithABomb : public Room
+{
 	public:
-		explicit RoomWithABomb(const int& room_number, const bool& has_bomb);
-		RoomWithABomb(const RoomWithABomb&);
+	RoomWithABomb(const RoomWithABomb&);
+	explicit RoomWithABomb(const int& room_number, const bool& has_bomb);
 
-		virtual RoomWithABomb* Clone() const override;
-		bool has_bomb() const;
-		void Initialize(const bool& bombed);
+	virtual RoomWithABomb *Clone() const override;
+	bool has_bomb() const;
+	void Initialize(const bool& bombed);
 
 	private:
-		bool has_bomb_;
-	};
-}
+	bool has_bomb_;
+};
+}}
 
 #endif

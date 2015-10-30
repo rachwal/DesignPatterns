@@ -7,17 +7,15 @@
 
 namespace foundation
 {
-	Currency::Currency(const double& price) :value_(price)
-	{
-	}
+Currency::Currency(const double& price) :value_(price) { }
 
-	double Currency::value() const
-	{
-		return value_;
-	}
+double Currency::value() const
+{
+	return value_;
+}
 
-	void Currency::value(double value)
-	{
-		value_ = value;
-	}
+void Currency::value(double value)
+{
+	value_ = value;
+}
 }

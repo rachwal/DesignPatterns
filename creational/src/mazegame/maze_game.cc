@@ -9,108 +9,108 @@
 
 namespace creational
 {
-	MazeGame::~MazeGame()
-	{
-	}
+using namespace commons;
 
-	Maze* MazeGame::CreateMaze() const
-	{
-		auto maze = new Maze();
-		auto r1 = new Room(1);
-		auto r2 = new Room(2);
-		auto door = new Door(*r1, *r2);
+MazeGame::~MazeGame() { }
 
-		r1->SetSide(North, new Wall);
-		r1->SetSide(East, door);
-		r1->SetSide(South, new Wall);
-		r1->SetSide(West, new Wall);
+commons::Maze *MazeGame::CreateMaze() const
+{
+	auto maze = new Maze();
+	auto r1 = new Room(1);
+	auto r2 = new Room(2);
+	auto door = new Door(*r1, *r2);
 
-		r2->SetSide(North, new Wall);
-		r2->SetSide(East, new Wall);
-		r2->SetSide(South, new Wall);
-		r2->SetSide(West, door);
+	r1->SetSide(North, new Wall);
+	r1->SetSide(East, door);
+	r1->SetSide(South, new Wall);
+	r1->SetSide(West, new Wall);
 
-		maze->AddRoom(r1);
-		maze->AddRoom(r2);
+	r2->SetSide(North, new Wall);
+	r2->SetSide(East, new Wall);
+	r2->SetSide(South, new Wall);
+	r2->SetSide(West, door);
 
-		return maze;
-	}
+	maze->AddRoom(r1);
+	maze->AddRoom(r2);
 
-	Maze* MazeGame::CreateMaze(MazeBuilderInterface& builder) const
-	{
-		builder.BuildMaze();
-		builder.BuildRoom(1000);
-		builder.BuildRoom(2000);
-		builder.BuildDoor(1000, 2000);
+	return maze;
+}
 
-		return builder.GetMaze();
-	}
+Maze *MazeGame::CreateMaze(builder::MazeBuilderInterface& builder) const
+{
+	builder.BuildMaze();
+	builder.BuildRoom(1000);
+	builder.BuildRoom(2000);
+	builder.BuildDoor(1000, 2000);
 
-	Maze* MazeGame::CreateMaze(const MazeFactoryInterface& factory) const
-	{
-		auto maze = factory.MakeMaze();
-		auto r1 = factory.MakeRoom(100);
-		auto r2 = factory.MakeRoom(200);
-		auto door = factory.MakeDoor(*r1, *r2);
-		auto wall = factory.MakeWall();
+	return builder.GetMaze();
+}
 
-		maze->AddRoom(r1);
-		maze->AddRoom(r2);
+Maze *MazeGame::CreateMaze(const abstractfactory::MazeFactoryInterface& factory) const
+{
+	auto maze = factory.MakeMaze();
+	auto r1 = factory.MakeRoom(100);
+	auto r2 = factory.MakeRoom(200);
+	auto door = factory.MakeDoor(*r1, *r2);
+	auto wall = factory.MakeWall();
 
-		r1->SetSide(North, wall);
-		r1->SetSide(East, door);
-		r1->SetSide(South, wall);
-		r1->SetSide(West, wall);
+	maze->AddRoom(r1);
+	maze->AddRoom(r2);
 
-		r2->SetSide(North, wall);
-		r2->SetSide(East, wall);
-		r2->SetSide(South, wall);
-		r2->SetSide(West, door);
+	r1->SetSide(North, wall);
+	r1->SetSide(East, door);
+	r1->SetSide(South, wall);
+	r1->SetSide(West, wall);
 
-		return maze;
-	}
+	r2->SetSide(North, wall);
+	r2->SetSide(East, wall);
+	r2->SetSide(South, wall);
+	r2->SetSide(West, door);
 
-	Maze* MazeGame::CreateSimpleMaze() const
-	{
-		auto maze = MakeMaze();
-		auto r1 = MakeRoom(12);
-		auto r2 = MakeRoom(23);
-		auto door = MakeDoor(*r1, *r2);
-		auto wall = MakeWall();
+	return maze;
+}
 
-		maze->AddRoom(r1);
-		maze->AddRoom(r2);
+Maze *MazeGame::CreateSimpleMaze() const
+{
+	auto maze = MakeMaze();
+	auto r1 = MakeRoom(12);
+	auto r2 = MakeRoom(23);
+	auto door = MakeDoor(*r1, *r2);
+	auto wall = MakeWall();
 
-		r1->SetSide(North, wall);
-		r1->SetSide(East, door);
-		r1->SetSide(South, wall);
-		r1->SetSide(West, wall);
+	maze->AddRoom(r1);
+	maze->AddRoom(r2);
 
-		r2->SetSide(North, wall);
-		r2->SetSide(East, wall);
-		r2->SetSide(South, wall);
-		r2->SetSide(West, door);
+	r1->SetSide(North, wall);
+	r1->SetSide(East, door);
+	r1->SetSide(South, wall);
+	r1->SetSide(West, wall);
 
-		return maze;
-	}
+	r2->SetSide(North, wall);
+	r2->SetSide(East, wall);
+	r2->SetSide(South, wall);
+	r2->SetSide(West, door);
 
-	Maze* MazeGame::MakeMaze() const
-	{
-		return new Maze;
-	}
+	return maze;
+}
 
-	Room* MazeGame::MakeRoom(const int& room_number) const
-	{
-		return new Room(room_number);
-	}
+Maze *MazeGame::MakeMaze() const
+{
+	return new Maze;
+}
 
-	Wall* MazeGame::MakeWall() const
-	{
-		return new Wall;
-	}
+Room *MazeGame::MakeRoom(const int& room_number) const
+{
+	return new Room(room_number);
+}
 
-	Door* MazeGame::MakeDoor(const Room& first_room, const Room& second_room) const
-	{
-		return new Door(first_room, second_room);
-	}
+Wall *MazeGame::MakeWall() const
+{
+	return new Wall;
+}
+
+Door *MazeGame::MakeDoor(const Room& first_room, const Room& second_room) const
+{
+	return new Door(first_room, second_room);
+}
 }

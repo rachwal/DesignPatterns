@@ -11,18 +11,20 @@
 
 namespace structural
 {
-	class IconWindow : public Window
-	{
+namespace bridge
+{
+class IconWindow : public Window
+{
 	public:
-		IconWindow(const std::string& bitmap_name, WindowImp* imp);
-		~IconWindow() override;
+	IconWindow(const std::string& bitmap_name, WindowImp* imp);
+	~IconWindow() override;
 
-		void DrawText(const std::string& text, const foundation::Point<float>&) override;
-		void DrawIcon();
+	void DrawText(const std::string& text, const foundation::Point<float>&) override;
+	void DrawIcon();
 
 	private:
-		Bitmap* bitmap_;
-	};
-}
+	Bitmap* bitmap_;
+};
+}}
 
 #endif

@@ -10,29 +10,31 @@
 
 namespace creational
 {
-	Maze* EnchantedMazeFactory::MakeMaze() const
-	{
-		return new Maze;
-	}
-
-	Wall* EnchantedMazeFactory::MakeWall() const
-	{
-		return new Wall;
-	}
-
-	Room* EnchantedMazeFactory::MakeRoom(const int& room_number) const
-	{
-		auto spell = CastSpell();
-		return new EnchantedRoom(room_number, *spell);
-	}
-
-	Door* EnchantedMazeFactory::MakeDoor(const Room& first_room, const Room& second_room) const
-	{
-		return new DoorNeedingSpell(first_room, second_room);
-	}
-
-	Spell* EnchantedMazeFactory::CastSpell() const
-	{
-		return new Spell("Cast Spell");
-	}
+namespace abstractfactory
+{
+commons::Maze *EnchantedMazeFactory::MakeMaze() const
+{
+	return new commons::Maze;
 }
+
+commons::Wall *EnchantedMazeFactory::MakeWall() const
+{
+	return new commons::Wall;
+}
+
+commons::Room *EnchantedMazeFactory::MakeRoom(const int& room_number) const
+{
+	auto spell = CastSpell();
+	return new commons::EnchantedRoom(room_number, *spell);
+}
+
+commons::Door *EnchantedMazeFactory::MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const
+{
+	return new commons::DoorNeedingSpell(first_room, second_room);
+}
+
+commons::Spell *EnchantedMazeFactory::CastSpell() const
+{
+	return new commons::Spell("Cast Spell");
+}
+}}

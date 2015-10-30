@@ -45,10 +45,14 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile />
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -141,6 +145,7 @@
     <ClCompile Include="src\decorator\compressing_stream.cc" />
     <ClCompile Include="src\decorator\file_stream.cc" />
     <ClCompile Include="src\decorator\stream_decorator.cc" />
+    <ClCompile Include="src\facade\bytecode_stream.cc" />
     <ClCompile Include="src\facade\compiler.cc" />
     <ClCompile Include="src\facade\expression_node.cc" />
     <ClCompile Include="src\facade\parser.cc" />

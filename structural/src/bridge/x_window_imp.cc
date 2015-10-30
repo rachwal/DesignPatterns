@@ -9,23 +9,21 @@
 
 namespace structural
 {
-	XWindowImp::XWindowImp() : text_("")
-	{
-	}
+namespace bridge
+{
+XWindowImp::XWindowImp() : text_("") { }
 
-	void XWindowImp::DeviceText(const std::string& text, float, float)
-	{
-		std::ostringstream stream;
-		stream << "<X|" << text << "|X>";
-		text_ = stream.str();
-	}
-
-	void XWindowImp::DeviceRect(float x0, float y0, float x1, float y1)
-	{
-	}
-
-	std::string XWindowImp::text() const
-	{
-		return text_;
-	}
+void XWindowImp::DeviceText(const std::string& text, float, float)
+{
+	std::ostringstream stream;
+	stream << "<X|" << text << "|X>";
+	text_ = stream.str();
 }
+
+void XWindowImp::DeviceRect(float x0, float y0, float x1, float y1) { }
+
+std::string XWindowImp::text() const
+{
+	return text_;
+}
+}}

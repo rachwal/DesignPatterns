@@ -7,35 +7,35 @@
 
 namespace structural
 {
-	GlyphFactory::GlyphFactory()
+namespace flyweight
+{
+GlyphFactory::GlyphFactory()
+{
+	for (auto i = 0; i < kNumberCharCodes; ++i)
 	{
-		for (auto i = 0; i < kNumberCharCodes; ++i)
-		{
-			character_[i] = nullptr;
-		}
-	}
-
-	GlyphFactory::~GlyphFactory()
-	{
-	}
-
-	Character* GlyphFactory::CreateCharacter(char c)
-	{
-		if (!character_[c])
-		{
-			character_[c] = new Character(c);
-		}
-
-		return character_[c];
-	}
-
-	Row* GlyphFactory::CreateRow()
-	{
-		return new Row;
-	}
-
-	Column* GlyphFactory::CreateColumn()
-	{
-		return new Column;
+		character_[i] = nullptr;
 	}
 }
+
+GlyphFactory::~GlyphFactory() { }
+
+Character *GlyphFactory::CreateCharacter(char c)
+{
+	if (!character_[c])
+	{
+		character_[c] = new Character(c);
+	}
+
+	return character_[c];
+}
+
+Row *GlyphFactory::CreateRow()
+{
+	return new Row;
+}
+
+Column *GlyphFactory::CreateColumn()
+{
+	return new Column;
+}
+}}

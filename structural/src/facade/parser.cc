@@ -7,27 +7,25 @@
 
 namespace structural
 {
-	Parser::Parser()
-	{
-	}
+namespace facade
+{
+Parser::Parser() { }
 
-	Parser::~Parser()
-	{
-	}
+Parser::~Parser() { }
 
-	void structural::Parser::Parse(Scanner& scanner, ProgramNodeBuilder& builder)
-	{
-		auto tokens = scanner.Scan();
+void Parser::Parse(Scanner& scanner, ProgramNodeBuilder& builder)
+{
+	auto tokens = scanner.Scan();
 
-		for (auto token = tokens.begin(); token != tokens.end(); ++token)
+	for (auto token = tokens.begin(); token != tokens.end(); ++token)
+	{
+		auto content = (*token)->content();
+		if (content.compare("auto") == 0)
 		{
-			auto content = (*token)->content();
-			if (content.compare("auto") == 0)
-			{
-				++token;
-				auto variable = (*token)->content();
-				builder.NewVariable(variable);
-			}
+			++token;
+			auto variable = (*token)->content();
+			builder.NewVariable(variable);
 		}
 	}
 }
+}}

@@ -12,21 +12,23 @@
 
 namespace structural
 {
-	class GlyphFactory
-	{
+namespace flyweight
+{
+class GlyphFactory
+{
 	public:
-		GlyphFactory();
-		virtual ~GlyphFactory();
+	GlyphFactory();
+	virtual ~GlyphFactory();
 
-		virtual Character* CreateCharacter(char);
-		virtual Row* CreateRow();
-		virtual Column* CreateColumn();
+	virtual Character *CreateCharacter(char);
+	virtual Row *CreateRow();
+	virtual Column *CreateColumn();
 
 	private:
-		static const int kNumberCharCodes = 128;
+	static const int kNumberCharCodes = 128;
 
-		Character* character_[kNumberCharCodes];
-	};
-}
+	Character* character_[kNumberCharCodes];
+};
+}}
 
 #endif

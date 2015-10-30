@@ -12,27 +12,27 @@
 
 namespace structural
 {
-	class GlyphInterface
-	{
+namespace flyweight
+{
+class GlyphInterface
+{
 	public:
-		virtual ~GlyphInterface()
-		{
-		};
+	virtual ~GlyphInterface() { };
 
-		virtual void Draw(Window*, GlyphContext&) = 0;
+	virtual void Draw(Window*, GlyphContext&) = 0;
 
-		virtual void First(GlyphContext&) = 0;
-		virtual void Next(GlyphContext&) = 0;
-		virtual bool IsDone(GlyphContext&) = 0;
+	virtual void First(GlyphContext&) = 0;
+	virtual void Next(GlyphContext&) = 0;
+	virtual bool IsDone(GlyphContext&) = 0;
 
-		virtual void SetFont(Font*, GlyphContext&) = 0;
-		virtual Font* GetFont(GlyphContext&) = 0;
+	virtual void SetFont(Font*, GlyphContext&) = 0;
+	virtual Font *GetFont(GlyphContext&) = 0;
 
-		virtual GlyphInterface* Current(GlyphContext&) = 0;
+	virtual GlyphInterface *Current(GlyphContext&) = 0;
 
-		virtual void Insert(GlyphInterface*, GlyphContext&) = 0;
-		virtual void Remove(GlyphContext&) = 0;
-	};
-}
+	virtual void Insert(GlyphInterface*, GlyphContext&) = 0;
+	virtual void Remove(GlyphContext&) = 0;
+};
+}}
 
 #endif

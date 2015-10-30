@@ -9,34 +9,36 @@
 
 namespace operational
 {
-	ClockTick::ClockTick()
-	{
-		observers_ = new List<ClockTickObserver*>();
-	}
+namespace observer
+{
+ClockTick::ClockTick()
+{
+	observers_ = new iterator::List<ClockTickObserver*>();
+}
 
-	ClockTick::~ClockTick()
-	{
-		delete observers_;
-	}
+ClockTick::~ClockTick()
+{
+	delete observers_;
+}
 
-	void ClockTick::Attach(ClockTickObserver* o)
-	{
-		observers_->Append(o);
-	}
+void ClockTick::Attach(ClockTickObserver* o)
+{
+	observers_->Append(o);
+}
 
-	void ClockTick::Detach(ClockTickObserver* o)
-	{
-		observers_->Remove(o);
-	}
+void ClockTick::Detach(ClockTickObserver* o)
+{
+	observers_->Remove(o);
+}
 
-	void ClockTick::Notify()
-	{
-		ListIterator<ClockTickObserver*> i(observers_);
+void ClockTick::Notify()
+{
+	iterator::ListIterator<ClockTickObserver*> i(observers_);
 
-		for (i.First(); !i.IsDone(); i.Next())
-		{
-			auto current_item = i.CurrentItem();
-			i.CurrentItem()->OnClockTick();
-		}
+	for (i.First(); !i.IsDone(); i.Next())
+	{
+		auto current_item = i.CurrentItem();
+		current_item->OnClockTick();
 	}
 }
+}}

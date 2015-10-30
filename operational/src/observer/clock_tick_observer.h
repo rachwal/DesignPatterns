@@ -8,15 +8,15 @@
 
 namespace operational
 {
-	class ClockTickObserver
-	{
+namespace observer
+{
+class ClockTickObserver
+{
 	public:
-		virtual ~ClockTickObserver()
-		{
-		}
+	virtual ~ClockTickObserver() { }
 
-		virtual void OnClockTick() = 0;
-	};
-}
+	virtual void OnClockTick() = 0;
+};
+}}
 
 #endif

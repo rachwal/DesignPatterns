@@ -7,18 +7,18 @@
 
 namespace structural
 {
-	ApplicationWindow::ApplicationWindow(const std::string& application_title, WindowImp* imp) : Window(imp), application_title_(application_title)
-	{
-	}
+namespace bridge
+{
+ApplicationWindow::ApplicationWindow(const std::string& application_title, WindowImp* imp) : Window(imp), application_title_(application_title) { }
 
-	void ApplicationWindow::DrawText(const std::string& text, const foundation::Point<float>& point)
-	{
-		auto imp = GetWindowImp();
-		imp->DeviceText(text, point.x(), point.y());
-	}
-
-	void ApplicationWindow::DrawTitle()
-	{
-		DrawText(application_title_, foundation::Point<float>(0, 0));
-	}
+void ApplicationWindow::DrawText(const std::string& text, const foundation::Point<float>& point)
+{
+	auto imp = GetWindowImp();
+	imp->DeviceText(text, point.x(), point.y());
 }
+
+void ApplicationWindow::DrawTitle()
+{
+	DrawText(application_title_, foundation::Point<float>(0, 0));
+}
+}}

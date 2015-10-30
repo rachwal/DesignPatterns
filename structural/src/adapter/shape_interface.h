@@ -10,15 +10,15 @@
 
 namespace structural
 {
-	class ShapeInterface
-	{
+namespace adapter
+{
+class ShapeInterface
+{
 	public:
-		virtual ~ShapeInterface()
-		{
-		}
+	virtual ~ShapeInterface() { }
 
-		virtual void BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const = 0;
-	};
-}
+	virtual void BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const = 0;
+};
+}}
 
 #endif

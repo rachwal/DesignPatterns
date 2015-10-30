@@ -10,31 +10,33 @@
 
 namespace structural
 {
-	class GlyphContext
-	{
+namespace flyweight
+{
+class GlyphContext
+{
 	public:
-		GlyphContext();
-		virtual ~GlyphContext();
+	GlyphContext();
+	virtual ~GlyphContext();
 
-		virtual void First();
+	virtual void First();
 
-		virtual void Next(int step);
-		virtual void Next();
+	virtual void Next(int step);
+	virtual void Next();
 
-		virtual bool IsDone();
+	virtual bool IsDone();
 
-		virtual void Insert(int quantity);
-		virtual void Insert();
+	virtual void Insert(int quantity);
+	virtual void Insert();
 
-		virtual Font* GetFont();
+	virtual Font *GetFont();
 
-		virtual void SetFont(Font*);
-		virtual void SetFont(Font*, int span);
+	virtual void SetFont(Font*);
+	virtual void SetFont(Font*, int span);
 
 	private:
-		int index_;
-		BTree* fonts_;
-	};
-}
+	int index_;
+	BTree* fonts_;
+};
+}}
 
 #endif

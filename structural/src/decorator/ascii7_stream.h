@@ -10,20 +10,22 @@
 
 namespace structural
 {
-	class ASCII7Stream : public StreamDecorator
-	{
+namespace decorator
+{
+class ASCII7Stream : public StreamDecorator
+{
 	public:
-		explicit ASCII7Stream(StreamInterface*);
+	explicit ASCII7Stream(StreamInterface*);
 
-		void PutInt(int) override;
-		void PutString(const std::string&) override;
-		int value() const;
-		std::string& message();
+	void PutInt(int) override;
+	void PutString(const std::string&) override;
+	int value() const;
+	std::string &message();
 
 	private:
-		int value_;
-		std::string text_string_;
-	};
-}
+	int value_;
+	std::string text_string_;
+};
+}}
 
 #endif

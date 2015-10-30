@@ -9,66 +9,63 @@
 
 namespace structuraltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace structural::decorator;
 
-	TEST_CLASS(DecoratorTest)
-	{
+TEST_CLASS(DecoratorTest)
+{
 	public:
-		DecoratorTest()
-		{
-		}
+	DecoratorTest() { }
 
-		~DecoratorTest()
-		{
-		}
+	~DecoratorTest() { }
 
-		TEST_METHOD(ShouldReturnGivenValueIncreasedByNumberOfDecoratorsUsed)
-		{
-			//GIVEN
-			auto expected_value = 3;
-			auto file_stream = new structural::FileStream();
+	TEST_METHOD(ShouldReturnGivenValueIncreasedByNumberOfDecoratorsUsed)
+	{
+		//GIVEN
+		auto expected_value = 3;
+		auto file_stream = new FileStream();
 
-			//WHEN
-			structural::StreamInterface* stream = new structural::CompressingStream(new structural::ASCII7Stream(file_stream));
+		//WHEN
+		StreamInterface* stream = new CompressingStream(new ASCII7Stream(file_stream));
 
-			stream->PutInt(0);
+		stream->PutInt(0);
 
-			//THEN
-			auto value = file_stream->value();
+		//THEN
+		auto value = file_stream->value();
 
-			Assert::AreEqual(expected_value, value);
-		}
+		Assert::AreEqual(expected_value, value);
+	}
 
-		TEST_METHOD(ShouldReturnDecoratedText)
-		{
-			//GIVEN
-			auto expected_message = "<FileStream|test|FileStream>";
-			auto file_stream = new structural::FileStream();
+	TEST_METHOD(ShouldReturnDecoratedText)
+	{
+		//GIVEN
+		auto expected_message = "<FileStream|test|FileStream>";
+		auto file_stream = new FileStream();
 
-			//WHEN
-			file_stream->PutString("test");
+		//WHEN
+		file_stream->PutString("test");
 
-			//THEN
-			auto text = file_stream->message();
+		//THEN
+		auto text = file_stream->message();
 
-			Assert::AreEqual(expected_message, text.c_str());
-		}
+		Assert::AreEqual(expected_message, text.c_str());
+	}
 
-		TEST_METHOD(ShouldReturnTextDecoratedByThreeObjectsDecorated)
-		{
-			//GIVEN
-			auto expected_message = "<FileStream|<ASCII7Stream|<CompressingStream|test|CompressingStream>|ASCII7Stream>|FileStream>";
-			auto file_stream = new structural::FileStream();
+	TEST_METHOD(ShouldReturnTextDecoratedByThreeObjectsDecorated)
+	{
+		//GIVEN
+		auto expected_message = "<FileStream|<ASCII7Stream|<CompressingStream|test|CompressingStream>|ASCII7Stream>|FileStream>";
+		auto file_stream = new FileStream();
 
-			//WHEN
-			structural::StreamInterface* stream = new structural::CompressingStream(new structural::ASCII7Stream(file_stream));
+		//WHEN
+		StreamInterface* stream = new CompressingStream(new ASCII7Stream(file_stream));
 
-			stream->PutString("test");
+		stream->PutString("test");
 
-			//THEN
-			auto text = file_stream->message();
+		//THEN
+		auto text = file_stream->message();
 
-			Assert::AreEqual(expected_message, text.c_str());
-		}
-	};
+		Assert::AreEqual(expected_message, text.c_str());
+	}
+};
 }

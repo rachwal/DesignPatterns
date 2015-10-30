@@ -13,21 +13,23 @@
 
 namespace structural
 {
-	class Window :public WindowInterface
-	{
+namespace bridge
+{
+class Window :public WindowInterface
+{
 	public:
-		explicit Window(WindowImp* imp);
-		~Window() override;
+	explicit Window(WindowImp* imp);
+	~Window() override;
 
-		virtual void DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2) override;
-		virtual void DrawText(const std::string& text, const foundation::Point<float>&) override = 0;
+	virtual void DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2) override;
+	virtual void DrawText(const std::string& text, const foundation::Point<float>&) override = 0;
 
 	protected:
-		WindowImp* GetWindowImp() const;
+	WindowImp *GetWindowImp() const;
 
 	private:
-		WindowImp* imp_;
-	};
-}
+	WindowImp* imp_;
+};
+}}
 
 #endif

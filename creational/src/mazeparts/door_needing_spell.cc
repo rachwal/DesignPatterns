@@ -7,20 +7,18 @@
 
 namespace creational
 {
-	DoorNeedingSpell::DoorNeedingSpell(const Room& first_room, const Room& second_room) :Door(first_room, second_room)
-	{
-	}
+namespace commons
+{
+DoorNeedingSpell::DoorNeedingSpell(const Room& first_room, const Room& second_room) :Door(first_room, second_room) { }
 
-	DoorNeedingSpell::DoorNeedingSpell(const DoorNeedingSpell& door_needing_spell) : Door(door_needing_spell)
-	{
-	}
+DoorNeedingSpell::DoorNeedingSpell(const DoorNeedingSpell& door_needing_spell) : Door(door_needing_spell) { }
 
-	bool DoorNeedingSpell::TrySpell(const Spell& spell) const
+bool DoorNeedingSpell::TrySpell(const Spell& spell) const
+{
+	if (spell.message() == "")
 	{
-		if (spell.message() == "")
-		{
-			return false;
-		}
-		return true;
+		return false;
 	}
+	return true;
 }
+}}

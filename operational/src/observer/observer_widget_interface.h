@@ -8,15 +8,15 @@
 
 namespace operational
 {
-	class ObserverWidgetInterface
-	{
+namespace observer
+{
+class ObserverWidgetInterface
+{
 	public:
-		virtual ~ObserverWidgetInterface()
-		{
-		}
+	virtual ~ObserverWidgetInterface() { }
 
-		virtual void Draw() = 0;
-	};
-}
+	virtual void Draw() = 0;
+};
+}}
 
 #endif

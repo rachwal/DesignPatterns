@@ -10,22 +10,24 @@
 
 namespace structural
 {
-	class FileStream : public StreamInterface
-	{
+namespace decorator
+{
+class FileStream : public StreamInterface
+{
 	public:
-		explicit FileStream(const char*);
-		FileStream();
+	FileStream();
+	explicit FileStream(const char*);
 
-		void PutInt(int value) override;
-		void PutString(const std::string&) override;
+	void PutInt(int value) override;
+	void PutString(const std::string&) override;
 
-		int value() const;
-		std::string& message();
+	int value() const;
+	std::string &message();
 
 	private:
-		int value_;
-		std::string text_string_;
-	};
-}
+	int value_;
+	std::string text_string_;
+};
+}}
 
 #endif

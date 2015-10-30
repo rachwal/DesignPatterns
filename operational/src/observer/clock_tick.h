@@ -13,19 +13,21 @@
 
 namespace operational
 {
-	class ClockTick : public ClockTickInterface
-	{
+namespace observer
+{
+class ClockTick : public ClockTickInterface
+{
 	public:
-		ClockTick();
-		~ClockTick() override;
+	ClockTick();
+	~ClockTick() override;
 
-		virtual void Attach(ClockTickObserver*) override;
-		virtual void Detach(ClockTickObserver*) override;
-		virtual void Notify() override;
+	virtual void Attach(ClockTickObserver*) override;
+	virtual void Detach(ClockTickObserver*) override;
+	virtual void Notify() override;
 
 	private:
-		List<ClockTickObserver*>* observers_;
-	};
-}
+	iterator::List<ClockTickObserver*>* observers_;
+};
+}}
 
 #endif

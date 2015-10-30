@@ -10,23 +10,25 @@
 
 namespace creational
 {
-	Maze* BombedMazeFactory::MakeMaze() const
-	{
-		return new Maze;
-	}
-
-	Wall* BombedMazeFactory::MakeWall() const
-	{
-		return new BombedWall(false);
-	}
-
-	Room* BombedMazeFactory::MakeRoom(const int& room_number) const
-	{
-		return new RoomWithABomb(room_number, false);
-	}
-
-	Door* BombedMazeFactory::MakeDoor(const Room& first_room, const Room& second_room) const
-	{
-		return new Door(first_room, second_room);
-	}
+namespace abstractfactory
+{
+commons::Maze *BombedMazeFactory::MakeMaze() const
+{
+	return new commons::Maze;
 }
+
+commons::Wall *BombedMazeFactory::MakeWall() const
+{
+	return new commons::BombedWall(false);
+}
+
+commons::Room *BombedMazeFactory::MakeRoom(const int& room_number) const
+{
+	return new commons::RoomWithABomb(room_number, false);
+}
+
+commons::Door *BombedMazeFactory::MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const
+{
+	return new commons::Door(first_room, second_room);
+}
+}}

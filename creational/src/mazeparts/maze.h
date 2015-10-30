@@ -12,20 +12,22 @@
 
 namespace creational
 {
-	class Maze
-	{
+namespace commons
+{
+class Maze
+{
 	public:
-		Maze();
-		Maze(const Maze&);
-		virtual ~Maze();
+	Maze();
+	Maze(const Maze&);
+	virtual ~Maze();
 
-		void AddRoom(Room*);
-		virtual Maze* Clone() const;
-		Room* GetRoom(const int& room_number) const;
+	void AddRoom(Room*);
+	virtual Maze *Clone() const;
+	Room *GetRoom(const int& room_number) const;
 
 	private:
-		std::map<int, Room*> rooms_;
-	};
-}
+	std::map<int, Room*> rooms_;
+};
+}}
 
 #endif

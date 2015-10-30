@@ -11,26 +11,28 @@
 
 namespace creational
 {
-	class Room : public MapSiteInterface
-	{
+namespace commons
+{
+class Room : public MapSiteInterface
+{
 	public:
-		explicit Room(const int& room_number);
-		Room(const Room& room);
+	explicit Room(const int& room_number);
+	Room(const Room& room);
 
-		virtual Room* Clone() const;
-		virtual void Enter() override;
-		virtual bool entered() const;
-		MapSiteInterface* GetSide(const Direction&) const;
-		int room_number() const;
-		void SetSide(const Direction&, MapSiteInterface*);
+	virtual Room *Clone() const;
+	virtual void Enter() override;
+	virtual bool entered() const;
+	MapSiteInterface *GetSide(const Direction&) const;
+	int room_number() const;
+	void SetSide(const Direction&, MapSiteInterface*);
 
 	protected:
-		int room_number_;
+	int room_number_;
 
 	private:
-		MapSiteInterface* sides_[4];
-		bool enetered_;
-	};
-}
+	MapSiteInterface* sides_[4];
+	bool enetered_;
+};
+}}
 
 #endif

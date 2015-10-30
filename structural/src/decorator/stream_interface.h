@@ -10,16 +10,16 @@
 
 namespace structural
 {
-	class StreamInterface
-	{
+namespace decorator
+{
+class StreamInterface
+{
 	public:
-		virtual ~StreamInterface()
-		{
-		}
+	virtual ~StreamInterface() { }
 
-		virtual void PutInt(int) = 0;
-		virtual void PutString(const std::string&) = 0;
-	};
-}
+	virtual void PutInt(int) = 0;
+	virtual void PutString(const std::string&) = 0;
+};
+}}
 
 #endif

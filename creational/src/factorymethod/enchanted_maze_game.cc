@@ -10,23 +10,23 @@
 
 namespace creational
 {
-	EnchantedMazeGame::EnchantedMazeGame()
-	{
-	}
+namespace factorymethod
+{
+EnchantedMazeGame::EnchantedMazeGame() { }
 
-	Room* EnchantedMazeGame::MakeRoom(const int& room_number) const
-	{
-		auto spell = WeaveSpell();
-		return new EnchantedRoom(room_number, *spell);
-	}
-
-	Door* EnchantedMazeGame::MakeDoor(const Room& first_room, const Room& second_room) const
-	{
-		return new DoorNeedingSpell(first_room, second_room);
-	}
-
-	Spell* EnchantedMazeGame::WeaveSpell() const
-	{
-		return new Spell("Weave Spell");
-	};
+commons::Room *EnchantedMazeGame::MakeRoom(const int& room_number) const
+{
+	auto spell = WeaveSpell();
+	return new commons::EnchantedRoom(room_number, *spell);
 }
+
+commons::Door *EnchantedMazeGame::MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const
+{
+	return new commons::DoorNeedingSpell(first_room, second_room);
+}
+
+commons::Spell *EnchantedMazeGame::WeaveSpell() const
+{
+	return new commons::Spell("Weave Spell");
+};
+}}

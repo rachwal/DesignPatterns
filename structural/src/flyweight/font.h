@@ -10,25 +10,27 @@
 
 namespace structural
 {
-	class Font
-	{
+namespace flyweight
+{
+class Font
+{
 	public:
-		explicit Font(const std::string& name);
+	explicit Font(const std::string& name);
 
-		std::string name() const;;
+	std::string name() const;;
 
-		friend bool operator ==(const Font& left_font, const Font& right_font);
+	friend bool operator ==(const Font& left_font, const Font& right_font);
 
 	private:
-		std::string name_;
-	};
+	std::string name_;
+};
 
-	inline bool operator==(const Font& left_font, const Font& right_font)
-	{
-		auto left_font_name = left_font.name();
-		auto right_font_name = right_font.name();
-		return left_font_name.compare(right_font_name) == 0;
-	}
+inline bool operator==(const Font& left_font, const Font& right_font)
+{
+	auto left_font_name = left_font.name();
+	auto right_font_name = right_font.name();
+	return left_font_name.compare(right_font_name) == 0;
 }
+}}
 
 #endif

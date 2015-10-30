@@ -8,49 +8,45 @@
 
 namespace structuraltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-	using namespace structural;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace structural::flyweight;
 
-	TEST_CLASS(FlyweightTest)
-	{
+TEST_CLASS(FlyweightTest)
+{
 	public:
-		FlyweightTest()
-		{
-		}
+	FlyweightTest() { }
 
-		~FlyweightTest()
-		{
-		}
+	~FlyweightTest() { }
 
-		TEST_METHOD(ShoulFlyweightTest)
-		{
-			//GIVEN
-			auto glyph_factory = new GlyphFactory();
+	TEST_METHOD(ShoulFlyweightTest)
+	{
+		//GIVEN
+		auto glyph_factory = new GlyphFactory();
 
-			auto a_character = glyph_factory->CreateCharacter('a');
-			auto b_character = glyph_factory->CreateCharacter('b');
+		auto a_character = glyph_factory->CreateCharacter('a');
+		auto b_character = glyph_factory->CreateCharacter('b');
 
-			auto column = glyph_factory->CreateColumn();
-			auto row = glyph_factory->CreateRow();
+		auto column = glyph_factory->CreateColumn();
+		auto row = glyph_factory->CreateRow();
 
-			auto context = new GlyphContext();
+		auto context = new GlyphContext();
 
-			auto times_12 = new Font("Times 12");
-			auto times_24 = new Font("Times 24");
+		auto times_12 = new Font("Times 12");
+		auto times_24 = new Font("Times 24");
 
-			//WHEN
-			a_character->SetFont(times_12, *context);
-			a_character->Next(*context);
-			b_character->SetFont(times_24, *context);
+		//WHEN
+		a_character->SetFont(times_12, *context);
+		a_character->Next(*context);
+		b_character->SetFont(times_24, *context);
 
-			//THEN
-			column->First(*context);
-			auto times_regular = column->GetFont(*context);
-			row->Next(*context);
-			auto times_big = row->GetFont(*context);
+		//THEN
+		column->First(*context);
+		auto times_regular = column->GetFont(*context);
+		row->Next(*context);
+		auto times_big = row->GetFont(*context);
 
-			Assert::IsTrue(times_12 == times_regular);
-			Assert::IsTrue(times_24 == times_big);
-		}
-	};
+		Assert::IsTrue(times_12 == times_regular);
+		Assert::IsTrue(times_24 == times_big);
+	}
+};
 }

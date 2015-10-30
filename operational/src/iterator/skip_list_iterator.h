@@ -11,50 +11,44 @@
 
 namespace operational
 {
-	template <class Item>
-	class SkipListIterator : public ListIterator<Item>
-	{
+namespace iterator
+{
+template<class Item>
+class SkipListIterator : public ListIterator<Item>
+{
 	public:
-		explicit SkipListIterator(const List<Item>* list);
-		~SkipListIterator() override;
+	explicit SkipListIterator(const List<Item>* list);
+	~SkipListIterator() override;
 
-		void First() override;
-		void Next() override;
-		bool IsDone() const override;
-		Item CurrentItem() const override;
-	};
+	void First() override;
+	void Next() override;
+	bool IsDone() const override;
+	Item CurrentItem() const override;
+};
 
-	template <class Item>
-	SkipListIterator<Item>::~SkipListIterator()
-	{
-	}
+template<class Item>
+SkipListIterator<Item>::~SkipListIterator() { }
 
-	template <class Item>
-	SkipListIterator<Item>::SkipListIterator(const List<Item>* list)
-	{
-	}
+template<class Item>
+SkipListIterator<Item>::SkipListIterator(const List<Item>* list) { }
 
-	template <class Item>
-	void SkipListIterator<Item>::First()
-	{
-	}
+template<class Item>
+void SkipListIterator<Item>::First() { }
 
-	template <class Item>
-	void SkipListIterator<Item>::Next()
-	{
-	}
+template<class Item>
+void SkipListIterator<Item>::Next() { }
 
-	template <class Item>
-	bool SkipListIterator<Item>::IsDone() const
-	{
-		return false;
-	}
-
-	template <class Item>
-	Item SkipListIterator<Item>::CurrentItem() const
-	{
-		return{};
-	}
+template<class Item>
+bool SkipListIterator<Item>::IsDone() const
+{
+	return false;
 }
+
+template<class Item>
+Item SkipListIterator<Item>::CurrentItem() const
+{
+	return{};
+}
+}}
 
 #endif

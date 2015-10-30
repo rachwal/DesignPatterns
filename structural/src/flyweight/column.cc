@@ -7,49 +7,43 @@
 
 namespace structural
 {
-	void Column::SetFont(Font* font, GlyphContext& context)
-	{
-		context.SetFont(font);
-	}
-
-	Font* Column::GetFont(GlyphContext& context)
-	{
-		return context.GetFont();
-	}
-
-	Column::~Column()
-	{
-	}
-
-	void Column::First(GlyphContext& context)
-	{
-		context.First();
-	}
-
-	void Column::Next(GlyphContext& context)
-	{
-		context.Next();
-	}
-
-	bool Column::IsDone(GlyphContext& context)
-	{
-		return context.IsDone();
-	}
-
-	GlyphInterface* Column::Current(GlyphContext&)
-	{
-		return nullptr;
-	}
-
-	void Column::Insert(GlyphInterface*, GlyphContext&)
-	{
-	}
-
-	void Column::Remove(GlyphContext&)
-	{
-	}
-
-	void Column::Draw(Window*, GlyphContext&)
-	{
-	}
+namespace flyweight
+{
+void Column::SetFont(Font* font, GlyphContext& context)
+{
+	context.SetFont(font);
 }
+
+Font *Column::GetFont(GlyphContext& context)
+{
+	return context.GetFont();
+}
+
+Column::~Column() { }
+
+void Column::First(GlyphContext& context)
+{
+	context.First();
+}
+
+void Column::Next(GlyphContext& context)
+{
+	context.Next();
+}
+
+bool Column::IsDone(GlyphContext& context)
+{
+	return context.IsDone();
+}
+
+GlyphInterface *Column::Current(GlyphContext&)
+{
+	return nullptr;
+}
+
+void Column::Insert(GlyphInterface*, GlyphContext&) { }
+
+void Column::Remove(GlyphContext&) { }
+
+void Column::Draw(Window*, GlyphContext&) { }
+}}

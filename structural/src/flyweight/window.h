@@ -8,9 +8,9 @@
 
 namespace structural
 {
-	class Window
-	{
-	};
-}
+namespace flyweight
+{
+class Window { };
+}}
 
 #endif

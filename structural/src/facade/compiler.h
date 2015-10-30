@@ -12,14 +12,16 @@
 
 namespace structural
 {
-	class Compiler
-	{
+namespace facade
+{
+class Compiler
+{
 	public:
-		Compiler();
-		virtual ~Compiler();
+	Compiler();
+	virtual ~Compiler();
 
-		virtual void Compile(std::istringstream&, BytecodeStream*);
-	};
-}
+	virtual void Compile(std::istringstream&, BytecodeStream*);
+};
+}}
 
 #endif

@@ -10,18 +10,20 @@
 
 namespace structural
 {
-	class TextDocument
-	{
+namespace proxy
+{
+class TextDocument
+{
 	public:
-		TextDocument();
+	TextDocument();
 
-		void Insert(GraphicInterface*);
-		const foundation::Point<float>& GetExtent();
+	void Insert(GraphicInterface*);
+	const foundation::Point<float> &GetExtent();
 
 	private:
-		GraphicInterface* graphic_;
-		foundation::Point<float> extent_;
-	};
-}
+	GraphicInterface* graphic_;
+	foundation::Point<float> extent_;
+};
+}}
 
 #endif

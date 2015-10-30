@@ -8,17 +8,17 @@
 
 namespace foundation
 {
-	class Watt
-	{
+class Watt
+{
 	public:
-		explicit Watt(const double& value);
+	explicit Watt(const double& value);
 
-		double value() const;
-		void value(double);
+	double value() const;
+	void value(double);
 
 	private:
-		double value_;
-	};
+	double value_;
+};
 }
 
 #endif

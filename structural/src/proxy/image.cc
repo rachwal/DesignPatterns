@@ -7,41 +7,35 @@
 
 namespace structural
 {
-	Image::Image(const std::string& file_name)
-	{
-		extent_ = foundation::Point<float>(100, 20);
-	}
+namespace proxy
+{
+Image::Image(const std::string& file_name)
+{
+	extent_ = foundation::Point<float>(100, 20);
+}
 
-	Image::~Image()
-	{
-	}
+Image::~Image() { }
 
-	void Image::Draw(const foundation::Point<float>& at)
+void Image::Draw(const foundation::Point<float>& at)
+{
+	if (at.x() > extent_.x())
 	{
-		if (at.x() > extent_.x())
-		{
-			extent_.x(at.x());
-		}
-		if (at.x() > extent_.y())
-		{
-			extent_.y(at.y());
-		}
+		extent_.x(at.x());
 	}
-
-	void Image::HandleMouse(Event& event)
+	if (at.x() > extent_.y())
 	{
-	}
-
-	void Image::Load(std::istream& from)
-	{
-	}
-
-	void Image::Save(std::ostream& to)
-	{
-	}
-
-	const foundation::Point<float>& Image::GetExtent()
-	{
-		return extent_;
+		extent_.y(at.y());
 	}
 }
+
+void Image::HandleMouse(Event& event) { }
+
+void Image::Load(std::istream& from) { }
+
+void Image::Save(std::ostream& to) { }
+
+const foundation::Point<float> &Image::GetExtent()
+{
+	return extent_;
+}
+}}

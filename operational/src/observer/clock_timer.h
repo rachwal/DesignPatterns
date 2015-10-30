@@ -11,29 +11,31 @@
 
 namespace operational
 {
-	class ClockTimer
-	{
+namespace observer
+{
+class ClockTimer
+{
 	public:
-		ClockTimer();
+	ClockTimer();
 
-		virtual ~ClockTimer();
+	virtual ~ClockTimer();
 
-		virtual int GetHours();
-		virtual int GetMinutes();
-		virtual int GetSeconds();
+	virtual int GetHours();
+	virtual int GetMinutes();
+	virtual int GetSeconds();
 
-		void Tick();
+	void Tick();
 
-		void Attach(ClockTickObserver* observer_interface) const;
-		void Detach(ClockTickObserver* observer_interface) const;
+	void Attach(ClockTickObserver* observer_interface) const;
+	void Detach(ClockTickObserver* observer_interface) const;
 
 	private:
-		int hours_;
-		int minutes_;
-		int seconds_;
+	int hours_;
+	int minutes_;
+	int seconds_;
 
-		ClockTick* clock_tick_;
-	};
-}
+	ClockTick* clock_tick_;
+};
+}}
 
 #endif

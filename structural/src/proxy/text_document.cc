@@ -7,22 +7,24 @@
 
 namespace structural
 {
-	TextDocument::TextDocument() :graphic_(nullptr)
-	{
-		extent_ = foundation::Point<float>(0, 0);
-	}
-
-	void TextDocument::Insert(GraphicInterface* graphic)
-	{
-		graphic_ = graphic;
-	}
-
-	const foundation::Point<float>& TextDocument::GetExtent()
-	{
-		if (graphic_)
-		{
-			extent_ = graphic_->GetExtent();
-		}
-		return extent_;
-	}
+namespace proxy
+{
+TextDocument::TextDocument() :graphic_(nullptr)
+{
+	extent_ = foundation::Point<float>(0, 0);
 }
+
+void TextDocument::Insert(GraphicInterface* graphic)
+{
+	graphic_ = graphic;
+}
+
+const foundation::Point<float> &TextDocument::GetExtent()
+{
+	if (graphic_)
+	{
+		extent_ = graphic_->GetExtent();
+	}
+	return extent_;
+}
+}}

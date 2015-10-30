@@ -11,20 +11,22 @@
 
 namespace creational
 {
-	class EnchantedRoom : public Room
-	{
+namespace commons
+{
+class EnchantedRoom : public Room
+{
 	public:
-		explicit EnchantedRoom(const int& room_number, const Spell& spell);
-		EnchantedRoom(const EnchantedRoom&);
+	EnchantedRoom(const EnchantedRoom&);
+	explicit EnchantedRoom(const int& room_number, const Spell& spell);
 
-		EnchantedRoom* Clone() const override;
-		bool HasSpell() const;
-		void Initialize(const Spell& spell);
-		Spell PickUpSpell() const;
+	EnchantedRoom *Clone() const override;
+	bool HasSpell() const;
+	void Initialize(const Spell& spell);
+	Spell PickUpSpell() const;
 
 	private:
-		Spell* spell_;
-	};
-}
+	Spell* spell_;
+};
+}}
 
 #endif

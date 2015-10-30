@@ -9,51 +9,53 @@
 
 namespace creational
 {
-	MazeFactory::MazeFactory()
-	{
-		instance_ = nullptr;
-	}
+namespace abstractfactory
+{
+MazeFactory::MazeFactory()
+{
+	instance_ = nullptr;
+}
 
-	MazeFactory::~MazeFactory()
-	{
-		delete instance_;
-	}
+MazeFactory::~MazeFactory()
+{
+	delete instance_;
+}
 
-	Maze* MazeFactory::MakeMaze() const
-	{
-		return new Maze;
-	}
+commons::Maze *MazeFactory::MakeMaze() const
+{
+	return new commons::Maze;
+}
 
-	Wall* MazeFactory::MakeWall() const
-	{
-		return new Wall;
-	}
+commons::Wall *MazeFactory::MakeWall() const
+{
+	return new commons::Wall;
+}
 
-	Room* MazeFactory::MakeRoom(const int& room_number) const
-	{
-		return new Room(room_number);
-	}
+commons::Room *MazeFactory::MakeRoom(const int& room_number) const
+{
+	return new commons::Room(room_number);
+}
 
-	Door* MazeFactory::MakeDoor(const Room& first_room, const Room& second_room) const
-	{
-		return new Door(first_room, second_room);
-	}
+commons::Door *MazeFactory::MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const
+{
+	return new commons::Door(first_room, second_room);
+}
 
-	MazeFactoryInterface* MazeFactory::instance_;
+MazeFactoryInterface* MazeFactory::instance_;
 
-	MazeFactoryInterface* MazeFactory::Instance()
+MazeFactoryInterface *MazeFactory::Instance()
+{
+	if (!instance_)
 	{
+		std::mutex m;
+		m.lock();
 		if (!instance_)
 		{
-			std::mutex m;
-			m.lock();
-			if (!instance_)
-			{
-				auto factory = new MazeFactory;
-				instance_ = factory;
-			}
-			m.unlock();
+			auto factory = new MazeFactory;
+			instance_ = factory;
 		}
-		return instance_;
+		m.unlock();
 	}
+	return instance_;
 }
+}}

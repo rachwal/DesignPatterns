@@ -10,17 +10,19 @@
 
 namespace structural
 {
-	class ApplicationWindow : public Window
-	{
+namespace bridge
+{
+class ApplicationWindow : public Window
+{
 	public:
-		explicit ApplicationWindow(const std::string& application_title, WindowImp* imp);
+	explicit ApplicationWindow(const std::string& application_title, WindowImp* imp);
 
-		void DrawText(const std::string& text, const foundation::Point<float>&) override;
-		void DrawTitle();
+	void DrawText(const std::string& text, const foundation::Point<float>&) override;
+	void DrawTitle();
 
 	private:
-		std::string application_title_;
-	};
-}
+	std::string application_title_;
+};
+}}
 
 #endif

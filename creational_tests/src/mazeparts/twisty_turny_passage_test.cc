@@ -7,42 +7,39 @@
 
 namespace creationaltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace creational::commons;
 
-	TEST_CLASS(TwistyTurnyPassageTest)
-	{
+TEST_CLASS(TwistyTurnyPassageTest)
+{
 	public:
-		TwistyTurnyPassageTest()
-		{
-		}
+	TwistyTurnyPassageTest() { }
 
-		~TwistyTurnyPassageTest()
-		{
-		}
+	~TwistyTurnyPassageTest() { }
 
-		TEST_METHOD(ShouldCreateTwistyTurnyPassage)
-		{
-			//WHEN
-			creational::TwistyTurnyPassage twisty_turny_passage;
+	TEST_METHOD(ShouldCreateTwistyTurnyPassage)
+	{
+		//WHEN
+		TwistyTurnyPassage twisty_turny_passage;
 
-			//THEN
-			auto entered = twisty_turny_passage.entered();
+		//THEN
+		auto entered = twisty_turny_passage.entered();
 
-			Assert::IsFalse(entered);
-		}
+		Assert::IsFalse(entered);
+	}
 
-		TEST_METHOD(ShouldEnterTwistyTurnyPassage)
-		{
-			//GIVEN
-			creational::TwistyTurnyPassage twisty_turny_passage;
+	TEST_METHOD(ShouldEnterTwistyTurnyPassage)
+	{
+		//GIVEN
+		TwistyTurnyPassage twisty_turny_passage;
 
-			//WHEN
-			twisty_turny_passage.Enter();
+		//WHEN
+		twisty_turny_passage.Enter();
 
-			//THEN
-			auto entered = twisty_turny_passage.entered();
+		//THEN
+		auto entered = twisty_turny_passage.entered();
 
-			Assert::IsTrue(entered);
-		}
-	};
+		Assert::IsTrue(entered);
+	}
+};
 }

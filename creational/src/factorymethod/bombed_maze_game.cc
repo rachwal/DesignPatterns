@@ -10,17 +10,17 @@
 
 namespace creational
 {
-	BombedMazeGame::BombedMazeGame()
-	{
-	}
+namespace factorymethod
+{
+BombedMazeGame::BombedMazeGame() { }
 
-	Wall* BombedMazeGame::MakeWall() const
-	{
-		return new BombedWall(false);
-	}
-
-	Room* BombedMazeGame::MakeRoom(const int& room_number) const
-	{
-		return new RoomWithABomb(room_number, false);
-	}
+commons::Wall *BombedMazeGame::MakeWall() const
+{
+	return new commons::BombedWall(false);
 }
+
+commons::Room *BombedMazeGame::MakeRoom(const int& room_number) const
+{
+	return new commons::RoomWithABomb(room_number, false);
+}
+}}

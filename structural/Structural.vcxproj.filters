@@ -338,5 +338,8 @@
     <ClCompile Include="src\facade\variable_node.cc">
       <Filter>Source Files\facade</Filter>
     </ClCompile>
+    <ClCompile Include="src\facade\bytecode_stream.cc">
+      <Filter>Source Files\facade</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

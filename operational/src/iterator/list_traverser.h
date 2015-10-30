@@ -11,47 +11,45 @@
 
 namespace operational
 {
-	template <class Item>
-	class ListTraverser
-	{
+namespace iterator
+{
+template<class Item>
+class ListTraverser
+{
 	public:
-		explicit ListTraverser(List<Item>* list);
-		virtual ~ListTraverser();
+	explicit ListTraverser(List<Item>* list);
+	virtual ~ListTraverser();
 
-		virtual bool Traverse();
+	virtual bool Traverse();
 
 	protected:
-		virtual bool ProcessItem(const Item&) = 0;
+	virtual bool ProcessItem(const Item&) = 0;
 
 	private:
-		ListIterator<Item> iterator_;
-	};
+	ListIterator<Item> iterator_;
+};
 
-	template <class Item>
-	ListTraverser<Item>::ListTraverser(List<Item>* list) : iterator_(list)
+template<class Item>
+ListTraverser<Item>::ListTraverser(List<Item>* list) : iterator_(list) { }
+
+template<class Item>
+ListTraverser<Item>::~ListTraverser() { }
+
+template<class Item>
+bool ListTraverser<Item>::Traverse()
+{
+	auto result = false;
+
+	for (iterator_.First(); !iterator_.IsDone(); iterator_.Next())
 	{
-	}
-
-	template <class Item>
-	ListTraverser<Item>::~ListTraverser()
-	{
-	}
-
-	template <class Item>
-	bool ListTraverser<Item>::Traverse()
-	{
-		auto result = false;
-
-		for (iterator_.First(); !iterator_.IsDone(); iterator_.Next())
+		result = ProcessItem(iterator_.CurrentItem());
+		if (result == false)
 		{
-			result = ProcessItem(iterator_.CurrentItem());
-			if (result == false)
-			{
-				break;
-			}
+			break;
 		}
-		return result;
 	}
+	return result;
 }
+}}
 
 #endif

@@ -8,13 +8,15 @@
 
 namespace creational
 {
-	enum Direction
-	{
-		North,
-		East,
-		South,
-		West
-	};
-}
+namespace commons
+{
+enum Direction
+{
+	North,
+	East,
+	South,
+	West
+};
+}}
 
 #endif

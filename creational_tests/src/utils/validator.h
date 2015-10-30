@@ -8,28 +8,29 @@
 
 namespace creationaltests
 {
-	namespace validation
-	{
-		class Validator
-		{
-		public:
-			static bool BasicMazeConfiguration(creational::Maze* maze);
-			static bool FactoryMethodsMazeConfiguration(creational::Maze* maze);
-			static bool BombedMazeFactoryMazeConfiguration(creational::Maze* maze);
-			static bool EnchantedMazeFactoryMazeConfiguration(creational::Maze* maze);
-			static bool MazeFactoryMazeConfiguration(creational::Maze* maze);
-			static bool StandardMazeBuilderConfiguration(creational::Maze* maze);
+namespace validation
+{
+using namespace creational::commons;
 
-		private:
-			template <class east_side, class west_side, class north_side, class south_side>
-			static bool ValidateRoom(creational::Maze* maze, int room_number);
+class Validator
+{
+	public:
+	static bool BasicMazeConfiguration(Maze* maze);
+	static bool FactoryMethodsMazeConfiguration(Maze* maze);
+	static bool BombedMazeFactoryMazeConfiguration(Maze* maze);
+	static bool EnchantedMazeFactoryMazeConfiguration(Maze* maze);
+	static bool MazeFactoryMazeConfiguration(Maze* maze);
+	static bool StandardMazeBuilderConfiguration(Maze* maze);
 
-			template <class room_type>
-			static bool ValidateRoomType(creational::Maze* maze, int room_number);
+	private:
+	template<class east_side, class west_side, class north_side, class south_side>
+	static bool ValidateRoom(Maze* maze, int room_number);
 
-			template <class side_type>
-			static bool ValidateSide(creational::Room* room, creational::Direction direction);
-		};
-	}
-}
+	template<class room_type>
+	static bool ValidateRoomType(Maze* maze, int room_number);
+
+	template<class side_type>
+	static bool ValidateSide(Room* room, Direction direction);
+};
+}}
 #endif

@@ -138,6 +138,72 @@
     <ClInclude Include="src\observer\clock_tick_interface.h">
       <Filter>Header Files\observer</Filter>
     </ClInclude>
+    <ClInclude Include="src\interpreter\and_exp.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\boolean_exp_interface.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\constant.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\interpreter_context.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\interpreter_context_interface.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\not_exp.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\or_exp.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\variable_exp.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\entry_field.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\font_dialog_director.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\list_box.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\mediator_button.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\mediator_widget.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\mediator_widget_interface.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\mouse_event.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\chain\help_handler_interface.h">
+      <Filter>Header Files\chain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\chain\application.h">
+      <Filter>Header Files\chain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\chain\button.h">
+      <Filter>Header Files\chain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\chain\widget.h">
+      <Filter>Header Files\chain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\chain\dialog.h">
+      <Filter>Header Files\chain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpreter\variable_exp_interface.h">
+      <Filter>Header Files\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mediator\dialog_director_interface.h">
+      <Filter>Header Files\mediator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\observer\analog_clock.cc">
@@ -157,6 +223,51 @@
     </ClCompile>
     <ClCompile Include="src\iterator\print_n_employees.cc">
       <Filter>Source Files\iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\and_exp.cc">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\constant.cc">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\interpreter_context.cc">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\not_exp.cc">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\or_exp.cc">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpreter\variable_exp.cc">
+      <Filter>Source Files\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mediator\entry_field.cc">
+      <Filter>Source Files\mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mediator\font_dialog_director.cc">
+      <Filter>Source Files\mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mediator\list_box.cc">
+      <Filter>Source Files\mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mediator\mediator_button.cc">
+      <Filter>Source Files\mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mediator\mediator_widget.cc">
+      <Filter>Source Files\mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chain\button.cc">
+      <Filter>Source Files\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chain\widget.cc">
+      <Filter>Source Files\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chain\dialog.cc">
+      <Filter>Source Files\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chain\application.cc">
+      <Filter>Source Files\chain</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

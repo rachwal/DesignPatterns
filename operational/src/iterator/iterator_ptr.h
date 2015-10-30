@@ -10,56 +10,54 @@
 
 namespace operational
 {
-	template <class Item>
-	class IteratorPtr
-	{
+namespace iterator
+{
+template<class Item>
+class IteratorPtr
+{
 	public:
-		explicit IteratorPtr(IteratorInterface<Item>* i);
-		~IteratorPtr();
+	explicit IteratorPtr(IteratorInterface<Item>* i);
+	~IteratorPtr();
 
-		IteratorInterface<Item>* operator->();
-		IteratorInterface<Item>& operator*();
+	IteratorInterface<Item> *operator->();
+	IteratorInterface<Item> &operator*();
 
 	private:
-		IteratorPtr(const IteratorPtr&);
-		IteratorPtr& operator=(const IteratorPtr&);
+	IteratorPtr(const IteratorPtr&);
+	IteratorPtr &operator=(const IteratorPtr&);
 
-		IteratorInterface<Item>* i_;
-	};
+	IteratorInterface<Item>* i_;
+};
 
-	template <class Item>
-	IteratorPtr<Item>::IteratorPtr(IteratorInterface<Item>* i) : i_(i)
-	{
-	}
+template<class Item>
+IteratorPtr<Item>::IteratorPtr(IteratorInterface<Item>* i) : i_(i) { }
 
-	template <class Item>
-	IteratorPtr<Item>::~IteratorPtr()
-	{
-		delete i_;
-	}
-
-	template <class Item>
-	IteratorInterface<Item>* IteratorPtr<Item>::operator->()
-	{
-		return i_;
-	}
-
-	template <class Item>
-	IteratorInterface<Item>& IteratorPtr<Item>::operator*()
-	{
-		return *i_;
-	}
-
-	template <class Item>
-	IteratorPtr<Item>::IteratorPtr(const IteratorPtr&)
-	{
-	}
-
-	template <class Item>
-	IteratorPtr<Item>& IteratorPtr<Item>::operator=(const IteratorPtr&)
-	{
-		return{};
-	}
+template<class Item>
+IteratorPtr<Item>::~IteratorPtr()
+{
+	delete i_;
 }
+
+template<class Item>
+IteratorInterface<Item> *IteratorPtr<Item>::operator->()
+{
+	return i_;
+}
+
+template<class Item>
+IteratorInterface<Item> &IteratorPtr<Item>::operator*()
+{
+	return *i_;
+}
+
+template<class Item>
+IteratorPtr<Item>::IteratorPtr(const IteratorPtr&) { }
+
+template<class Item>
+IteratorPtr<Item> &IteratorPtr<Item>::operator=(const IteratorPtr&)
+{
+	return{};
+}
+}}
 
 #endif

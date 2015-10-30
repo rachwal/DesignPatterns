@@ -8,51 +8,40 @@
 
 namespace operationaltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-	using namespace operational;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace operational;
 
-	TEST_CLASS(IteratorTest)
-	{
+TEST_CLASS(IteratorTest)
+{
 	public:
-		IteratorTest()
-		{
-		}
+	IteratorTest() { }
 
-		~IteratorTest()
-		{
-		}
+	~IteratorTest() { }
 
-		TEST_METHOD(ShouldCreateEmptyList)
-		{
-			//GIVEN
-			auto employees = new List<Employee*>();
+	TEST_METHOD(ShouldCreateEmptyList)
+	{
+		//GIVEN
+		auto employees = new iterator::List<iterator::Employee*>();
 
-			//WHEN
-			auto employees_count = employees->Count();
+		//WHEN
+		auto employees_count = employees->Count();
 
-			//THEN
-			Assert::AreEqual(0l, employees_count);
-		}
+		//THEN
+		Assert::AreEqual(0l, employees_count);
+	}
 
-		TEST_METHOD(ShouldAppendTwoElementsToList)
-		{
-			//GIVEN
-			auto employees = new List<Employee*>();
+	TEST_METHOD(ShouldAppendTwoElementsToList)
+	{
+		//GIVEN
+		auto employees = new iterator::List<iterator::Employee*>();
 
-			//WHEN
-			employees->Append(new Employee("Test 1"));
-			employees->Append(new Employee("Test 2"));
+		//WHEN
+		employees->Append(new iterator::Employee("Test 1"));
+		employees->Append(new iterator::Employee("Test 2"));
 
-			//THEN
-			auto employees_count = employees->Count();
-			Assert::AreEqual(2l, employees_count);
-		}
-
-		//void PrintEmployees(IteratorInterface<Employee*>& i) const
-		//{
-		//	for (i.First(); !i.IsDone(); i.Next()) {
-		//		i.CurrentItem()->Print();
-		//	}
-		//};
-	};
+		//THEN
+		auto employees_count = employees->Count();
+		Assert::AreEqual(2l, employees_count);
+	}
+};
 }

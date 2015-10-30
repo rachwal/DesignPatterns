@@ -12,17 +12,19 @@
 
 namespace creational
 {
-	class EnchantedMazeFactory : public MazeFactoryInterface
-	{
+namespace abstractfactory
+{
+class EnchantedMazeFactory : public MazeFactoryInterface
+{
 	public:
-		virtual Maze* MakeMaze() const override;
-		virtual Wall* MakeWall() const override;
-		virtual Room* MakeRoom(const int& room_number) const override;
-		virtual Door* MakeDoor(const Room& first_room, const Room& second_room) const override;
+	virtual commons::Maze *MakeMaze() const override;
+	virtual commons::Wall *MakeWall() const override;
+	virtual commons::Room *MakeRoom(const int& room_number) const override;
+	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const override;
 
 	protected:
-		Spell* CastSpell() const;
-	};
-}
+	commons::Spell *CastSpell() const;
+};
+}}
 
 #endif

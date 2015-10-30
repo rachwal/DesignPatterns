@@ -11,60 +11,58 @@
 
 namespace operational
 {
-	template <class Item>
-	class ListIterator : public IteratorInterface<Item>
-	{
+namespace iterator
+{
+template<class Item>
+class ListIterator : public IteratorInterface<Item>
+{
 	public:
-		explicit ListIterator(const ListInterface<Item>* list);
-		virtual ~ListIterator() override;
+	explicit ListIterator(const ListInterface<Item>* list);
+	virtual ~ListIterator() override;
 
-		virtual void First() override;
-		virtual void Next() override;
-		virtual bool IsDone() const override;
-		virtual Item CurrentItem() const override;
+	virtual void First() override;
+	virtual void Next() override;
+	virtual bool IsDone() const override;
+	virtual Item CurrentItem() const override;
 
 	private:
-		const ListInterface<Item>* list_;
-		long current_;
-	};
+	const ListInterface<Item>* list_;
+	long current_;
+};
 
-	template <class Item>
-	ListIterator<Item>::ListIterator(const ListInterface<Item>* list) : list_(list), current_(0)
-	{
-	}
+template<class Item>
+ListIterator<Item>::ListIterator(const ListInterface<Item>* list) : list_(list), current_(0) { }
 
-	template <class Item>
-	ListIterator<Item>::~ListIterator()
-	{
-	}
+template<class Item>
+ListIterator<Item>::~ListIterator() { }
 
-	template <class Item>
-	void ListIterator<Item>::First()
-	{
-		current_ = 0;
-	}
-
-	template <class Item>
-	void ListIterator<Item>::Next()
-	{
-		current_++;
-	}
-
-	template <class Item>
-	bool ListIterator<Item>::IsDone() const
-	{
-		return current_ >= list_->Count();
-	}
-
-	template <class Item>
-	Item ListIterator<Item>::CurrentItem() const
-	{
-		if (IsDone())
-		{
-			return nullptr;
-		}
-		return list_->Get(current_);
-	}
+template<class Item>
+void ListIterator<Item>::First()
+{
+	current_ = 0;
 }
+
+template<class Item>
+void ListIterator<Item>::Next()
+{
+	current_++;
+}
+
+template<class Item>
+bool ListIterator<Item>::IsDone() const
+{
+	return current_ >= list_->Count();
+}
+
+template<class Item>
+Item ListIterator<Item>::CurrentItem() const
+{
+	if (IsDone())
+	{
+		return nullptr;
+	}
+	return list_->Get(current_);
+}
+}}
 
 #endif

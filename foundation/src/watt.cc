@@ -7,17 +7,15 @@
 
 namespace foundation
 {
-	Watt::Watt(const double& value) :value_(value)
-	{
-	}
+Watt::Watt(const double& value) :value_(value) { }
 
-	double Watt::value() const
-	{
-		return value_;
-	}
+double Watt::value() const
+{
+	return value_;
+}
 
-	void Watt::value(double value)
-	{
-		value_ = value;
-	}
+void Watt::value(double value)
+{
+	value_ = value;
+}
 }

@@ -10,16 +10,16 @@
 
 namespace structural
 {
-	class WindowInterface
-	{
+namespace bridge
+{
+class WindowInterface
+{
 	public:
-		virtual ~WindowInterface()
-		{
-		}
+	virtual ~WindowInterface() { }
 
-		virtual void DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2) = 0;
-		virtual void DrawText(const std::string& text, const foundation::Point<float>&) = 0;
-	};
-}
+	virtual void DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2) = 0;
+	virtual void DrawText(const std::string& text, const foundation::Point<float>&) = 0;
+};
+}}
 
 #endif

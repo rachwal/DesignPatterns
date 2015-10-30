@@ -11,18 +11,20 @@
 
 namespace structural
 {
-	class RISCCodeGenerator : public CodeGeneratorInterface
-	{
+namespace facade
+{
+class RISCCodeGenerator : public CodeGeneratorInterface
+{
 	public:
-		explicit RISCCodeGenerator(BytecodeStream*);
+	explicit RISCCodeGenerator(BytecodeStream*);
 
-		virtual void Visit(VariableNodeInterface*) override;
-		virtual void Visit(StatementNodeInterface*) override;
-		virtual void Visit(ExpressionNodeInterface*) override;
+	virtual void Visit(VariableNodeInterface*) override;
+	virtual void Visit(StatementNodeInterface*) override;
+	virtual void Visit(ExpressionNodeInterface*) override;
 
 	private:
-		BytecodeStream* output_;
-	};
-}
+	BytecodeStream* output_;
+};
+}}
 
 #endif

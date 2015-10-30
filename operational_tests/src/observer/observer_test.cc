@@ -8,38 +8,35 @@
 
 namespace operationaltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace operational::observer;
 
-	TEST_CLASS(ObserverTest)
-	{
+TEST_CLASS(ObserverTest)
+{
 	public:
-		ObserverTest()
+	ObserverTest() { }
+
+	~ObserverTest() { }
+
+	TEST_METHOD(ShouldIncreaseNotifyObserversAboutClockTimerChange)
+	{
+		//GIVEN
+		auto timer = new ClockTimer;
+		auto analog_clock = new AnalogClock(timer);
+		auto digital_clock = new DigitalClock(timer);
+
+		//WHEN
+		for (auto i = 0; i < 1001; i++)
 		{
+			timer->Tick();
 		}
 
-		~ObserverTest()
-		{
-		}
+		//THEN
+		auto analog_time = analog_clock->formated_time();
+		auto digital_time = digital_clock->formated_time();
 
-		TEST_METHOD(ShouldIncreaseNotifyObserversAboutClockTimerChange)
-		{
-			//GIVEN
-			auto timer = new operational::ClockTimer;
-			auto analog_clock = new operational::AnalogClock(timer);
-			auto digital_clock = new operational::DigitalClock(timer);
-
-			//WHEN
-			for (auto i = 0; i < 1001; i++)
-			{
-				timer->Tick();
-			}
-
-			//THEN
-			auto analog_time = analog_clock->formated_time();
-			auto digital_time = digital_clock->formated_time();
-
-			Assert::AreEqual("4/10", analog_time.c_str());
-			Assert::AreEqual("4:10:15", digital_time.c_str());
-		}
-	};
+		Assert::AreEqual("4/10", analog_time.c_str());
+		Assert::AreEqual("4:10:15", digital_time.c_str());
+	}
+};
 }

@@ -7,106 +7,103 @@
 
 namespace creationaltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace creational::commons;
 
-	TEST_CLASS(BombedWallTest)
-	{
+TEST_CLASS(BombedWallTest)
+{
 	public:
-		BombedWallTest()
-		{
-		}
+	BombedWallTest() { }
 
-		~BombedWallTest()
-		{
-		}
+	~BombedWallTest() { }
 
-		TEST_METHOD(ShouldCreateBombedWall)
-		{
-			//GIVEN
-			auto bombed = true;
+	TEST_METHOD(ShouldCreateBombedWall)
+	{
+		//GIVEN
+		auto bombed = true;
 
-			//WHEN
-			auto bombed_wall = creational::BombedWall(bombed);
+		//WHEN
+		auto bombed_wall = BombedWall(bombed);
 
-			//THEN
-			auto is_bombed = bombed_wall.bombed();
+		//THEN
+		auto is_bombed = bombed_wall.bombed();
 
-			Assert::IsTrue(is_bombed);
-		}
+		Assert::IsTrue(is_bombed);
+	}
 
-		TEST_METHOD(ShouldCreateNonBombedWall)
-		{
-			//GIVEN
-			auto bombed = false;
+	TEST_METHOD(ShouldCreateNonBombedWall)
+	{
+		//GIVEN
+		auto bombed = false;
 
-			//WHEN
-			auto bombed_wall = creational::BombedWall(bombed);
+		//WHEN
+		auto bombed_wall = BombedWall(bombed);
 
-			//THEN
-			auto is_bombed = bombed_wall.bombed();
+		//THEN
+		auto is_bombed = bombed_wall.bombed();
 
-			Assert::IsFalse(is_bombed);
-		}
+		Assert::IsFalse(is_bombed);
+	}
 
-		TEST_METHOD(ShouldCreateBombedWallFromAnotherBombedWall)
-		{
-			//GIVEN
-			auto existing_bombed_wall = creational::BombedWall(true);
+	TEST_METHOD(ShouldCreateBombedWallFromAnotherBombedWall)
+	{
+		//GIVEN
+		auto existing_bombed_wall = BombedWall(true);
 
-			//WHEN
-			auto bombed_wall = creational::BombedWall(existing_bombed_wall);
+		//WHEN
+		auto bombed_wall = BombedWall(existing_bombed_wall);
 
-			//THEN
-			auto is_bombed = bombed_wall.bombed();
+		//THEN
+		auto is_bombed = bombed_wall.bombed();
 
-			Assert::IsTrue(is_bombed);
-		}
+		Assert::IsTrue(is_bombed);
+	}
 
-		TEST_METHOD(ShouldCreateBombedWallFromAnotherNonBombedWall)
-		{
-			//GIVEN
-			auto existing_bombed_wall = creational::BombedWall(false);
+	TEST_METHOD(ShouldCreateBombedWallFromAnotherNonBombedWall)
+	{
+		//GIVEN
+		auto existing_bombed_wall = BombedWall(false);
 
-			//WHEN
-			auto bombed_wall = creational::BombedWall(existing_bombed_wall);
+		//WHEN
+		auto bombed_wall = BombedWall(existing_bombed_wall);
 
-			//THEN
-			auto is_bombed = bombed_wall.bombed();
+		//THEN
+		auto is_bombed = bombed_wall.bombed();
 
-			Assert::IsFalse(is_bombed);
-		}
+		Assert::IsFalse(is_bombed);
+	}
 
-		TEST_METHOD(ShouldCloneEnteredBombedWall)
-		{
-			//GIVEN
-			auto existing_bombed_wall = creational::BombedWall(true);
-			existing_bombed_wall.Enter();
+	TEST_METHOD(ShouldCloneEnteredBombedWall)
+	{
+		//GIVEN
+		auto existing_bombed_wall = BombedWall(true);
+		existing_bombed_wall.Enter();
 
-			//WHEN
-			auto bombed_wall = existing_bombed_wall.Clone();
-			auto is_entered = bombed_wall->entered();
+		//WHEN
+		auto bombed_wall = existing_bombed_wall.Clone();
+		auto is_entered = bombed_wall->entered();
 
-			//THEN
-			auto is_bombed = bombed_wall->bombed();
+		//THEN
+		auto is_bombed = bombed_wall->bombed();
 
-			Assert::IsTrue(is_bombed);
-			Assert::IsTrue(is_entered);
-		}
+		Assert::IsTrue(is_bombed);
+		Assert::IsTrue(is_entered);
+	}
 
-		TEST_METHOD(ShouldCloneNonBombedWall)
-		{
-			//GIVEN
-			auto existing_bombed_wall = creational::BombedWall(false);
+	TEST_METHOD(ShouldCloneNonBombedWall)
+	{
+		//GIVEN
+		auto existing_bombed_wall = BombedWall(false);
 
-			//WHEN
-			auto bombed_wall = existing_bombed_wall.Clone();
+		//WHEN
+		auto bombed_wall = existing_bombed_wall.Clone();
 
-			//THEN
-			auto is_bombed = bombed_wall->bombed();
-			auto is_entered = bombed_wall->entered();
+		//THEN
+		auto is_bombed = bombed_wall->bombed();
+		auto is_entered = bombed_wall->entered();
 
-			Assert::IsFalse(is_bombed);
-			Assert::IsFalse(is_entered);
-		}
-	};
+		Assert::IsFalse(is_bombed);
+		Assert::IsFalse(is_entered);
+	}
+};
 }

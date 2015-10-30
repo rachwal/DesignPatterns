@@ -10,15 +10,15 @@
 
 namespace structural
 {
-	class StatementNodeInterface
-	{
+namespace facade
+{
+class StatementNodeInterface
+{
 	public:
-		virtual ~StatementNodeInterface()
-		{
-		}
+	virtual ~StatementNodeInterface() { }
 
-		virtual std::string statement() const = 0;
-	};
-}
+	virtual std::string statement() const = 0;
+};
+}}
 
 #endif

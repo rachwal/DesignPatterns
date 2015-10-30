@@ -10,21 +10,23 @@
 
 namespace structural
 {
-	class CompressingStream : public StreamDecorator
-	{
+namespace decorator
+{
+class CompressingStream : public StreamDecorator
+{
 	public:
-		explicit CompressingStream(StreamInterface*);
+	explicit CompressingStream(StreamInterface*);
 
-		void PutInt(int) override;
-		void PutString(const std::string&) override;
+	void PutInt(int) override;
+	void PutString(const std::string&) override;
 
-		int value() const;
-		std::string& message();
+	int value() const;
+	std::string &message();
 
 	private:
-		int value_;
-		std::string text_string_;
-	};
-}
+	int value_;
+	std::string text_string_;
+};
+}}
 
 #endif

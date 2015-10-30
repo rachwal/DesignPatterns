@@ -10,19 +10,19 @@
 
 namespace structural
 {
-	class ProgramNodeInterface
-	{
+namespace facade
+{
+class ProgramNodeInterface
+{
 	public:
-		virtual ~ProgramNodeInterface()
-		{
-		}
+	virtual ~ProgramNodeInterface() { }
 
-		virtual void GetSourcePosition(int& line, int& index) = 0;
-		virtual void Add(ProgramNodeInterface*) = 0;
-		virtual void Remove(ProgramNodeInterface*) = 0;
+	virtual void GetSourcePosition(int& line, int& index) = 0;
+	virtual void Add(ProgramNodeInterface*) = 0;
+	virtual void Remove(ProgramNodeInterface*) = 0;
 
-		virtual void Traverse(CodeGeneratorInterface&) = 0;
-	};
-}
+	virtual void Traverse(CodeGeneratorInterface&) = 0;
+};
+}}
 
 #endif

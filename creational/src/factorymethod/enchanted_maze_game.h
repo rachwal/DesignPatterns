@@ -11,17 +11,19 @@
 
 namespace creational
 {
-	class EnchantedMazeGame : public MazeGame
-	{
+namespace factorymethod
+{
+class EnchantedMazeGame : public MazeGame
+{
 	public:
-		EnchantedMazeGame();
+	EnchantedMazeGame();
 
-		virtual Room* MakeRoom(const int& room_number) const override;
-		virtual Door* MakeDoor(const Room& first_room, const Room& second_room) const override;
+	virtual commons::Room *MakeRoom(const int& room_number) const override;
+	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const override;
 
 	protected:
-		Spell* WeaveSpell() const;
-	};
-}
+	commons::Spell *WeaveSpell() const;
+};
+}}
 
 #endif

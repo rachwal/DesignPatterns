@@ -7,12 +7,12 @@
 
 namespace structural
 {
-	Token::Token(const std::string& content) : content_(content)
-	{
-	}
+namespace facade
+{
+Token::Token(const std::string& content) : content_(content) { }
 
-	std::string Token::content() const
-	{
-		return content_;
-	}
+std::string Token::content() const
+{
+	return content_;
 }
+}}

@@ -10,15 +10,15 @@
 
 namespace structural
 {
-	class ExpressionNodeInterface
-	{
+namespace facade
+{
+class ExpressionNodeInterface
+{
 	public:
-		virtual ~ExpressionNodeInterface()
-		{
-		}
+	virtual ~ExpressionNodeInterface() { }
 
-		virtual std::string expression() const = 0;
-	};
-}
+	virtual std::string expression() const = 0;
+};
+}}
 
 #endif

@@ -13,24 +13,22 @@
 
 namespace foundation
 {
-	class EquipmentInterface
-	{
+class EquipmentInterface
+{
 	public:
-		virtual ~EquipmentInterface()
-		{
-		}
+	virtual ~EquipmentInterface() { }
 
-		virtual std::string name() const = 0;
+	virtual std::string name() const = 0;
 
-		virtual Currency price() const = 0;
-		virtual void price(const Currency&) = 0;
+	virtual Currency price() const = 0;
+	virtual void price(const Currency&) = 0;
 
-		virtual Watt power() const = 0;
-		virtual void power(const Watt&) = 0;
+	virtual Watt power() const = 0;
+	virtual void power(const Watt&) = 0;
 
-		virtual Currency NetPrice() = 0;
-		virtual Currency DiscountPrice() = 0;
-	};
+	virtual Currency NetPrice() = 0;
+	virtual Currency DiscountPrice() = 0;
+};
 }
 
 #endif

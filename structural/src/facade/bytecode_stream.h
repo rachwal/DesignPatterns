@@ -10,31 +10,19 @@
 
 namespace structural
 {
-	class BytecodeStream
-	{
+namespace facade
+{
+class BytecodeStream
+{
 	public:
-		BytecodeStream();
+	BytecodeStream();
 
-		void Write(std::string text);
-		std::string Read() const;
+	void Write(std::string text);
+	std::string Read() const;
 
 	private:
-		std::string text_;
-	};
-
-	inline BytecodeStream::BytecodeStream() :text_("")
-	{
-	}
-
-	inline void BytecodeStream::Write(std::string text)
-	{
-		text_.append(text);
-	}
-
-	inline std::string BytecodeStream::Read() const
-	{
-		return text_;
-	}
-}
+	std::string text_;
+};
+}}
 
 #endif

@@ -11,34 +11,31 @@
 
 namespace structuraltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace structural::facade;
 
-	TEST_CLASS(FacadeTest)
-	{
+TEST_CLASS(FacadeTest)
+{
 	public:
-		FacadeTest()
-		{
-		}
+	FacadeTest() { }
 
-		~FacadeTest()
-		{
-		}
+	~FacadeTest() { }
 
-		TEST_METHOD(ShouldPassExampleBookFacadeTest)
-		{
-			//GIVEN
-			auto expected_stream = "<RISC|variable|items_|variable|RISC>";
-			auto output_stream = structural::BytecodeStream();
-			auto input_stream = std::istringstream("auto items_ = new operational::List<ProgramNodeInterface*>();");
+	TEST_METHOD(ShouldPassExampleBookFacadeTest)
+	{
+		//GIVEN
+		auto expected_stream = "<RISC|variable|items_|variable|RISC>";
+		auto output_stream = BytecodeStream();
+		auto input_stream = std::istringstream("auto items_ = new operational::List<ProgramNodeInterface*>();");
 
-			auto compiler = new structural::Compiler();
+		auto compiler = new Compiler();
 
-			//WHEN
-			compiler->Compile(input_stream, &output_stream);
+		//WHEN
+		compiler->Compile(input_stream, &output_stream);
 
-			//THEN
-			auto output = output_stream.Read();
-			Assert::AreEqual(expected_stream, output.c_str());
-		}
-	};
+		//THEN
+		auto output = output_stream.Read();
+		Assert::AreEqual(expected_stream, output.c_str());
+	}
+};
 }

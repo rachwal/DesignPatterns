@@ -7,31 +7,29 @@
 
 namespace creational
 {
-	Wall::Wall() :entered_(false)
-	{
-	}
+namespace commons
+{
+Wall::Wall() :entered_(false) { }
 
-	Wall::Wall(const Wall& wall)
-	{
-		entered_ = wall.entered_;
-	}
-
-	Wall::~Wall()
-	{
-	}
-
-	Wall* Wall::Clone() const
-	{
-		return new Wall(*this);
-	}
-
-	void Wall::Enter()
-	{
-		entered_ = true;
-	}
-
-	bool Wall::entered() const
-	{
-		return entered_;
-	}
+Wall::Wall(const Wall& wall)
+{
+	entered_ = wall.entered_;
 }
+
+Wall::~Wall() { }
+
+Wall *Wall::Clone() const
+{
+	return new Wall(*this);
+}
+
+void Wall::Enter()
+{
+	entered_ = true;
+}
+
+bool Wall::entered() const
+{
+	return entered_;
+}
+}}

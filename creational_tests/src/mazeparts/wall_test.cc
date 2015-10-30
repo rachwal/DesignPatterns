@@ -7,100 +7,97 @@
 
 namespace creationaltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace creational::commons;
 
-	TEST_CLASS(WallTest)
-	{
+TEST_CLASS(WallTest)
+{
 	public:
-		WallTest()
-		{
-		}
+	WallTest() { }
 
-		~WallTest()
-		{
-		}
+	~WallTest() { }
 
-		TEST_METHOD(ShouldCreateWall)
-		{
-			//WHEN
-			creational::Wall wall;
+	TEST_METHOD(ShouldCreateWall)
+	{
+		//WHEN
+		Wall wall;
 
-			//THEN
-			auto entered = wall.entered();
+		//THEN
+		auto entered = wall.entered();
 
-			Assert::IsFalse(entered);
-		}
+		Assert::IsFalse(entered);
+	}
 
-		TEST_METHOD(ShouldEnterWall)
-		{
-			//GIVEN
-			creational::Wall wall;
+	TEST_METHOD(ShouldEnterWall)
+	{
+		//GIVEN
+		Wall wall;
 
-			//WHEN
-			wall.Enter();
+		//WHEN
+		wall.Enter();
 
-			//THEN
-			auto entered = wall.entered();
+		//THEN
+		auto entered = wall.entered();
 
-			Assert::IsTrue(entered);
-		}
+		Assert::IsTrue(entered);
+	}
 
-		TEST_METHOD(ShouldCreateWallFromAnotherWall)
-		{
-			//GIVEN
-			creational::Wall existing_wall;
+	TEST_METHOD(ShouldCreateWallFromAnotherWall)
+	{
+		//GIVEN
+		Wall existing_wall;
 
-			//WHEN
-			auto wall = creational::Wall(existing_wall);
+		//WHEN
+		auto wall = Wall(existing_wall);
 
-			//THEN
-			auto entered = wall.entered();
+		//THEN
+		auto entered = wall.entered();
 
-			Assert::IsFalse(entered);
-		}
+		Assert::IsFalse(entered);
+	}
 
-		TEST_METHOD(ShouldCreateWallFromAnotherEnteredWall)
-		{
-			//GIVEN
-			creational::Wall existing_wall;
-			existing_wall.Enter();
+	TEST_METHOD(ShouldCreateWallFromAnotherEnteredWall)
+	{
+		//GIVEN
+		Wall existing_wall;
+		existing_wall.Enter();
 
-			//WHEN
-			auto wall = creational::Wall(existing_wall);
+		//WHEN
+		auto wall = Wall(existing_wall);
 
-			//THEN
-			auto entered = wall.entered();
+		//THEN
+		auto entered = wall.entered();
 
-			Assert::IsTrue(entered);
-		}
+		Assert::IsTrue(entered);
+	}
 
-		TEST_METHOD(ShouldCloneWallFromAnotherWall)
-		{
-			//GIVEN
-			creational::Wall existing_wall;
+	TEST_METHOD(ShouldCloneWallFromAnotherWall)
+	{
+		//GIVEN
+		Wall existing_wall;
 
-			//WHEN
-			auto wall = existing_wall.Clone();
+		//WHEN
+		auto wall = existing_wall.Clone();
 
-			//THEN
-			auto entered = wall->entered();
+		//THEN
+		auto entered = wall->entered();
 
-			Assert::IsFalse(entered);
-		}
+		Assert::IsFalse(entered);
+	}
 
-		TEST_METHOD(ShouldCloneWallFromAnotherEnteredWall)
-		{
-			//GIVEN
-			creational::Wall existing_wall;
-			existing_wall.Enter();
+	TEST_METHOD(ShouldCloneWallFromAnotherEnteredWall)
+	{
+		//GIVEN
+		Wall existing_wall;
+		existing_wall.Enter();
 
-			//WHEN
-			auto wall = existing_wall.Clone();
+		//WHEN
+		auto wall = existing_wall.Clone();
 
-			//THEN
-			auto entered = wall->entered();
+		//THEN
+		auto entered = wall->entered();
 
-			Assert::IsTrue(entered);
-		}
-	};
+		Assert::IsTrue(entered);
+	}
+};
 }

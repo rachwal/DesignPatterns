@@ -10,22 +10,24 @@
 
 namespace creational
 {
-	class MazePrototypeFactory : public MazeFactoryInterface
-	{
+namespace prototype
+{
+class MazePrototypeFactory : public abstractfactory::MazeFactoryInterface
+{
 	public:
-		MazePrototypeFactory(Maze*, Wall*, Room*, Door*);
+	MazePrototypeFactory(commons::Maze*, commons::Wall*, commons::Room*, commons::Door*);
 
-		virtual Maze* MakeMaze() const override;
-		virtual Room* MakeRoom(const int& room_number) const override;
-		virtual Wall* MakeWall() const override;
-		virtual Door* MakeDoor(const Room& first_room, const Room& second_room) const override;
+	virtual commons::Maze *MakeMaze() const override;
+	virtual commons::Room *MakeRoom(const int& room_number) const override;
+	virtual commons::Wall *MakeWall() const override;
+	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const override;
 
 	private:
-		Maze* prototype_maze_;
-		Room* prototype_room_;
-		Wall* prototype_wall_;
-		Door* prototype_door_;
-	};
-}
+	commons::Maze* prototype_maze_;
+	commons::Room* prototype_room_;
+	commons::Wall* prototype_wall_;
+	commons::Door* prototype_door_;
+};
+}}
 
 #endif

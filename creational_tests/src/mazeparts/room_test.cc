@@ -9,147 +9,144 @@
 
 namespace creationaltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace creational::commons;
 
-	TEST_CLASS(RoomTest)
-	{
+TEST_CLASS(RoomTest)
+{
 	public:
-		RoomTest()
-		{
-		}
+	RoomTest() { }
 
-		~RoomTest()
-		{
-		}
+	~RoomTest() { }
 
-		TEST_METHOD(ShouldCreateNonEnteredRoomWithNumber)
-		{
-			//GIVEN
-			auto expected_room_number = 3;
+	TEST_METHOD(ShouldCreateNonEnteredRoomWithNumber)
+	{
+		//GIVEN
+		auto expected_room_number = 3;
 
-			//WHEN
-			auto room = creational::Room(expected_room_number);
+		//WHEN
+		auto room = Room(expected_room_number);
 
-			//THEN
-			auto room_number = room.room_number();
-			auto entered = room.entered();
+		//THEN
+		auto room_number = room.room_number();
+		auto entered = room.entered();
 
-			Assert::AreEqual(expected_room_number, room_number);
-			Assert::AreEqual(false, entered);
-		}
+		Assert::AreEqual(expected_room_number, room_number);
+		Assert::AreEqual(false, entered);
+	}
 
-		TEST_METHOD(ShouldEnterRoom)
-		{
-			//GIVEN
-			auto room = creational::Room(0);
+	TEST_METHOD(ShouldEnterRoom)
+	{
+		//GIVEN
+		auto room = Room(0);
 
-			//WHEN
-			room.Enter();
+		//WHEN
+		room.Enter();
 
-			//THEN
-			auto entered = room.entered();
+		//THEN
+		auto entered = room.entered();
 
-			Assert::AreEqual(true, entered);
-		}
+		Assert::AreEqual(true, entered);
+	}
 
-		TEST_METHOD(ShouldCreateRoomWithFromNonEnteredRoom)
-		{
-			//GIVEN
-			auto expected_room_number = 3;
-			auto existing_room = creational::Room(expected_room_number);
+	TEST_METHOD(ShouldCreateRoomWithFromNonEnteredRoom)
+	{
+		//GIVEN
+		auto expected_room_number = 3;
+		auto existing_room = Room(expected_room_number);
 
-			//WHEN
-			auto room = creational::Room(existing_room);
+		//WHEN
+		auto room = Room(existing_room);
 
-			//THEN
-			auto room_number = room.room_number();
-			auto entered = room.entered();
+		//THEN
+		auto room_number = room.room_number();
+		auto entered = room.entered();
 
-			Assert::AreEqual(expected_room_number, room_number);
-			Assert::AreEqual(false, entered);
-		}
+		Assert::AreEqual(expected_room_number, room_number);
+		Assert::AreEqual(false, entered);
+	}
 
-		TEST_METHOD(ShouldCreateRoomWithFromEnteredRoom)
-		{
-			//GIVEN
-			auto expected_room_number = 3;
-			auto existing_room = creational::Room(expected_room_number);
+	TEST_METHOD(ShouldCreateRoomWithFromEnteredRoom)
+	{
+		//GIVEN
+		auto expected_room_number = 3;
+		auto existing_room = Room(expected_room_number);
 
-			//WHEN
-			auto room = creational::Room(existing_room);
-			room.Enter();
+		//WHEN
+		auto room = Room(existing_room);
+		room.Enter();
 
-			//THEN
-			auto room_number = room.room_number();
-			auto entered = room.entered();
+		//THEN
+		auto room_number = room.room_number();
+		auto entered = room.entered();
 
-			Assert::AreEqual(expected_room_number, room_number);
-			Assert::AreEqual(true, entered);
-		}
+		Assert::AreEqual(expected_room_number, room_number);
+		Assert::AreEqual(true, entered);
+	}
 
-		TEST_METHOD(ShouldSetSide)
-		{
-			//GIVEN
-			auto room = creational::Room(1);
-			auto wall = new creational::Wall();
-			auto door = new creational::Door(creational::Room(3), creational::Room(4));
+	TEST_METHOD(ShouldSetSide)
+	{
+		//GIVEN
+		auto room = Room(1);
+		auto wall = new Wall();
+		auto door = new Door(Room(3), Room(4));
 
-			//WHEN
-			room.SetSide(creational::North, wall);
-			room.SetSide(creational::South, door);
+		//WHEN
+		room.SetSide(North, wall);
+		room.SetSide(South, door);
 
-			//THEN
-			auto north_side = room.GetSide(creational::North);
-			auto north_side_wall = dynamic_cast<creational::Wall*>(north_side);
+		//THEN
+		auto north_side = room.GetSide(North);
+		auto north_side_wall = dynamic_cast<Wall*>(north_side);
 
-			auto south_side = room.GetSide(creational::South);
-			auto south_side_door = dynamic_cast<creational::Door*>(south_side);
+		auto south_side = room.GetSide(South);
+		auto south_side_door = dynamic_cast<Door*>(south_side);
 
-			auto east_side = room.GetSide(creational::East);
-			auto west_side = room.GetSide(creational::West);
+		auto east_side = room.GetSide(East);
+		auto west_side = room.GetSide(West);
 
-			Assert::IsNotNull(north_side_wall);
-			Assert::IsNotNull(south_side_door);
-			Assert::IsNull(east_side);
-			Assert::IsNull(west_side);
-		}
+		Assert::IsNotNull(north_side_wall);
+		Assert::IsNotNull(south_side_door);
+		Assert::IsNull(east_side);
+		Assert::IsNull(west_side);
+	}
 
-		TEST_METHOD(ShouldCloneNonEnteredRoom)
-		{
-			//GIVEN
-			auto expected_room_number = 3;
-			auto existing_room = creational::Room(expected_room_number);
-			existing_room.SetSide(creational::West, new creational::Wall);
+	TEST_METHOD(ShouldCloneNonEnteredRoom)
+	{
+		//GIVEN
+		auto expected_room_number = 3;
+		auto existing_room = Room(expected_room_number);
+		existing_room.SetSide(West, new Wall);
 
-			//WHEN
-			auto room = existing_room.Clone();
+		//WHEN
+		auto room = existing_room.Clone();
 
-			//THEN
-			auto room_number = room->room_number();
-			auto entered = room->entered();
-			auto west_side = room->GetSide(creational::West);
+		//THEN
+		auto room_number = room->room_number();
+		auto entered = room->entered();
+		auto west_side = room->GetSide(West);
 
-			Assert::AreEqual(expected_room_number, room_number);
-			Assert::AreEqual(false, entered);
-			Assert::IsNotNull(west_side);
-		}
+		Assert::AreEqual(expected_room_number, room_number);
+		Assert::AreEqual(false, entered);
+		Assert::IsNotNull(west_side);
+	}
 
-		TEST_METHOD(ShouldCloneEnteredRoom)
-		{
-			//GIVEN
-			auto expected_room_number = 3;
-			auto existing_room = creational::Room(expected_room_number);
+	TEST_METHOD(ShouldCloneEnteredRoom)
+	{
+		//GIVEN
+		auto expected_room_number = 3;
+		auto existing_room = Room(expected_room_number);
 
-			//WHEN
-			auto room = existing_room.Clone();
-			room->Enter();
+		//WHEN
+		auto room = existing_room.Clone();
+		room->Enter();
 
-			//THEN
-			auto room_number = room->room_number();
-			auto entered = room->entered();
+		//THEN
+		auto room_number = room->room_number();
+		auto entered = room->entered();
 
-			Assert::AreEqual(expected_room_number, room_number);
-			Assert::AreEqual(true, entered);
-		}
-	};
+		Assert::AreEqual(expected_room_number, room_number);
+		Assert::AreEqual(true, entered);
+	}
+};
 }

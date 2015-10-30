@@ -10,18 +10,20 @@
 
 namespace structural
 {
-	class Bitmap
-	{
+namespace bridge
+{
+class Bitmap
+{
 	public:
-		explicit Bitmap(const std::string& file_name);
+	explicit Bitmap(const std::string& file_name);
 
-		float width() const;
-		float height() const;
+	float width() const;
+	float height() const;
 
 	private:
-		float width_;
-		float height_;
-	};
-}
+	float width_;
+	float height_;
+};
+}}
 
 #endif

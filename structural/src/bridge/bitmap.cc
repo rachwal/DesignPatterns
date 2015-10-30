@@ -7,19 +7,21 @@
 
 namespace structural
 {
-	Bitmap::Bitmap(const std::string& file_name)
-	{
-		width_ = 100;
-		height_ = 20;
-	}
-
-	float Bitmap::width() const
-	{
-		return width_;
-	}
-
-	float Bitmap::height() const
-	{
-		return height_;
-	}
+namespace bridge
+{
+Bitmap::Bitmap(const std::string& file_name)
+{
+	width_ = 100;
+	height_ = 20;
 }
+
+float Bitmap::width() const
+{
+	return width_;
+}
+
+float Bitmap::height() const
+{
+	return height_;
+}
+}}

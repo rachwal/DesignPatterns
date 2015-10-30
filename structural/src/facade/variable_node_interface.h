@@ -10,15 +10,15 @@
 
 namespace structural
 {
-	class VariableNodeInterface
-	{
+namespace facade
+{
+class VariableNodeInterface
+{
 	public:
-		virtual ~VariableNodeInterface()
-		{
-		}
+	virtual ~VariableNodeInterface() { }
 
-		virtual std::string name() const = 0;
-	};
-}
+	virtual std::string name() const = 0;
+};
+}}
 
 #endif

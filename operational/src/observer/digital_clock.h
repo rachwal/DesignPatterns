@@ -13,22 +13,24 @@
 
 namespace operational
 {
-	class DigitalClock : public ObserverWidgetInterface, public ClockTickObserver
-	{
+namespace observer
+{
+class DigitalClock : public ObserverWidgetInterface, public ClockTickObserver
+{
 	public:
-		explicit DigitalClock(ClockTimer* clock_timer);
-		virtual ~DigitalClock() override;
+	explicit DigitalClock(ClockTimer* clock_timer);
+	virtual ~DigitalClock() override;
 
-		virtual void OnClockTick() override;
+	virtual void OnClockTick() override;
 
-		virtual void Draw() override;
+	virtual void Draw() override;
 
-		std::string formated_time() const;
+	std::string formated_time() const;
 
 	private:
-		ClockTimer* clock_timer_;
-		std::string formated_time_;
-	};
-}
+	ClockTimer* clock_timer_;
+	std::string formated_time_;
+};
+}}
 
 #endif

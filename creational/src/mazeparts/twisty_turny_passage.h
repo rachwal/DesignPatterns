@@ -10,17 +10,19 @@
 
 namespace creational
 {
-	class TwistyTurnyPassage : public Room
-	{
+namespace commons
+{
+class TwistyTurnyPassage : public Room
+{
 	public:
-		TwistyTurnyPassage();
+	TwistyTurnyPassage();
 
-		virtual void Enter() override;
-		virtual bool entered() const override;
+	virtual void Enter() override;
+	virtual bool entered() const override;
 
 	private:
-		bool entered_;
-	};
-}
+	bool entered_;
+};
+}}
 
 #endif

@@ -9,23 +9,21 @@
 
 namespace structural
 {
-	PMWindowImp::PMWindowImp() : text_("")
-	{
-	}
+namespace bridge
+{
+PMWindowImp::PMWindowImp() : text_("") { }
 
-	void PMWindowImp::DeviceText(const std::string& text, float, float)
-	{
-		std::ostringstream stream;
-		stream << "<PM|" << text << "|PM>";
-		text_ = stream.str();
-	}
-
-	void PMWindowImp::DeviceRect(float x0, float y0, float x1, float y1)
-	{
-	}
-
-	std::string PMWindowImp::text() const
-	{
-		return text_;
-	}
+void PMWindowImp::DeviceText(const std::string& text, float, float)
+{
+	std::ostringstream stream;
+	stream << "<PM|" << text << "|PM>";
+	text_ = stream.str();
 }
+
+void PMWindowImp::DeviceRect(float x0, float y0, float x1, float y1) { }
+
+std::string PMWindowImp::text() const
+{
+	return text_;
+}
+}}

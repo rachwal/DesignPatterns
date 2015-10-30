@@ -8,9 +8,9 @@
 
 namespace structural
 {
-	class Event
-	{
-	};
-}
+namespace proxy
+{
+class Event { };
+}}
 
 #endif

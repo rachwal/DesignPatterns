@@ -10,17 +10,17 @@
 
 namespace operational
 {
-	class ClockTickInterface
-	{
+namespace observer
+{
+class ClockTickInterface
+{
 	public:
-		virtual ~ClockTickInterface()
-		{
-		}
+	virtual ~ClockTickInterface() { }
 
-		virtual void Attach(ClockTickObserver*) = 0;
-		virtual void Detach(ClockTickObserver*) = 0;
-		virtual void Notify() = 0;
-	};
-}
+	virtual void Attach(ClockTickObserver*) = 0;
+	virtual void Detach(ClockTickObserver*) = 0;
+	virtual void Notify() = 0;
+};
+}}
 
 #endif

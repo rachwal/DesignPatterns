@@ -10,28 +10,30 @@
 
 namespace structural
 {
-	class Character : public GlyphInterface
-	{
+namespace flyweight
+{
+class Character : public GlyphInterface
+{
 	public:
-		explicit Character(char);
+	explicit Character(char);
 
-		virtual void First(GlyphContext&) override;
-		virtual void Next(GlyphContext&) override;
-		virtual bool IsDone(GlyphContext&) override;
+	virtual void First(GlyphContext&) override;
+	virtual void Next(GlyphContext&) override;
+	virtual bool IsDone(GlyphContext&) override;
 
-		virtual void SetFont(Font*, GlyphContext&) override;
-		virtual Font* GetFont(GlyphContext&) override;
+	virtual void SetFont(Font*, GlyphContext&) override;
+	virtual Font *GetFont(GlyphContext&) override;
 
-		virtual GlyphInterface* Current(GlyphContext&) override;
+	virtual GlyphInterface *Current(GlyphContext&) override;
 
-		virtual void Insert(GlyphInterface*, GlyphContext&) override;
-		virtual void Remove(GlyphContext&) override;
+	virtual void Insert(GlyphInterface*, GlyphContext&) override;
+	virtual void Remove(GlyphContext&) override;
 
-		virtual void Draw(Window*, GlyphContext&) override;
+	virtual void Draw(Window*, GlyphContext&) override;
 
 	private:
-		char charcode_;
-	};
-}
+	char charcode_;
+};
+}}
 
 #endif

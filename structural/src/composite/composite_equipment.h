@@ -13,37 +13,39 @@
 
 namespace structural
 {
-	class CompositeEquipment : public foundation::EquipmentInterface
-	{
+namespace composite
+{
+class CompositeEquipment : public foundation::EquipmentInterface
+{
 	public:
-		virtual std::string name() const override;
+	virtual std::string name() const override;
 
-		virtual foundation::Currency price() const override;
-		virtual void price(const foundation::Currency&) override;
+	virtual foundation::Currency price() const override;
+	virtual void price(const foundation::Currency&) override;
 
-		virtual foundation::Watt power() const override;
-		virtual void power(const foundation::Watt&) override;
+	virtual foundation::Watt power() const override;
+	virtual void power(const foundation::Watt&) override;
 
-		foundation::Currency NetPrice() override;
-		foundation::Currency DiscountPrice() override;
+	foundation::Currency NetPrice() override;
+	foundation::Currency DiscountPrice() override;
 
-		virtual void Add(EquipmentInterface*);
-		virtual void Remove(EquipmentInterface*);
+	virtual void Add(EquipmentInterface*);
+	virtual void Remove(EquipmentInterface*);
 
-		virtual operational::IteratorInterface<EquipmentInterface*>* CreateIterator();
+	virtual operational::iterator::IteratorInterface<EquipmentInterface*> *CreateIterator();
 
 	protected:
-		explicit CompositeEquipment(const std::string& name);
-		CompositeEquipment();
-		~CompositeEquipment();
+	CompositeEquipment();
+	explicit CompositeEquipment(const std::string& name);
+	~CompositeEquipment();
 
 	private:
-		std::string name_;
-		foundation::Currency price_;
-		foundation::Watt power_;
+	std::string name_;
+	foundation::Currency price_;
+	foundation::Watt power_;
 
-		operational::List<EquipmentInterface*>* equipment_;
-	};
-}
+	operational::iterator::List<EquipmentInterface*>* equipment_;
+};
+}}
 
 #endif

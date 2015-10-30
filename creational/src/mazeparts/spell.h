@@ -10,17 +10,19 @@
 
 namespace creational
 {
-	class Spell
-	{
+namespace commons
+{
+class Spell
+{
 	public:
-		explicit Spell(const std::string& message);
-		Spell(const Spell& spell);
+	explicit Spell(const std::string& message);
+	Spell(const Spell& spell);
 
-		std::string message() const;
+	std::string message() const;
 
 	private:
-		const std::string message_;
-	};
-}
+	const std::string message_;
+};
+}}
 
 #endif

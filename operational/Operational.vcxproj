@@ -45,10 +45,14 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -65,6 +69,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\chain\application.h" />
+    <ClInclude Include="src\chain\button.h" />
+    <ClInclude Include="src\chain\widget.h" />
+    <ClInclude Include="src\chain\dialog.h" />
+    <ClInclude Include="src\chain\help_handler_interface.h" />
+    <ClInclude Include="src\interpreter\and_exp.h" />
+    <ClInclude Include="src\interpreter\boolean_exp_interface.h" />
+    <ClInclude Include="src\interpreter\constant.h" />
+    <ClInclude Include="src\interpreter\interpreter_context.h" />
+    <ClInclude Include="src\interpreter\interpreter_context_interface.h" />
+    <ClInclude Include="src\interpreter\not_exp.h" />
+    <ClInclude Include="src\interpreter\or_exp.h" />
+    <ClInclude Include="src\interpreter\variable_exp.h" />
+    <ClInclude Include="src\interpreter\variable_exp_interface.h" />
     <ClInclude Include="src\iterator\employee.h" />
     <ClInclude Include="src\iterator\filtering_list_traverser.h" />
     <ClInclude Include="src\iterator\iterator_interface.h" />
@@ -77,6 +95,14 @@
     <ClInclude Include="src\iterator\reverse_list_iterator.h" />
     <ClInclude Include="src\iterator\skip_list.h" />
     <ClInclude Include="src\iterator\skip_list_iterator.h" />
+    <ClInclude Include="src\mediator\dialog_director_interface.h" />
+    <ClInclude Include="src\mediator\entry_field.h" />
+    <ClInclude Include="src\mediator\font_dialog_director.h" />
+    <ClInclude Include="src\mediator\list_box.h" />
+    <ClInclude Include="src\mediator\mediator_button.h" />
+    <ClInclude Include="src\mediator\mediator_widget.h" />
+    <ClInclude Include="src\mediator\mediator_widget_interface.h" />
+    <ClInclude Include="src\mediator\mouse_event.h" />
     <ClInclude Include="src\observer\analog_clock.h" />
     <ClInclude Include="src\observer\clock_timer.h" />
     <ClInclude Include="src\observer\digital_clock.h" />
@@ -86,8 +112,23 @@
     <ClInclude Include="src\observer\observer_widget_interface.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\chain\application.cc" />
+    <ClCompile Include="src\chain\button.cc" />
+    <ClCompile Include="src\chain\widget.cc" />
+    <ClCompile Include="src\chain\dialog.cc" />
+    <ClCompile Include="src\interpreter\and_exp.cc" />
+    <ClCompile Include="src\interpreter\constant.cc" />
+    <ClCompile Include="src\interpreter\interpreter_context.cc" />
+    <ClCompile Include="src\interpreter\not_exp.cc" />
+    <ClCompile Include="src\interpreter\or_exp.cc" />
+    <ClCompile Include="src\interpreter\variable_exp.cc" />
     <ClCompile Include="src\iterator\employee.cc" />
     <ClCompile Include="src\iterator\print_n_employees.cc" />
+    <ClCompile Include="src\mediator\entry_field.cc" />
+    <ClCompile Include="src\mediator\font_dialog_director.cc" />
+    <ClCompile Include="src\mediator\list_box.cc" />
+    <ClCompile Include="src\mediator\mediator_button.cc" />
+    <ClCompile Include="src\mediator\mediator_widget.cc" />
     <ClCompile Include="src\observer\analog_clock.cc" />
     <ClCompile Include="src\observer\clock_timer.cc" />
     <ClCompile Include="src\observer\digital_clock.cc" />

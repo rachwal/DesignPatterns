@@ -7,26 +7,24 @@
 
 namespace creational
 {
-	RoomWithABomb::RoomWithABomb(const int& room_number, const bool& bombed) :Room(room_number), has_bomb_(bombed)
-	{
-	}
+namespace commons
+{
+RoomWithABomb::RoomWithABomb(const int& room_number, const bool& bombed) :Room(room_number), has_bomb_(bombed) { }
 
-	RoomWithABomb::RoomWithABomb(const RoomWithABomb& room) : Room(room.room_number_), has_bomb_(room.has_bomb_)
-	{
-	}
+RoomWithABomb::RoomWithABomb(const RoomWithABomb& room) : Room(room.room_number_), has_bomb_(room.has_bomb_) { }
 
-	bool RoomWithABomb::has_bomb() const
-	{
-		return has_bomb_;
-	}
-
-	RoomWithABomb* RoomWithABomb::Clone() const
-	{
-		return new RoomWithABomb(*this);
-	}
-
-	void RoomWithABomb::Initialize(const bool& bombed)
-	{
-		has_bomb_ = bombed;
-	}
+bool RoomWithABomb::has_bomb() const
+{
+	return has_bomb_;
 }
+
+RoomWithABomb *RoomWithABomb::Clone() const
+{
+	return new RoomWithABomb(*this);
+}
+
+void RoomWithABomb::Initialize(const bool& bombed)
+{
+	has_bomb_ = bombed;
+}
+}}

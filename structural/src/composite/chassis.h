@@ -10,12 +10,14 @@
 
 namespace structural
 {
-	class Chassis : public CompositeEquipment
-	{
+namespace composite
+{
+class Chassis : public CompositeEquipment
+{
 	public:
-		explicit Chassis(const std::string& name);
-		Chassis();
-	};
-}
+	Chassis();
+	explicit Chassis(const std::string& name);
+};
+}}
 
 #endif

@@ -8,25 +8,23 @@
 
 namespace operational
 {
-	PrintNEmployees::~PrintNEmployees()
-	{
-	}
+namespace iterator
+{
+PrintNEmployees::~PrintNEmployees() { }
 
-	bool PrintNEmployees::Traverse()
-	{
-		return false;
-	}
-
-	PrintNEmployees::PrintNEmployees(List<Employee*>* list, int n) :
-		ListTraverser<Employee*>(list),
-		total_(n), count_(0)
-	{
-	}
-
-	bool PrintNEmployees::ProcessItem(Employee* const& e)
-	{
-		count_++;
-		e->Print();
-		return count_ < total_;
-	}
+bool PrintNEmployees::Traverse()
+{
+	return false;
 }
+
+PrintNEmployees::PrintNEmployees(List<Employee*>* list, int n) :
+	ListTraverser<Employee*>(list),
+	total_(n), count_(0) { }
+
+bool PrintNEmployees::ProcessItem(Employee* const& e)
+{
+	count_++;
+	e->Print();
+	return count_ < total_;
+}
+}}

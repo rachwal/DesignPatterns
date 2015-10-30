@@ -15,24 +15,26 @@
 
 namespace structural
 {
-	class VariableNode : public ProgramNodeInterface, public VariableNodeInterface
-	{
+namespace facade
+{
+class VariableNode : public ProgramNodeInterface, public VariableNodeInterface
+{
 	public:
-		explicit VariableNode(const std::string name);
+	explicit VariableNode(const std::string name);
 
-		virtual void GetSourcePosition(int& line, int& index) override;
+	virtual void GetSourcePosition(int& line, int& index) override;
 
-		virtual void Add(ProgramNodeInterface*) override;
-		virtual void Remove(ProgramNodeInterface*) override;
+	virtual void Add(ProgramNodeInterface*) override;
+	virtual void Remove(ProgramNodeInterface*) override;
 
-		virtual void Traverse(CodeGeneratorInterface&) override;
+	virtual void Traverse(CodeGeneratorInterface&) override;
 
-		virtual std::string name() const override;
+	virtual std::string name() const override;
 
 	protected:
-		operational::List<ProgramNodeInterface*>* children_;
-		std::string name_;
-	};
-}
+	operational::iterator::List<ProgramNodeInterface*>* children_;
+	std::string name_;
+};
+}}
 
 #endif

@@ -8,30 +8,30 @@
 
 namespace foundation
 {
-	class Currency
-	{
+class Currency
+{
 	public:
-		explicit Currency(const double&);
+	explicit Currency(const double&);
 
-		double value() const;
-		void value(double);
+	double value() const;
+	void value(double);
 
-		friend bool operator==(const Currency& left, const Currency& right);
-		friend bool operator!=(const Currency& left, const Currency& right);
+	friend bool operator==(const Currency& left, const Currency& right);
+	friend bool operator!=(const Currency& left, const Currency& right);
 
 	private:
-		double value_;
-	};
+	double value_;
+};
 
-	inline bool operator==(const Currency& left, const Currency& right)
-	{
-		return left.value() == right.value();
-	}
+inline bool operator==(const Currency& left, const Currency& right)
+{
+	return left.value() == right.value();
+}
 
-	inline bool operator!=(const Currency& left, const Currency& right)
-	{
-		return left.value() != right.value();
-	}
+inline bool operator!=(const Currency& left, const Currency& right)
+{
+	return left.value() != right.value();
+}
 }
 
 #endif

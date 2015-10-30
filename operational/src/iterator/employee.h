@@ -10,17 +10,19 @@
 
 namespace operational
 {
-	class Employee
-	{
+namespace iterator
+{
+class Employee
+{
 	public:
-		explicit Employee(const std::string& name);
-		Employee(const Employee&);
+	explicit Employee(const std::string& name);
+	Employee(const Employee&);
 
-		void Print();
+	void Print();
 
 	private:
-		std::string name_;
-	};
-}
+	std::string name_;
+};
+}}
 
 #endif

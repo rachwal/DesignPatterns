@@ -56,6 +56,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderFile />
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -63,6 +64,9 @@
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -92,7 +96,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\chain\application_test.cc" />
+    <ClCompile Include="src\chain\chain_test.cc" />
+    <ClCompile Include="src\interpreter\interpreter_test.cc" />
     <ClCompile Include="src\iterator\iterator_test.cc" />
+    <ClCompile Include="src\mediator\mediator_test.cc" />
     <ClCompile Include="src\observer\clock_timer_test.cc" />
     <ClCompile Include="src\observer\observer_test.cc" />
   </ItemGroup>

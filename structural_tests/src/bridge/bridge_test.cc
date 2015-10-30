@@ -10,74 +10,71 @@
 
 namespace structuraltests
 {
-	using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace structural::bridge;
 
-	TEST_CLASS(BridgeTest)
-	{
+TEST_CLASS(BridgeTest)
+{
 	public:
-		BridgeTest()
-		{
-		}
+	BridgeTest() { }
 
-		~BridgeTest()
-		{
-		}
+	~BridgeTest() { }
 
-		TEST_METHOD(ShouldDrawTextOnApplicationWindowUsingXWindowImplementation)
-		{
-			//GIVEN
-			auto application_title = "test application";
-			auto sample_text = "sample text";
-			auto expected_x_window_imp_text = "<X|sample text|X>";
+	TEST_METHOD(ShouldDrawTextOnApplicationWindowUsingXWindowImplementation)
+	{
+		//GIVEN
+		auto application_title = "test application";
+		auto sample_text = "sample text";
+		auto expected_x_window_imp_text = "<X|sample text|X>";
 
-			auto x_window_imp = new structural::XWindowImp();
-			auto application_window = new structural::ApplicationWindow(application_title, x_window_imp);
+		auto x_window_imp = new XWindowImp();
+		auto application_window = new ApplicationWindow(application_title, x_window_imp);
 
-			//WHEN
-			application_window->DrawText(sample_text, foundation::Point<float>(0, 0));
+		//WHEN
+		application_window->DrawText(sample_text, foundation::Point<float>(0, 0));
 
-			//THEN
-			auto x_window_imp_text = x_window_imp->text();
+		//THEN
+		auto x_window_imp_text = x_window_imp->text();
 
-			Assert::AreEqual(expected_x_window_imp_text, x_window_imp_text.c_str());
-		}
+		Assert::AreEqual(expected_x_window_imp_text, x_window_imp_text.c_str());
+	}
 
-		TEST_METHOD(ShouldDrawTextOnApplicationWindowUsingPMWindowImplementation)
-		{
-			//GIVEN
-			auto application_title = "test application";
-			auto sample_text = "sample text";
-			auto expected_pm_window_imp_text = "<PM|sample text|PM>";
+	TEST_METHOD(ShouldDrawTextOnApplicationWindowUsingPMWindowImplementation)
+	{
+		//GIVEN
+		auto application_title = "test application";
+		auto sample_text = "sample text";
+		auto expected_pm_window_imp_text = "<PM|sample text|PM>";
 
-			auto pm_window_imp = new structural::PMWindowImp();
-			auto application_window = new structural::ApplicationWindow(application_title, pm_window_imp);
+		auto pm_window_imp = new PMWindowImp();
+		auto application_window = new ApplicationWindow(application_title, pm_window_imp);
 
-			//WHEN
-			application_window->DrawText(sample_text, foundation::Point<float>(0, 0));
+		//WHEN
+		application_window->DrawText(sample_text, foundation::Point<float>(0, 0));
 
-			//THEN
-			auto pm_window_imp_text = pm_window_imp->text();
+		//THEN
+		auto pm_window_imp_text = pm_window_imp->text();
 
-			Assert::AreEqual(expected_pm_window_imp_text, pm_window_imp_text.c_str());
-		}
+		Assert::AreEqual(expected_pm_window_imp_text, pm_window_imp_text.c_str());
+	}
 
-		TEST_METHOD(ShouldDrawTextOnIconWindowUsingPMWindowImplementation)
-		{
-			//GIVEN
-			auto bitmap_file_name = "sample.bmp";
-			auto sample_text = "sample text";
-			auto expected_pm_window_imp_text = "<PM|sample text|PM>";
+	TEST_METHOD(ShouldDrawTextOnIconWindowUsingPMWindowImplementation)
+	{
+		//GIVEN
+		auto bitmap_file_name = "sample.bmp";
+		auto sample_text = "sample text";
+		auto expected_pm_window_imp_text = "<PM|sample text|PM>";
 
-			auto pm_window_imp = new structural::PMWindowImp();
-			auto icon_window = new structural::IconWindow(bitmap_file_name, pm_window_imp);
+		auto pm_window_imp = new PMWindowImp();
+		auto icon_window = new IconWindow(bitmap_file_name, pm_window_imp);
 
-			//WHEN
-			icon_window->DrawText(sample_text, foundation::Point<float>(0, 0));
+		//WHEN
+		icon_window->DrawText(sample_text, foundation::Point<float>(0, 0));
 
-			//THEN
-			auto pm_window_imp_text = pm_window_imp->text();
+		//THEN
+		auto pm_window_imp_text = pm_window_imp->text();
 
-			Assert::AreEqual(expected_pm_window_imp_text, pm_window_imp_text.c_str());
-		}
-	};
+		Assert::AreEqual(expected_pm_window_imp_text, pm_window_imp_text.c_str());
+	}
+};
 }

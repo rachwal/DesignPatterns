@@ -9,29 +9,27 @@
 
 namespace structural
 {
-	Scanner::Scanner(std::istringstream& stream) :input_stream_(stream)
-	{
-	}
+namespace facade
+{
+Scanner::Scanner(std::istringstream& stream) :input_stream_(stream) { }
 
-	Scanner::~Scanner()
-	{
-	}
+Scanner::~Scanner() { }
 
-	std::vector<Token*> Scanner::Scan()
-	{
-		std::vector<std::string> words
-			{
-				std::istream_iterator<std::string>{input_stream_},
-				std::istream_iterator<std::string>{}
-			};
-
-		auto tokens = std::vector<Token*>();
-		for (auto word = words.begin(); word != words.end(); ++word)
+std::vector<Token*> Scanner::Scan()
+{
+	std::vector<std::string> words
 		{
-			auto token = new Token(*word);
-			tokens.push_back(token);
-		}
+			std::istream_iterator<std::string>{input_stream_},
+			std::istream_iterator<std::string>{}
+		};
 
-		return tokens;
-	};
-}
+	auto tokens = std::vector<Token*>();
+	for (auto word = words.begin(); word != words.end(); ++word)
+	{
+		auto token = new Token(*word);
+		tokens.push_back(token);
+	}
+
+	return tokens;
+};
+}}

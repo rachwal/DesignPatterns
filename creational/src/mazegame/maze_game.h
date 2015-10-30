@@ -11,22 +11,22 @@
 
 namespace creational
 {
-	class MazeGame
-	{
+class MazeGame
+{
 	public:
-		virtual ~MazeGame();
+	virtual ~MazeGame();
 
-		Maze* CreateMaze() const;
-		Maze* CreateSimpleMaze() const;
-		Maze* CreateMaze(const MazeFactoryInterface&) const;
-		Maze* CreateMaze(MazeBuilderInterface&) const;
+	commons::Maze *CreateMaze() const;
+	commons::Maze *CreateSimpleMaze() const;
+	commons::Maze *CreateMaze(const abstractfactory::MazeFactoryInterface&) const;
+	commons::Maze *CreateMaze(builder::MazeBuilderInterface&) const;
 
-		// factory methods
-		virtual Maze* MakeMaze() const;
-		virtual Room* MakeRoom(const int& room_number) const;
-		virtual Wall* MakeWall() const;
-		virtual Door* MakeDoor(const Room& first_room, const Room& second_room) const;
-	};
+	// factory methods
+	virtual commons::Maze *MakeMaze() const;
+	virtual commons::Room *MakeRoom(const int& room_number) const;
+	virtual commons::Wall *MakeWall() const;
+	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const;
+};
 }
 
 #endif

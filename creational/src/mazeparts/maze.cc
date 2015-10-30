@@ -7,42 +7,42 @@
 
 namespace creational
 {
-	Maze::Maze()
-	{
-	}
+namespace commons
+{
+Maze::Maze() { }
 
-	Maze::Maze(const Maze& maze)
-	{
-		rooms_ = std::map<int, Room*>(maze.rooms_);
-	}
+Maze::Maze(const Maze& maze)
+{
+	rooms_ = std::map<int, Room*>(maze.rooms_);
+}
 
-	Maze::~Maze()
+Maze::~Maze()
+{
+	auto itr = rooms_.begin();
+	while (itr != rooms_.end())
 	{
-		auto itr = rooms_.begin();
-		while (itr != rooms_.end())
-		{
-			itr = rooms_.erase(itr);
-		}
-	}
-
-	Room* Maze::GetRoom(const int& room_number) const
-	{
-		auto room = rooms_.find(room_number);
-		if (room == rooms_.end())
-		{
-			return nullptr;
-		}
-		return rooms_.at(room_number);
-	}
-
-	void Maze::AddRoom(Room* room)
-	{
-		auto room_number = room->room_number();
-		rooms_[room_number] = room;
-	}
-
-	Maze* Maze::Clone() const
-	{
-		return new Maze(*this);
+		itr = rooms_.erase(itr);
 	}
 }
+
+Room *Maze::GetRoom(const int& room_number) const
+{
+	auto room = rooms_.find(room_number);
+	if (room == rooms_.end())
+	{
+		return nullptr;
+	}
+	return rooms_.at(room_number);
+}
+
+void Maze::AddRoom(Room* room)
+{
+	auto room_number = room->room_number();
+	rooms_[room_number] = room;
+}
+
+Maze *Maze::Clone() const
+{
+	return new Maze(*this);
+}
+}}

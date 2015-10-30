@@ -13,21 +13,23 @@
 
 namespace structural
 {
-	class ExpressionNode : public ProgramNodeInterface, public ExpressionNodeInterface
-	{
+namespace facade
+{
+class ExpressionNode : public ProgramNodeInterface, public ExpressionNodeInterface
+{
 	public:
-		ExpressionNode();
+	ExpressionNode();
 
-		virtual void GetSourcePosition(int& line, int& index) override;
+	virtual void GetSourcePosition(int& line, int& index) override;
 
-		virtual void Add(ProgramNodeInterface*) override;
-		virtual void Remove(ProgramNodeInterface*) override;
+	virtual void Add(ProgramNodeInterface*) override;
+	virtual void Remove(ProgramNodeInterface*) override;
 
-		virtual void Traverse(CodeGeneratorInterface&) override;
+	virtual void Traverse(CodeGeneratorInterface&) override;
 
 	protected:
-		operational::List<ProgramNodeInterface*>* children_;
-	};
-}
+	operational::iterator::List<ProgramNodeInterface*>* children_;
+};
+}}
 
 #endif

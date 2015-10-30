@@ -10,16 +10,18 @@
 
 namespace structural
 {
-	class Token
-	{
+namespace facade
+{
+class Token
+{
 	public:
-		explicit Token(const std::string& content);
+	explicit Token(const std::string& content);
 
-		std::string content() const;
+	std::string content() const;
 
 	private:
-		std::string content_;
-	};
-}
+	std::string content_;
+};
+}}
 
 #endif

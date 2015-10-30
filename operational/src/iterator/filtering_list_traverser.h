@@ -12,63 +12,61 @@
 
 namespace operational
 {
-	template <class Item>
-	class FilteringListTraverser : public ListTraverser<Item>
-	{
+namespace iterator
+{
+template<class Item>
+class FilteringListTraverser : public ListTraverser<Item>
+{
 	public:
-		explicit FilteringListTraverser(List<Item>* aList);
-		virtual ~FilteringListTraverser() override;
+	explicit FilteringListTraverser(List<Item>* aList);
+	virtual ~FilteringListTraverser() override;
 
-		bool Traverse() override;
+	bool Traverse() override;
 
 	protected:
-		virtual bool ProcessItem(const Item&) override;
-		virtual bool TestItem(const Item&);
+	virtual bool ProcessItem(const Item&) override;
+	virtual bool TestItem(const Item&);
 
 	private:
-		ListIterator<Item> iterator_;
-	};
+	ListIterator<Item> iterator_;
+};
 
-	template <class Item>
-	FilteringListTraverser<Item>::FilteringListTraverser(List<Item>* list)
+template<class Item>
+FilteringListTraverser<Item>::FilteringListTraverser(List<Item>* list) { }
+
+template<class Item>
+FilteringListTraverser<Item>::~FilteringListTraverser() { }
+
+template<class Item>
+bool FilteringListTraverser<Item>::Traverse()
+{
+	auto result = false;
+
+	for (iterator_.First(); !iterator_.IsDone(); iterator_.Next())
 	{
-	}
-
-	template <class Item>
-	FilteringListTraverser<Item>::~FilteringListTraverser()
-	{
-	}
-
-	template <class Item>
-	bool FilteringListTraverser<Item>::Traverse()
-	{
-		auto result = false;
-
-		for (iterator_.First(); !iterator_.IsDone(); iterator_.Next())
+		if (TestItem(iterator_.CurrentItem()))
 		{
-			if (TestItem(iterator_.CurrentItem()))
+			result = ProcessItem(iterator_.CurrentItem());
+			if (result == false)
 			{
-				result = ProcessItem(iterator_.CurrentItem());
-				if (result == false)
-				{
-					break;
-				}
+				break;
 			}
 		}
-		return result;
 	}
-
-	template <class Item>
-	bool FilteringListTraverser<Item>::ProcessItem(const Item&)
-	{
-		return false;
-	}
-
-	template <class Item>
-	bool FilteringListTraverser<Item>::TestItem(const Item&)
-	{
-		return false;
-	}
+	return result;
 }
+
+template<class Item>
+bool FilteringListTraverser<Item>::ProcessItem(const Item&)
+{
+	return false;
+}
+
+template<class Item>
+bool FilteringListTraverser<Item>::TestItem(const Item&)
+{
+	return false;
+}
+}}
 
 #endif

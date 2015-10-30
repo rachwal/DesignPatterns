@@ -10,22 +10,24 @@
 
 namespace creational
 {
-	class StandardMazeBuilder : public MazeBuilderInterface
-	{
+namespace builder
+{
+class StandardMazeBuilder : public MazeBuilderInterface
+{
 	public:
-		StandardMazeBuilder();
-		~StandardMazeBuilder() override;
+	StandardMazeBuilder();
+	~StandardMazeBuilder() override;
 
-		virtual void BuildMaze() override;
-		virtual void BuildRoom(const int& room_number) override;
-		virtual void BuildDoor(const int& first_room_number, const int& second_room_number) override;
+	virtual void BuildMaze() override;
+	virtual void BuildRoom(const int& room_number) override;
+	virtual void BuildDoor(const int& first_room_number, const int& second_room_number) override;
 
-		virtual Maze* GetMaze() override;
+	virtual commons::Maze *GetMaze() override;
 
 	private:
-		virtual Direction CommonWall(const Room& first_room, const Room& second_room) const;
-		Maze* current_maze_;
-	};
-}
+	virtual commons::Direction CommonWall(const commons::Room& first_room, const commons::Room& second_room) const;
+	commons::Maze* current_maze_;
+};
+}}
 
 #endif

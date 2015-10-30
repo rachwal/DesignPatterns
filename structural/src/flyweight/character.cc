@@ -7,49 +7,43 @@
 
 namespace structural
 {
-	Character::Character(char code) :charcode_(code)
-	{
-	}
+namespace flyweight
+{
+Character::Character(char code) :charcode_(code) { }
 
-	void Character::SetFont(Font* font, GlyphContext& context)
-	{
-		context.SetFont(font);
-	}
-
-	Font* Character::GetFont(GlyphContext& context)
-	{
-		return context.GetFont();
-	}
-
-	void Character::First(GlyphContext& context)
-	{
-		context.First();
-	}
-
-	void Character::Next(GlyphContext& context)
-	{
-		context.Next();
-	}
-
-	bool Character::IsDone(GlyphContext& context)
-	{
-		return context.IsDone();
-	}
-
-	GlyphInterface* Character::Current(GlyphContext&)
-	{
-		return nullptr;
-	}
-
-	void Character::Insert(GlyphInterface*, GlyphContext&)
-	{
-	}
-
-	void Character::Remove(GlyphContext&)
-	{
-	}
-
-	void Character::Draw(Window*, GlyphContext&)
-	{
-	}
+void Character::SetFont(Font* font, GlyphContext& context)
+{
+	context.SetFont(font);
 }
+
+Font *Character::GetFont(GlyphContext& context)
+{
+	return context.GetFont();
+}
+
+void Character::First(GlyphContext& context)
+{
+	context.First();
+}
+
+void Character::Next(GlyphContext& context)
+{
+	context.Next();
+}
+
+bool Character::IsDone(GlyphContext& context)
+{
+	return context.IsDone();
+}
+
+GlyphInterface *Character::Current(GlyphContext&)
+{
+	return nullptr;
+}
+
+void Character::Insert(GlyphInterface*, GlyphContext&) { }
+
+void Character::Remove(GlyphContext&) { }
+
+void Character::Draw(Window*, GlyphContext&) { }
+}}
