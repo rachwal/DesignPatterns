@@ -6,6 +6,7 @@
 #include "scanner.h"
 
 #include <vector>
+#include <iterator>
 
 namespace structural
 {
