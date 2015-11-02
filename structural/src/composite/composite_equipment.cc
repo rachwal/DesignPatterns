@@ -26,27 +26,27 @@ std::string CompositeEquipment::name() const
 	return name_;
 }
 
-foundation::Currency CompositeEquipment::price() const
+Currency CompositeEquipment::price() const
 {
 	return price_;
 }
 
-void CompositeEquipment::price(const foundation::Currency& price)
+void CompositeEquipment::price(const Currency& price)
 {
 	price_ = price;
 }
 
-foundation::Watt CompositeEquipment::power() const
+Watt CompositeEquipment::power() const
 {
 	return power_;
 }
 
-void CompositeEquipment::power(const foundation::Watt& power)
+void CompositeEquipment::power(const Watt& power)
 {
 	power_ = power;
 }
 
-foundation::Currency CompositeEquipment::NetPrice()
+Currency CompositeEquipment::NetPrice()
 {
 	auto i = CreateIterator();
 	auto total = price_.value();
@@ -59,14 +59,14 @@ foundation::Currency CompositeEquipment::NetPrice()
 	}
 	delete i;
 
-	return foundation::Currency(total);
+	return Currency(total);
 }
 
-foundation::Currency CompositeEquipment::DiscountPrice()
+Currency CompositeEquipment::DiscountPrice()
 {
 	auto net_price = NetPrice();
 	auto discount_price = net_price.value() * 0.8;
-	return foundation::Currency(discount_price);
+	return Currency(discount_price);
 }
 
 void CompositeEquipment::Add(EquipmentInterface* equipment)
@@ -79,7 +79,7 @@ void CompositeEquipment::Remove(EquipmentInterface* equipment)
 	equipment_->Remove(equipment);
 }
 
-operational::iterator::IteratorInterface<foundation::EquipmentInterface*> *CompositeEquipment::CreateIterator()
+operational::iterator::IteratorInterface<EquipmentInterface*> *CompositeEquipment::CreateIterator()
 {
 	return new operational::iterator::ListIterator<EquipmentInterface*>(equipment_);
 }

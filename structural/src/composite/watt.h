@@ -3,10 +3,12 @@
 //
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
-#ifndef FOUNDATION_FOUNDATION_WATT_H_
-#define FOUNDATION_FOUNDATION_WATT_H_
+#ifndef STRUCTURAL_COMPOSITE_WATT_H_
+#define STRUCTURAL_COMPOSITE_WATT_H_
 
-namespace foundation
+namespace structural
+{
+namespace composite
 {
 class Watt
 {
@@ -19,6 +21,6 @@ class Watt
 	private:
 	double value_;
 };
-}
+}}
 
 #endif

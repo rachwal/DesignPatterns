@@ -3,12 +3,14 @@
 //
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
-#ifndef FOUNDATION_FOUNDATION_POINT_H_
-#define FOUNDATION_FOUNDATION_POINT_H_
+#ifndef STRUCTURAL_COMMONS_POINT_H_
+#define STRUCTURAL_COMMONS_POINT_H_
 
 #include <iostream>
 
-namespace foundation
+namespace structural
+{
+namespace commons
 {
 template<class type>
 class Point
@@ -142,6 +144,6 @@ Point<type> Point<type>::operator-()
 	y_ = -x_;
 	return *this;
 }
-}
+}}
 
 #endif

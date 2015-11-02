@@ -10,7 +10,7 @@
 
 #include <iostream>
 
-#include "../../../foundation/src/point.h"
+#include "../commons/point.h"
 
 namespace structural
 {
@@ -21,9 +21,9 @@ class GraphicInterface
 	public:
 	virtual ~GraphicInterface() { }
 
-	virtual void Draw(const foundation::Point<float>& at) = 0;
+	virtual void Draw(const commons::Point<float>& at) = 0;
 	virtual void HandleMouse(Event& event) = 0;
-	virtual const foundation::Point<float> &GetExtent() = 0;
+	virtual const commons::Point<float> &GetExtent() = 0;
 	virtual void Load(std::istream& from) = 0;
 	virtual void Save(std::ostream& to) = 0;
 };

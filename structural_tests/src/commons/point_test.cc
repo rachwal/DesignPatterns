@@ -3,11 +3,12 @@
 
 #include <CppUnitTest.h>
 
-#include "../Foundation/src/point.h"
+#include "../../../Structural/src/commons/point.h"
 
 namespace structuraltests
 {
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace structural::commons;
 
 TEST_CLASS(PointTest)
 {
@@ -19,7 +20,7 @@ TEST_CLASS(PointTest)
 	TEST_METHOD(ShouldCreateDefaultPoint)
 	{
 		//WHEN
-		foundation::Point<float> point;
+		Point<float> point;
 
 		//THEN
 		Assert::AreEqual(0.0f, point.x());
@@ -29,8 +30,8 @@ TEST_CLASS(PointTest)
 	TEST_METHOD(ShouldAddTwoPoints)
 	{
 		//GIVEN
-		foundation::Point<float> first_point(1, 2);
-		foundation::Point<float> second_point(3, 4);
+		Point<float> first_point(1, 2);
+		Point<float> second_point(3, 4);
 
 		//WHEN
 		auto point = first_point + second_point;
@@ -43,8 +44,8 @@ TEST_CLASS(PointTest)
 	TEST_METHOD(ShouldSubstractTwoPoints)
 	{
 		//GIVEN
-		foundation::Point<float> first_point(1, 2);
-		foundation::Point<float> second_point(3, 4);
+		Point<float> first_point(1, 2);
+		Point<float> second_point(3, 4);
 
 		//WHEN
 		auto point = first_point - second_point;
@@ -57,8 +58,8 @@ TEST_CLASS(PointTest)
 	TEST_METHOD(ShouldAddPointToExistingOne)
 	{
 		//GIVEN
-		foundation::Point<float> first_point(1, 2);
-		foundation::Point<float> second_point(3, 4);
+		Point<float> first_point(1, 2);
+		Point<float> second_point(3, 4);
 
 		//WHEN
 		first_point += second_point;
@@ -71,8 +72,8 @@ TEST_CLASS(PointTest)
 	TEST_METHOD(ShouldSubstractPointFromExistingOne)
 	{
 		//GIVEN
-		foundation::Point<float> first_point(1, 2);
-		foundation::Point<float> second_point(3, 4);
+		Point<float> first_point(1, 2);
+		Point<float> second_point(3, 4);
 
 		//WHEN
 		first_point -= second_point;

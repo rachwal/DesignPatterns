@@ -18,11 +18,11 @@ class TextDocument
 	TextDocument();
 
 	void Insert(GraphicInterface*);
-	const foundation::Point<float> &GetExtent();
+	const commons::Point<float> &GetExtent();
 
 	private:
 	GraphicInterface* graphic_;
-	foundation::Point<float> extent_;
+	commons::Point<float> extent_;
 };
 }}
 

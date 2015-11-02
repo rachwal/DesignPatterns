@@ -9,8 +9,6 @@
 #include "window_interface.h"
 #include "window_imp.h"
 
-#include "../../../Foundation/src/point.h"
-
 namespace structural
 {
 namespace bridge
@@ -21,8 +19,8 @@ class Window :public WindowInterface
 	explicit Window(WindowImp* imp);
 	~Window() override;
 
-	virtual void DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2) override;
-	virtual void DrawText(const std::string& text, const foundation::Point<float>&) override = 0;
+	virtual void DrawRect(const commons::Point<float>& p1, const commons::Point<float>& p2) override;
+	virtual void DrawText(const std::string& text, const commons::Point<float>&) override = 0;
 
 	protected:
 	WindowImp *GetWindowImp() const;

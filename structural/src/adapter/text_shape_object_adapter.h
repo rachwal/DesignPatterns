@@ -18,7 +18,7 @@ class TextShapeObjectAdapter : public ShapeInterface
 	public:
 	explicit TextShapeObjectAdapter(TextView*);
 
-	virtual void BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const override;
+	virtual void BoundingBox(commons::Point<float>& bottom_left, commons::Point<float>& top_right) const override;
 
 	virtual bool IsEmpty() const;
 

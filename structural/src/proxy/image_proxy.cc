@@ -30,7 +30,7 @@ Image *ImageProxy::GetImage()
 	return image_;
 }
 
-const foundation::Point<float> &ImageProxy::GetExtent()
+const commons::Point<float> &ImageProxy::GetExtent()
 {
 	if (extent_ == kZeroExtent)
 	{
@@ -39,7 +39,7 @@ const foundation::Point<float> &ImageProxy::GetExtent()
 	return extent_;
 }
 
-void ImageProxy::Draw(const foundation::Point<float>& at)
+void ImageProxy::Draw(const commons::Point<float>& at)
 {
 	GetImage()->Draw(at);
 }

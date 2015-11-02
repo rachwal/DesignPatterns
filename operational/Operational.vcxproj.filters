@@ -204,6 +204,57 @@
     <ClInclude Include="src\mediator\dialog_director_interface.h">
       <Filter>Header Files\mediator</Filter>
     </ClInclude>
+    <ClInclude Include="src\templatemethod\document_interface.h">
+      <Filter>Header Files\templatemethod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\templatemethod\template_application.h">
+      <Filter>Header Files\templatemethod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\templatemethod\sample_application.h">
+      <Filter>Header Files\templatemethod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\templatemethod\sample_document.h">
+      <Filter>Header Files\templatemethod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\bus.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\bus_interface.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\card.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\card_interface.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\chassis.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\chassis_interface.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\floppy_disk.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\floppy_disk_interface.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\inventory.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\inventory_visitor.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\pricing_visitor.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\visited_equipment_interface.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\visitor\equipment_visitor_interface.h">
+      <Filter>Header Files\visitor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\observer\analog_clock.cc">
@@ -268,6 +319,36 @@
     </ClCompile>
     <ClCompile Include="src\chain\application.cc">
       <Filter>Source Files\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\templatemethod\template_application.cc">
+      <Filter>Source Files\templatemethod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\templatemethod\sample_application.cc">
+      <Filter>Source Files\templatemethod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\templatemethod\sample_document.cc">
+      <Filter>Source Files\templatemethod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\bus.cc">
+      <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\card.cc">
+      <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\chassis.cc">
+      <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\floppy_disk.cc">
+      <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\inventory.cc">
+      <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\inventory_visitor.cc">
+      <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\pricing_visitor.cc">
+      <Filter>Source Files\visitor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

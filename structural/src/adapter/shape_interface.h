@@ -6,7 +6,7 @@
 #ifndef STRUCTURAL_ADAPTER_SHAPE_INTERFACE_H_
 #define STRUCTURAL_ADAPTER_SHAPE_INTERFACE_H_
 
-#include "../../../foundation/src/point.h"
+#include "../commons/point.h"
 
 namespace structural
 {
@@ -17,7 +17,7 @@ class ShapeInterface
 	public:
 	virtual ~ShapeInterface() { }
 
-	virtual void BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const = 0;
+	virtual void BoundingBox(commons::Point<float>& bottom_left, commons::Point<float>& top_right) const = 0;
 };
 }}
 

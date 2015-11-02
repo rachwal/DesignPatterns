@@ -17,7 +17,7 @@ IconWindow::~IconWindow()
 	delete bitmap_;
 }
 
-void IconWindow::DrawText(const std::string& text, const foundation::Point<float>& point)
+void IconWindow::DrawText(const std::string& text, const commons::Point<float>& point)
 {
 	auto imp = GetWindowImp();
 	imp->DeviceText(text, point.x(), point.y());

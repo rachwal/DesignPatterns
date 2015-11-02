@@ -17,7 +17,7 @@ Window::~Window()
 	delete imp_;
 }
 
-void Window::DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2)
+void Window::DrawRect(const commons::Point<float>& p1, const commons::Point<float>& p2)
 {
 	auto imp = GetWindowImp();
 	imp->DeviceRect(p1.x(), p1.y(), p2.x(), p2.y());

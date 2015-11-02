@@ -55,6 +55,9 @@
     <Filter Include="Source Files\flyweight">
       <UniqueIdentifier>{3ceaf74f-41d9-40a1-a95b-41a1b7373297}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\commons">
+      <UniqueIdentifier>{d155f216-2b7e-4191-8e7f-f46c134bc3b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\composite\bus.h">
@@ -222,6 +225,18 @@
     <ClInclude Include="src\facade\program_node_builder_interface.h">
       <Filter>Header Files\facade</Filter>
     </ClInclude>
+    <ClInclude Include="src\composite\currency.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\composite\equipment_interface.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\composite\watt.h">
+      <Filter>Header Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commons\point.h">
+      <Filter>Header Files\commons</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\composite\bus.cc">
@@ -340,6 +355,12 @@
     </ClCompile>
     <ClCompile Include="src\facade\bytecode_stream.cc">
       <Filter>Source Files\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\currrency.cc">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\composite\watt.cc">
+      <Filter>Source Files\composite</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

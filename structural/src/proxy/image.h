@@ -9,7 +9,7 @@
 #include "event.h"
 #include "graphic_interface.h"
 
-#include "../../../foundation/src/point.h"
+#include "../commons/point.h"
 
 namespace structural
 {
@@ -21,14 +21,14 @@ class Image : public GraphicInterface
 	explicit Image(const std::string& file_name);
 	virtual ~Image();
 
-	virtual void Draw(const foundation::Point<float>& at) override;
+	virtual void Draw(const commons::Point<float>& at) override;
 	virtual void HandleMouse(Event& event) override;
 	virtual void Load(std::istream& from) override;
 	virtual void Save(std::ostream& to) override;
-	const foundation::Point<float> &GetExtent() override;
+	const commons::Point<float> &GetExtent() override;
 
 	private:
-	foundation::Point<float> extent_;
+	commons::Point<float> extent_;
 };
 }}
 

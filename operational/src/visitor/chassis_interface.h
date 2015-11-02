@@ -3,19 +3,20 @@
 //
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
-#include "watt.h"
+#ifndef OPERATIONAL_VISITOR_CHASSIS_INTERFACE_H_
+#define OPERATIONAL_VISITOR_CHASSIS_INTERFACE_H_
 
-namespace foundation
+namespace operational
 {
-Watt::Watt(const double& value) :value_(value) { }
+namespace visitor
+{
+class ChassisInterface
+{
+	public:
+	virtual ~ChassisInterface() {}
 
-double Watt::value() const
-{
-	return value_;
-}
+	virtual double GetPrice() = 0;
+};
+}}
 
-void Watt::value(double value)
-{
-	value_ = value;
-}
-}
+#endif

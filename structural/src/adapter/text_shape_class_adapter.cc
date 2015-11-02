@@ -13,15 +13,15 @@ TextShapeClassAdapter::TextShapeClassAdapter(const std::string& text) : TextView
 
 TextShapeClassAdapter::TextShapeClassAdapter() : TextShapeClassAdapter("") { }
 
-void TextShapeClassAdapter::BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const
+void TextShapeClassAdapter::BoundingBox(commons::Point<float>& bottom_left, commons::Point<float>& top_right) const
 {
 	float x, y, width, height;
 
 	GetOrigin(x, y);
 	GetExtent(width, height);
 
-	bottom_left = foundation::Point<float>(x, y);
-	top_right = foundation::Point<float>(x + width, y + height);
+	bottom_left = commons::Point<float>(x, y);
+	top_right = commons::Point<float>(x + width, y + height);
 }
 
 bool TextShapeClassAdapter::IsEmpty() const

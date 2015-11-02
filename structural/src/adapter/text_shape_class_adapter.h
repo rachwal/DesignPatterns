@@ -19,7 +19,7 @@ class TextShapeClassAdapter : public TextView, public ShapeInterface
 	explicit TextShapeClassAdapter(const std::string& text);
 	TextShapeClassAdapter();
 
-	virtual void BoundingBox(foundation::Point<float>& bottom_left, foundation::Point<float>& top_right) const override;
+	virtual void BoundingBox(commons::Point<float>& bottom_left, commons::Point<float>& top_right) const override;
 
 	virtual bool IsEmpty() const override;
 };

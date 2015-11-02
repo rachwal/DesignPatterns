@@ -19,7 +19,7 @@ class IconWindow : public Window
 	IconWindow(const std::string& bitmap_name, WindowImp* imp);
 	~IconWindow() override;
 
-	void DrawText(const std::string& text, const foundation::Point<float>&) override;
+	void DrawText(const std::string& text, const commons::Point<float>&) override;
 	void DrawIcon();
 
 	private:

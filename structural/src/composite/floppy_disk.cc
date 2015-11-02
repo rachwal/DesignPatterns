@@ -18,34 +18,34 @@ std::string FloppyDisk::name() const
 	return name_;
 }
 
-foundation::Currency FloppyDisk::price() const
+Currency FloppyDisk::price() const
 {
 	return price_;
 }
 
-void FloppyDisk::price(const foundation::Currency& price)
+void FloppyDisk::price(const Currency& price)
 {
 	price_ = price;
 }
 
-foundation::Watt FloppyDisk::power() const
+Watt FloppyDisk::power() const
 {
 	return power_;
 }
 
-void FloppyDisk::power(const foundation::Watt& power)
+void FloppyDisk::power(const Watt& power)
 {
 	power_ = power;
 }
 
-foundation::Currency FloppyDisk::NetPrice()
+Currency FloppyDisk::NetPrice()
 {
 	return price_;
 }
 
-foundation::Currency FloppyDisk::DiscountPrice()
+Currency FloppyDisk::DiscountPrice()
 {
 	auto discount_price = price_.value() * 0.9;
-	return foundation::Currency(discount_price);
+	return Currency(discount_price);
 }
 }}

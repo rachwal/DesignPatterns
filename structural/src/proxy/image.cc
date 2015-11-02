@@ -11,12 +11,12 @@ namespace proxy
 {
 Image::Image(const std::string& file_name)
 {
-	extent_ = foundation::Point<float>(100, 20);
+	extent_ = commons::Point<float>(100, 20);
 }
 
 Image::~Image() { }
 
-void Image::Draw(const foundation::Point<float>& at)
+void Image::Draw(const commons::Point<float>& at)
 {
 	if (at.x() > extent_.x())
 	{
@@ -34,7 +34,7 @@ void Image::Load(std::istream& from) { }
 
 void Image::Save(std::ostream& to) { }
 
-const foundation::Point<float> &Image::GetExtent()
+const commons::Point<float> &Image::GetExtent()
 {
 	return extent_;
 }

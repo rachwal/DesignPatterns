@@ -82,12 +82,16 @@
     <ClInclude Include="src\bridge\window_imp.h" />
     <ClInclude Include="src\bridge\window_interface.h" />
     <ClInclude Include="src\bridge\x_window_imp.h" />
+    <ClInclude Include="src\commons\point.h" />
     <ClInclude Include="src\composite\bus.h" />
     <ClInclude Include="src\composite\cabinet.h" />
     <ClInclude Include="src\composite\card.h" />
     <ClInclude Include="src\composite\chassis.h" />
     <ClInclude Include="src\composite\composite_equipment.h" />
+    <ClInclude Include="src\composite\currency.h" />
+    <ClInclude Include="src\composite\equipment_interface.h" />
     <ClInclude Include="src\composite\floppy_disk.h" />
+    <ClInclude Include="src\composite\watt.h" />
     <ClInclude Include="src\decorator\ascii7_stream.h" />
     <ClInclude Include="src\decorator\compressing_stream.h" />
     <ClInclude Include="src\decorator\file_stream.h" />
@@ -140,7 +144,9 @@
     <ClCompile Include="src\composite\card.cc" />
     <ClCompile Include="src\composite\chassis.cc" />
     <ClCompile Include="src\composite\composite_equipment.cc" />
+    <ClCompile Include="src\composite\currrency.cc" />
     <ClCompile Include="src\composite\floppy_disk.cc" />
+    <ClCompile Include="src\composite\watt.cc" />
     <ClCompile Include="src\decorator\ascii7_stream.cc" />
     <ClCompile Include="src\decorator\compressing_stream.cc" />
     <ClCompile Include="src\decorator\file_stream.cc" />

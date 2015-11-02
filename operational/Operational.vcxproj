@@ -110,6 +110,23 @@
     <ClInclude Include="src\observer\clock_tick.h" />
     <ClInclude Include="src\observer\clock_tick_interface.h" />
     <ClInclude Include="src\observer\observer_widget_interface.h" />
+    <ClInclude Include="src\templatemethod\sample_application.h" />
+    <ClInclude Include="src\templatemethod\sample_document.h" />
+    <ClInclude Include="src\templatemethod\template_application.h" />
+    <ClInclude Include="src\templatemethod\document_interface.h" />
+    <ClInclude Include="src\visitor\bus.h" />
+    <ClInclude Include="src\visitor\bus_interface.h" />
+    <ClInclude Include="src\visitor\card.h" />
+    <ClInclude Include="src\visitor\card_interface.h" />
+    <ClInclude Include="src\visitor\chassis.h" />
+    <ClInclude Include="src\visitor\chassis_interface.h" />
+    <ClInclude Include="src\visitor\equipment_visitor_interface.h" />
+    <ClInclude Include="src\visitor\floppy_disk.h" />
+    <ClInclude Include="src\visitor\floppy_disk_interface.h" />
+    <ClInclude Include="src\visitor\inventory.h" />
+    <ClInclude Include="src\visitor\inventory_visitor.h" />
+    <ClInclude Include="src\visitor\pricing_visitor.h" />
+    <ClInclude Include="src\visitor\visited_equipment_interface.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\chain\application.cc" />
@@ -133,11 +150,16 @@
     <ClCompile Include="src\observer\clock_timer.cc" />
     <ClCompile Include="src\observer\digital_clock.cc" />
     <ClCompile Include="src\observer\subject.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Foundation\Foundation.vcxproj">
-      <Project>{b0dc43c0-c3a4-41f8-8d39-8499b1510f8c}</Project>
-    </ProjectReference>
+    <ClCompile Include="src\templatemethod\sample_application.cc" />
+    <ClCompile Include="src\templatemethod\sample_document.cc" />
+    <ClCompile Include="src\templatemethod\template_application.cc" />
+    <ClCompile Include="src\visitor\bus.cc" />
+    <ClCompile Include="src\visitor\card.cc" />
+    <ClCompile Include="src\visitor\chassis.cc" />
+    <ClCompile Include="src\visitor\floppy_disk.cc" />
+    <ClCompile Include="src\visitor\inventory.cc" />
+    <ClCompile Include="src\visitor\inventory_visitor.cc" />
+    <ClCompile Include="src\visitor\pricing_visitor.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

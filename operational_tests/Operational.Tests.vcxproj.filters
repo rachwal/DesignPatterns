@@ -28,6 +28,12 @@
     <Filter Include="Source Files\mediator">
       <UniqueIdentifier>{ac89dffa-1e05-44b9-82ba-51b97e0c3ee9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\templatemethod">
+      <UniqueIdentifier>{51e12015-a650-4cc2-ac7e-67866f258966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\visitor">
+      <UniqueIdentifier>{5bda23dc-b3c3-4776-bbd8-bf7c519525a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\iterator\iterator_test.cc">
@@ -50,6 +56,12 @@
     </ClCompile>
     <ClCompile Include="src\mediator\mediator_test.cc">
       <Filter>Source Files\mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\templatemethod\templatemethod_test.cc">
+      <Filter>Source Files\templatemethod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visitor\visitor_test.cc">
+      <Filter>Source Files\visitor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

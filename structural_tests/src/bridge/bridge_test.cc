@@ -31,7 +31,7 @@ TEST_CLASS(BridgeTest)
 		auto application_window = new ApplicationWindow(application_title, x_window_imp);
 
 		//WHEN
-		application_window->DrawText(sample_text, foundation::Point<float>(0, 0));
+		application_window->DrawText(sample_text, structural::commons::Point<float>(0, 0));
 
 		//THEN
 		auto x_window_imp_text = x_window_imp->text();
@@ -50,7 +50,7 @@ TEST_CLASS(BridgeTest)
 		auto application_window = new ApplicationWindow(application_title, pm_window_imp);
 
 		//WHEN
-		application_window->DrawText(sample_text, foundation::Point<float>(0, 0));
+		application_window->DrawText(sample_text, structural::commons::Point<float>(0, 0));
 
 		//THEN
 		auto pm_window_imp_text = pm_window_imp->text();
@@ -69,7 +69,7 @@ TEST_CLASS(BridgeTest)
 		auto icon_window = new IconWindow(bitmap_file_name, pm_window_imp);
 
 		//WHEN
-		icon_window->DrawText(sample_text, foundation::Point<float>(0, 0));
+		icon_window->DrawText(sample_text, structural::commons::Point<float>(0, 0));
 
 		//THEN
 		auto pm_window_imp_text = pm_window_imp->text();

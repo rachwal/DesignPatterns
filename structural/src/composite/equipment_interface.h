@@ -3,15 +3,17 @@
 //
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
-#ifndef FOUNDATION_FOUNDATION_EQUIPMENT_INTERFACE_H_
-#define FOUNDATION_FOUNDATION_EQUIPMENT_INTERFACE_H_
+#ifndef STRUCTURAL_COMPOSITE_EQUIPMENT_INTERFACE_H_
+#define STRUCTURAL_COMPOSITE_EQUIPMENT_INTERFACE_H_
 
 #include "watt.h"
 #include "currency.h"
 
 #include <string>
 
-namespace foundation
+namespace structural
+{
+namespace composite
 {
 class EquipmentInterface
 {
@@ -29,6 +31,6 @@ class EquipmentInterface
 	virtual Currency NetPrice() = 0;
 	virtual Currency DiscountPrice() = 0;
 };
-}
+}}
 
 #endif

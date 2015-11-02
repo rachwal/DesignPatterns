@@ -88,9 +88,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Foundation\Foundation.vcxproj">
-      <Project>{b0dc43c0-c3a4-41f8-8d39-8499b1510f8c}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\Operational\Operational.vcxproj">
       <Project>{a52f7575-f0dc-4e39-9f35-810d288dd477}</Project>
     </ProjectReference>
@@ -103,6 +100,8 @@
     <ClCompile Include="src\mediator\mediator_test.cc" />
     <ClCompile Include="src\observer\clock_timer_test.cc" />
     <ClCompile Include="src\observer\observer_test.cc" />
+    <ClCompile Include="src\templatemethod\templatemethod_test.cc" />
+    <ClCompile Include="src\visitor\visitor_test.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

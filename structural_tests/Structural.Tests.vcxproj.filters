@@ -34,6 +34,9 @@
     <Filter Include="Source Files\flyweight">
       <UniqueIdentifier>{bd9e9f85-5a30-4a7b-8892-5b9a86de61d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\commons">
+      <UniqueIdentifier>{89daa3f5-60a7-4fc5-81a4-190d30186635}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\adapter\adapter_test.cc">
@@ -65,6 +68,9 @@
     </ClCompile>
     <ClCompile Include="src\flyweight\glyph_context_test.cc">
       <Filter>Source Files\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commons\point_test.cc">
+      <Filter>Source Files\commons</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

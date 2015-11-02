@@ -6,28 +6,29 @@
 #ifndef STRUCTURAL_COMPOSITE_COMPOSITE_EQUIPMENT_H_
 #define STRUCTURAL_COMPOSITE_COMPOSITE_EQUIPMENT_H_
 
+#include "equipment_interface.h"
+
 #include <string>
 
 #include "../../../Operational/src/iterator/list.h"
-#include "../../../foundation/src/equipment_interface.h"
 
 namespace structural
 {
 namespace composite
 {
-class CompositeEquipment : public foundation::EquipmentInterface
+class CompositeEquipment : public EquipmentInterface
 {
 	public:
 	virtual std::string name() const override;
 
-	virtual foundation::Currency price() const override;
-	virtual void price(const foundation::Currency&) override;
+	virtual Currency price() const override;
+	virtual void price(const Currency&) override;
 
-	virtual foundation::Watt power() const override;
-	virtual void power(const foundation::Watt&) override;
+	virtual Watt power() const override;
+	virtual void power(const Watt&) override;
 
-	foundation::Currency NetPrice() override;
-	foundation::Currency DiscountPrice() override;
+	Currency NetPrice() override;
+	Currency DiscountPrice() override;
 
 	virtual void Add(EquipmentInterface*);
 	virtual void Remove(EquipmentInterface*);
@@ -41,8 +42,8 @@ class CompositeEquipment : public foundation::EquipmentInterface
 
 	private:
 	std::string name_;
-	foundation::Currency price_;
-	foundation::Watt power_;
+	Currency price_;
+	Watt power_;
 
 	operational::iterator::List<EquipmentInterface*>* equipment_;
 };

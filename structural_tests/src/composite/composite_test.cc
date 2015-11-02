@@ -10,7 +10,6 @@
 namespace structuraltests
 {
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace foundation;
 using namespace structural::composite;
 
 TEST_CLASS(CompositeTest)

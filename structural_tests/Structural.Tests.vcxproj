@@ -75,6 +75,7 @@
     <ClCompile Include="src\adapter\adapter_test.cc" />
     <ClCompile Include="src\adapter\text_view_test.cc" />
     <ClCompile Include="src\bridge\bridge_test.cc" />
+    <ClCompile Include="src\commons\point_test.cc" />
     <ClCompile Include="src\composite\composite_test.cc" />
     <ClCompile Include="src\decorator\decorator_test.cc" />
     <ClCompile Include="src\facade\facade_test.cc" />
@@ -84,9 +85,6 @@
     <ClCompile Include="src\proxy\proxy_test.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Foundation\Foundation.vcxproj">
-      <Project>{b0dc43c0-c3a4-41f8-8d39-8499b1510f8c}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\Structural\Structural.vcxproj">
       <Project>{bbf942f9-e2ac-42e3-8bb6-5a6b52aada27}</Project>
     </ProjectReference>

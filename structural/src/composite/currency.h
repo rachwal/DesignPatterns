@@ -3,10 +3,12 @@
 //
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
-#ifndef FOUNDATION_FOUNDATION_CURRENCY_H_
-#define FOUNDATION_FOUNDATION_CURRENCY_H_
+#ifndef STRUCTURAL_COMPOSITE_CURRENCY_H_
+#define STRUCTURAL_COMPOSITE_CURRENCY_H_
 
-namespace foundation
+namespace structural
+{
+namespace composite
 {
 class Currency
 {
@@ -32,6 +34,5 @@ inline bool operator!=(const Currency& left, const Currency& right)
 {
 	return left.value() != right.value();
 }
-}
-
+}}
 #endif

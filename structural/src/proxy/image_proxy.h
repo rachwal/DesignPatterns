@@ -19,9 +19,9 @@ class ImageProxy : public GraphicInterface
 	explicit ImageProxy(const std::string& file_name);
 	virtual ~ImageProxy();
 
-	virtual void Draw(const foundation::Point<float>& at) override;
+	virtual void Draw(const commons::Point<float>& at) override;
 	virtual void HandleMouse(Event& event) override;
-	virtual const foundation::Point<float> &GetExtent() override;
+	virtual const commons::Point<float> &GetExtent() override;
 	virtual void Load(std::istream& from) override;
 	virtual void Save(std::ostream& to) override;
 
@@ -29,9 +29,9 @@ class ImageProxy : public GraphicInterface
 	Image *GetImage();
 
 	private:
-	const foundation::Point<float> kZeroExtent = foundation::Point<float>(0, 0);
+	const commons::Point<float> kZeroExtent = commons::Point<float>(0, 0);
 	Image* image_;
-	foundation::Point<float> extent_;
+	commons::Point<float> extent_;
 	std::string file_name_;
 };
 }}

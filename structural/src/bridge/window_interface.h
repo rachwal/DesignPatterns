@@ -6,7 +6,7 @@
 #ifndef STRUCTURAL_BRIDGE_WINDOW_INTERFACE_H_
 #define STRUCTURAL_BRIDGE_WINDOW_INTERFACE_H_
 
-#include "../../../Foundation/src/point.h"
+#include "../commons/point.h"
 
 namespace structural
 {
@@ -17,8 +17,8 @@ class WindowInterface
 	public:
 	virtual ~WindowInterface() { }
 
-	virtual void DrawRect(const foundation::Point<float>& p1, const foundation::Point<float>& p2) = 0;
-	virtual void DrawText(const std::string& text, const foundation::Point<float>&) = 0;
+	virtual void DrawRect(const commons::Point<float>& p1, const commons::Point<float>& p2) = 0;
+	virtual void DrawText(const std::string& text, const commons::Point<float>&) = 0;
 };
 }}
 

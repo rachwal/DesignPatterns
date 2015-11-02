@@ -17,7 +17,7 @@ class ApplicationWindow : public Window
 	public:
 	explicit ApplicationWindow(const std::string& application_title, WindowImp* imp);
 
-	void DrawText(const std::string& text, const foundation::Point<float>&) override;
+	void DrawText(const std::string& text, const commons::Point<float>&) override;
 	void DrawTitle();
 
 	private:

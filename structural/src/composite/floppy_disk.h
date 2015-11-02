@@ -6,7 +6,7 @@
 #ifndef STRUCTURAL_COMPOSITE_FLOPPY_DISK_H_
 #define STRUCTURAL_COMPOSITE_FLOPPY_DISK_H_
 
-#include "../../../foundation/src/equipment_interface.h"
+#include "equipment_interface.h"
 
 #include <string>
 
@@ -14,24 +14,24 @@ namespace structural
 {
 namespace composite
 {
-class FloppyDisk : public foundation::EquipmentInterface
+class FloppyDisk : public EquipmentInterface
 {
 	public:
 	FloppyDisk();
 	explicit FloppyDisk(const std::string&);
 
 	std::string name() const override;
-	foundation::Currency price() const override;
-	void price(const foundation::Currency&) override;
-	foundation::Watt power() const override;
-	void power(const foundation::Watt&) override;
-	foundation::Currency NetPrice() override;
-	foundation::Currency DiscountPrice() override;
+	Currency price() const override;
+	void price(const Currency&) override;
+	Watt power() const override;
+	void power(const Watt&) override;
+	Currency NetPrice() override;
+	Currency DiscountPrice() override;
 
 	private:
 	std::string name_;
-	foundation::Watt power_;
-	foundation::Currency price_;
+	Watt power_;
+	Currency price_;
 };
 }}
 

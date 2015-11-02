@@ -53,8 +53,8 @@ TEST_CLASS(AdapterTest)
 		auto client = new TextShapeObjectAdapter(text_view);
 
 		//WHEN
-		auto bottom_left = new foundation::Point<float>();
-		auto top_right = new foundation::Point<float>();
+		auto bottom_left = new structural::commons::Point<float>();
+		auto top_right = new structural::commons::Point<float>();
 		client->BoundingBox(*bottom_left, *top_right);
 
 		//THEN
@@ -103,8 +103,8 @@ TEST_CLASS(AdapterTest)
 		client->SetExtent(2.0f, 3.0f);
 
 		//THEN
-		auto bottom_left = new foundation::Point<float>();
-		auto top_right = new foundation::Point<float>();
+		auto bottom_left = new structural::commons::Point<float>();
+		auto top_right = new structural::commons::Point<float>();
 		client->BoundingBox(*bottom_left, *top_right);
 
 		Assert::AreEqual(3.0f, bottom_left->x());

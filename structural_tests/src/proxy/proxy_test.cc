@@ -3,15 +3,16 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Foundation/src/point.h"
-#include "../../../Structural/src/proxy/image_proxy.h"
-#include "../../../Structural/src/proxy/text_document.h"
-#include "../../../Structural/src/proxy/virtual_image_proxy.h"
+#include "../../../structural/src/commons/point.h"
+#include "../../../structural/src/proxy/image_proxy.h"
+#include "../../../structural/src/proxy/text_document.h"
+#include "../../../structural/src/proxy/virtual_image_proxy.h"
 
 namespace structuraltests
 {
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::proxy;
+using namespace structural::commons;
 
 TEST_CLASS(ProxyTest)
 {
@@ -23,7 +24,7 @@ TEST_CLASS(ProxyTest)
 	TEST_METHOD(VirtualProxyShouldCreateImageWithDefaultExtent)
 	{
 		//GIVEN
-		auto expected_default_extent = foundation::Point<float>(100, 20);
+		auto expected_default_extent = Point<float>(100, 20);
 		auto image = VirtualImageProxy("sample.bmp");
 
 		//WHEN
@@ -36,7 +37,7 @@ TEST_CLASS(ProxyTest)
 	TEST_METHOD(VirtualProxyShouldSetNewExtentWhenDrawing)
 	{
 		//GIVEN
-		auto new_extent = foundation::Point<float>(150, 120);
+		auto new_extent = Point<float>(150, 120);
 		auto image = VirtualImageProxy("sample.bmp");
 
 		//WHEN
@@ -50,7 +51,7 @@ TEST_CLASS(ProxyTest)
 	TEST_METHOD(ShouldCreateEmptyDocumentWithZeroExtent)
 	{
 		//GIVEN
-		auto zero_extent = foundation::Point<float>(0, 0);
+		auto zero_extent = Point<float>(0, 0);
 		auto text = new TextDocument;
 
 		//WHEN
@@ -63,7 +64,7 @@ TEST_CLASS(ProxyTest)
 	TEST_METHOD(ShouldChangeDocumentExtentToGraphicExtent)
 	{
 		//GIVEN
-		auto expected_default_extent = foundation::Point<float>(100, 20);
+		auto expected_default_extent = Point<float>(100, 20);
 		auto text = new TextDocument;
 
 		//WHEN

@@ -18,34 +18,34 @@ std::string Card::name() const
 	return name_;
 }
 
-foundation::Currency Card::price() const
+Currency Card::price() const
 {
 	return price_;
 }
 
-void Card::price(const foundation::Currency& price)
+void Card::price(const Currency& price)
 {
 	price_ = price;
 }
 
-foundation::Watt Card::power() const
+Watt Card::power() const
 {
 	return power_;
 }
 
-void Card::power(const foundation::Watt& power)
+void Card::power(const Watt& power)
 {
 	power_ = power;
 }
 
-foundation::Currency Card::NetPrice()
+Currency Card::NetPrice()
 {
 	return price_;
 }
 
-foundation::Currency Card::DiscountPrice()
+Currency Card::DiscountPrice()
 {
 	auto discount_price = price_.value() * 0.9;
-	return foundation::Currency(discount_price);
+	return Currency(discount_price);
 }
 }}

@@ -11,7 +11,7 @@ namespace proxy
 {
 TextDocument::TextDocument() :graphic_(nullptr)
 {
-	extent_ = foundation::Point<float>(0, 0);
+	extent_ = commons::Point<float>(0, 0);
 }
 
 void TextDocument::Insert(GraphicInterface* graphic)
@@ -19,7 +19,7 @@ void TextDocument::Insert(GraphicInterface* graphic)
 	graphic_ = graphic;
 }
 
-const foundation::Point<float> &TextDocument::GetExtent()
+const commons::Point<float> &TextDocument::GetExtent()
 {
 	if (graphic_)
 	{

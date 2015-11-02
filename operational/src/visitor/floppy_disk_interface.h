@@ -3,19 +3,20 @@
 //
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
-#include "currency.h"
+#ifndef OPERATIONAL_VISITOR_FLOPPY_DISK_INTERFACE_H_
+#define OPERATIONAL_VISITOR_FLOPPY_DISK_INTERFACE_H_
 
-namespace foundation
+namespace operational
 {
-Currency::Currency(const double& price) :value_(price) { }
+namespace visitor
+{
+class FloppyDiskInterface
+{
+	public:
+	virtual ~FloppyDiskInterface() {}
 
-double Currency::value() const
-{
-	return value_;
-}
+	virtual double GetBoxPrice() = 0;
+};
+}}
 
-void Currency::value(double value)
-{
-	value_ = value;
-}
-}
+#endif
