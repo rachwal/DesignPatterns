@@ -17,8 +17,6 @@ namespace state
 class TcpConnection
 {
 	public:
-	TcpConnection();
-
 	static TcpConnection *CreateConnection();
 
 	void ActiveOpen();
@@ -34,6 +32,8 @@ class TcpConnection
 	std::string Info() const;
 
 	private:
+	TcpConnection();
+
 	friend class TcpState;
 	void ChangeState(TcpState*);
 
