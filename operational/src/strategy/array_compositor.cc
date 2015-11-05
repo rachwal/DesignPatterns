@@ -13,7 +13,7 @@ ArrayCompositor::ArrayCompositor(int interval) : interval_(interval) {}
 
 int ArrayCompositor::Compose(float natural[], float stretch[], float shrink[], int componentCount, int lineWidth, int breaks[])
 {
-	auto break_count = natural[0] + stretch[0] + shrink[0] + componentCount + lineWidth + breaks[0];
+	auto break_count = static_cast<int>(natural[0] + stretch[0] + shrink[0] + componentCount + lineWidth + breaks[0]);
 
 	if (break_count < 0)
 	{
