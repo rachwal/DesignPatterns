@@ -8,8 +8,6 @@
 
 #include "event.h"
 
-#include <iostream>
-
 #include "../commons/point.h"
 
 namespace structural

@@ -3,13 +3,14 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/adapter/text_shape_object_adapter.h"
-#include "../../../Structural/src/adapter/text_shape_class_adapter.h"
+#include "../../../structural/src/adapter/text_shape_object_adapter.h"
+#include "../../../structural/src/adapter/text_shape_class_adapter.h"
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::adapter;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(AdapterTest)
 {

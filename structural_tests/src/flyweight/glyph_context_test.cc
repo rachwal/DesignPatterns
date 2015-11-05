@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/flyweight/glyph_context.h"
+#include "../../../structural/src/flyweight/glyph_context.h"
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::flyweight;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(GlyphContextTest)
 {

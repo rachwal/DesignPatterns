@@ -3,13 +3,14 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/observer/digital_clock.h"
-#include "../../../Operational/src/observer/analog_clock.h"
+#include "../../../operational/src/observer/digital_clock.h"
+#include "../../../operational/src/observer/analog_clock.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::observer;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(ObserverTest)
 {

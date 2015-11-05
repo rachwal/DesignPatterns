@@ -3,8 +3,8 @@
 //
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
-#include <algorithm>
 #include "p_m_window_imp.h"
+
 #include <sstream>
 
 namespace structural

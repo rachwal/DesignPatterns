@@ -294,6 +294,45 @@
     <ClInclude Include="src\command\my_class.h">
       <Filter>Header Files\command</Filter>
     </ClInclude>
+    <ClInclude Include="src\strategy\array_compositor.h">
+      <Filter>Header Files\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\composition.h">
+      <Filter>Header Files\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\my_strategy.h">
+      <Filter>Header Files\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\simple_compositor.h">
+      <Filter>Header Files\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\strategy_context.h">
+      <Filter>Header Files\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\tex_compositor.h">
+      <Filter>Header Files\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\strategy\compositor_interface.h">
+      <Filter>Header Files\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state\tcp_closed.h">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state\tcp_connection.h">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state\tcp_established.h">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state\tcp_listen.h">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state\tcp_octet_stream.h">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state\tcp_state.h">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\observer\analog_clock.cc">
@@ -418,6 +457,36 @@
     </ClCompile>
     <ClCompile Include="src\command\my_class.cc">
       <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\array_compositor.cc">
+      <Filter>Source Files\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\composition.cc">
+      <Filter>Source Files\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\my_strategy.cc">
+      <Filter>Source Files\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\simple_compositor.cc">
+      <Filter>Source Files\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\tex_compositor.cc">
+      <Filter>Source Files\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state\tcp_closed.cc">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state\tcp_connection.cc">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state\tcp_established.cc">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state\tcp_listen.cc">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state\tcp_state.cc">
+      <Filter>Source Files\state</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

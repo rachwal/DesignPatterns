@@ -6,7 +6,7 @@
 #ifndef OPERATIONAL_MEMENTO_GRAPHIC_H_
 #define OPERATIONAL_MEMENTO_GRAPHIC_H_
 
-#include "../../../Structural/src/commons/point.h"
+#include "../../../structural/src/commons/point.h"
 
 namespace operational
 {

@@ -10,9 +10,10 @@
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::proxy;
 using namespace structural::commons;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(ProxyTest)
 {

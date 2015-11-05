@@ -4,6 +4,7 @@
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
 #include "application.h"
+
 #include <sstream>
 
 namespace operational

@@ -3,14 +3,15 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/decorator/compressing_stream.h"
-#include "../../../Structural/src/decorator/ascii7_stream.h"
-#include "../../../Structural/src/decorator/file_stream.h"
+#include "../../../structural/src/decorator/compressing_stream.h"
+#include "../../../structural/src/decorator/ascii7_stream.h"
+#include "../../../structural/src/decorator/file_stream.h"
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::decorator;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(DecoratorTest)
 {

@@ -4,6 +4,7 @@
 // Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
 
 #include "risc_code_generator.h"
+
 #include <sstream>
 
 namespace structural

@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/observer/clock_timer.h"
+#include "../../../operational/src/observer/clock_timer.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::observer;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(ClockTimerTest)
 {

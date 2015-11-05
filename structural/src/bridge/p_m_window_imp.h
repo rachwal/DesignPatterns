@@ -7,6 +7,7 @@
 #define STRUCTURAL_BRIDGE_P_M_WINDOW_IMP_H_
 
 #include "window_imp.h"
+
 #include <string>
 
 namespace structural

@@ -5,19 +5,20 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Creational/src/mazegame/maze_game.h"
-#include "../../../Creational/src/abstractfactory/bombed_maze_factory.h"
-#include "../../../Creational/src/abstractfactory/enchanted_maze_factory.h"
-#include "../../../Creational/src/builder/standard_maze_builder.h"
-#include "../../../Creational/src/builder/counting_maze_builder.h"
-#include "../../../Creational/src/prototype/maze_prototype_factory.h"
-#include "../../../Creational/src/mazeparts/enchanted_room.h"
-#include "../../../Creational/src/mazeparts/bombed_wall.h"
+#include "../../../creational/src/mazegame/maze_game.h"
+#include "../../../creational/src/abstractfactory/bombed_maze_factory.h"
+#include "../../../creational/src/abstractfactory/enchanted_maze_factory.h"
+#include "../../../creational/src/builder/standard_maze_builder.h"
+#include "../../../creational/src/builder/counting_maze_builder.h"
+#include "../../../creational/src/prototype/maze_prototype_factory.h"
+#include "../../../creational/src/mazeparts/enchanted_room.h"
+#include "../../../creational/src/mazeparts/bombed_wall.h"
 
 namespace creationaltests
 {
 using namespace creational;
 using namespace validation;
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(MazeGameTest)

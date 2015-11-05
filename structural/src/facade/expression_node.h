@@ -9,7 +9,7 @@
 #include "program_node_interface.h"
 #include "expression_node_interface.h"
 
-#include "../../../Operational/src/iterator/list.h"
+#include "../../../operational/src/iterator/list.h"
 
 namespace structural
 {

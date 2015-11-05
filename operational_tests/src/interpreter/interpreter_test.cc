@@ -3,18 +3,19 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/interpreter/boolean_exp_interface.h"
-#include "../../../Operational/src/interpreter/interpreter_context.h"
-#include "../../../Operational/src/interpreter/or_exp.h"
-#include "../../../Operational/src/interpreter/and_exp.h"
-#include "../../../Operational/src/interpreter/constant.h"
-#include "../../../Operational/src/interpreter/not_exp.h"
-#include "../../../Operational/src/interpreter/variable_exp.h"
+#include "../../../operational/src/interpreter/boolean_exp_interface.h"
+#include "../../../operational/src/interpreter/interpreter_context.h"
+#include "../../../operational/src/interpreter/or_exp.h"
+#include "../../../operational/src/interpreter/and_exp.h"
+#include "../../../operational/src/interpreter/constant.h"
+#include "../../../operational/src/interpreter/not_exp.h"
+#include "../../../operational/src/interpreter/variable_exp.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::interpreter;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(InterpreterTest)
 {

@@ -3,13 +3,14 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/observer/clock_timer.h"
-#include "../../../Operational/src/iterator/employee.h"
+#include "../../../operational/src/observer/clock_timer.h"
+#include "../../../operational/src/iterator/employee.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(IteratorTest)
 {

@@ -1,0 +1,25 @@
+// Based on "Design Patterns: Elements of Reusable Object-Oriented Software"
+// book by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm 
+//
+// Created by Bartosz Rachwal. The National Institute of Advanced Industrial Science and Technology, Japan.
+
+#include "tex_compositor.h"
+
+namespace operational
+{
+namespace strategy
+{
+int TexCompositor::Compose(float natural[], float stretch[], float shrink[], int componentCount, int lineWidth, int breaks[])
+{
+	auto break_count = natural[0] * stretch[0] * shrink[0] * componentCount * lineWidth * breaks[0];
+
+	if (break_count < 0)
+	{
+		return 0;
+	}
+
+	return break_count;
+}
+}
+}
+

@@ -3,13 +3,13 @@
 
 #include "validator.h"
 
-#include "../../../Creational/src/mazeparts/maze.h"
-#include "../../../Creational/src/mazeparts/door.h"
-#include "../../../Creational/src/mazeparts/wall.h"
-#include "../../../Creational/src/mazeparts/door_needing_spell.h"
-#include "../../../Creational/src/mazeparts/bombed_wall.h"
-#include "../../../Creational/src/mazeparts/room_with_a_bomb.h"
-#include "../../../Creational/src/mazeparts/enchanted_room.h"
+#include "../../../creational/src/mazeparts/maze.h"
+#include "../../../creational/src/mazeparts/door.h"
+#include "../../../creational/src/mazeparts/wall.h"
+#include "../../../creational/src/mazeparts/door_needing_spell.h"
+#include "../../../creational/src/mazeparts/bombed_wall.h"
+#include "../../../creational/src/mazeparts/room_with_a_bomb.h"
+#include "../../../creational/src/mazeparts/enchanted_room.h"
 
 namespace creationaltests
 {

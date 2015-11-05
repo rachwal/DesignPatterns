@@ -6,7 +6,7 @@
 #ifndef OPERATIONAL_VISITOR_PRICING_VISITOR_H_
 #define OPERATIONAL_VISITOR_PRICING_VISITOR_H_
 
-#include "chassis.h"
+#include "equipment_visitor_interface.h"
 
 namespace operational
 {

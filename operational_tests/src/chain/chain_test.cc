@@ -3,14 +3,15 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/chain/button.h"
-#include "../../../Operational/src/chain/application.h"
-#include "../../../Operational/src/chain/dialog.h"
+#include "../../../operational/src/chain/button.h"
+#include "../../../operational/src/chain/application.h"
+#include "../../../operational/src/chain/dialog.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(ChainTest)
 {

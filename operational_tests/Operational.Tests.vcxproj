@@ -102,6 +102,8 @@
     <ClCompile Include="src\memento\memento_test.cc" />
     <ClCompile Include="src\observer\clock_timer_test.cc" />
     <ClCompile Include="src\observer\observer_test.cc" />
+    <ClCompile Include="src\state\state_test.cc" />
+    <ClCompile Include="src\strategy\strategy_test.cc" />
     <ClCompile Include="src\templatemethod\templatemethod_test.cc" />
     <ClCompile Include="src\visitor\visitor_test.cc" />
   </ItemGroup>

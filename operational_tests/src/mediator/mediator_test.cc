@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/mediator/font_dialog_director.h"
+#include "../../../operational/src/mediator/font_dialog_director.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::madiator;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(MediatorTest)
 {

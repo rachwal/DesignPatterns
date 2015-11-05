@@ -3,13 +3,14 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Creational/src/mazeparts/spell.h"
-#include "../../../Creational/src/mazeparts/enchanted_room.h"
+#include "../../../creational/src/mazeparts/spell.h"
+#include "../../../creational/src/mazeparts/enchanted_room.h"
 
 namespace creationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace creational::commons;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(EnchantedRoomTest)
 {

@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/commons/point.h"
+#include "../../../structural/src/commons/point.h"
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::commons;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(PointTest)
 {

@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/templatemethod/sample_application.h"
+#include "../../../operational/src/templatemethod/sample_application.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::templatemethod;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(TemplatemethodTest)
 {

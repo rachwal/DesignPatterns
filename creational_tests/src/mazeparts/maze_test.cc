@@ -3,13 +3,14 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Creational/src/mazeparts/room.h"
-#include "../../../Creational/src/mazeparts/maze.h"
+#include "../../../creational/src/mazeparts/room.h"
+#include "../../../creational/src/mazeparts/maze.h"
 
 namespace creationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace creational::commons;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(MazeTest)
 {

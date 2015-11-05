@@ -3,17 +3,18 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/visitor/inventory_visitor.h"
-#include "../../../Operational/src/visitor/chassis.h"
-#include "../../../Operational/src/visitor/bus.h"
-#include "../../../Operational/src/visitor/floppy_disk.h"
-#include "../../../Operational/src/visitor/card.h"
-#include "../../../Operational/src/visitor/pricing_visitor.h"
+#include "../../../operational/src/visitor/inventory_visitor.h"
+#include "../../../operational/src/visitor/chassis.h"
+#include "../../../operational/src/visitor/bus.h"
+#include "../../../operational/src/visitor/floppy_disk.h"
+#include "../../../operational/src/visitor/card.h"
+#include "../../../operational/src/visitor/pricing_visitor.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::visitor;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(VisitorTest)
 {

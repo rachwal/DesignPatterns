@@ -3,7 +3,7 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/facade/compiler.h"
+#include "../../../structural/src/facade/compiler.h"
 
 #include <sstream>
 #include <algorithm>
@@ -11,8 +11,9 @@
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::facade;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(FacadeTest)
 {

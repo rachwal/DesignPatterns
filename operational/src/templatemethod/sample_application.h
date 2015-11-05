@@ -9,8 +9,6 @@
 #include "template_application.h"
 #include "document_interface.h"
 
-#include <list>
-
 namespace operational
 {
 namespace templatemethod

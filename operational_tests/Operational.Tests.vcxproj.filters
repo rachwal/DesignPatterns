@@ -40,6 +40,12 @@
     <Filter Include="Source Files\command">
       <UniqueIdentifier>{643398fb-c6db-43be-bfce-e01b3632ca79}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\strategy">
+      <UniqueIdentifier>{d46b5124-5e56-4bd5-ba07-d55bd2ddcf45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\state">
+      <UniqueIdentifier>{eb5fa19c-a4f3-4687-ac17-1f230cc781b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\iterator\iterator_test.cc">
@@ -74,6 +80,12 @@
     </ClCompile>
     <ClCompile Include="src\command\command_test.cc">
       <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strategy\strategy_test.cc">
+      <Filter>Source Files\strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state\state_test.cc">
+      <Filter>Source Files\state</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

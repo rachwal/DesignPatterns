@@ -3,13 +3,14 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/memento/constraint_solver.h"
-#include "../../../Operational/src/memento/move_command.h"
+#include "../../../operational/src/memento/constraint_solver.h"
+#include "../../../operational/src/memento/move_command.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::memento;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(MementoTest)
 {

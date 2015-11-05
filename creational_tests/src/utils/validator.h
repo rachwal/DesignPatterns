@@ -4,7 +4,7 @@
 #ifndef CREATIONALTESTS_UTILS_VALIDATOR_H_
 #define CREATIONALTESTS_UTILS_VALIDATOR_H_
 
-#include "../../../Creational/src/mazeparts/maze.h"
+#include "../../../creational/src/mazeparts/maze.h"
 
 namespace creationaltests
 {

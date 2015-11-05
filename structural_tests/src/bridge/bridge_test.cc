@@ -3,15 +3,16 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/bridge/application_window.h"
-#include "../../../Structural/src/bridge/x_window_imp.h"
-#include "../../../Structural/src/bridge/p_m_window_imp.h"
-#include "../../../Structural/src/bridge/icon_window.h"
+#include "../../../structural/src/bridge/application_window.h"
+#include "../../../structural/src/bridge/x_window_imp.h"
+#include "../../../structural/src/bridge/p_m_window_imp.h"
+#include "../../../structural/src/bridge/icon_window.h"
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::bridge;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(BridgeTest)
 {

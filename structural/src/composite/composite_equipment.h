@@ -10,7 +10,7 @@
 
 #include <string>
 
-#include "../../../Operational/src/iterator/list.h"
+#include "../../../operational/src/iterator/list.h"
 
 namespace structural
 {

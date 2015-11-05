@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/chain/application.h"
+#include "../../../operational/src/chain/application.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(ApplicationTest)
 {

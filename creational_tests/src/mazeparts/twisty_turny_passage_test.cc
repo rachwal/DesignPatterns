@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Creational/src/mazeparts/twisty_turny_passage.h"
+#include "../../../creational/src/mazeparts/twisty_turny_passage.h"
 
 namespace creationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace creational::commons;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(TwistyTurnyPassageTest)
 {

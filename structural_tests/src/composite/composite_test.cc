@@ -3,14 +3,15 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/composite/bus.h"
-#include "../../../Structural/src/composite/cabinet.h"
-#include "../../../Structural/src/composite/card.h"
+#include "../../../structural/src/composite/bus.h"
+#include "../../../structural/src/composite/cabinet.h"
+#include "../../../structural/src/composite/card.h"
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::composite;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(CompositeTest)
 {

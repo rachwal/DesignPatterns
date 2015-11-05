@@ -3,17 +3,18 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Operational/src/command/my_class.h"
-#include "../../../Operational/src/command/simple_command.h"
-#include "../../../Operational/src/command/command_application.h"
-#include "../../../Operational/src/command/open_command.h"
-#include "../../../Operational/src/command/macro_command.h"
-#include "../../../Operational/src/command/paste_command.h"
+#include "../../../operational/src/command/my_class.h"
+#include "../../../operational/src/command/simple_command.h"
+#include "../../../operational/src/command/command_application.h"
+#include "../../../operational/src/command/open_command.h"
+#include "../../../operational/src/command/macro_command.h"
+#include "../../../operational/src/command/paste_command.h"
 
 namespace operationaltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace operational::command;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(CommnadTest)
 {

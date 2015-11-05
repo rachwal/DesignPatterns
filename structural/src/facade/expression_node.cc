@@ -5,7 +5,7 @@
 
 #include "expression_node.h"
 
-#include "../../../Operational/src/iterator/list_iterator.h"
+#include "../../../operational/src/iterator/list_iterator.h"
 
 namespace structural
 {

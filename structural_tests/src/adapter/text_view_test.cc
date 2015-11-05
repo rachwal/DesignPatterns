@@ -3,12 +3,13 @@
 
 #include <CppUnitTest.h>
 
-#include "../../../Structural/src/adapter/text_view.h"
+#include "../../../structural/src/adapter/text_view.h"
 
 namespace structuraltests
 {
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace structural::adapter;
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 TEST_CLASS(TextViewTest)
 {
