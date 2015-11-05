@@ -9,7 +9,7 @@ namespace operational
 {
 namespace madiator
 {
-ListBox::ListBox(DialogDirectorInterface* director) :director_(director), items_(nullptr) {}
+ListBox::ListBox(DialogDirectorInterface* director) : director_(director), items_(nullptr) {}
 
 const std::string &ListBox::GetSelection()
 {
@@ -30,4 +30,6 @@ void ListBox::Changed()
 {
 	director_->WidgetChanged(this);
 }
-}}
+}
+}
+

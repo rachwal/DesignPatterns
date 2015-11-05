@@ -101,3 +101,4 @@ TEST_CLASS(WallTest)
 	}
 };
 }
+

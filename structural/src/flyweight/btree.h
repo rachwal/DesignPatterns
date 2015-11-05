@@ -28,6 +28,8 @@ class BTree
 	int* nodes_;
 	operational::iterator::List<Font*>* leafs_;
 };
-}}
+}
+}
 
 #endif
+

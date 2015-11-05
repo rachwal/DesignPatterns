@@ -30,6 +30,8 @@ class ExpressionNode : public ProgramNodeInterface, public ExpressionNodeInterfa
 	protected:
 	operational::iterator::List<ProgramNodeInterface*>* children_;
 };
-}}
+}
+}
 
 #endif
+

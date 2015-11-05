@@ -43,3 +43,4 @@ TEST_CLASS(TwistyTurnyPassageTest)
 	}
 };
 }
+

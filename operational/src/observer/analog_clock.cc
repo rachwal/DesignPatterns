@@ -41,4 +41,6 @@ std::string AnalogClock::formated_time() const
 {
 	return formated_time_;
 }
-}}
+}
+}
+

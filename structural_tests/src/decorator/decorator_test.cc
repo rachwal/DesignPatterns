@@ -34,6 +34,8 @@ TEST_CLASS(DecoratorTest)
 		auto value = file_stream->value();
 
 		Assert::AreEqual(expected_value, value);
+
+		delete stream;
 	}
 
 	TEST_METHOD(ShouldReturnDecoratedText)
@@ -49,6 +51,8 @@ TEST_CLASS(DecoratorTest)
 		auto text = file_stream->message();
 
 		Assert::AreEqual(expected_message, text.c_str());
+
+		delete file_stream;
 	}
 
 	TEST_METHOD(ShouldReturnTextDecoratedByThreeObjectsDecorated)
@@ -66,6 +70,9 @@ TEST_CLASS(DecoratorTest)
 		auto text = file_stream->message();
 
 		Assert::AreEqual(expected_message, text.c_str());
+
+		delete stream;
 	}
 };
 }
+

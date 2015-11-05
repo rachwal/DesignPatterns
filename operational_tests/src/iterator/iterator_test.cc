@@ -28,6 +28,8 @@ TEST_CLASS(IteratorTest)
 
 		//THEN
 		Assert::AreEqual(0l, employees_count);
+
+		delete employees;
 	}
 
 	TEST_METHOD(ShouldAppendTwoElementsToList)
@@ -42,6 +44,9 @@ TEST_CLASS(IteratorTest)
 		//THEN
 		auto employees_count = employees->Count();
 		Assert::AreEqual(2l, employees_count);
+
+		delete employees;
 	}
 };
 }
+

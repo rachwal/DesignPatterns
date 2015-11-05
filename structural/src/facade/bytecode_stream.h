@@ -23,6 +23,8 @@ class BytecodeStream
 	private:
 	std::string text_;
 };
-}}
+}
+}
 
 #endif
+

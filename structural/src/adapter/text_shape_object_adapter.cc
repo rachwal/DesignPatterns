@@ -26,4 +26,6 @@ bool TextShapeObjectAdapter::IsEmpty() const
 {
 	return text_view_->IsEmpty();
 }
-}}
+}
+}
+

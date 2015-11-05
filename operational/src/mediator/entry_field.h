@@ -27,5 +27,7 @@ class EntryField : public MediatorWidget
 	private:
 	std::string text_;
 };
-}}
+}
+}
 #endif
+

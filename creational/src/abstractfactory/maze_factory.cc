@@ -58,4 +58,6 @@ MazeFactoryInterface *MazeFactory::Instance()
 	}
 	return instance_;
 }
-}}
+}
+}
+

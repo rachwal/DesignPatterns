@@ -185,4 +185,6 @@ bool Validator::ValidateSide(Room* room, Direction direction)
 	}
 	return true;
 }
-}};
+}
+};
+

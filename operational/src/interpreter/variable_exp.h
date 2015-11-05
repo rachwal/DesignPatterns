@@ -27,6 +27,8 @@ class VariableExp : public BooleanExpInterface, public VariableExpInterface
 	private:
 	std::string name_;
 };
-}}
+}
+}
 
 #endif
+

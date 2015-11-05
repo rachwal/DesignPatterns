@@ -23,6 +23,8 @@ class StreamDecorator : public StreamInterface
 	protected:
 	StreamInterface* component_;
 };
-}}
+}
+}
 
 #endif
+

@@ -9,7 +9,7 @@ namespace operational
 {
 namespace visitor
 {
-PricingVisitor::PricingVisitor() :total_(0) {}
+PricingVisitor::PricingVisitor() : total_(0) {}
 
 double PricingVisitor::GetTotalPrice() const
 {
@@ -39,4 +39,6 @@ void PricingVisitor::VisitBus(BusInterface* bus)
 	auto price = bus->GetLuxPrice();
 	total_ += price;
 }
-}}
+}
+}
+

@@ -27,4 +27,6 @@ bool PrintNEmployees::ProcessItem(Employee* const& e)
 	e->Print();
 	return count_ < total_;
 }
-}}
+}
+}
+

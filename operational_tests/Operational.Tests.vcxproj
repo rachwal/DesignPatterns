@@ -95,9 +95,11 @@
   <ItemGroup>
     <ClCompile Include="src\chain\application_test.cc" />
     <ClCompile Include="src\chain\chain_test.cc" />
+    <ClCompile Include="src\command\command_test.cc" />
     <ClCompile Include="src\interpreter\interpreter_test.cc" />
     <ClCompile Include="src\iterator\iterator_test.cc" />
     <ClCompile Include="src\mediator\mediator_test.cc" />
+    <ClCompile Include="src\memento\memento_test.cc" />
     <ClCompile Include="src\observer\clock_timer_test.cc" />
     <ClCompile Include="src\observer\observer_test.cc" />
     <ClCompile Include="src\templatemethod\templatemethod_test.cc" />

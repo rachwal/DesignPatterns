@@ -25,4 +25,6 @@ void EntryField::HandleMouse(MouseEvent& event)
 {
 	Changed();
 }
-}}
+}
+}
+

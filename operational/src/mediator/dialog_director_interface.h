@@ -20,6 +20,8 @@ class DialogDirectorInterface
 	virtual void ShowDialog() = 0;
 	virtual void WidgetChanged(MediatorWidgetInterface*) = 0;
 };
-}}
+}
+}
 
 #endif
+

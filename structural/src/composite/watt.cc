@@ -9,7 +9,7 @@ namespace structural
 {
 namespace composite
 {
-Watt::Watt(const double& value) :value_(value) { }
+Watt::Watt(const double& value) : value_(value) { }
 
 double Watt::value() const
 {
@@ -20,4 +20,6 @@ void Watt::value(double value)
 {
 	value_ = value;
 }
-}}
+}
+}
+

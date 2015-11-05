@@ -32,7 +32,7 @@ class FilteringListTraverser : public ListTraverser<Item>
 };
 
 template<class Item>
-FilteringListTraverser<Item>::FilteringListTraverser(List<Item>* list) { }
+FilteringListTraverser<Item>::FilteringListTraverser(List<Item>* list): ListTraverser<Item>(list) { }
 
 template<class Item>
 FilteringListTraverser<Item>::~FilteringListTraverser() { }
@@ -67,6 +67,8 @@ bool FilteringListTraverser<Item>::TestItem(const Item&)
 {
 	return false;
 }
-}}
+}
+}
 
 #endif
+

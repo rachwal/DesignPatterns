@@ -6,7 +6,7 @@
 #ifndef STRUCTURAL_BRIDGE_WINDOW_IMP_H_
 #define STRUCTURAL_BRIDGE_WINDOW_IMP_H_
 
-#include <string>
+#include<string>
 
 namespace structural
 {
@@ -20,6 +20,8 @@ class WindowImp
 	virtual void DeviceRect(float, float, float, float) = 0;
 	virtual void DeviceText(const std::string& text, float, float) = 0;
 };
-}}
+}
+}
 
 #endif
+

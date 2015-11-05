@@ -28,6 +28,8 @@ class StandardMazeBuilder : public MazeBuilderInterface
 	virtual commons::Direction CommonWall(const commons::Room& first_room, const commons::Room& second_room) const;
 	commons::Maze* current_maze_;
 };
-}}
+}
+}
 
 #endif
+

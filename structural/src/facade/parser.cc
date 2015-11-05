@@ -28,4 +28,6 @@ void Parser::Parse(Scanner& scanner, ProgramNodeBuilder& builder)
 		}
 	}
 }
-}}
+}
+}
+

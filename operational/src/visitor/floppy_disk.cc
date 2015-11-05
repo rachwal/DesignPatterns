@@ -9,7 +9,7 @@ namespace operational
 {
 namespace visitor
 {
-FloppyDisk::FloppyDisk(const std::string& name) :name_(name), price_(0) {}
+FloppyDisk::FloppyDisk(const std::string& name) : name_(name), price_(0) {}
 
 std::string FloppyDisk::name() const
 {
@@ -35,4 +35,6 @@ void FloppyDisk::Accept(EquipmentVisitorInterface& visitor)
 {
 	visitor.VisitFloppyDisk(this);
 }
-}}
+}
+}
+

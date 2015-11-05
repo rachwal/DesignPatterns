@@ -17,6 +17,8 @@ class ObserverWidgetInterface
 
 	virtual void Draw() = 0;
 };
-}}
+}
+}
 
 #endif
+

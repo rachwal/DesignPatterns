@@ -18,13 +18,16 @@ class PMWindowImp : public WindowImp
 	public:
 	PMWindowImp();
 
-	virtual void DeviceText(const std::string& text, float, float) override;
-	virtual void DeviceRect(float, float, float, float) override;
+	void DeviceRect(float, float, float, float) override;
+	void DeviceText(const std::string& text, float, float) override;
+
 	std::string text() const;
 
 	private:
 	std::string text_;
 };
-}}
+}
+}
 
 #endif
+

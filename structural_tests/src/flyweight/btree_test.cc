@@ -39,6 +39,8 @@ TEST_CLASS(BTreeTest)
 
 		//THEN
 		Assert::IsTrue(first_font == *font);
+
+		delete btree;
 	}
 
 	TEST_METHOD(ShouldGetFontByIndex)
@@ -58,6 +60,8 @@ TEST_CLASS(BTreeTest)
 		//THEN
 		Assert::IsTrue(first_font == *first);
 		Assert::IsTrue(second_font == *second);
+
+		delete btree;
 	}
 
 	TEST_METHOD(ShouldGetFontByIndexConsideringAlsoCapacityOfFontBlock)
@@ -79,6 +83,8 @@ TEST_CLASS(BTreeTest)
 		Assert::IsTrue(first_font == *first);
 		Assert::IsTrue(first_font == *second);
 		Assert::IsTrue(second_font == *fourth);
+
+		delete btree;
 	}
 
 	TEST_METHOD(ShouldPassTestCaseFromBook)
@@ -111,6 +117,9 @@ TEST_CLASS(BTreeTest)
 		Assert::IsTrue(times_italic_12 == *italic);
 		Assert::IsTrue(times_bold_12 == *bold);
 		Assert::IsTrue(courier_24 == *courier);
+
+		delete btree;
 	}
 };
 }
+

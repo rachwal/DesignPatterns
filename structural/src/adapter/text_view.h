@@ -41,6 +41,8 @@ class TextView :public VisualComponentInterface
 	float width_;
 	float height_;
 };
-}}
+}
+}
 
 #endif
+

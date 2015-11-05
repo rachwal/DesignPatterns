@@ -22,6 +22,8 @@ class Compiler
 
 	virtual void Compile(std::istringstream&, BytecodeStream*);
 };
-}}
+}
+}
 
 #endif
+

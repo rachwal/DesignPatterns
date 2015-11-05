@@ -34,6 +34,12 @@
     <Filter Include="Source Files\visitor">
       <UniqueIdentifier>{5bda23dc-b3c3-4776-bbd8-bf7c519525a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\memento">
+      <UniqueIdentifier>{ef5f6f82-b5fd-47b1-b7c5-7851bb30fc7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command">
+      <UniqueIdentifier>{643398fb-c6db-43be-bfce-e01b3632ca79}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\iterator\iterator_test.cc">
@@ -62,6 +68,12 @@
     </ClCompile>
     <ClCompile Include="src\visitor\visitor_test.cc">
       <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memento\memento_test.cc">
+      <Filter>Source Files\memento</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\command_test.cc">
+      <Filter>Source Files\command</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

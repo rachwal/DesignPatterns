@@ -38,4 +38,6 @@ void ExpressionNode::Traverse(CodeGeneratorInterface& cg)
 		i.CurrentItem()->Traverse(cg);
 	}
 }
-}}
+}
+}
+

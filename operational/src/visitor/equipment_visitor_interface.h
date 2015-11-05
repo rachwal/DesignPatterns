@@ -25,6 +25,8 @@ class EquipmentVisitorInterface
 	virtual void VisitChassis(ChassisInterface*) = 0;
 	virtual void VisitBus(BusInterface*) = 0;
 };
-}}
+}
+}
 
 #endif
+

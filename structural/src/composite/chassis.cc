@@ -9,7 +9,9 @@ namespace structural
 {
 namespace composite
 {
-Chassis::Chassis(const std::string& name) :CompositeEquipment(name) { }
+Chassis::Chassis(const std::string& name) : CompositeEquipment(name) { }
 
 Chassis::Chassis() : Chassis("") { }
-}}
+}
+}
+

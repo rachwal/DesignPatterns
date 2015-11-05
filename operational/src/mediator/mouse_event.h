@@ -11,6 +11,8 @@ namespace operational
 namespace madiator
 {
 class MouseEvent { };
-}}
+}
+}
 
 #endif
+

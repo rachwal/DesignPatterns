@@ -24,6 +24,8 @@ class NotExp : public BooleanExpInterface
 	private:
 	BooleanExpInterface* operand_;
 };
-}}
+}
+}
 
 #endif
+

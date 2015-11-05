@@ -12,7 +12,7 @@ namespace creational
 {
 namespace builder
 {
-StandardMazeBuilder::StandardMazeBuilder() :current_maze_(nullptr) { }
+StandardMazeBuilder::StandardMazeBuilder() : current_maze_(nullptr) { }
 
 StandardMazeBuilder::~StandardMazeBuilder()
 {
@@ -60,4 +60,6 @@ commons::Direction StandardMazeBuilder::CommonWall(const commons::Room& first_ro
 	}
 	return commons::West;
 }
-}}
+}
+}
+

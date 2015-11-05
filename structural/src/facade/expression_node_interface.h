@@ -19,6 +19,8 @@ class ExpressionNodeInterface
 
 	virtual std::string expression() const = 0;
 };
-}}
+}
+}
 
 #endif
+

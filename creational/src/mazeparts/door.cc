@@ -59,4 +59,6 @@ Door *Door::Clone() const
 {
 	return new Door(*this);
 }
-}}
+}
+}
+

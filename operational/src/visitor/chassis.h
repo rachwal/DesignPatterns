@@ -30,13 +30,15 @@ class Chassis : public VisitedEquipmentInterface, public ChassisInterface
 
 	void Accept(EquipmentVisitorInterface&) override;
 
-	void AddPart(VisitedEquipmentInterface*);
+	void AddPart(VisitedEquipmentInterface*) const;
 
 	private:
 	std::string name_;
 	double price_;
 	iterator::List<VisitedEquipmentInterface*>* parts_;
 };
-}}
+}
+}
 
 #endif
+

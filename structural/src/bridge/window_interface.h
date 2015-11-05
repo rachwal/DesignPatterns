@@ -20,6 +20,8 @@ class WindowInterface
 	virtual void DrawRect(const commons::Point<float>& p1, const commons::Point<float>& p2) = 0;
 	virtual void DrawText(const std::string& text, const commons::Point<float>&) = 0;
 };
-}}
+}
+}
 
 #endif
+

@@ -37,6 +37,8 @@ class GlyphContext
 	int index_;
 	BTree* fonts_;
 };
-}}
+}
+}
 
 #endif
+

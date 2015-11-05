@@ -9,7 +9,7 @@ namespace structural
 {
 namespace composite
 {
-CompositeEquipment::CompositeEquipment(const std::string& name) :name_(name), price_(0), power_(0)
+CompositeEquipment::CompositeEquipment(const std::string& name) : name_(name), price_(0), power_(0)
 {
 	equipment_ = new operational::iterator::List<EquipmentInterface*>();
 }
@@ -83,4 +83,6 @@ operational::iterator::IteratorInterface<EquipmentInterface*> *CompositeEquipmen
 {
 	return new operational::iterator::ListIterator<EquipmentInterface*>(equipment_);
 }
-}}
+}
+}
+

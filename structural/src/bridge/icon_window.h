@@ -20,11 +20,13 @@ class IconWindow : public Window
 	~IconWindow() override;
 
 	void DrawText(const std::string& text, const commons::Point<float>&) override;
-	void DrawIcon();
+	void DrawIcon() const;
 
 	private:
 	Bitmap* bitmap_;
 };
-}}
+}
+}
 
 #endif
+

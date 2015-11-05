@@ -9,7 +9,7 @@ namespace structural
 {
 namespace composite
 {
-FloppyDisk::FloppyDisk(const std::string& name) :name_(name), power_(0), price_(0) { }
+FloppyDisk::FloppyDisk(const std::string& name) : name_(name), power_(0), price_(0) { }
 
 FloppyDisk::FloppyDisk() : FloppyDisk("") { }
 
@@ -48,4 +48,6 @@ Currency FloppyDisk::DiscountPrice()
 	auto discount_price = price_.value() * 0.9;
 	return Currency(discount_price);
 }
-}}
+}
+}
+

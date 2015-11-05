@@ -9,7 +9,7 @@ namespace operational
 {
 namespace visitor
 {
-InventoryVisitor::InventoryVisitor() :inventory_(new Inventory()) {}
+InventoryVisitor::InventoryVisitor() : inventory_(new Inventory()) {}
 
 Inventory *InventoryVisitor::GetInventory() const
 {
@@ -35,4 +35,6 @@ void InventoryVisitor::VisitBus(BusInterface*)
 {
 	inventory_->Accumulate(nullptr);
 }
-}}
+}
+}
+

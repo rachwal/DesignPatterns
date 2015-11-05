@@ -9,7 +9,7 @@ namespace operational
 {
 namespace visitor
 {
-Bus::Bus(const std::string& name) :name_(name), price_(0) {}
+Bus::Bus(const std::string& name) : name_(name), price_(0) {}
 
 std::string Bus::name() const
 {
@@ -40,4 +40,6 @@ void Bus::Accept(EquipmentVisitorInterface& visitor)
 {
 	visitor.VisitBus(this);
 }
-}}
+}
+}
+

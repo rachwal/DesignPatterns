@@ -26,6 +26,8 @@ class Scanner
 	private:
 	std::istringstream& input_stream_;
 };
-}}
+}
+}
 
 #endif
+

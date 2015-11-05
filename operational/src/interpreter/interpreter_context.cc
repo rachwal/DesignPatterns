@@ -24,4 +24,6 @@ void InterpreterContext::Assign(VariableExpInterface* expression, bool value)
 	auto name = expression->name();
 	variables_->operator[](name) = value;
 }
-}}
+}
+}
+

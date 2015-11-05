@@ -26,4 +26,6 @@ std::string XWindowImp::text() const
 {
 	return text_;
 }
-}}
+}
+}
+

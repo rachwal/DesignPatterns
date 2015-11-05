@@ -26,6 +26,8 @@ class VisitedEquipmentInterface
 
 	virtual void Accept(EquipmentVisitorInterface&) = 0;
 };
-}}
+}
+}
 
 #endif
+

@@ -31,6 +31,8 @@ class DigitalClock : public ObserverWidgetInterface, public ClockTickObserver
 	ClockTimer* clock_timer_;
 	std::string formated_time_;
 };
-}}
+}
+}
 
 #endif
+

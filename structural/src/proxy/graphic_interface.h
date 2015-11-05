@@ -27,6 +27,8 @@ class GraphicInterface
 	virtual void Load(std::istream& from) = 0;
 	virtual void Save(std::ostream& to) = 0;
 };
-}}
+}
+}
 
 #endif
+

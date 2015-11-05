@@ -28,6 +28,8 @@ class Maze
 	private:
 	std::map<int, Room*> rooms_;
 };
-}}
+}
+}
 
 #endif
+

@@ -28,6 +28,8 @@ TEST_CLASS(TemplatemethodTest)
 		//THEN
 		auto document_state = application->GetCurrentDocumentState();
 		Assert::IsTrue(kNonCreated == document_state);
+
+		delete application;
 	}
 
 	TEST_METHOD(ShouldOpenDocumentInSampleApplication)
@@ -41,6 +43,9 @@ TEST_CLASS(TemplatemethodTest)
 		//THEN
 		auto document_state = application->GetCurrentDocumentState();
 		Assert::IsTrue(kRead == document_state);
+
+		delete application;
 	}
 };
 }
+

@@ -63,6 +63,8 @@ Item ListIterator<Item>::CurrentItem() const
 	}
 	return list_->Get(current_);
 }
-}}
+}
+}
 
 #endif
+

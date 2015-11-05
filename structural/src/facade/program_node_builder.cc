@@ -50,4 +50,6 @@ ProgramNodeInterface *ProgramNodeBuilder::GetRootNode() const
 {
 	return node_;
 }
-}}
+}
+}
+

@@ -46,4 +46,6 @@ void Column::Insert(GlyphInterface*, GlyphContext&) { }
 void Column::Remove(GlyphContext&) { }
 
 void Column::Draw(Window*, GlyphContext&) { }
-}}
+}
+}
+

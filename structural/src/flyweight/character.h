@@ -34,6 +34,8 @@ class Character : public GlyphInterface
 	private:
 	char charcode_;
 };
-}}
+}
+}
 
 #endif
+

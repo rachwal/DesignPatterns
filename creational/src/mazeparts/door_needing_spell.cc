@@ -9,11 +9,11 @@ namespace creational
 {
 namespace commons
 {
-DoorNeedingSpell::DoorNeedingSpell(const Room& first_room, const Room& second_room) :Door(first_room, second_room) { }
+DoorNeedingSpell::DoorNeedingSpell(const Room& first_room, const Room& second_room) : Door(first_room, second_room) { }
 
 DoorNeedingSpell::DoorNeedingSpell(const DoorNeedingSpell& door_needing_spell) : Door(door_needing_spell) { }
 
-bool DoorNeedingSpell::TrySpell(const Spell& spell) const
+bool DoorNeedingSpell::TrySpell(const Spell& spell)
 {
 	if (spell.message() == "")
 	{
@@ -21,4 +21,6 @@ bool DoorNeedingSpell::TrySpell(const Spell& spell) const
 	}
 	return true;
 }
-}}
+}
+}
+

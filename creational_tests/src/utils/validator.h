@@ -32,5 +32,7 @@ class Validator
 	template<class side_type>
 	static bool ValidateSide(Room* room, Direction direction);
 };
-}}
+}
+}
 #endif
+

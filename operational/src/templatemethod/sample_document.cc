@@ -9,7 +9,7 @@ namespace operational
 {
 namespace templatemethod
 {
-SampleDocument::SampleDocument() :state_(kCreated) {}
+SampleDocument::SampleDocument() : state_(kCreated) {}
 
 void SampleDocument::Save()
 {
@@ -35,4 +35,6 @@ DocumentState SampleDocument::state() const
 {
 	return state_;
 }
-}}
+}
+}
+

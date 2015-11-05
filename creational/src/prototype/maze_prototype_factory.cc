@@ -39,4 +39,6 @@ commons::Door *MazePrototypeFactory::MakeDoor(const commons::Room& first_room, c
 	door->Initialize(first_room, second_room);
 	return door;
 }
-}}
+}
+}
+

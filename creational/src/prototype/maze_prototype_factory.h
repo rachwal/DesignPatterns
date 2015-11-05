@@ -28,6 +28,8 @@ class MazePrototypeFactory : public abstractfactory::MazeFactoryInterface
 	commons::Wall* prototype_wall_;
 	commons::Door* prototype_door_;
 };
-}}
+}
+}
 
 #endif
+

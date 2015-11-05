@@ -9,7 +9,7 @@ namespace creational
 {
 namespace commons
 {
-Room::Room(const int& room_number) :room_number_(room_number), enetered_(false)
+Room::Room(const int& room_number) : room_number_(room_number), enetered_(false)
 {
 	for (auto i = 0; i < 4; i++)
 	{
@@ -17,7 +17,7 @@ Room::Room(const int& room_number) :room_number_(room_number), enetered_(false)
 	}
 }
 
-Room::Room(const Room& room) :room_number_(room.room_number_), enetered_(room.enetered_)
+Room::Room(const Room& room) : room_number_(room.room_number_), enetered_(room.enetered_)
 {
 	for (auto i = 0; i < 4; i++)
 	{
@@ -54,4 +54,6 @@ void Room::Enter()
 {
 	enetered_ = true;
 }
-}}
+}
+}
+

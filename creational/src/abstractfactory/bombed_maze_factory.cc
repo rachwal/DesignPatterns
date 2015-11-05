@@ -31,4 +31,6 @@ commons::Door *BombedMazeFactory::MakeDoor(const commons::Room& first_room, cons
 {
 	return new commons::Door(first_room, second_room);
 }
-}}
+}
+}
+

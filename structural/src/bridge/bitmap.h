@@ -24,6 +24,8 @@ class Bitmap
 	float width_;
 	float height_;
 };
-}}
+}
+}
 
 #endif
+

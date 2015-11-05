@@ -209,6 +209,8 @@ Item &List<Item>::Pop()
 	RemoveLast();
 	return top;
 }
-}}
+}
+}
 
 #endif
+

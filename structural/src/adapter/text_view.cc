@@ -9,7 +9,7 @@ namespace structural
 {
 namespace adapter
 {
-TextView::TextView() :TextView("") { }
+TextView::TextView() : TextView("") { }
 
 TextView::TextView(const std::string& text) : content_(text), x_(0), y_(0), width_(10), height_(1) { }
 
@@ -57,4 +57,6 @@ void TextView::content(const std::string& text)
 {
 	content_ = text;
 }
-}}
+}
+}
+

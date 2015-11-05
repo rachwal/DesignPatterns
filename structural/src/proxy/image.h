@@ -30,6 +30,8 @@ class Image : public GraphicInterface
 	private:
 	commons::Point<float> extent_;
 };
-}}
+}
+}
 
 #endif
+

@@ -49,3 +49,4 @@ TEST_CLASS(DoorNeedingSpellTest)
 	}
 };
 }
+

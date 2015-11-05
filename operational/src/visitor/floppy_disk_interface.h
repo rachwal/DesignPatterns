@@ -17,6 +17,8 @@ class FloppyDiskInterface
 
 	virtual double GetBoxPrice() = 0;
 };
-}}
+}
+}
 
 #endif
+

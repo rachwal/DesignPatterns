@@ -11,7 +11,7 @@ namespace operational
 {
 namespace chain
 {
-Dialog::Dialog() :Dialog("dialog", -1, nullptr) {}
+Dialog::Dialog() : Dialog("dialog", -1, nullptr) {}
 
 Dialog::Dialog(std::string name) : Dialog(name, -1, nullptr) {}
 
@@ -45,4 +45,6 @@ std::string Dialog::help_message() const
 {
 	return help_message_;
 }
-}}
+}
+}
+

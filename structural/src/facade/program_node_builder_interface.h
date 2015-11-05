@@ -25,6 +25,8 @@ class ProgramNodeBuilderInterface
 	virtual ProgramNodeInterface *NewCondition(ProgramNodeInterface* condition, ProgramNodeInterface* truePart, ProgramNodeInterface* falsePart) = 0;
 	virtual ProgramNodeInterface *GetRootNode() const = 0;
 };
-}}
+}
+}
 
 #endif
+

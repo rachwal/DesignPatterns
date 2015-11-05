@@ -9,7 +9,7 @@ namespace creational
 {
 namespace commons
 {
-RoomWithABomb::RoomWithABomb(const int& room_number, const bool& bombed) :Room(room_number), has_bomb_(bombed) { }
+RoomWithABomb::RoomWithABomb(const int& room_number, const bool& bombed) : Room(room_number), has_bomb_(bombed) { }
 
 RoomWithABomb::RoomWithABomb(const RoomWithABomb& room) : Room(room.room_number_), has_bomb_(room.has_bomb_) { }
 
@@ -27,4 +27,6 @@ void RoomWithABomb::Initialize(const bool& bombed)
 {
 	has_bomb_ = bombed;
 }
-}}
+}
+}
+

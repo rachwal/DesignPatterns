@@ -31,6 +31,8 @@ class EquipmentInterface
 	virtual Currency NetPrice() = 0;
 	virtual Currency DiscountPrice() = 0;
 };
-}}
+}
+}
 
 #endif
+

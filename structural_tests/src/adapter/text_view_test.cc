@@ -34,6 +34,8 @@ TEST_CLASS(TextViewTest)
 		Assert::AreEqual(0.0f, y);
 		Assert::AreEqual(10.0f, width);
 		Assert::AreEqual(1.0f, height);
+
+		delete text_view;
 	}
 
 	TEST_METHOD(ShouldCreateTextViewWithNoContent)
@@ -45,6 +47,8 @@ TEST_CLASS(TextViewTest)
 		auto content = text_view->content();
 
 		Assert::AreEqual("", content.c_str());
+
+		delete text_view;
 	}
 
 	TEST_METHOD(ShouldCreateTextViewWithContent)
@@ -61,6 +65,8 @@ TEST_CLASS(TextViewTest)
 
 		Assert::AreEqual(expected_content, content.c_str());
 		Assert::IsFalse(is_empty);
+
+		delete text_view;
 	}
 
 	TEST_METHOD(ShouldSetTextViewOrigin)
@@ -79,6 +85,8 @@ TEST_CLASS(TextViewTest)
 
 		Assert::AreEqual(expected_x, x);
 		Assert::AreEqual(expected_y, y);
+
+		delete text_view;
 	}
 
 	TEST_METHOD(ShouldSetTextViewExtent)
@@ -97,6 +105,9 @@ TEST_CLASS(TextViewTest)
 
 		Assert::AreEqual(expected_width, width);
 		Assert::AreEqual(expected_height, height);
+
+		delete text_view;
 	}
 };
 }
+

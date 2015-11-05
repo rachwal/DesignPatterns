@@ -9,7 +9,7 @@ namespace creational
 {
 namespace commons
 {
-Wall::Wall() :entered_(false) { }
+Wall::Wall() : entered_(false) { }
 
 Wall::Wall(const Wall& wall)
 {
@@ -32,4 +32,6 @@ bool Wall::entered() const
 {
 	return entered_;
 }
-}}
+}
+}
+

@@ -22,6 +22,8 @@ class Token
 	private:
 	std::string content_;
 };
-}}
+}
+}
 
 #endif
+

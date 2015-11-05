@@ -9,7 +9,7 @@ namespace creational
 {
 namespace commons
 {
-EnchantedRoom::EnchantedRoom(const int& room_number, const Spell& spell) :Room(room_number)
+EnchantedRoom::EnchantedRoom(const int& room_number, const Spell& spell) : Room(room_number)
 {
 	spell_ = new Spell(spell);
 }
@@ -39,4 +39,6 @@ Spell EnchantedRoom::PickUpSpell() const
 {
 	return *spell_;
 }
-}}
+}
+}
+

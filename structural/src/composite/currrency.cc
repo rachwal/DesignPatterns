@@ -9,7 +9,7 @@ namespace structural
 {
 namespace composite
 {
-Currency::Currency(const double& price) :value_(price) { }
+Currency::Currency(const double& price) : value_(price) { }
 
 double Currency::value() const
 {
@@ -20,4 +20,6 @@ void Currency::value(double value)
 {
 	value_ = value;
 }
-}}
+}
+}
+

@@ -33,6 +33,8 @@ class Column : public GlyphInterface
 
 	virtual void Draw(Window*, GlyphContext&) override;
 };
-}}
+}
+}
 
 #endif
+

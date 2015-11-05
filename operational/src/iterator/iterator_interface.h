@@ -21,6 +21,8 @@ class IteratorInterface
 	virtual bool IsDone() const = 0;
 	virtual Item CurrentItem() const = 0;
 };
-}}
+}
+}
 
 #endif
+

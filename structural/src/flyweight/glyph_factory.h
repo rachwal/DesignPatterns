@@ -29,6 +29,8 @@ class GlyphFactory
 
 	Character* character_[kNumberCharCodes];
 };
-}}
+}
+}
 
 #endif
+

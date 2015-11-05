@@ -11,7 +11,7 @@ namespace operational
 {
 namespace chain
 {
-Widget::Widget() :Widget("widget", -1, nullptr) {}
+Widget::Widget() : Widget("widget", -1, nullptr) {}
 
 Widget::Widget(std::string name) : Widget(name, -1, nullptr) {}
 
@@ -67,4 +67,6 @@ std::string Widget::help_message() const
 {
 	return help_message_;
 }
-}}
+}
+}
+

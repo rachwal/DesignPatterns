@@ -19,5 +19,7 @@ void StreamDecorator::PutString(const std::string& string)
 	component_->PutString(string);
 }
 
-StreamDecorator::StreamDecorator(StreamInterface* stream) :component_(stream) { }
-}}
+StreamDecorator::StreamDecorator(StreamInterface* stream) : component_(stream) { }
+}
+}
+

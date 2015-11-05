@@ -19,6 +19,8 @@ class VariableExpInterface
 
 	virtual std::string name() const = 0;
 };
-}}
+}
+}
 
 #endif
+

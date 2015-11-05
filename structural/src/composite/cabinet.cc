@@ -9,7 +9,9 @@ namespace structural
 {
 namespace composite
 {
-Cabinet::Cabinet(const std::string& name) :CompositeEquipment(name) { }
+Cabinet::Cabinet(const std::string& name) : CompositeEquipment(name) { }
 
 Cabinet::Cabinet() : Cabinet("") { }
-}}
+}
+}
+

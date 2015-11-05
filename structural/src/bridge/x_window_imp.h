@@ -27,6 +27,8 @@ class XWindowImp : public WindowImp
 	private:
 	std::string text_;
 };
-}}
+}
+}
 
 #endif
+

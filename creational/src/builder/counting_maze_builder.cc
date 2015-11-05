@@ -12,7 +12,7 @@ namespace creational
 {
 namespace builder
 {
-CountingMazeBuilder::CountingMazeBuilder() :current_maze_(nullptr), doors_(0), rooms_(0) { }
+CountingMazeBuilder::CountingMazeBuilder() : current_maze_(nullptr), doors_(0), rooms_(0) { }
 
 CountingMazeBuilder::~CountingMazeBuilder()
 {
@@ -69,4 +69,6 @@ commons::Direction CountingMazeBuilder::CommonWall(const commons::Room& first_ro
 	}
 	return commons::West;
 }
-}}
+}
+}
+

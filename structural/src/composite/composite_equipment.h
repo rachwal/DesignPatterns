@@ -47,6 +47,8 @@ class CompositeEquipment : public EquipmentInterface
 
 	operational::iterator::List<EquipmentInterface*>* equipment_;
 };
-}}
+}
+}
 
 #endif
+

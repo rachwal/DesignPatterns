@@ -21,6 +21,8 @@ class Parser
 
 	virtual void Parse(Scanner&, ProgramNodeBuilder&);
 };
-}}
+}
+}
 
 #endif
+

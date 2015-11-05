@@ -37,4 +37,6 @@ std::string &CompressingStream::message()
 {
 	return text_string_;
 }
-}}
+}
+}
+

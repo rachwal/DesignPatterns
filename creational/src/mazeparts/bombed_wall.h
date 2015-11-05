@@ -26,6 +26,8 @@ class BombedWall : public Wall
 	private:
 	bool bombed_;
 };
-}}
+}
+}
 
 #endif
+

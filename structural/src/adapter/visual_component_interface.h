@@ -18,6 +18,8 @@ class VisualComponentInterface
 	virtual void Draw() = 0;
 	virtual void Resize() = 0;
 };
-}}
+}
+}
 
 #endif
+

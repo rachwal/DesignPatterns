@@ -29,4 +29,6 @@ BooleanExpInterface *AndExp::Replace(const std::string& name, BooleanExpInterfac
 {
 	return new AndExp(left_operand_->Replace(name, expression), right_operand_->Replace(name, expression));
 }
-}}
+}
+}
+

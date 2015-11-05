@@ -28,4 +28,6 @@ BooleanExpInterface *Constant::Copy() const
 {
 	return new Constant(value_);
 }
-}}
+}
+}
+

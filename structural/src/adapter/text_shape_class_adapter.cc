@@ -28,4 +28,6 @@ bool TextShapeClassAdapter::IsEmpty() const
 {
 	return TextView::IsEmpty();
 }
-}}
+}
+}
+

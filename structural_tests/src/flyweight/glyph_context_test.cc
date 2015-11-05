@@ -106,3 +106,4 @@ TEST_CLASS(GlyphContextTest)
 	}
 };
 }
+

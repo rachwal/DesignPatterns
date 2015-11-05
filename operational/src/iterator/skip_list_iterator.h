@@ -30,7 +30,7 @@ template<class Item>
 SkipListIterator<Item>::~SkipListIterator() { }
 
 template<class Item>
-SkipListIterator<Item>::SkipListIterator(const List<Item>* list) { }
+SkipListIterator<Item>::SkipListIterator(const List<Item>* list): ListIterator<Item>(list) { }
 
 template<class Item>
 void SkipListIterator<Item>::First() { }
@@ -47,8 +47,10 @@ bool SkipListIterator<Item>::IsDone() const
 template<class Item>
 Item SkipListIterator<Item>::CurrentItem() const
 {
-	return{};
+	return {};
 }
-}}
+}
+}
 
 #endif
+

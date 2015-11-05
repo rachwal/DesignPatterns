@@ -24,6 +24,8 @@ class MazeFactoryInterface
 	virtual commons::Room *MakeRoom(const int& room_number) const = 0;
 	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const = 0;
 };
-}}
+}
+}
 
 #endif
+

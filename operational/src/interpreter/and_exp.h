@@ -25,6 +25,8 @@ class AndExp : public BooleanExpInterface
 	BooleanExpInterface* left_operand_;
 	BooleanExpInterface* right_operand_;
 };
-}}
+}
+}
 
 #endif
+

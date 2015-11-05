@@ -26,6 +26,8 @@ class VirtualImageProxy
 	Image* image_;
 	std::string image_file_;
 };
-}}
+}
+}
 
 #endif
+

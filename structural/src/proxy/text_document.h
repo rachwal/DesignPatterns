@@ -24,6 +24,8 @@ class TextDocument
 	GraphicInterface* graphic_;
 	commons::Point<float> extent_;
 };
-}}
+}
+}
 
 #endif
+

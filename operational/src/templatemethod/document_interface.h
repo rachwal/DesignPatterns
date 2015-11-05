@@ -32,6 +32,8 @@ class DocumentInterface
 
 	virtual DocumentState state() const = 0;
 };
-}}
+}
+}
 
 #endif
+

@@ -25,8 +25,10 @@ commons::Door *EnchantedMazeGame::MakeDoor(const commons::Room& first_room, cons
 	return new commons::DoorNeedingSpell(first_room, second_room);
 }
 
-commons::Spell *EnchantedMazeGame::WeaveSpell() const
+commons::Spell *EnchantedMazeGame::WeaveSpell()
 {
 	return new commons::Spell("Weave Spell");
 };
-}}
+}
+}
+

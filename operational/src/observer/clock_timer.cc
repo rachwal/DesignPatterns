@@ -56,4 +56,6 @@ void ClockTimer::Detach(ClockTickObserver* observer_interface) const
 {
 	clock_tick_->Detach(observer_interface);
 }
-}}
+}
+}
+

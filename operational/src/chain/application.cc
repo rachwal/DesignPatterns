@@ -10,7 +10,7 @@ namespace operational
 {
 namespace chain
 {
-Application::Application() :Application("application", -1, nullptr) {}
+Application::Application() : Application("application", -1, nullptr) {}
 
 Application::Application(std::string name) : Application(name, -1, nullptr) {}
 
@@ -66,4 +66,6 @@ std::string Application::help_message() const
 {
 	return help_message_;
 }
-}}
+}
+}
+

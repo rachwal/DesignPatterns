@@ -27,6 +27,8 @@ class MediatorButton : public MediatorWidget
 	private:
 	std::string text_;
 };
-}}
+}
+}
 
 #endif
+

@@ -12,4 +12,6 @@ namespace composite
 Bus::Bus(const std::string& name) : CompositeEquipment(name) { }
 
 Bus::Bus() : Bus("") { }
-}}
+}
+}
+

@@ -36,6 +36,8 @@ class ClockTimer
 
 	ClockTick* clock_tick_;
 };
-}}
+}
+}
 
 #endif
+

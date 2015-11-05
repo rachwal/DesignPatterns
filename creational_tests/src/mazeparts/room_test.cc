@@ -150,3 +150,4 @@ TEST_CLASS(RoomTest)
 	}
 };
 }
+

@@ -26,4 +26,6 @@ std::string PMWindowImp::text() const
 {
 	return text_;
 }
-}}
+}
+}
+

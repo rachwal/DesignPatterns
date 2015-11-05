@@ -19,6 +19,8 @@ class ShapeInterface
 
 	virtual void BoundingBox(commons::Point<float>& bottom_left, commons::Point<float>& top_right) const = 0;
 };
-}}
+}
+}
 
 #endif
+

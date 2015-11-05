@@ -11,7 +11,7 @@ namespace structural
 {
 namespace decorator
 {
-ASCII7Stream::ASCII7Stream(StreamInterface* stream) :StreamDecorator(stream), value_(0), text_string_("") { }
+ASCII7Stream::ASCII7Stream(StreamInterface* stream) : StreamDecorator(stream), value_(0), text_string_("") { }
 
 void ASCII7Stream::PutInt(int value)
 {
@@ -37,4 +37,6 @@ std::string &ASCII7Stream::message()
 {
 	return text_string_;
 }
-}}
+}
+}
+

@@ -28,10 +28,12 @@ class TemplateApplication
 	virtual void AboutToOpenDocument(DocumentInterface* document) = 0;
 
 	private:
-	void AddDocument(DocumentInterface* document);
+	void AddDocument(DocumentInterface* document) const;
 
 	std::list<DocumentInterface*>* documents_;
 };
-}}
+}
+}
 
 #endif
+

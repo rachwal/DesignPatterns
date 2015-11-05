@@ -17,6 +17,8 @@ class ClockTickObserver
 
 	virtual void OnClockTick() = 0;
 };
-}}
+}
+}
 
 #endif
+

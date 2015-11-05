@@ -29,4 +29,6 @@ BooleanExpInterface *OrExp::Replace(const std::string& name, BooleanExpInterface
 {
 	return new OrExp(left_operand_->Replace(name, expression), right_operand_->Replace(name, expression));
 }
-}}
+}
+}
+

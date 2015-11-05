@@ -28,6 +28,8 @@ class ClockTick : public ClockTickInterface
 	private:
 	iterator::List<ClockTickObserver*>* observers_;
 };
-}}
+}
+}
 
 #endif
+

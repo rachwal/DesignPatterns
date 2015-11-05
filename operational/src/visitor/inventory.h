@@ -24,6 +24,8 @@ class Inventory
 	private:
 	int count_;
 };
-}}
+}
+}
 
 #endif
+

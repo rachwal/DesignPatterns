@@ -36,6 +36,8 @@ TEST_CLASS(VisitorTest)
 		auto inventory = visitor.GetInventory();
 
 		Assert::AreEqual(1, inventory->count());
+
+		delete bus;
 	}
 
 	TEST_METHOD(ShouldVisitCompositeElement)
@@ -58,6 +60,8 @@ TEST_CLASS(VisitorTest)
 		auto inventory = visitor.GetInventory();
 
 		Assert::AreEqual(4, inventory->count());
+
+		delete chassis;
 	}
 
 	TEST_METHOD(ShouldVisitCalculateTotalPriceOfCompositeElement)
@@ -93,6 +97,9 @@ TEST_CLASS(VisitorTest)
 		auto price = visitor.GetTotalPrice();
 
 		Assert::AreEqual(expected_price, price);
+
+		delete chassis;
 	}
 };
 }
+

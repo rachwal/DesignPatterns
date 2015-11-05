@@ -9,9 +9,11 @@ namespace operational
 {
 namespace iterator
 {
-Employee::Employee(const std::string& name) :name_(name) { }
+Employee::Employee(const std::string& name) : name_(name) { }
 
 Employee::Employee(const Employee& employee) : name_(employee.name_) { }
 
 void Employee::Print() { }
-}}
+}
+}
+

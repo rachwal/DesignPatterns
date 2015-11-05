@@ -47,8 +47,10 @@ DocumentState TemplateApplication::GetCurrentDocumentState() const
 	return document->state();
 }
 
-void TemplateApplication::AddDocument(DocumentInterface* document)
+void TemplateApplication::AddDocument(DocumentInterface* document) const
 {
 	documents_->push_front(document);
 }
-}}
+}
+}
+

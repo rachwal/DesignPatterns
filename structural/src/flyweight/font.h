@@ -31,6 +31,8 @@ inline bool operator==(const Font& left_font, const Font& right_font)
 	auto right_font_name = right_font.name();
 	return left_font_name.compare(right_font_name) == 0;
 }
-}}
+}
+}
 
 #endif
+

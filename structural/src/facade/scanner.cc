@@ -12,7 +12,7 @@ namespace structural
 {
 namespace facade
 {
-Scanner::Scanner(std::istringstream& stream) :input_stream_(stream) { }
+Scanner::Scanner(std::istringstream& stream) : input_stream_(stream) { }
 
 Scanner::~Scanner() { }
 
@@ -33,4 +33,6 @@ std::vector<Token*> Scanner::Scan()
 
 	return tokens;
 };
-}}
+}
+}
+

@@ -9,7 +9,7 @@ namespace creational
 {
 namespace commons
 {
-BombedWall::BombedWall(const bool& bombed) :bombed_(bombed) { }
+BombedWall::BombedWall(const bool& bombed) : bombed_(bombed) { }
 
 BombedWall::BombedWall(const BombedWall& bombed_wall) : Wall(bombed_wall)
 {
@@ -35,4 +35,6 @@ void BombedWall::Enter()
 {
 	entered_ = true;
 }
-}}
+}
+}
+

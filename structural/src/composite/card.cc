@@ -9,7 +9,7 @@ namespace structural
 {
 namespace composite
 {
-Card::Card(const std::string& name) :name_(name), power_(0), price_(0) { }
+Card::Card(const std::string& name) : name_(name), power_(0), price_(0) { }
 
 Card::Card() : Card("") { }
 
@@ -48,4 +48,6 @@ Currency Card::DiscountPrice()
 	auto discount_price = price_.value() * 0.9;
 	return Currency(discount_price);
 }
-}}
+}
+}
+

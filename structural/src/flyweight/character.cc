@@ -9,7 +9,7 @@ namespace structural
 {
 namespace flyweight
 {
-Character::Character(char code) :charcode_(code) { }
+Character::Character(char code) : charcode_(code) { }
 
 void Character::SetFont(Font* font, GlyphContext& context)
 {
@@ -46,4 +46,6 @@ void Character::Insert(GlyphInterface*, GlyphContext&) { }
 void Character::Remove(GlyphContext&) { }
 
 void Character::Draw(Window*, GlyphContext&) { }
-}}
+}
+}
+

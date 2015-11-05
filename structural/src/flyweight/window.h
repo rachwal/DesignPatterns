@@ -11,6 +11,8 @@ namespace structural
 namespace flyweight
 {
 class Window { };
-}}
+}
+}
 
 #endif
+

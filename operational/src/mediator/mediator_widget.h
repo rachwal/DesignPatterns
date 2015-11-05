@@ -24,6 +24,8 @@ class MediatorWidget : public MediatorWidgetInterface
 	private:
 	DialogDirectorInterface* director_;
 };
-}}
+}
+}
 
 #endif
+

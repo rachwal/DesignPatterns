@@ -189,3 +189,4 @@ TEST_CLASS(MazeGameTest)
 	}
 };
 }
+

@@ -9,7 +9,7 @@ namespace structural
 {
 namespace facade
 {
-VariableNode::VariableNode(const std::string name) :name_(name)
+VariableNode::VariableNode(const std::string name) : name_(name)
 {
 	children_ = new operational::iterator::List<ProgramNodeInterface*>();
 }
@@ -42,4 +42,6 @@ std::string VariableNode::name() const
 {
 	return name_;
 }
-}}
+}
+}
+

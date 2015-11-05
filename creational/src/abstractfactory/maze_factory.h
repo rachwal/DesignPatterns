@@ -30,6 +30,8 @@ class MazeFactory : public MazeFactoryInterface
 	private:
 	static MazeFactoryInterface* instance_;
 };
-}}
+}
+}
 
 #endif
+

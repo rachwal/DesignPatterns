@@ -23,6 +23,8 @@ class TwistyTurnyPassage : public Room
 	private:
 	bool entered_;
 };
-}}
+}
+}
 
 #endif
+

@@ -22,6 +22,8 @@ class InterpreterContextInterface
 	virtual void Assign(VariableExpInterface* expression, bool) = 0;
 	virtual bool Lookup(const std::string& name) const = 0;
 };
-}}
+}
+}
 
 #endif
+

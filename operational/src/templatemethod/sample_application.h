@@ -22,6 +22,8 @@ class SampleApplication : public TemplateApplication
 	virtual bool CanOpenDocument(const std::string& path) override;
 	virtual void AboutToOpenDocument(DocumentInterface* document) override;
 };
-}}
+}
+}
 
 #endif
+

@@ -34,6 +34,8 @@ class ImageProxy : public GraphicInterface
 	commons::Point<float> extent_;
 	std::string file_name_;
 };
-}}
+}
+}
 
 #endif
+

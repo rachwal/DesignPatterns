@@ -4,7 +4,7 @@ namespace structural
 {
 namespace facade
 {
-BytecodeStream::BytecodeStream() :text_("") { }
+BytecodeStream::BytecodeStream() : text_("") { }
 
 void BytecodeStream::Write(std::string text)
 {
@@ -15,4 +15,6 @@ std::string BytecodeStream::Read() const
 {
 	return text_;
 }
-}}
+}
+}
+

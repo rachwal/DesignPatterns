@@ -9,7 +9,7 @@ namespace operational
 {
 namespace interpreter
 {
-NotExp::NotExp(BooleanExpInterface* operand) :operand_(operand) { }
+NotExp::NotExp(BooleanExpInterface* operand) : operand_(operand) { }
 
 bool NotExp::Evaluate(InterpreterContextInterface& context)
 {
@@ -25,4 +25,6 @@ BooleanExpInterface *NotExp::Copy() const
 {
 	return new NotExp(operand_->Copy());
 }
-}}
+}
+}
+

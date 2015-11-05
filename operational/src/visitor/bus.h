@@ -32,6 +32,8 @@ class Bus : public VisitedEquipmentInterface, public BusInterface
 	std::string name_;
 	double price_;
 };
-}}
+}
+}
 
 #endif
+

@@ -34,5 +34,7 @@ inline bool operator!=(const Currency& left, const Currency& right)
 {
 	return left.value() != right.value();
 }
-}}
+}
+}
 #endif
+

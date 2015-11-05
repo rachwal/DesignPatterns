@@ -32,6 +32,8 @@ class Door : public MapSiteInterface
 	bool is_open_;
 	bool entered_;
 };
-}}
+}
+}
 
 #endif
+

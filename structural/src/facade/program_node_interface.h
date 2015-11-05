@@ -23,6 +23,8 @@ class ProgramNodeInterface
 
 	virtual void Traverse(CodeGeneratorInterface&) = 0;
 };
-}}
+}
+}
 
 #endif
+

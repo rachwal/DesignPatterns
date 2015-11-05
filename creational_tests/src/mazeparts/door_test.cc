@@ -121,3 +121,4 @@ TEST_CLASS(DoorTest)
 	}
 };
 }
+

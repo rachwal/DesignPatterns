@@ -17,6 +17,8 @@ class ChassisInterface
 
 	virtual double GetPrice() = 0;
 };
-}}
+}
+}
 
 #endif
+

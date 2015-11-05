@@ -10,7 +10,7 @@ namespace structural
 {
 namespace decorator
 {
-FileStream::FileStream(const char* text) :value_(0), text_string_(text) { }
+FileStream::FileStream(const char* text) : value_(0), text_string_(text) { }
 
 FileStream::FileStream() : FileStream("") { }
 
@@ -36,4 +36,6 @@ std::string &FileStream::message()
 {
 	return text_string_;
 }
-}}
+}
+}
+

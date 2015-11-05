@@ -11,6 +11,8 @@ namespace structural
 namespace proxy
 {
 class Event { };
-}}
+}
+}
 
 #endif
+

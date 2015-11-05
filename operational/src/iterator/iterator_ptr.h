@@ -56,8 +56,10 @@ IteratorPtr<Item>::IteratorPtr(const IteratorPtr&) { }
 template<class Item>
 IteratorPtr<Item> &IteratorPtr<Item>::operator=(const IteratorPtr&)
 {
-	return{};
+	return {};
 }
-}}
+}
+}
 
 #endif
+

@@ -78,3 +78,4 @@ TEST_CLASS(MediatorTest)
 	}
 };
 }
+

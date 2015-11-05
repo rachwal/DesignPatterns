@@ -30,6 +30,8 @@ class FloppyDisk : public VisitedEquipmentInterface, public FloppyDiskInterface
 	std::string name_;
 	double price_;
 };
-}}
+}
+}
 
 #endif
+

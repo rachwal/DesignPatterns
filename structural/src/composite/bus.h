@@ -18,6 +18,8 @@ class Bus : public CompositeEquipment
 	Bus();
 	explicit Bus(const std::string& name);
 };
-}}
+}
+}
 
 #endif
+

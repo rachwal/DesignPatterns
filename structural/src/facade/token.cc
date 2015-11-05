@@ -15,4 +15,6 @@ std::string Token::content() const
 {
 	return content_;
 }
-}}
+}
+}
+

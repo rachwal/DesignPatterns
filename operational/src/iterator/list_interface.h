@@ -39,6 +39,8 @@ class ListInterface
 
 	virtual Item &Pop() = 0;
 };
-}}
+}
+}
 
 #endif
+

@@ -30,6 +30,8 @@ TEST_CLASS(CompositeTest)
 
 		//THEN
 		Assert::AreEqual(expected_name, bus_name.c_str());
+
+		delete bus;
 	}
 
 	TEST_METHOD(ShouldSetBusPrice)
@@ -46,6 +48,8 @@ TEST_CLASS(CompositeTest)
 		//THEN
 		Assert::IsTrue(expected_price == bus_price);
 		Assert::IsTrue(expected_price == bus_net_price);
+
+		delete bus;
 	}
 
 	TEST_METHOD(ShouldReturnPriceOfBusWithCabinetComposite)
@@ -69,6 +73,8 @@ TEST_CLASS(CompositeTest)
 		//THEN
 		Assert::IsTrue(expected_bus_price == bus_price);
 		Assert::IsTrue(expected_total_price == bus_net_price);
+
+		delete bus;
 	}
 
 	TEST_METHOD(ShouldReturnLeafPrice)
@@ -87,6 +93,8 @@ TEST_CLASS(CompositeTest)
 		//THEN
 		Assert::IsTrue(expected_card_price == card_price);
 		Assert::IsTrue(expected_total_price == card_net_price);
+
+		delete card;
 	}
 
 	TEST_METHOD(ShouldReturnCompositeWithALeafPrice)
@@ -110,6 +118,9 @@ TEST_CLASS(CompositeTest)
 		//THEN
 		Assert::IsTrue(expected_bus_price == bus_price);
 		Assert::IsTrue(expected_total_price == bus_net_price);
+
+		delete bus;
 	}
 };
 }
+

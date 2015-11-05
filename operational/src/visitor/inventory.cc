@@ -9,7 +9,7 @@ namespace operational
 {
 namespace visitor
 {
-Inventory::Inventory() :count_(0) {}
+Inventory::Inventory() : count_(0) {}
 
 Inventory::Inventory(const Inventory& inventory) : count_(inventory.count_) {}
 
@@ -22,4 +22,6 @@ int Inventory::count() const
 {
 	return count_;
 }
-}}
+}
+}
+

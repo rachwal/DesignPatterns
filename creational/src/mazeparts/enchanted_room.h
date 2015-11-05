@@ -27,6 +27,8 @@ class EnchantedRoom : public Room
 	private:
 	Spell* spell_;
 };
-}}
+}
+}
 
 #endif
+

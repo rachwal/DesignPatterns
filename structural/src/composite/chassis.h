@@ -18,6 +18,8 @@ class Chassis : public CompositeEquipment
 	Chassis();
 	explicit Chassis(const std::string& name);
 };
-}}
+}
+}
 
 #endif
+

@@ -19,6 +19,8 @@ class HelpHandlerInterface
 	virtual void SetHandler(HelpHandlerInterface*, int) = 0;
 	virtual void HandleHelp() = 0;
 };
-}}
+}
+}
 
 #endif
+

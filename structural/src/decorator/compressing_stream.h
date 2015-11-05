@@ -27,6 +27,8 @@ class CompressingStream : public StreamDecorator
 	int value_;
 	std::string text_string_;
 };
-}}
+}
+}
 
 #endif
+

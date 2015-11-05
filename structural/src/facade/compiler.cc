@@ -31,4 +31,6 @@ void Compiler::Compile(std::istringstream& input, BytecodeStream* output)
 		parseTree->Traverse(generator);
 	}
 }
-}}
+}
+}
+

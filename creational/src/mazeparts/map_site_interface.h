@@ -17,6 +17,8 @@ class MapSiteInterface
 
 	virtual void Enter() = 0;
 };
-}}
+}
+}
 
 #endif
+

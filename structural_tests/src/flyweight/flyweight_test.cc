@@ -47,6 +47,11 @@ TEST_CLASS(FlyweightTest)
 
 		Assert::IsTrue(times_12 == times_regular);
 		Assert::IsTrue(times_24 == times_big);
+
+		delete glyph_factory;
+		delete b_character;
+		delete context;
 	}
 };
 }
+

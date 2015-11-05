@@ -31,6 +31,8 @@ TEST_CLASS(ClockTimerTest)
 		Assert::AreEqual(0, hour);
 		Assert::AreEqual(0, minute);
 		Assert::AreEqual(0, second);
+
+		delete timer;
 	}
 
 	TEST_METHOD(ShouldIncreaseSecondsValueBy15AfterOneTick)
@@ -49,6 +51,8 @@ TEST_CLASS(ClockTimerTest)
 		Assert::AreEqual(0, hour);
 		Assert::AreEqual(0, minute);
 		Assert::AreEqual(15, second);
+
+		delete timer;
 	}
 
 	TEST_METHOD(ShouldSetCorrectTimeAfter1001Ticks)
@@ -70,6 +74,9 @@ TEST_CLASS(ClockTimerTest)
 		Assert::AreEqual(4, hour);
 		Assert::AreEqual(10, minute);
 		Assert::AreEqual(15, second);
+
+		delete timer;
 	}
 };
 }
+

@@ -17,6 +17,8 @@ enum Direction
 	South,
 	West
 };
-}}
+}
+}
 
 #endif
+

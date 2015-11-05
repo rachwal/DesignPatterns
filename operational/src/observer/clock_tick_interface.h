@@ -21,6 +21,8 @@ class ClockTickInterface
 	virtual void Detach(ClockTickObserver*) = 0;
 	virtual void Notify() = 0;
 };
-}}
+}
+}
 
 #endif
+

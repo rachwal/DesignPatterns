@@ -18,6 +18,8 @@ class Cabinet : public CompositeEquipment
 	Cabinet();
 	explicit Cabinet(const std::string& name);
 };
-}}
+}
+}
 
 #endif
+

@@ -9,7 +9,7 @@ namespace structural
 {
 namespace flyweight
 {
-BTree::BTree(long size) :size_(size)
+BTree::BTree(long size) : size_(size)
 {
 	leafs_ = new operational::iterator::List<Font*>();
 	nodes_ = new int[size_];
@@ -20,7 +20,7 @@ BTree::BTree(long size) :size_(size)
 	}
 }
 
-BTree::BTree() :BTree(1000) { }
+BTree::BTree() : BTree(1000) { }
 
 void BTree::Set(Font* font, const int& index, const int& span) const
 {
@@ -61,4 +61,6 @@ Font *BTree::Get(int index) const
 
 	return leafs_->Get(font_index);
 }
-}}
+}
+}
+

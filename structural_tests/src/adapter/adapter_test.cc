@@ -30,6 +30,8 @@ TEST_CLASS(AdapterTest)
 		auto is_empty = client->IsEmpty();
 
 		Assert::IsTrue(is_empty);
+
+		delete client;
 	}
 
 	TEST_METHOD(ClientShouldNotBeEmptyWhenAdapteeHasSomeContent)
@@ -44,6 +46,8 @@ TEST_CLASS(AdapterTest)
 		auto is_empty = client->IsEmpty();
 
 		Assert::IsFalse(is_empty);
+
+		delete client;
 	}
 
 	TEST_METHOD(ClientShouldHaveBoundingBoxBasedOnAdaptee)
@@ -62,6 +66,10 @@ TEST_CLASS(AdapterTest)
 		Assert::AreEqual(0.0f, bottom_left->y());
 		Assert::AreEqual(10.0f, top_right->x());
 		Assert::AreEqual(1.0f, top_right->y());
+
+		delete bottom_left;
+		delete top_right;
+		delete client;
 	}
 
 	TEST_METHOD(ClientShouldHaveAnEmptyContentAfterCreationLikeAdaptee)
@@ -75,6 +83,8 @@ TEST_CLASS(AdapterTest)
 
 		Assert::IsTrue(is_empty);
 		Assert::AreEqual("", content.c_str());
+
+		delete client;
 	}
 
 	TEST_METHOD(ClientShouldCreateClassAdapterWithContentLikeAdaptee)
@@ -91,6 +101,8 @@ TEST_CLASS(AdapterTest)
 
 		Assert::IsFalse(is_empty);
 		Assert::AreEqual(expected_content, content.c_str());
+
+		delete client;
 	}
 
 	TEST_METHOD(ClientShouldSetBoundingBoxLikeAdaptee)
@@ -111,6 +123,11 @@ TEST_CLASS(AdapterTest)
 		Assert::AreEqual(4.0f, bottom_left->y());
 		Assert::AreEqual(5.0f, top_right->x());
 		Assert::AreEqual(7.0f, top_right->y());
+
+		delete bottom_left;
+		delete top_right;
+		delete client;
 	}
 };
 }
+

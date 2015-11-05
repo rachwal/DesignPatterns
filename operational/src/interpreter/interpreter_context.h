@@ -25,6 +25,8 @@ class InterpreterContext :public InterpreterContextInterface
 	private:
 	std::map<std::string, bool>* variables_;
 };
-}}
+}
+}
 
 #endif
+

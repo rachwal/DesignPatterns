@@ -45,4 +45,6 @@ Maze *Maze::Clone() const
 {
 	return new Maze(*this);
 }
-}}
+}
+}
+

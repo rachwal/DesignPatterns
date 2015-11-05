@@ -30,6 +30,8 @@ TEST_CLASS(ApplicationTest)
 		//THEN
 		Assert::IsFalse(has_help);
 		Assert::AreEqual(no_help_topic, topic);
+
+		delete application;
 	}
 
 	TEST_METHOD(ShouldCreateApplicationWithHelp)
@@ -48,6 +50,8 @@ TEST_CLASS(ApplicationTest)
 		Assert::IsTrue(has_help);
 		Assert::AreEqual(expected_help_topic, topic);
 		Assert::AreEqual(0, default_help_message.compare(help_message));
+
+		delete application;
 	}
 
 	TEST_METHOD(ShouldHandleHelp)
@@ -63,6 +67,8 @@ TEST_CLASS(ApplicationTest)
 		//THEN
 		auto help_message = application->help_message();
 		Assert::AreEqual(0, expected_help_message.compare(help_message));
+
+		delete application;
 	}
 
 	TEST_METHOD(ShouldChangeApplicationHandler)
@@ -81,6 +87,8 @@ TEST_CLASS(ApplicationTest)
 
 		Assert::IsFalse(has_help);
 		Assert::AreEqual(no_help_topic, topic);
+
+		delete application;
 	}
 
 	TEST_METHOD(ShouldPassHandlingHelpToSuccessor)
@@ -101,6 +109,8 @@ TEST_CLASS(ApplicationTest)
 
 		Assert::IsFalse(child_has_help);
 		Assert::IsTrue(parent_has_help);
+
+		delete child_application;
 	}
 
 	TEST_METHOD(ParentShouldHandleHelpWhenChildHasNoTopic)
@@ -123,6 +133,9 @@ TEST_CLASS(ApplicationTest)
 
 		Assert::AreEqual(0, default_help_message.compare(child_help_message));
 		Assert::AreEqual(0, expected_help_message.compare(parent_help_message));
+
+		delete child_application;
 	}
 };
 }
+

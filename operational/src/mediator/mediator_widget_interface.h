@@ -20,6 +20,8 @@ class MediatorWidgetInterface
 	virtual void Changed() = 0;
 	virtual void HandleMouse(MouseEvent& event) = 0;
 };
-}}
+}
+}
 
 #endif
+

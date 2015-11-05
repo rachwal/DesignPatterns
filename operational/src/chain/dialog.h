@@ -30,6 +30,8 @@ class Dialog : public Widget
 	std::string name_;
 	std::string help_message_;
 };
-}}
+}
+}
 
 #endif
+

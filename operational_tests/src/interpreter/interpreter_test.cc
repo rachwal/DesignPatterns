@@ -35,6 +35,8 @@ TEST_CLASS(InterpreterTest)
 		auto result = x->Evaluate(context);
 
 		Assert::IsFalse(result);
+
+		delete x;
 	}
 
 	TEST_METHOD(ShouldCreateConstantWithTrueValue)
@@ -49,6 +51,8 @@ TEST_CLASS(InterpreterTest)
 		auto result = x->Evaluate(context);
 
 		Assert::IsTrue(result);
+
+		delete x;
 	}
 
 	TEST_METHOD(ShouldCreateDefaultVariable)
@@ -63,6 +67,8 @@ TEST_CLASS(InterpreterTest)
 		auto result = x->Evaluate(context);
 
 		Assert::IsFalse(result);
+
+		delete x;
 	}
 
 	TEST_METHOD(ShouldAssignTrueValueToVariable)
@@ -79,6 +85,8 @@ TEST_CLASS(InterpreterTest)
 		auto result = x->Evaluate(context);
 
 		Assert::IsTrue(result);
+
+		delete x;
 	}
 
 	TEST_METHOD(ShouldAssignFalseValueToVariable)
@@ -95,6 +103,8 @@ TEST_CLASS(InterpreterTest)
 		auto result = x->Evaluate(context);
 
 		Assert::IsFalse(result);
+
+		delete x;
 	}
 
 	TEST_METHOD(ShouldEvaluateNotExpressionWithTrueVariableValue)
@@ -112,6 +122,8 @@ TEST_CLASS(InterpreterTest)
 		auto result = not_x->Evaluate(context);
 
 		Assert::IsFalse(result);
+
+		delete not_x;
 	}
 
 	TEST_METHOD(ShouldEvaluateNotExpressionWithFalseVariableValue)
@@ -129,6 +141,8 @@ TEST_CLASS(InterpreterTest)
 		auto result = not_x->Evaluate(context);
 
 		Assert::IsTrue(result);
+
+		delete not_x;
 	}
 
 	TEST_METHOD(ShouldReplaceValueWithNotExpression)
@@ -152,6 +166,9 @@ TEST_CLASS(InterpreterTest)
 		auto result = replacement->Evaluate(context);
 
 		Assert::IsTrue(result);
+
+		delete expression;
+		delete not_z;
 	}
 
 	TEST_METHOD(ShouldPassFirstInterpreterBookTestCase)
@@ -175,6 +192,8 @@ TEST_CLASS(InterpreterTest)
 		//THEN
 		auto result = expression->Evaluate(context);
 		Assert::IsTrue(result);
+
+		delete expression;
 	}
 
 
@@ -205,6 +224,10 @@ TEST_CLASS(InterpreterTest)
 		//THEN
 		auto result = replacement->Evaluate(context);
 		Assert::IsFalse(result);
+
+		delete expression;
+		delete not_z;
 	}
 };
 }
+

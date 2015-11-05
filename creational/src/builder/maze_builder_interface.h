@@ -23,6 +23,8 @@ class MazeBuilderInterface
 
 	virtual commons::Maze *GetMaze() = 0;
 };
-}}
+}
+}
 
 #endif
+

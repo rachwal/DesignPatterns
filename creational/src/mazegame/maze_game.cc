@@ -13,7 +13,7 @@ using namespace commons;
 
 MazeGame::~MazeGame() { }
 
-commons::Maze *MazeGame::CreateMaze() const
+Maze *MazeGame::CreateMaze()
 {
 	auto maze = new Maze();
 	auto r1 = new Room(1);
@@ -36,7 +36,7 @@ commons::Maze *MazeGame::CreateMaze() const
 	return maze;
 }
 
-Maze *MazeGame::CreateMaze(builder::MazeBuilderInterface& builder) const
+Maze *MazeGame::CreateMaze(builder::MazeBuilderInterface& builder)
 {
 	builder.BuildMaze();
 	builder.BuildRoom(1000);
@@ -46,7 +46,7 @@ Maze *MazeGame::CreateMaze(builder::MazeBuilderInterface& builder) const
 	return builder.GetMaze();
 }
 
-Maze *MazeGame::CreateMaze(const abstractfactory::MazeFactoryInterface& factory) const
+Maze *MazeGame::CreateMaze(const abstractfactory::MazeFactoryInterface& factory)
 {
 	auto maze = factory.MakeMaze();
 	auto r1 = factory.MakeRoom(100);
@@ -114,3 +114,4 @@ Door *MazeGame::MakeDoor(const Room& first_room, const Room& second_room) const
 	return new Door(first_room, second_room);
 }
 }
+

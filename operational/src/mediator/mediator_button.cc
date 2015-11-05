@@ -27,4 +27,6 @@ void MediatorButton::HandleMouse(MouseEvent& event)
 {
 	Changed();
 }
-}}
+}
+}
+

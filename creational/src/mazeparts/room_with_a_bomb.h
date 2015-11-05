@@ -25,6 +25,8 @@ class RoomWithABomb : public Room
 	private:
 	bool has_bomb_;
 };
-}}
+}
+}
 
 #endif
+

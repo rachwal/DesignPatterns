@@ -25,6 +25,8 @@ class TextShapeObjectAdapter : public ShapeInterface
 	private:
 	TextView* text_view_;
 };
-}}
+}
+}
 
 #endif
+

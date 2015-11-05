@@ -9,7 +9,7 @@ namespace operational
 {
 namespace interpreter
 {
-VariableExp::VariableExp(const std::string& name) :name_(name) { }
+VariableExp::VariableExp(const std::string& name) : name_(name) { }
 
 bool VariableExp::Evaluate(InterpreterContextInterface& context)
 {
@@ -34,4 +34,6 @@ BooleanExpInterface *VariableExp::Replace(const std::string& name, BooleanExpInt
 	}
 	return new VariableExp(name_);
 }
-}}
+}
+}
+

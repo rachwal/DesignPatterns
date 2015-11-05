@@ -47,8 +47,10 @@ bool ReverseListIterator<Item>::IsDone() const
 template<class Item>
 Item ReverseListIterator<Item>::CurrentItem() const
 {
-	return{};
+	return {};
 }
-}}
+}
+}
 
 #endif
+

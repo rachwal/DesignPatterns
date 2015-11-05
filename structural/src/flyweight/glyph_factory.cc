@@ -38,4 +38,6 @@ Column *GlyphFactory::CreateColumn()
 {
 	return new Column;
 }
-}}
+}
+}
+

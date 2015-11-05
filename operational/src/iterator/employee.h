@@ -18,11 +18,13 @@ class Employee
 	explicit Employee(const std::string& name);
 	Employee(const Employee&);
 
-	void Print();
+	static void Print();
 
 	private:
 	std::string name_;
 };
-}}
+}
+}
 
 #endif
+

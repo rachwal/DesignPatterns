@@ -20,8 +20,10 @@ class DoorNeedingSpell : public Door
 	DoorNeedingSpell(const DoorNeedingSpell&);
 	DoorNeedingSpell(const Room& first_room, const Room& second_room);
 
-	bool TrySpell(const Spell&) const;
+	static bool TrySpell(const Spell&);
 };
-}}
+}
+}
 
 #endif
+

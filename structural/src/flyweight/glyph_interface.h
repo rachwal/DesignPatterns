@@ -33,6 +33,8 @@ class GlyphInterface
 	virtual void Insert(GlyphInterface*, GlyphContext&) = 0;
 	virtual void Remove(GlyphContext&) = 0;
 };
-}}
+}
+}
 
 #endif
+

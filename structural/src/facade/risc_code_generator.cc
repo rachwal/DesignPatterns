@@ -41,4 +41,6 @@ void RISCCodeGenerator::Visit(ExpressionNodeInterface* expression_node)
 
 	output_->Write(stream.str());
 }
-}}
+}
+}
+

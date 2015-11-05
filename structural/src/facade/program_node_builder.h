@@ -27,6 +27,8 @@ class ProgramNodeBuilder :public ProgramNodeBuilderInterface
 	private:
 	ProgramNodeInterface* node_;
 };
-}}
+}
+}
 
 #endif
+

@@ -52,4 +52,6 @@ void ImageProxy::HandleMouse(Event& event)
 void ImageProxy::Save(std::ostream& to) { }
 
 void ImageProxy::Load(std::istream& from) { }
-}}
+}
+}
+

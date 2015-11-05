@@ -28,6 +28,8 @@ class Window :public WindowInterface
 	private:
 	WindowImp* imp_;
 };
-}}
+}
+}
 
 #endif
+

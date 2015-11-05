@@ -32,6 +32,8 @@ class ListBox : public MediatorWidgetInterface
 	DialogDirectorInterface* director_;
 	iterator::List<std::string>* items_;
 };
-}}
+}
+}
 
 #endif
+

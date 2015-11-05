@@ -46,9 +46,7 @@ class Point
 
 	friend bool operator==(const Point<type>& left, const Point<type>& right)
 	{
-		bool x = left.x() == right.x();
-		bool y = left.y() == right.y();
-		return ((x == true) && (y == true));
+		return left.x() == right.x() && left.y() == right.y();
 	}
 
 	friend bool operator!=(const Point<type>& left, const Point<type>& right)
@@ -73,7 +71,7 @@ class Point
 };
 
 template<class type>
-Point<type>::Point() :Point<type>(0, 0) { }
+Point<type>::Point() : Point<type>(0, 0) { }
 
 template<class type>
 Point<type>::Point(const type& x, const type& y) : x_(x), y_(y) { }
@@ -144,6 +142,8 @@ Point<type> Point<type>::operator-()
 	y_ = -x_;
 	return *this;
 }
-}}
+}
+}
 
 #endif
+

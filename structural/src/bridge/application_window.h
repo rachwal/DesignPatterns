@@ -23,6 +23,8 @@ class ApplicationWindow : public Window
 	private:
 	std::string application_title_;
 };
-}}
+}
+}
 
 #endif
+

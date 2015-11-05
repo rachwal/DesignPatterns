@@ -36,6 +36,9 @@ TEST_CLASS(FacadeTest)
 		//THEN
 		auto output = output_stream.Read();
 		Assert::AreEqual(expected_stream, output.c_str());
+
+		delete compiler;
 	}
 };
 }
+

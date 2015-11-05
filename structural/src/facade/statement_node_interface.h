@@ -19,6 +19,8 @@ class StatementNodeInterface
 
 	virtual std::string statement() const = 0;
 };
-}}
+}
+}
 
 #endif
+

@@ -24,6 +24,8 @@ class Constant : public BooleanExpInterface
 	private:
 	bool value_;
 };
-}}
+}
+}
 
 #endif
+

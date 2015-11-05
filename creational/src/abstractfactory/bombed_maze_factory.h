@@ -20,6 +20,8 @@ class BombedMazeFactory : public MazeFactoryInterface
 	virtual commons::Room *MakeRoom(const int& room_number) const override;
 	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const override;
 };
-}}
+}
+}
 
 #endif
+

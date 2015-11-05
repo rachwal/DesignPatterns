@@ -37,4 +37,6 @@ commons::Spell *EnchantedMazeFactory::CastSpell() const
 {
 	return new commons::Spell("Cast Spell");
 }
-}}
+}
+}
+

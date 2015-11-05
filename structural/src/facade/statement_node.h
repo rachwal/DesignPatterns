@@ -30,6 +30,8 @@ class StatementNode : public ProgramNodeInterface, public StatementNodeInterface
 	protected:
 	operational::iterator::List<ProgramNodeInterface*>* children_;
 };
-}}
+}
+}
 
 #endif
+

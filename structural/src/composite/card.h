@@ -33,6 +33,8 @@ class Card : public EquipmentInterface
 	Watt power_;
 	Currency price_;
 };
-}}
+}
+}
 
 #endif
+

@@ -9,10 +9,12 @@ namespace structural
 {
 namespace flyweight
 {
-Font::Font(const std::string& name) :name_(name) { }
+Font::Font(const std::string& name) : name_(name) { }
 
 std::string Font::name() const
 {
 	return name_;
 }
-}}
+}
+}
+

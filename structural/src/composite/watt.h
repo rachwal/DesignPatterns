@@ -21,6 +21,8 @@ class Watt
 	private:
 	double value_;
 };
-}}
+}
+}
 
 #endif
+

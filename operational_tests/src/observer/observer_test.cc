@@ -37,6 +37,10 @@ TEST_CLASS(ObserverTest)
 
 		Assert::AreEqual("4/10", analog_time.c_str());
 		Assert::AreEqual("4:10:15", digital_time.c_str());
+
+		delete analog_clock;
+		delete digital_clock;
 	}
 };
 }
+

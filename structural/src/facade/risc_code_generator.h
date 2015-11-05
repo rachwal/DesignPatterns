@@ -25,6 +25,8 @@ class RISCCodeGenerator : public CodeGeneratorInterface
 	private:
 	BytecodeStream* output_;
 };
-}}
+}
+}
 
 #endif
+

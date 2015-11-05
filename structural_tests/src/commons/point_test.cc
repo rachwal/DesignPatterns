@@ -84,3 +84,4 @@ TEST_CLASS(PointTest)
 	}
 };
 }
+

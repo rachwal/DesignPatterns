@@ -33,6 +33,8 @@ class FloppyDisk : public EquipmentInterface
 	Watt power_;
 	Currency price_;
 };
-}}
+}
+}
 
 #endif
+

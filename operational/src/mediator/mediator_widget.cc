@@ -9,7 +9,7 @@ namespace operational
 {
 namespace madiator
 {
-MediatorWidget::MediatorWidget(DialogDirectorInterface* director) :director_(director) { }
+MediatorWidget::MediatorWidget(DialogDirectorInterface* director) : director_(director) { }
 
 void MediatorWidget::HandleMouse(MouseEvent& event)
 {
@@ -20,4 +20,6 @@ void MediatorWidget::Changed()
 {
 	director_->WidgetChanged(this);
 }
-}}
+}
+}
+

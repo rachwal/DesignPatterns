@@ -50,6 +50,8 @@ bool ListTraverser<Item>::Traverse()
 	}
 	return result;
 }
-}}
+}
+}
 
 #endif
+

@@ -11,7 +11,7 @@ namespace operational
 {
 namespace chain
 {
-Button::Button() :Button("button", -1, nullptr) {}
+Button::Button() : Button("button", -1, nullptr) {}
 
 Button::Button(std::string name) : Button(name, -1, nullptr) {}
 
@@ -45,4 +45,6 @@ std::string Button::help_message() const
 {
 	return help_message_;
 }
-}}
+}
+}
+

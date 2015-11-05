@@ -30,6 +30,8 @@ class FontDialogDirector : public DialogDirectorInterface
 	ListBox* font_list_;
 	EntryField* font_name_;
 };
-}}
+}
+}
 
 #endif
+

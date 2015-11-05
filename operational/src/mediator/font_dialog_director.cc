@@ -45,4 +45,6 @@ void FontDialogDirector::WidgetChanged(MediatorWidgetInterface* widget)
 		cancel_button_->text("cancelled");
 	}
 }
-}}
+}
+}
+

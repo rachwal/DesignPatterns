@@ -27,6 +27,8 @@ class InventoryVisitor : public EquipmentVisitorInterface
 	private:
 	Inventory* inventory_;
 };
-}}
+}
+}
 
 #endif
+

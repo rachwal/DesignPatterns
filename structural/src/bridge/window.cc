@@ -10,7 +10,7 @@ namespace structural
 {
 namespace bridge
 {
-Window::Window(WindowImp* imp) :imp_(imp) { }
+Window::Window(WindowImp* imp) : imp_(imp) { }
 
 Window::~Window()
 {
@@ -27,4 +27,6 @@ WindowImp *Window::GetWindowImp() const
 {
 	return imp_;
 }
-}}
+}
+}
+

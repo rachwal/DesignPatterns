@@ -9,7 +9,7 @@ namespace structural
 {
 namespace proxy
 {
-TextDocument::TextDocument() :graphic_(nullptr)
+TextDocument::TextDocument() : graphic_(nullptr)
 {
 	extent_ = commons::Point<float>(0, 0);
 }
@@ -27,4 +27,6 @@ const commons::Point<float> &TextDocument::GetExtent()
 	}
 	return extent_;
 }
-}}
+}
+}
+

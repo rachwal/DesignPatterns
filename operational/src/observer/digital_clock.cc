@@ -11,7 +11,7 @@ namespace operational
 {
 namespace observer
 {
-DigitalClock::DigitalClock(ClockTimer* clock_timer) :clock_timer_(clock_timer)
+DigitalClock::DigitalClock(ClockTimer* clock_timer) : clock_timer_(clock_timer)
 {
 	clock_timer_->Attach(this);
 }
@@ -42,4 +42,6 @@ std::string DigitalClock::formated_time() const
 {
 	return formated_time_;
 }
-}}
+}
+}
+

@@ -18,6 +18,8 @@ class BusInterface
 	virtual double GetLuxPrice() = 0;
 	virtual double GetRegularPrice() = 0;
 };
-}}
+}
+}
 
 #endif
+

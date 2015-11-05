@@ -32,6 +32,8 @@ class Card :public VisitedEquipmentInterface, public CardInterface
 	std::string name_;
 	double price_;
 };
-}}
+}
+}
 
 #endif
+

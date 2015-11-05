@@ -42,6 +42,8 @@ TEST_CLASS(ChainTest)
 		Assert::AreEqual(0, default_help_message.compare(application_help_message));
 		Assert::AreEqual(0, default_help_message.compare(dialog_help_message));
 		Assert::AreEqual(0, expected_help_message.compare(button_help_message));
+
+		delete button;
 	}
 
 	TEST_METHOD(LastElementShouldHandleHelp)
@@ -68,6 +70,9 @@ TEST_CLASS(ChainTest)
 		Assert::AreEqual(0, expected_help_message.compare(application_help_message));
 		Assert::AreEqual(0, default_help_message.compare(dialog_help_message));
 		Assert::AreEqual(0, default_help_message.compare(button_help_message));
+
+		delete button;
 	}
 };
 }
+

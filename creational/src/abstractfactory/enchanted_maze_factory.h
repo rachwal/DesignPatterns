@@ -23,8 +23,10 @@ class EnchantedMazeFactory : public MazeFactoryInterface
 	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const override;
 
 	protected:
-	commons::Spell *CastSpell() const;
+	virtual commons::Spell *CastSpell() const;
 };
-}}
+}
+}
 
 #endif
+

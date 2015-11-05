@@ -27,6 +27,8 @@ class SampleDocument :public DocumentInterface
 	private:
 	DocumentState state_;
 };
-}}
+}
+}
 
 #endif
+

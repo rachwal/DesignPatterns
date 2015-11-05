@@ -23,6 +23,8 @@ class CodeGeneratorInterface
 	virtual void Visit(ExpressionNodeInterface*) = 0;
 	virtual void Visit(StatementNodeInterface*) = 0;
 };
-}}
+}
+}
 
 #endif
+

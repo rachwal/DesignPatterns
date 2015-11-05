@@ -20,4 +20,6 @@ bool TwistyTurnyPassage::entered() const
 {
 	return entered_;
 }
-}}
+}
+}
+

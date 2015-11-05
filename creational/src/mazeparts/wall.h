@@ -26,6 +26,8 @@ class Wall : public MapSiteInterface
 	protected:
 	bool entered_;
 };
-}}
+}
+}
 
 #endif
+

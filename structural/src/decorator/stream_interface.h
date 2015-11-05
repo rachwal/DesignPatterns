@@ -20,6 +20,8 @@ class StreamInterface
 	virtual void PutInt(int) = 0;
 	virtual void PutString(const std::string&) = 0;
 };
-}}
+}
+}
 
 #endif
+

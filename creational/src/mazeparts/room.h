@@ -33,6 +33,8 @@ class Room : public MapSiteInterface
 	MapSiteInterface* sides_[4];
 	bool enetered_;
 };
-}}
+}
+}
 
 #endif
+

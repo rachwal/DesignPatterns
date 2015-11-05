@@ -37,6 +37,8 @@ IteratorInterface<Item> *SkipList<Item>::CreateIterator() const
 {
 	return nullptr;
 }
-}}
+}
+}
 
 #endif
+

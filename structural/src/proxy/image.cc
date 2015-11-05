@@ -38,4 +38,6 @@ const commons::Point<float> &Image::GetExtent()
 {
 	return extent_;
 }
-}}
+}
+}
+

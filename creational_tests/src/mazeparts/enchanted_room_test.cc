@@ -100,3 +100,4 @@ TEST_CLASS(EnchantedRoomTest)
 	}
 };
 }
+

@@ -41,4 +41,6 @@ void ClockTick::Notify()
 		current_item->OnClockTick();
 	}
 }
-}}
+}
+}
+

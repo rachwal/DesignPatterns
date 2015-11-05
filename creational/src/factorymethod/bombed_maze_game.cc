@@ -23,4 +23,6 @@ commons::Room *BombedMazeGame::MakeRoom(const int& room_number) const
 {
 	return new commons::RoomWithABomb(room_number, false);
 }
-}}
+}
+}
+

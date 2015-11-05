@@ -20,6 +20,8 @@ class BombedMazeGame : public MazeGame
 	virtual commons::Wall *MakeWall() const override;
 	virtual commons::Room *MakeRoom(const int& room_number) const override;
 };
-}}
+}
+}
 
 #endif
+

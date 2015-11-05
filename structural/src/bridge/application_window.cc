@@ -21,4 +21,6 @@ void ApplicationWindow::DrawTitle()
 {
 	DrawText(application_title_, commons::Point<float>(0, 0));
 }
-}}
+}
+}
+

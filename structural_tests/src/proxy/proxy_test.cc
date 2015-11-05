@@ -59,6 +59,8 @@ TEST_CLASS(ProxyTest)
 
 		//THEN
 		Assert::IsTrue(zero_extent == extent);
+
+		delete text;
 	}
 
 	TEST_METHOD(ShouldChangeDocumentExtentToGraphicExtent)
@@ -73,6 +75,9 @@ TEST_CLASS(ProxyTest)
 
 		//THEN
 		Assert::IsTrue(expected_default_extent == extent);
+
+		delete text;
 	}
 };
 }
+

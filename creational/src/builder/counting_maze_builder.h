@@ -33,6 +33,8 @@ class CountingMazeBuilder : public MazeBuilderInterface
 	int doors_;
 	int rooms_;
 };
-}}
+}
+}
 
 #endif
+

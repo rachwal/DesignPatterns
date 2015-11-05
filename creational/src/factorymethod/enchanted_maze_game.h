@@ -22,8 +22,10 @@ class EnchantedMazeGame : public MazeGame
 	virtual commons::Door *MakeDoor(const commons::Room& first_room, const commons::Room& second_room) const override;
 
 	protected:
-	commons::Spell *WeaveSpell() const;
+	static commons::Spell *WeaveSpell();
 };
-}}
+}
+}
 
 #endif
+

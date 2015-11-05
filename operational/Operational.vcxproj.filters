@@ -255,6 +255,45 @@
     <ClInclude Include="src\visitor\equipment_visitor_interface.h">
       <Filter>Header Files\visitor</Filter>
     </ClInclude>
+    <ClInclude Include="src\memento\constraint_solver.h">
+      <Filter>Header Files\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="src\memento\constraint_solver_interface.h">
+      <Filter>Header Files\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="src\memento\graphic.h">
+      <Filter>Header Files\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="src\memento\move_command.h">
+      <Filter>Header Files\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="src\memento\constraint_solver_memento.h">
+      <Filter>Header Files\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\command_application.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\command_document.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\macro_command.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\open_command.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\paste_command.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\simple_command.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\command_interface.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command\my_class.h">
+      <Filter>Header Files\command</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\observer\analog_clock.cc">
@@ -349,6 +388,36 @@
     </ClCompile>
     <ClCompile Include="src\visitor\pricing_visitor.cc">
       <Filter>Source Files\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memento\constraint_solver.cc">
+      <Filter>Source Files\memento</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memento\constraint_solver_memento.cc">
+      <Filter>Source Files\memento</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memento\graphic.cc">
+      <Filter>Source Files\memento</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memento\move_command.cc">
+      <Filter>Source Files\memento</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\command_application.cc">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\command_document.cc">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\macro_command.cc">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\open_command.cc">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\paste_command.cc">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command\my_class.cc">
+      <Filter>Source Files\command</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -40,4 +40,6 @@ Image &VirtualImageProxy::operator*()
 {
 	return *LoadImage();
 }
-}}
+}
+}
+

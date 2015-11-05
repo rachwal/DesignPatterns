@@ -35,6 +35,8 @@ class VariableNode : public ProgramNodeInterface, public VariableNodeInterface
 	operational::iterator::List<ProgramNodeInterface*>* children_;
 	std::string name_;
 };
-}}
+}
+}
 
 #endif
+

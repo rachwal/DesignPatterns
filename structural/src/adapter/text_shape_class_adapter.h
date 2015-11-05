@@ -23,6 +23,8 @@ class TextShapeClassAdapter : public TextView, public ShapeInterface
 
 	virtual bool IsEmpty() const override;
 };
-}}
+}
+}
 
 #endif
+

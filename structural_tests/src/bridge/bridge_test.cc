@@ -37,6 +37,8 @@ TEST_CLASS(BridgeTest)
 		auto x_window_imp_text = x_window_imp->text();
 
 		Assert::AreEqual(expected_x_window_imp_text, x_window_imp_text.c_str());
+
+		delete application_window;
 	}
 
 	TEST_METHOD(ShouldDrawTextOnApplicationWindowUsingPMWindowImplementation)
@@ -56,6 +58,8 @@ TEST_CLASS(BridgeTest)
 		auto pm_window_imp_text = pm_window_imp->text();
 
 		Assert::AreEqual(expected_pm_window_imp_text, pm_window_imp_text.c_str());
+
+		delete application_window;
 	}
 
 	TEST_METHOD(ShouldDrawTextOnIconWindowUsingPMWindowImplementation)
@@ -75,6 +79,9 @@ TEST_CLASS(BridgeTest)
 		auto pm_window_imp_text = pm_window_imp->text();
 
 		Assert::AreEqual(expected_pm_window_imp_text, pm_window_imp_text.c_str());
+
+		delete icon_window;
 	}
 };
 }
+

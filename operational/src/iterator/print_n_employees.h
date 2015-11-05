@@ -28,6 +28,8 @@ class PrintNEmployees : public ListTraverser<Employee*>
 	int total_;
 	int count_;
 };
-}}
+}
+}
 
 #endif
+

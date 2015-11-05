@@ -23,6 +23,8 @@ class Spell
 	private:
 	const std::string message_;
 };
-}}
+}
+}
 
 #endif
+

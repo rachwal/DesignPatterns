@@ -24,4 +24,6 @@ float Bitmap::height() const
 {
 	return height_;
 }
-}}
+}
+}
+

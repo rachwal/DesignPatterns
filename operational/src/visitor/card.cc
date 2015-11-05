@@ -9,7 +9,7 @@ namespace operational
 {
 namespace visitor
 {
-Card::Card(const std::string& name) :name_(name), price_(0) {}
+Card::Card(const std::string& name) : name_(name), price_(0) {}
 
 std::string Card::name() const
 {
@@ -40,4 +40,6 @@ void Card::Accept(EquipmentVisitorInterface& visitor)
 {
 	visitor.VisitCard(this);
 }
-}}
+}
+}
+

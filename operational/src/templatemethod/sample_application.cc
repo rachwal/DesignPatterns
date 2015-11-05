@@ -25,4 +25,6 @@ bool SampleApplication::CanOpenDocument(const std::string& path)
 }
 
 void SampleApplication::AboutToOpenDocument(DocumentInterface* document) {}
-}}
+}
+}
+

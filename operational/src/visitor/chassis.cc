@@ -48,8 +48,10 @@ void Chassis::Accept(EquipmentVisitorInterface& visitor)
 	visitor.VisitChassis(this);
 }
 
-void Chassis::AddPart(VisitedEquipmentInterface* part)
+void Chassis::AddPart(VisitedEquipmentInterface* part) const
 {
 	parts_->Append(part);
 }
-}}
+}
+}
+

@@ -18,6 +18,8 @@ class CardInterface
 	virtual double GetSilverPrice() = 0;
 	virtual double GetGoldPrice() = 0;
 };
-}}
+}
+}
 
 #endif
+

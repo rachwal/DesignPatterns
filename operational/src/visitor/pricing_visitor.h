@@ -27,6 +27,8 @@ class PricingVisitor : public EquipmentVisitorInterface
 	private:
 	double total_;
 };
-}}
+}
+}
 
 #endif
+

@@ -23,6 +23,8 @@ class BooleanExpInterface
 	virtual BooleanExpInterface *Replace(const std::string& name, BooleanExpInterface& expression) = 0;
 	virtual BooleanExpInterface *Copy() const = 0;
 };
-}}
+}
+}
 
 #endif
+

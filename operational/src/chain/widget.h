@@ -38,6 +38,8 @@ class Widget : public HelpHandlerInterface
 	std::string help_message_;
 	HelpHandlerInterface* parent_;
 };
-}}
+}
+}
 
 #endif
+

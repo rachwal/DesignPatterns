@@ -28,6 +28,8 @@ class FileStream : public StreamInterface
 	int value_;
 	std::string text_string_;
 };
-}}
+}
+}
 
 #endif
+

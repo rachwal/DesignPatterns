@@ -16,10 +16,10 @@ class MazeGame
 	public:
 	virtual ~MazeGame();
 
-	commons::Maze *CreateMaze() const;
+	static commons::Maze *CreateMaze();
 	commons::Maze *CreateSimpleMaze() const;
-	commons::Maze *CreateMaze(const abstractfactory::MazeFactoryInterface&) const;
-	commons::Maze *CreateMaze(builder::MazeBuilderInterface&) const;
+	static commons::Maze *CreateMaze(const abstractfactory::MazeFactoryInterface&);
+	static commons::Maze *CreateMaze(builder::MazeBuilderInterface&);
 
 	// factory methods
 	virtual commons::Maze *MakeMaze() const;
@@ -30,3 +30,4 @@ class MazeGame
 }
 
 #endif
+

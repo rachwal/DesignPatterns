@@ -9,7 +9,7 @@ namespace structural
 {
 namespace flyweight
 {
-GlyphContext::GlyphContext() :index_(1)
+GlyphContext::GlyphContext() : index_(1)
 {
 	fonts_ = new BTree();
 }
@@ -68,4 +68,6 @@ void GlyphContext::SetFont(Font* font, int span)
 {
 	fonts_->Set(font, index_, span);
 }
-}}
+}
+}
+
