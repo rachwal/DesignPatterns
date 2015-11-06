@@ -1,0 +1,11 @@
+<map id="src/structural/src/facade/parser.h" name="src/structural/src/facade/parser.h">
+<area shape="rect" id="node2" href="$d2/d57/program__node__builder_8h.html" title="program_node_builder.h" alt="" coords="516,95,676,121"/>
+<area shape="rect" id="node10" href="$db/d62/scanner_8h.html" title="scanner.h" alt="" coords="721,95,799,121"/>
+<area shape="rect" id="node3" href="$da/dc8/program__node__builder__interface_8h.html" title="program_node_builder\l_interface.h" alt="" coords="512,169,661,211"/>
+<area shape="rect" id="node4" href="$dc/d6c/program__node__interface_8h.html" title="program_node_interface.h" alt="" coords="419,259,589,285"/>
+<area shape="rect" id="node5" href="$d7/df5/code__generator__interface_8h.html" title="code_generator_interface.h" alt="" coords="316,333,495,360"/>
+<area shape="rect" id="node6" href="$d9/d24/expression__node__interface_8h.html" title="expression_node_interface.h" alt="" coords="5,408,192,435"/>
+<area shape="rect" id="node8" href="$dd/d4b/statement__node__interface_8h.html" title="statement_node_interface.h" alt="" coords="217,408,399,435"/>
+<area shape="rect" id="node9" href="$df/d19/variable__node__interface_8h.html" title="variable_node_interface.h" alt="" coords="423,408,590,435"/>
+<area shape="rect" id="node11" href="$d1/d07/token_8h.html" title="token.h" alt="" coords="666,259,731,285"/>
+</map>

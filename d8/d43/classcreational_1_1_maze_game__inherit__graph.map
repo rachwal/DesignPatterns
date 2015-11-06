@@ -1,0 +1,4 @@
+<map id="creational::MazeGame" name="creational::MazeGame">
+<area shape="rect" id="node2" href="$d8/d85/classcreational_1_1factorymethod_1_1_bombed_maze_game.html" title="{creational::factorymethod\l::BombedMazeGame\n||+ BombedMazeGame()\l+ MakeWall()\l+ MakeRoom()\l}" alt="" coords="5,255,173,377"/>
+<area shape="rect" id="node3" href="$d0/d01/classcreational_1_1factorymethod_1_1_enchanted_maze_game.html" title="{creational::factorymethod\l::EnchantedMazeGame\n||+ EnchantedMazeGame()\l+ MakeRoom()\l+ MakeDoor()\l# WeaveSpell()\l}" alt="" coords="197,248,368,384"/>
+</map>

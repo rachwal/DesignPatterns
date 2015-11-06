@@ -1,0 +1,9 @@
+<map id="structural::composite::Currency::value" name="structural::composite::Currency::value">
+<area shape="rect" id="node2" href="$d7/d98/classstructural_1_1composite_1_1_card.html#a7fa3d1508b978b433e51801f238c0057" title="structural::composite\l::Card::DiscountPrice" alt="" coords="216,5,363,47"/>
+<area shape="rect" id="node3" href="$d5/d43/classstructural_1_1composite_1_1_floppy_disk.html#a6b03335156bf9b3c2cd07b0893bb58c6" title="structural::composite\l::FloppyDisk::DiscountPrice" alt="" coords="197,71,381,112"/>
+<area shape="rect" id="node4" href="$d9/d95/classstructural_1_1composite_1_1_composite_equipment.html#a23cb569abec8ab608e2f10ee85cd261d" title="structural::composite\l::CompositeEquipment\l::NetPrice" alt="" coords="212,137,367,193"/>
+<area shape="rect" id="node6" href="$d8/ded/namespacestructural_1_1composite.html#a1a5a1ebcf095b8dbdd5c5374a8840244" title="structural::composite\l::operator==" alt="" coords="217,217,361,259"/>
+<area shape="rect" id="node7" href="$d8/ded/namespacestructural_1_1composite.html#a5d86db5146a967ee3935766ef4254f34" title="structural::composite\l::operator!=" alt="" coords="217,283,361,324"/>
+<area shape="rect" id="node8" href="$d1/db1/classstructural_1_1composite_1_1_currency.html#a20bb37ccd41bfaccf3b0f24e6aafaefc" title="structural::composite\l::Currency::value" alt="" coords="217,348,361,389"/>
+<area shape="rect" id="node5" href="$d9/d95/classstructural_1_1composite_1_1_composite_equipment.html#aea75ec1af630bd834b67798d1e6f06d9" title="structural::composite\l::CompositeEquipment\l::DiscountPrice" alt="" coords="429,137,584,193"/>
+</map>

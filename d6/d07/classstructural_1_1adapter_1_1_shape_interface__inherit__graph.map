@@ -1,0 +1,4 @@
+<map id="structural::adapter::ShapeInterface" name="structural::adapter::ShapeInterface">
+<area shape="rect" id="node2" href="$df/d8e/classstructural_1_1adapter_1_1_text_shape_class_adapter.html" title="{structural::adapter\l::TextShapeClassAdapter\n||+ TextShapeClassAdapter()\l+ TextShapeClassAdapter()\l+ BoundingBox()\l+ IsEmpty()\l}" alt="" coords="5,160,188,296"/>
+<area shape="rect" id="node3" href="$d2/d3e/classstructural_1_1adapter_1_1_text_shape_object_adapter.html" title="{structural::adapter\l::TextShapeObjectAdapter\n||+ TextShapeObjectAdapter()\l+ BoundingBox()\l+ IsEmpty()\l}" alt="" coords="213,167,399,289"/>
+</map>

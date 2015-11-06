@@ -1,0 +1,10 @@
+<map id="creational::commons::MapSiteInterface" name="creational::commons::MapSiteInterface">
+<area shape="rect" id="node2" href="$df/d04/classcreational_1_1commons_1_1_door.html" title="{creational::commons\l::Door\n||+ Door()\l+ Door()\l+ Clone()\l+ Enter()\l+ Initialize()\l+ is_open()\l+ OtherSideFrom()\l+ entered()\l}" alt="" coords="92,160,235,355"/>
+<area shape="rect" id="node4" href="$d7/d33/classcreational_1_1commons_1_1_room.html" title="{creational::commons\l::Room\n|# room_number_\l|+ Room()\l+ Room()\l+ Clone()\l+ Enter()\l+ entered()\l+ GetSide()\l+ room_number()\l+ SetSide()\l}" alt="" coords="344,160,487,355"/>
+<area shape="rect" id="node8" href="$da/d9e/classcreational_1_1commons_1_1_wall.html" title="{creational::commons\l::Wall\n|# entered_\l|+ Wall()\l+ Wall()\l+ ~Wall()\l+ Clone()\l+ Enter()\l+ entered()\l}" alt="" coords="605,175,748,340"/>
+<area shape="rect" id="node3" href="$dd/da2/classcreational_1_1commons_1_1_door_needing_spell.html" title="{creational::commons\l::DoorNeedingSpell\n||+ DoorNeedingSpell()\l+ DoorNeedingSpell()\l+ TrySpell()\l}" alt="" coords="5,425,151,546"/>
+<area shape="rect" id="node5" href="$d8/d48/classcreational_1_1commons_1_1_enchanted_room.html" title="{creational::commons\l::EnchantedRoom\n||+ EnchantedRoom()\l+ EnchantedRoom()\l+ Clone()\l+ HasSpell()\l+ Initialize()\l+ PickUpSpell()\l}" alt="" coords="175,403,317,568"/>
+<area shape="rect" id="node6" href="$d6/d96/classcreational_1_1commons_1_1_room_with_a_bomb.html" title="{creational::commons\l::RoomWithABomb\n||+ RoomWithABomb()\l+ RoomWithABomb()\l+ Clone()\l+ has_bomb()\l+ Initialize()\l}" alt="" coords="342,410,489,561"/>
+<area shape="rect" id="node7" href="$d8/d0c/classcreational_1_1commons_1_1_twisty_turny_passage.html" title="{creational::commons\l::TwistyTurnyPassage\n||+ TwistyTurnyPassage()\l+ Enter()\l+ entered()\l}" alt="" coords="513,425,675,546"/>
+<area shape="rect" id="node9" href="$da/db1/classcreational_1_1commons_1_1_bombed_wall.html" title="{creational::commons\l::BombedWall\n||+ BombedWall()\l+ BombedWall()\l+ Clone()\l+ Enter()\l+ Intialize()\l+ bombed()\l}" alt="" coords="700,403,843,568"/>
+</map>

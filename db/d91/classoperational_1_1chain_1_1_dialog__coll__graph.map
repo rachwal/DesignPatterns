@@ -1,0 +1,4 @@
+<map id="operational::chain::Dialog" name="operational::chain::Dialog">
+<area shape="rect" id="node2" href="$df/d6a/classoperational_1_1chain_1_1_widget.html" title="{operational::chain\l::Widget\n||+ HasHelp()\l+ SetHandler()\l+ HandleHelp()\l+ topic()\l+ name()\l+ help_message()\l# Widget()\l# Widget()\l# Widget()\l# Widget()\l}" alt="" coords="27,189,153,413"/>
+<area shape="rect" id="node3" href="$df/dcd/classoperational_1_1chain_1_1_help_handler_interface.html" title="{operational::chain\l::HelpHandlerInterface\n||+ ~HelpHandlerInterface()\l+ HasHelp()\l+ SetHandler()\l+ HandleHelp()\l}" alt="" coords="5,5,175,141"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="structural::adapter::TextShapeClassAdapter" name="structural::adapter::TextShapeClassAdapter">
+<area shape="rect" id="node2" href="$d7/dce/classstructural_1_1adapter_1_1_text_view.html" title="{structural::adapter\l::TextView\n||+ TextView()\l+ TextView()\l+ ~TextView()\l+ Draw()\l+ Resize()\l+ GetOrigin()\l+ SetOrigin()\l+ GetExtent()\l+ SetExtent()\l+ IsEmpty()\l+ content()\l+ content()\l}" alt="" coords="43,175,169,428"/>
+<area shape="rect" id="node3" href="$da/d96/classstructural_1_1adapter_1_1_visual_component_interface.html" title="{structural::adapter\l::VisualComponentInterface\n||+ ~VisualComponentInterface()\l+ Draw()\l+ Resize()\l}" alt="" coords="5,5,207,127"/>
+<area shape="rect" id="node4" href="$da/da8/classstructural_1_1adapter_1_1_shape_interface.html" title="{structural::adapter\l::ShapeInterface\n||+ ~ShapeInterface()\l+ BoundingBox()\l}" alt="" coords="194,248,330,355"/>
+</map>

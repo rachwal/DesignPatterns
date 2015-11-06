@@ -1,0 +1,8 @@
+<map id="structural::composite::EquipmentInterface" name="structural::composite::EquipmentInterface">
+<area shape="rect" id="node2" href="$d7/d98/classstructural_1_1composite_1_1_card.html" title="{structural::composite\l::Card\n||+ Card()\l+ Card()\l+ name()\l+ price()\l+ price()\l+ power()\l+ power()\l+ NetPrice()\l+ DiscountPrice()\l}" alt="" coords="22,277,166,487"/>
+<area shape="rect" id="node3" href="$d9/d95/classstructural_1_1composite_1_1_composite_equipment.html" title="{structural::composite\l::CompositeEquipment\n||+ name()\l+ price()\l+ price()\l+ power()\l+ power()\l+ NetPrice()\l+ DiscountPrice()\l+ Add()\l+ Remove()\l+ CreateIterator()\l# CompositeEquipment()\l# CompositeEquipment()\l# ~CompositeEquipment()\l}" alt="" coords="190,248,363,516"/>
+<area shape="rect" id="node7" href="$d5/d43/classstructural_1_1composite_1_1_floppy_disk.html" title="{structural::composite\l::FloppyDisk\n||+ FloppyDisk()\l+ FloppyDisk()\l+ name()\l+ price()\l+ price()\l+ power()\l+ power()\l+ NetPrice()\l+ DiscountPrice()\l}" alt="" coords="387,277,531,487"/>
+<area shape="rect" id="node4" href="$dc/d6c/classstructural_1_1composite_1_1_bus.html" title="{structural::composite::Bus\n||+ Bus()\l+ Bus()\l}" alt="" coords="5,571,180,663"/>
+<area shape="rect" id="node5" href="$d1/d1f/classstructural_1_1composite_1_1_cabinet.html" title="{structural::composite\l::Cabinet\n||+ Cabinet()\l+ Cabinet()\l}" alt="" coords="205,564,349,671"/>
+<area shape="rect" id="node6" href="$d5/dd4/classstructural_1_1composite_1_1_chassis.html" title="{structural::composite\l::Chassis\n||+ Chassis()\l+ Chassis()\l}" alt="" coords="373,564,517,671"/>
+</map>

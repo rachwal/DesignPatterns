@@ -1,0 +1,15 @@
+<map id="src/structural/src/composite/equipment_interface.h" name="src/structural/src/composite/equipment_interface.h">
+<area shape="rect" id="node2" href="$d7/d12/composite__equipment_8h.html" title="src/structural/src\l/composite/composite\l_equipment.h" alt="" coords="351,109,501,165"/>
+<area shape="rect" id="node11" href="$d1/def/structural_2src_2composite_2card_8h.html" title="src/structural/src\l/composite/card.h" alt="" coords="651,117,777,158"/>
+<area shape="rect" id="node13" href="$d3/d51/structural_2src_2composite_2floppy__disk_8h.html" title="src/structural/src\l/composite/floppy_disk.h" alt="" coords="856,117,1023,158"/>
+<area shape="rect" id="node3" href="$d7/d66/structural_2src_2composite_2bus_8h.html" title="src/structural/src\l/composite/bus.h" alt="" coords="526,221,649,262"/>
+<area shape="rect" id="node6" href="$d4/d06/cabinet_8h.html" title="src/structural/src\l/composite/cabinet.h" alt="" coords="184,221,327,262"/>
+<area shape="rect" id="node8" href="$db/d73/structural_2src_2composite_2chassis_8h.html" title="src/structural/src\l/composite/chassis.h" alt="" coords="10,221,157,262"/>
+<area shape="rect" id="node10" href="$d6/dc4/composite__equipment_8cc.html" title="src/structural/src\l/composite/composite\l_equipment.cc" alt="" coords="351,213,501,269"/>
+<area shape="rect" id="node4" href="$d5/dbd/structural_2src_2composite_2bus_8cc.html" title="src/structural/src\l/composite/bus.cc" alt="" coords="401,325,531,366"/>
+<area shape="rect" id="node5" href="$d3/dcb/composite__test_8cc.html" title="src/structural_tests\l/src/composite/composite\l_test.cc" alt="" coords="555,317,727,373"/>
+<area shape="rect" id="node7" href="$da/dfc/cabinet_8cc.html" title="src/structural/src\l/composite/cabinet.cc" alt="" coords="183,325,333,366"/>
+<area shape="rect" id="node9" href="$d6/d70/structural_2src_2composite_2chassis_8cc.html" title="src/structural/src\l/composite/chassis.cc" alt="" coords="5,325,159,366"/>
+<area shape="rect" id="node12" href="$d0/d6f/structural_2src_2composite_2card_8cc.html" title="src/structural/src\l/composite/card.cc" alt="" coords="723,221,857,262"/>
+<area shape="rect" id="node14" href="$df/d40/structural_2src_2composite_2floppy__disk_8cc.html" title="src/structural/src\l/composite/floppy_disk.cc" alt="" coords="881,221,1054,262"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="structural::proxy::GraphicInterface" name="structural::proxy::GraphicInterface">
+<area shape="rect" id="node2" href="$dd/d5a/classstructural_1_1proxy_1_1_image.html" title="{structural::proxy::\lImage\n||+ Image()\l+ ~Image()\l+ Draw()\l+ HandleMouse()\l+ Load()\l+ Save()\l+ GetExtent()\l}" alt="" coords="5,226,129,406"/>
+<area shape="rect" id="node3" href="$d9/d2c/classstructural_1_1proxy_1_1_image_proxy.html" title="{structural::proxy::\lImageProxy\n||+ ImageProxy()\l+ ~ImageProxy()\l+ Draw()\l+ HandleMouse()\l+ GetExtent()\l+ Load()\l+ Save()\l# GetImage()\l}" alt="" coords="153,219,277,413"/>
+</map>

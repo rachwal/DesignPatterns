@@ -1,0 +1,17 @@
+<map id="src/structural/src/composite/currency.h" name="src/structural/src/composite/currency.h">
+<area shape="rect" id="node2" href="$d4/d70/equipment__interface_8h.html" title="src/structural/src\l/composite/equipment\l_interface.h" alt="" coords="639,95,789,151"/>
+<area shape="rect" id="node16" href="$d5/d43/currrency_8cc.html" title="src/structural/src\l/composite/currrency.cc" alt="" coords="814,102,977,143"/>
+<area shape="rect" id="node3" href="$d7/d12/composite__equipment_8h.html" title="src/structural/src\l/composite/composite\l_equipment.h" alt="" coords="351,199,501,255"/>
+<area shape="rect" id="node12" href="$d1/def/structural_2src_2composite_2card_8h.html" title="src/structural/src\l/composite/card.h" alt="" coords="651,206,777,247"/>
+<area shape="rect" id="node14" href="$d3/d51/structural_2src_2composite_2floppy__disk_8h.html" title="src/structural/src\l/composite/floppy_disk.h" alt="" coords="856,206,1023,247"/>
+<area shape="rect" id="node4" href="$d7/d66/structural_2src_2composite_2bus_8h.html" title="src/structural/src\l/composite/bus.h" alt="" coords="526,310,649,351"/>
+<area shape="rect" id="node7" href="$d4/d06/cabinet_8h.html" title="src/structural/src\l/composite/cabinet.h" alt="" coords="184,310,327,351"/>
+<area shape="rect" id="node9" href="$db/d73/structural_2src_2composite_2chassis_8h.html" title="src/structural/src\l/composite/chassis.h" alt="" coords="10,310,157,351"/>
+<area shape="rect" id="node11" href="$d6/dc4/composite__equipment_8cc.html" title="src/structural/src\l/composite/composite\l_equipment.cc" alt="" coords="351,303,501,359"/>
+<area shape="rect" id="node5" href="$d5/dbd/structural_2src_2composite_2bus_8cc.html" title="src/structural/src\l/composite/bus.cc" alt="" coords="401,414,531,455"/>
+<area shape="rect" id="node6" href="$d3/dcb/composite__test_8cc.html" title="src/structural_tests\l/src/composite/composite\l_test.cc" alt="" coords="555,407,727,463"/>
+<area shape="rect" id="node8" href="$da/dfc/cabinet_8cc.html" title="src/structural/src\l/composite/cabinet.cc" alt="" coords="183,414,333,455"/>
+<area shape="rect" id="node10" href="$d6/d70/structural_2src_2composite_2chassis_8cc.html" title="src/structural/src\l/composite/chassis.cc" alt="" coords="5,414,159,455"/>
+<area shape="rect" id="node13" href="$d0/d6f/structural_2src_2composite_2card_8cc.html" title="src/structural/src\l/composite/card.cc" alt="" coords="723,310,857,351"/>
+<area shape="rect" id="node15" href="$df/d40/structural_2src_2composite_2floppy__disk_8cc.html" title="src/structural/src\l/composite/floppy_disk.cc" alt="" coords="881,310,1054,351"/>
+</map>

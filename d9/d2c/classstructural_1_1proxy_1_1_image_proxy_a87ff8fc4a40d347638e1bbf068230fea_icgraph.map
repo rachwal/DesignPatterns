@@ -1,0 +1,5 @@
+<map id="structural::proxy::ImageProxy::GetImage" name="structural::proxy::ImageProxy::GetImage">
+<area shape="rect" id="node2" href="$d9/d2c/classstructural_1_1proxy_1_1_image_proxy.html#a8776c3c03a04149fd9b1c858507cf134" title="structural::proxy::\lImageProxy::GetExtent" alt="" coords="218,5,377,47"/>
+<area shape="rect" id="node3" href="$d9/d2c/classstructural_1_1proxy_1_1_image_proxy.html#a7105d5b869b5dbe266ee25a58211a701" title="structural::proxy::\lImageProxy::Draw" alt="" coords="233,71,361,112"/>
+<area shape="rect" id="node4" href="$d9/d2c/classstructural_1_1proxy_1_1_image_proxy.html#ad8e5c38b13434fffcb2bc9f2b1838a1c" title="structural::proxy::\lImageProxy::HandleMouse" alt="" coords="208,136,387,177"/>
+</map>

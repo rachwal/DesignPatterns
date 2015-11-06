@@ -1,0 +1,5 @@
+<map id="structural::flyweight::GlyphInterface" name="structural::flyweight::GlyphInterface">
+<area shape="rect" id="node2" href="$d7/dd6/classstructural_1_1flyweight_1_1_character.html" title="{structural::flyweight\l::Character\n||+ Character()\l+ First()\l+ Next()\l+ IsDone()\l+ SetFont()\l+ GetFont()\l+ Current()\l+ Insert()\l+ Remove()\l+ Draw()\l}" alt="" coords="5,277,140,501"/>
+<area shape="rect" id="node3" href="$d4/da7/classstructural_1_1flyweight_1_1_column.html" title="{structural::flyweight\l::Column\n||+ ~Column()\l+ First()\l+ Next()\l+ IsDone()\l+ SetFont()\l+ GetFont()\l+ Current()\l+ Insert()\l+ Remove()\l+ Draw()\l}" alt="" coords="164,277,299,501"/>
+<area shape="rect" id="node4" href="$d4/d84/classstructural_1_1flyweight_1_1_row.html" title="{structural::flyweight::Row\n||+ ~Row()\l+ First()\l+ Next()\l+ IsDone()\l+ SetFont()\l+ GetFont()\l+ Current()\l+ Insert()\l+ Remove()\l+ Draw()\l}" alt="" coords="323,285,489,494"/>
+</map>

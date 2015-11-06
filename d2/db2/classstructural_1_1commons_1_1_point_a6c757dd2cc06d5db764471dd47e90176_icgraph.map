@@ -1,0 +1,11 @@
+<map id="structural::commons::Point::x" name="structural::commons::Point::x">
+<area shape="rect" id="node2" href="$d0/dbf/classstructural_1_1bridge_1_1_application_window.html#af2f1e385e04f14d911f03355933e5bba" title="structural::bridge\l::ApplicationWindow\l::DrawText" alt="" coords="206,5,346,61"/>
+<area shape="rect" id="node4" href="$dc/d25/classstructural_1_1bridge_1_1_icon_window.html#aa74e7f4698050ac6ba17b4152b0d451d" title="structural::bridge\l::IconWindow::DrawText" alt="" coords="195,86,357,127"/>
+<area shape="rect" id="node5" href="$d5/d3d/classstructural_1_1bridge_1_1_window.html#a89fde0df83fd4640f0aebfcaabaf4f33" title="structural::bridge\l::Window::DrawRect" alt="" coords="206,151,346,193"/>
+<area shape="rect" id="node6" href="$d2/db2/classstructural_1_1commons_1_1_point.html#ae7044d2f3cfc325b3eb193210e70695a" title="structural::commons\l::Point::operator+=" alt="" coords="205,217,347,258"/>
+<area shape="rect" id="node7" href="$d2/db2/classstructural_1_1commons_1_1_point.html#a5f54e4f921239bb57b5870b0f65924f9" title="structural::commons\l::Point::operator&#45;=" alt="" coords="205,282,347,323"/>
+<area shape="rect" id="node8" href="$dd/d5a/classstructural_1_1proxy_1_1_image.html#ae872452935d47a0df1a047290f66417d" title="structural::proxy::\lImage::Draw" alt="" coords="214,347,338,389"/>
+<area shape="rect" id="node10" href="$d5/dab/namespacestructuraltests.html#a65330cc5c6b545d30d8ea81309a87506" title="structuraltests::TEST\l_CLASS" alt="" coords="203,413,349,454"/>
+<area shape="rect" id="node3" href="$d0/dbf/classstructural_1_1bridge_1_1_application_window.html#a5f9643f30f1ffa5d253a36ff42ffeb40" title="structural::bridge\l::ApplicationWindow\l::DrawTitle" alt="" coords="405,5,545,61"/>
+<area shape="rect" id="node9" href="$d9/d2c/classstructural_1_1proxy_1_1_image_proxy.html#a7105d5b869b5dbe266ee25a58211a701" title="structural::proxy::\lImageProxy::Draw" alt="" coords="411,347,539,389"/>
+</map>

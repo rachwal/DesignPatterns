@@ -1,0 +1,4 @@
+<map id="creational::commons::TwistyTurnyPassage" name="creational::commons::TwistyTurnyPassage">
+<area shape="rect" id="node2" href="$d7/d33/classcreational_1_1commons_1_1_room.html" title="{creational::commons\l::Room\n|# room_number_\l|+ Room()\l+ Room()\l+ Clone()\l+ Enter()\l+ entered()\l+ GetSide()\l+ room_number()\l+ SetSide()\l}" alt="" coords="15,160,158,355"/>
+<area shape="rect" id="node3" href="$d6/dde/classcreational_1_1commons_1_1_map_site_interface.html" title="{creational::commons\l::MapSiteInterface\n||+ ~MapSiteInterface()\l+ Enter()\l}" alt="" coords="13,5,160,112"/>
+</map>

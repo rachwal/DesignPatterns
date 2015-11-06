@@ -1,0 +1,4 @@
+<map id="structural::bridge::ApplicationWindow" name="structural::bridge::ApplicationWindow">
+<area shape="rect" id="node2" href="$d5/d3d/classstructural_1_1bridge_1_1_window.html" title="{structural::bridge\l::Window\n||+ Window()\l+ ~Window()\l+ DrawRect()\l+ DrawText()\l# GetWindowImp()\l}" alt="" coords="17,175,146,325"/>
+<area shape="rect" id="node3" href="$dc/dac/classstructural_1_1bridge_1_1_window_interface.html" title="{structural::bridge\l::WindowInterface\n||+ ~WindowInterface()\l+ DrawRect()\l+ DrawText()\l}" alt="" coords="9,5,154,127"/>
+</map>

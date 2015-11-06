@@ -1,0 +1,4 @@
+<map id="structural::decorator::CompressingStream" name="structural::decorator::CompressingStream">
+<area shape="rect" id="node2" href="$d6/de5/classstructural_1_1decorator_1_1_stream_decorator.html" title="{structural::decorator\l::StreamDecorator\n||+ StreamDecorator()\l+ PutInt()\l+ PutString()\l}" alt="" coords="15,189,155,311"/>
+<area shape="rect" id="node3" href="$d1/dbf/classstructural_1_1decorator_1_1_stream_interface.html" title="{structural::decorator\l::StreamInterface\n||+ ~StreamInterface()\l+ PutInt()\l+ PutString()\l}" alt="" coords="15,5,156,127"/>
+</map>

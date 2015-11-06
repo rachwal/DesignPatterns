@@ -1,0 +1,6 @@
+<map id="operational::madiator::MediatorWidgetInterface" name="operational::madiator::MediatorWidgetInterface">
+<area shape="rect" id="node2" href="$df/d1e/classoperational_1_1madiator_1_1_list_box.html" title="{operational::madiator\l::ListBox\n||+ ListBox()\l+ GetSelection()\l+ SetList()\l+ HandleMouse()\l+ Changed()\l}" alt="" coords="5,175,148,325"/>
+<area shape="rect" id="node3" href="$da/dd3/classoperational_1_1madiator_1_1_mediator_widget.html" title="{operational::madiator\l::MediatorWidget\n||+ MediatorWidget()\l+ Changed()\l+ HandleMouse()\l}" alt="" coords="172,189,315,311"/>
+<area shape="rect" id="node4" href="$d7/d87/classoperational_1_1madiator_1_1_entry_field.html" title="{operational::madiator\l::EntryField\n||+ EntryField()\l+ HandleMouse()\l+ text()\l+ text()\l}" alt="" coords="88,373,231,509"/>
+<area shape="rect" id="node5" href="$d3/d5c/classoperational_1_1madiator_1_1_mediator_button.html" title="{operational::madiator\l::MediatorButton\n||+ MediatorButton()\l+ text()\l+ text()\l+ HandleMouse()\l}" alt="" coords="255,373,397,509"/>
+</map>

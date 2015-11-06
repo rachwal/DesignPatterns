@@ -1,0 +1,7 @@
+<map id="src/creational/src/mazeparts/door_needing_spell.h" name="src/creational/src/mazeparts/door_needing_spell.h">
+<area shape="rect" id="node2" href="$d3/d4b/enchanted__maze__factory_8cc.html" title="src/creational/src\l/abstractfactory/enchanted\l_maze_factory.cc" alt="" coords="5,109,181,165"/>
+<area shape="rect" id="node3" href="$db/db5/enchanted__maze__game_8cc.html" title="src/creational/src\l/factorymethod/enchanted\l_maze_game.cc" alt="" coords="206,109,378,165"/>
+<area shape="rect" id="node4" href="$db/dd4/door__needing__spell_8cc.html" title="src/creational/src\l/mazeparts/door_needing\l_spell.cc" alt="" coords="403,109,571,165"/>
+<area shape="rect" id="node5" href="$d8/d61/door__needing__spell__test_8cc.html" title="src/creational_tests\l/src/mazeparts/door_needing\l_spell_test.cc" alt="" coords="595,109,786,165"/>
+<area shape="rect" id="node6" href="$d9/d77/validator_8cc.html" title="src/creational_tests\l/src/utils/validator.cc" alt="" coords="811,117,952,158"/>
+</map>

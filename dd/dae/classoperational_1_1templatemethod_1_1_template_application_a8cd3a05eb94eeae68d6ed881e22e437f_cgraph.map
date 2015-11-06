@@ -1,0 +1,5 @@
+<map id="operational::templatemethod::TemplateApplication::OpenDocument" name="operational::templatemethod::TemplateApplication::OpenDocument">
+<area shape="rect" id="node2" href="$dd/dae/classoperational_1_1templatemethod_1_1_template_application.html#a0075acf43934783b182bb455c57264a3" title="operational::templatemethod\l::TemplateApplication::CanOpenDocument" alt="" coords="299,5,567,47"/>
+<area shape="rect" id="node3" href="$dd/dae/classoperational_1_1templatemethod_1_1_template_application.html#a53937d1ea8855de1e6a78bc7c7cacb6a" title="operational::templatemethod\l::TemplateApplication::CreateDocument" alt="" coords="307,71,559,112"/>
+<area shape="rect" id="node4" href="$dd/dae/classoperational_1_1templatemethod_1_1_template_application.html#a1c4f931aec93100c38239822657aa0fc" title="operational::templatemethod\l::TemplateApplication::AboutToOpen\lDocument" alt="" coords="315,137,550,193"/>
+</map>

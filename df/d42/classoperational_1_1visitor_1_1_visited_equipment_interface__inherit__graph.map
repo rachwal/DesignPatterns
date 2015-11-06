@@ -1,0 +1,6 @@
+<map id="operational::visitor::VisitedEquipmentInterface" name="operational::visitor::VisitedEquipmentInterface">
+<area shape="rect" id="node2" href="$dc/d83/classoperational_1_1visitor_1_1_bus.html" title="{operational::visitor::Bus\n||+ Bus()\l+ name()\l+ price()\l+ price()\l+ GetLuxPrice()\l+ GetRegularPrice()\l+ Accept()\l}" alt="" coords="5,219,163,384"/>
+<area shape="rect" id="node3" href="$d1/df0/classoperational_1_1visitor_1_1_card.html" title="{operational::visitor\l::Card\n||+ Card()\l+ name()\l+ price()\l+ price()\l+ GetSilverPrice()\l+ GetGoldPrice()\l+ Accept()\l}" alt="" coords="187,211,314,391"/>
+<area shape="rect" id="node4" href="$d6/d2e/classoperational_1_1visitor_1_1_chassis.html" title="{operational::visitor\l::Chassis\n||+ Chassis()\l+ ~Chassis()\l+ name()\l+ price()\l+ price()\l+ GetPrice()\l+ Accept()\l+ AddPart()\l}" alt="" coords="338,204,465,399"/>
+<area shape="rect" id="node5" href="$d1/dfb/classoperational_1_1visitor_1_1_floppy_disk.html" title="{operational::visitor\l::FloppyDisk\n||+ FloppyDisk()\l+ name()\l+ price()\l+ price()\l+ GetBoxPrice()\l+ Accept()\l}" alt="" coords="489,219,615,384"/>
+</map>

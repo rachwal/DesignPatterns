@@ -1,0 +1,6 @@
+<map id="structural::proxy::ImageProxy::Draw" name="structural::proxy::ImageProxy::Draw">
+<area shape="rect" id="node2" href="$d9/d2c/classstructural_1_1proxy_1_1_image_proxy.html#a87ff8fc4a40d347638e1bbf068230fea" title="structural::proxy::\lImageProxy::GetImage" alt="" coords="181,5,336,47"/>
+<area shape="rect" id="node3" href="$dd/d5a/classstructural_1_1proxy_1_1_image.html#ae872452935d47a0df1a047290f66417d" title="structural::proxy::\lImage::Draw" alt="" coords="197,71,321,112"/>
+<area shape="rect" id="node4" href="$d2/db2/classstructural_1_1commons_1_1_point.html#a6c757dd2cc06d5db764471dd47e90176" title="structural::commons\l::Point::x" alt="" coords="384,37,525,79"/>
+<area shape="rect" id="node5" href="$d2/db2/classstructural_1_1commons_1_1_point.html#a879eaf11e2edad52cc239c75da03bf74" title="structural::commons\l::Point::y" alt="" coords="384,103,525,144"/>
+</map>

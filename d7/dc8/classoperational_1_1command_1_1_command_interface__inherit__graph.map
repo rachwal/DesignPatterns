@@ -1,0 +1,6 @@
+<map id="operational::command::CommandInterface" name="operational::command::CommandInterface">
+<area shape="rect" id="node2" href="$db/da6/classoperational_1_1command_1_1_macro_command.html" title="{operational::command\l::MacroCommand\n||+ MacroCommand()\l+ ~MacroCommand()\l+ Add()\l+ Remove()\l+ Execute()\l}" alt="" coords="5,160,156,311"/>
+<area shape="rect" id="node3" href="$d8/d69/classoperational_1_1command_1_1_open_command.html" title="{operational::command\l::OpenCommand\n||+ OpenCommand()\l+ Execute()\l# AskUser()\l}" alt="" coords="180,175,331,296"/>
+<area shape="rect" id="node4" href="$d3/d98/classoperational_1_1command_1_1_paste_command.html" title="{operational::command\l::PasteCommand\n||+ PasteCommand()\l+ Execute()\l}" alt="" coords="355,182,505,289"/>
+<area shape="rect" id="node5" href="$d3/dc0/classoperational_1_1command_1_1_simple_command.html" title="{operational::command\l::SimpleCommand\&lt; Receiver \&gt;\n||+ SimpleCommand()\l+ Execute()\l}" alt="" coords="530,182,733,289"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d4/dad/classoperational_1_1strategy_1_1_compositor_interface.html" title="operational::strategy\l::CompositorInterface" alt="" coords="5,71,151,112"/>
+<area shape="rect" id="node2" href="$d8/d76/classoperational_1_1strategy_1_1_array_compositor.html" title="operational::strategy\l::ArrayCompositor" alt="" coords="199,5,339,47"/>
+<area shape="rect" id="node3" href="$db/d1e/classoperational_1_1strategy_1_1_simple_compositor.html" title="operational::strategy\l::SimpleCompositor" alt="" coords="199,71,339,112"/>
+<area shape="rect" id="node4" href="$d1/d0e/classoperational_1_1strategy_1_1_tex_compositor.html" title="operational::strategy\l::TexCompositor" alt="" coords="199,136,339,177"/>
+</map>

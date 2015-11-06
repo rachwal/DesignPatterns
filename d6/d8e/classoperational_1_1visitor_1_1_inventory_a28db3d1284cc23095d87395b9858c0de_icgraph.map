@@ -1,0 +1,6 @@
+<map id="operational::visitor::Inventory::Accumulate" name="operational::visitor::Inventory::Accumulate">
+<area shape="rect" id="node2" href="$d4/dc2/classoperational_1_1visitor_1_1_inventory_visitor.html#aa842ea0a196b35fbdb94a5aff60b9592" title="operational::visitor\l::InventoryVisitor::VisitFloppyDisk" alt="" coords="212,5,429,47"/>
+<area shape="rect" id="node3" href="$d4/dc2/classoperational_1_1visitor_1_1_inventory_visitor.html#af0db1700341164fec9423d4e14dbf9f9" title="operational::visitor\l::InventoryVisitor::VisitCard" alt="" coords="231,71,410,112"/>
+<area shape="rect" id="node4" href="$d4/dc2/classoperational_1_1visitor_1_1_inventory_visitor.html#a20f7641ba87b4125091c080ac5d9e3f2" title="operational::visitor\l::InventoryVisitor::VisitChassis" alt="" coords="221,136,420,177"/>
+<area shape="rect" id="node5" href="$d4/dc2/classoperational_1_1visitor_1_1_inventory_visitor.html#aacdd8712ca0f213ecc3c28ec2d8f8a41" title="operational::visitor\l::InventoryVisitor::VisitBus" alt="" coords="233,201,408,243"/>
+</map>

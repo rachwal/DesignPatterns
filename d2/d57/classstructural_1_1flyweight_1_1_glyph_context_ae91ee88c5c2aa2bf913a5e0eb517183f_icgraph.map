@@ -1,0 +1,5 @@
+<map id="structural::flyweight::GlyphContext::IsDone" name="structural::flyweight::GlyphContext::IsDone">
+<area shape="rect" id="node2" href="$d7/dd6/classstructural_1_1flyweight_1_1_character.html#a1baf342f210fe52c8e5f143e80a90feb" title="structural::flyweight\l::Character::IsDone" alt="" coords="211,5,345,47"/>
+<area shape="rect" id="node3" href="$d4/da7/classstructural_1_1flyweight_1_1_column.html#a2bf1a23838a960f033e07dcce7db6537" title="structural::flyweight\l::Column::IsDone" alt="" coords="211,71,345,112"/>
+<area shape="rect" id="node4" href="$d4/d84/classstructural_1_1flyweight_1_1_row.html#af06d4584b55e7688d99b3426d042af77" title="structural::flyweight\l::Row::IsDone" alt="" coords="211,136,345,177"/>
+</map>

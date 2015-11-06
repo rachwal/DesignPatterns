@@ -1,0 +1,12 @@
+<map id="src/structural/src/flyweight/window.h" name="src/structural/src/flyweight/window.h">
+<area shape="rect" id="node2" href="$df/d3c/glyph__interface_8h.html" title="src/structural/src\l/flyweight/glyph_interface.h" alt="" coords="249,95,428,136"/>
+<area shape="rect" id="node8" href="$dc/df8/column_8h.html" title="src/structural/src\l/flyweight/column.h" alt="" coords="417,184,551,225"/>
+<area shape="rect" id="node3" href="$dc/d26/character_8h.html" title="src/structural/src\l/flyweight/character.h" alt="" coords="103,184,249,225"/>
+<area shape="rect" id="node10" href="$d4/d6d/row_8h.html" title="src/structural/src\l/flyweight/row.h" alt="" coords="273,184,393,225"/>
+<area shape="rect" id="node4" href="$db/d57/character_8cc.html" title="src/structural/src\l/flyweight/character.cc" alt="" coords="5,273,157,315"/>
+<area shape="rect" id="node5" href="$da/dec/glyph__factory_8h.html" title="src/structural/src\l/flyweight/glyph_factory.h" alt="" coords="325,273,493,315"/>
+<area shape="rect" id="node6" href="$d6/dbd/glyph__factory_8cc.html" title="src/structural/src\l/flyweight/glyph_factory.cc" alt="" coords="227,370,402,411"/>
+<area shape="rect" id="node7" href="$dd/d09/flyweight__test_8cc.html" title="src/structural_tests\l/src/flyweight/flyweight\l_test.cc" alt="" coords="427,363,579,419"/>
+<area shape="rect" id="node9" href="$de/de6/column_8cc.html" title="src/structural/src\l/flyweight/column.cc" alt="" coords="518,273,658,315"/>
+<area shape="rect" id="node11" href="$df/d78/row_8cc.html" title="src/structural/src\l/flyweight/row.cc" alt="" coords="181,273,301,315"/>
+</map>

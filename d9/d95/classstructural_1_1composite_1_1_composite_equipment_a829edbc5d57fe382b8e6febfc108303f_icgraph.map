@@ -1,0 +1,5 @@
+<map id="structural::composite::CompositeEquipment::price" name="structural::composite::CompositeEquipment::price">
+<area shape="rect" id="node2" href="$d9/d95/classstructural_1_1composite_1_1_composite_equipment.html#a0a302bb0b45cf95474a8b0815fbb9ec4" title="structural::composite\l::CompositeEquipment\l::price" alt="" coords="208,5,363,61"/>
+<area shape="rect" id="node3" href="$d9/d95/classstructural_1_1composite_1_1_composite_equipment.html#a23cb569abec8ab608e2f10ee85cd261d" title="structural::composite\l::CompositeEquipment\l::NetPrice" alt="" coords="208,85,363,141"/>
+<area shape="rect" id="node4" href="$d9/d95/classstructural_1_1composite_1_1_composite_equipment.html#aea75ec1af630bd834b67798d1e6f06d9" title="structural::composite\l::CompositeEquipment\l::DiscountPrice" alt="" coords="411,85,565,141"/>
+</map>

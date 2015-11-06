@@ -1,0 +1,4 @@
+<map id="creational::builder::CountingMazeBuilder::BuildRoom" name="creational::builder::CountingMazeBuilder::BuildRoom">
+<area shape="rect" id="node2" href="$de/d93/classcreational_1_1commons_1_1_maze.html#a8b364f1371af7ccbf7b8d3fcffe79426" title="creational::commons\l::Maze::AddRoom" alt="" coords="207,13,349,54"/>
+<area shape="rect" id="node3" href="$d7/d33/classcreational_1_1commons_1_1_room.html#ae23154964af6170704b85d49d3d30536" title="creational::commons\l::Room::room_number" alt="" coords="397,13,548,54"/>
+</map>

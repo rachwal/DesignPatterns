@@ -1,0 +1,4 @@
+<map id="operational::observer::AnalogClock::Draw" name="operational::observer::AnalogClock::Draw">
+<area shape="rect" id="node2" href="$d0/dd5/classoperational_1_1observer_1_1_clock_timer.html#ad3638968eb369fdcf93fe9b41ac27b26" title="operational::observer\l::ClockTimer::GetHours" alt="" coords="201,5,359,47"/>
+<area shape="rect" id="node3" href="$d0/dd5/classoperational_1_1observer_1_1_clock_timer.html#a2b871310803ed9e2ca8f9909c4383bff" title="operational::observer\l::ClockTimer::GetMinutes" alt="" coords="195,71,365,112"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="operational::observer::DigitalClock" name="operational::observer::DigitalClock">
+<area shape="rect" id="node2" href="$d8/db9/classoperational_1_1observer_1_1_observer_widget_interface.html" title="{operational::observer\l::ObserverWidgetInterface\n||+ ~ObserverWidgetInterface()\l+ Draw()\l}" alt="" coords="5,5,196,112"/>
+<area shape="rect" id="node3" href="$df/d1a/classoperational_1_1observer_1_1_clock_tick_observer.html" title="{operational::observer\l::ClockTickObserver\n||+ ~ClockTickObserver()\l+ OnClockTick()\l}" alt="" coords="220,5,379,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d1/dbf/classstructural_1_1decorator_1_1_stream_interface.html" title="structural::decorator\l::StreamInterface" alt="" coords="5,39,144,80"/>
+<area shape="rect" id="node2" href="$d1/d73/classstructural_1_1decorator_1_1_file_stream.html" title="structural::decorator\l::FileStream" alt="" coords="192,5,331,47"/>
+<area shape="rect" id="node3" href="$d6/de5/classstructural_1_1decorator_1_1_stream_decorator.html" title="structural::decorator\l::StreamDecorator" alt="" coords="192,71,331,112"/>
+<area shape="rect" id="node4" href="$da/dfb/classstructural_1_1decorator_1_1_a_s_c_i_i7_stream.html" title="structural::decorator\l::ASCII7Stream" alt="" coords="383,37,522,79"/>
+<area shape="rect" id="node5" href="$d6/d17/classstructural_1_1decorator_1_1_compressing_stream.html" title="structural::decorator\l::CompressingStream" alt="" coords="379,103,527,144"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="operational::observer::DigitalClock::~DigitalClock" name="operational::observer::DigitalClock::~DigitalClock">
+<area shape="rect" id="node2" href="$d0/dd5/classoperational_1_1observer_1_1_clock_timer.html#a3605ad90b29bd98b9d4dcc4a69d7c41f" title="operational::observer\l::ClockTimer::Detach" alt="" coords="237,5,381,47"/>
+<area shape="rect" id="node3" href="$d4/de0/classoperational_1_1observer_1_1_clock_tick.html#a41abe8a38c0dd89c3b943d0059bf1ab9" title="operational::observer\l::ClockTick::Detach" alt="" coords="429,5,571,47"/>
+</map>

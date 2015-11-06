@@ -1,0 +1,10 @@
+<map id="src/structural/src/adapter/visual_component_interface.h" name="src/structural/src/adapter/visual_component_interface.h">
+<area shape="rect" id="node2" href="$d3/dee/text__view_8h.html" title="src/structural/src\l/adapter/text_view.h" alt="" coords="331,109,468,151"/>
+<area shape="rect" id="node3" href="$d4/d4c/text__shape__class__adapter_8h.html" title="src/structural/src\l/adapter/text_shape\l_class_adapter.h" alt="" coords="87,199,224,255"/>
+<area shape="rect" id="node6" href="$d2/d17/text__shape__object__adapter_8h.html" title="src/structural/src\l/adapter/text_shape\l_object_adapter.h" alt="" coords="248,199,385,255"/>
+<area shape="rect" id="node8" href="$da/dff/text__view_8cc.html" title="src/structural/src\l/adapter/text_view.cc" alt="" coords="410,206,554,247"/>
+<area shape="rect" id="node9" href="$df/d31/text__view__test_8cc.html" title="src/structural_tests\l/src/adapter/text_view\l_test.cc" alt="" coords="579,199,727,255"/>
+<area shape="rect" id="node4" href="$d8/d13/text__shape__class__adapter_8cc.html" title="src/structural/src\l/adapter/text_shape\l_class_adapter.cc" alt="" coords="5,303,143,359"/>
+<area shape="rect" id="node5" href="$d9/d38/adapter__test_8cc.html" title="src/structural_tests\l/src/adapter/adapter\l_test.cc" alt="" coords="167,303,306,359"/>
+<area shape="rect" id="node7" href="$d7/d61/text__shape__object__adapter_8cc.html" title="src/structural/src\l/adapter/text_shape\l_object_adapter.cc" alt="" coords="331,303,468,359"/>
+</map>

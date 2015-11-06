@@ -1,0 +1,5 @@
+<map id="creational::prototype::MazePrototypeFactory::MakeDoor" name="creational::prototype::MazePrototypeFactory::MakeDoor">
+<area shape="rect" id="node2" href="$df/d04/classcreational_1_1commons_1_1_door.html#a2168e2b001d02f3635386352e87f2f3c" title="creational::commons\l::Door::Clone" alt="" coords="216,5,359,47"/>
+<area shape="rect" id="node4" href="$df/d04/classcreational_1_1commons_1_1_door.html#a2a7abbfa4e89b6e64db3bd4635b06f4d" title="creational::commons\l::Door::Initialize" alt="" coords="216,71,359,112"/>
+<area shape="rect" id="node3" href="$df/d04/classcreational_1_1commons_1_1_door.html#aef1db3f62ed934e79644c12b282af588" title="creational::commons\l::Door::Door" alt="" coords="407,5,549,47"/>
+</map>

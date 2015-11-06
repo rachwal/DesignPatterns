@@ -1,0 +1,4 @@
+<map id="creational::commons::Door" name="creational::commons::Door">
+<area shape="rect" id="node3" href="$dd/da2/classcreational_1_1commons_1_1_door_needing_spell.html" title="{creational::commons\l::DoorNeedingSpell\n||+ DoorNeedingSpell()\l+ DoorNeedingSpell()\l+ TrySpell()\l}" alt="" coords="6,403,151,524"/>
+<area shape="rect" id="node2" href="$d6/dde/classcreational_1_1commons_1_1_map_site_interface.html" title="{creational::commons\l::MapSiteInterface\n||+ ~MapSiteInterface()\l+ Enter()\l}" alt="" coords="5,5,152,112"/>
+</map>

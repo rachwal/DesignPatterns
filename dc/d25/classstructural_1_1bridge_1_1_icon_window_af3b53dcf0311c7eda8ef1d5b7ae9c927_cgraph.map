@@ -1,0 +1,5 @@
+<map id="structural::bridge::IconWindow::DrawIcon" name="structural::bridge::IconWindow::DrawIcon">
+<area shape="rect" id="node2" href="$d5/d3d/classstructural_1_1bridge_1_1_window.html#a9ca2cea738469604f17b00631f45e208" title="structural::bridge\l::Window::GetWindowImp" alt="" coords="215,5,387,47"/>
+<area shape="rect" id="node3" href="$d6/dce/classstructural_1_1bridge_1_1_bitmap.html#a2c3ccc1cde9be0e30ec6ac859d4d6893" title="structural::bridge\l::Bitmap::width" alt="" coords="241,71,360,112"/>
+<area shape="rect" id="node4" href="$d6/dce/classstructural_1_1bridge_1_1_bitmap.html#ada43e526c7d48deace85f02eb9f9ef8c" title="structural::bridge\l::Bitmap::height" alt="" coords="241,136,360,177"/>
+</map>

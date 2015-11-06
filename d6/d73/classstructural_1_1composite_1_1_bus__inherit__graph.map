@@ -1,0 +1,4 @@
+<map id="structural::composite::Bus" name="structural::composite::Bus">
+<area shape="rect" id="node2" href="$d9/d95/classstructural_1_1composite_1_1_composite_equipment.html" title="{structural::composite\l::CompositeEquipment\n||+ name()\l+ price()\l+ price()\l+ power()\l+ power()\l+ NetPrice()\l+ DiscountPrice()\l+ Add()\l+ Remove()\l+ CreateIterator()\l# CompositeEquipment()\l# CompositeEquipment()\l# ~CompositeEquipment()\l}" alt="" coords="6,248,179,516"/>
+<area shape="rect" id="node3" href="$df/d68/classstructural_1_1composite_1_1_equipment_interface.html" title="{structural::composite\l::EquipmentInterface\n||+ ~EquipmentInterface()\l+ name()\l+ price()\l+ price()\l+ power()\l+ power()\l+ NetPrice()\l+ DiscountPrice()\l}" alt="" coords="12,5,173,200"/>
+</map>

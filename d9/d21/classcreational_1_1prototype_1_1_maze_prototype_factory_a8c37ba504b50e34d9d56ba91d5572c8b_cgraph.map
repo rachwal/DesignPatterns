@@ -1,0 +1,4 @@
+<map id="creational::prototype::MazePrototypeFactory::MakeWall" name="creational::prototype::MazePrototypeFactory::MakeWall">
+<area shape="rect" id="node2" href="$da/d9e/classcreational_1_1commons_1_1_wall.html#a9fb0eebe8ac20bdbcbfb5c3498a7bbf1" title="creational::commons\l::Wall::Clone" alt="" coords="216,13,359,54"/>
+<area shape="rect" id="node3" href="$da/d9e/classcreational_1_1commons_1_1_wall.html#aee942b78fcd70573f5cf645b58918c52" title="creational::commons\l::Wall::Wall" alt="" coords="407,13,549,54"/>
+</map>

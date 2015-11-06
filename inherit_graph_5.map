@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d7/d1d/classcreational_1_1_maze_game.html" title="creational::MazeGame" alt="" coords="5,46,159,73"/>
+<area shape="rect" id="node2" href="$d8/d85/classcreational_1_1factorymethod_1_1_bombed_maze_game.html" title="creational::factorymethod\l::BombedMazeGame" alt="" coords="207,5,375,47"/>
+<area shape="rect" id="node3" href="$d0/d01/classcreational_1_1factorymethod_1_1_enchanted_maze_game.html" title="creational::factorymethod\l::EnchantedMazeGame" alt="" coords="207,71,375,112"/>
+</map>

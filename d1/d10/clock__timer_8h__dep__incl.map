@@ -1,0 +1,10 @@
+<map id="src/operational/src/observer/clock_timer.h" name="src/operational/src/observer/clock_timer.h">
+<area shape="rect" id="node2" href="$d7/d55/analog__clock_8h.html" title="src/operational/src\l/observer/analog_clock.h" alt="" coords="9,102,174,143"/>
+<area shape="rect" id="node5" href="$da/d4d/clock__timer_8cc.html" title="src/operational/src\l/observer/clock_timer.cc" alt="" coords="198,102,361,143"/>
+<area shape="rect" id="node6" href="$d7/dee/digital__clock_8h.html" title="src/operational/src\l/observer/digital_clock.h" alt="" coords="385,102,547,143"/>
+<area shape="rect" id="node8" href="$d9/d6d/iterator__test_8cc.html" title="src/operational_tests\l/src/iterator/iterator\l_test.cc" alt="" coords="571,95,713,151"/>
+<area shape="rect" id="node9" href="$df/d15/clock__timer__test_8cc.html" title="src/operational_tests\l/src/observer/clock_timer\l_test.cc" alt="" coords="737,95,904,151"/>
+<area shape="rect" id="node3" href="$dc/dcb/analog__clock_8cc.html" title="src/operational/src\l/observer/analog_clock.cc" alt="" coords="5,206,177,247"/>
+<area shape="rect" id="node4" href="$d6/d34/observer__test_8cc.html" title="src/operational_tests\l/src/observer/observer\l_test.cc" alt="" coords="205,199,353,255"/>
+<area shape="rect" id="node7" href="$d6/db3/digital__clock_8cc.html" title="src/operational/src\l/observer/digital_clock.cc" alt="" coords="382,206,550,247"/>
+</map>

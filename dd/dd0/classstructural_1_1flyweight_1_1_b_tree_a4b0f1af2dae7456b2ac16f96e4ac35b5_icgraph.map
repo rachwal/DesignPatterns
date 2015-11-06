@@ -1,0 +1,12 @@
+<map id="structural::flyweight::BTree::Get" name="structural::flyweight::BTree::Get">
+<area shape="rect" id="node2" href="$d2/d57/classstructural_1_1flyweight_1_1_glyph_context.html#ab34665560b402faf0bf359f7cb01e67f" title="structural::flyweight\l::GlyphContext::Insert" alt="" coords="195,71,345,112"/>
+<area shape="rect" id="node3" href="$d2/d57/classstructural_1_1flyweight_1_1_glyph_context.html#a4aa8f35261cad4fef834d07dadc9c622" title="structural::flyweight\l::GlyphContext::GetFont" alt="" coords="188,136,352,177"/>
+<area shape="rect" id="node4" href="$d7/dd6/classstructural_1_1flyweight_1_1_character.html#aa2a911aecd907ef9250eeff638683b86" title="structural::flyweight\l::Character::GetFont" alt="" coords="408,5,549,47"/>
+<area shape="rect" id="node5" href="$d4/da7/classstructural_1_1flyweight_1_1_column.html#a7b2213b6789525e6154aa73ca27e3049" title="structural::flyweight\l::Column::GetFont" alt="" coords="411,71,546,112"/>
+<area shape="rect" id="node6" href="$d2/d57/classstructural_1_1flyweight_1_1_glyph_context.html#ae91ee88c5c2aa2bf913a5e0eb517183f" title="structural::flyweight\l::GlyphContext::IsDone" alt="" coords="400,136,557,177"/>
+<area shape="rect" id="node10" href="$d4/d84/classstructural_1_1flyweight_1_1_row.html#a236657bd40e8f4daccf313c1a0cfeaa7" title="structural::flyweight\l::Row::GetFont" alt="" coords="411,201,546,243"/>
+<area shape="rect" id="node11" href="$d5/dab/namespacestructuraltests.html#aa99c6e1b868b8650d7952a693a106c21" title="structuraltests::TEST\l_CLASS" alt="" coords="406,267,551,308"/>
+<area shape="rect" id="node7" href="$d7/dd6/classstructural_1_1flyweight_1_1_character.html#a1baf342f210fe52c8e5f143e80a90feb" title="structural::flyweight\l::Character::IsDone" alt="" coords="605,71,740,112"/>
+<area shape="rect" id="node8" href="$d4/da7/classstructural_1_1flyweight_1_1_column.html#a2bf1a23838a960f033e07dcce7db6537" title="structural::flyweight\l::Column::IsDone" alt="" coords="605,136,740,177"/>
+<area shape="rect" id="node9" href="$d4/d84/classstructural_1_1flyweight_1_1_row.html#af06d4584b55e7688d99b3426d042af77" title="structural::flyweight\l::Row::IsDone" alt="" coords="605,201,740,243"/>
+</map>

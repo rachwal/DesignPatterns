@@ -1,0 +1,3 @@
+<map id="operational::visitor::InventoryVisitor" name="operational::visitor::InventoryVisitor">
+<area shape="rect" id="node2" href="$df/dc7/classoperational_1_1visitor_1_1_equipment_visitor_interface.html" title="{operational::visitor\l::EquipmentVisitorInterface\n||+ ~EquipmentVisitorInterface()\l+ VisitFloppyDisk()\l+ VisitCard()\l+ VisitChassis()\l+ VisitBus()\l}" alt="" coords="5,5,204,156"/>
+</map>

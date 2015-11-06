@@ -1,0 +1,5 @@
+<map id="structural::bridge::Window::DrawRect" name="structural::bridge::Window::DrawRect">
+<area shape="rect" id="node2" href="$d5/d3d/classstructural_1_1bridge_1_1_window.html#a9ca2cea738469604f17b00631f45e208" title="structural::bridge\l::Window::GetWindowImp" alt="" coords="193,5,365,47"/>
+<area shape="rect" id="node3" href="$d2/db2/classstructural_1_1commons_1_1_point.html#a6c757dd2cc06d5db764471dd47e90176" title="structural::commons\l::Point::x" alt="" coords="209,71,350,112"/>
+<area shape="rect" id="node4" href="$d2/db2/classstructural_1_1commons_1_1_point.html#a879eaf11e2edad52cc239c75da03bf74" title="structural::commons\l::Point::y" alt="" coords="209,136,350,177"/>
+</map>

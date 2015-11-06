@@ -1,0 +1,6 @@
+<map id="structural::decorator::StreamInterface" name="structural::decorator::StreamInterface">
+<area shape="rect" id="node2" href="$d1/d73/classstructural_1_1decorator_1_1_file_stream.html" title="{structural::decorator\l::FileStream\n||+ FileStream()\l+ FileStream()\l+ PutInt()\l+ PutString()\l+ value()\l+ message()\l}" alt="" coords="5,175,144,340"/>
+<area shape="rect" id="node3" href="$d6/de5/classstructural_1_1decorator_1_1_stream_decorator.html" title="{structural::decorator\l::StreamDecorator\n|# component_\l|+ StreamDecorator()\l+ PutInt()\l+ PutString()\l}" alt="" coords="169,197,309,318"/>
+<area shape="rect" id="node4" href="$da/dfb/classstructural_1_1decorator_1_1_a_s_c_i_i7_stream.html" title="{structural::decorator\l::ASCII7Stream\n||+ ASCII7Stream()\l+ PutInt()\l+ PutString()\l+ value()\l+ message()\l}" alt="" coords="83,388,221,539"/>
+<area shape="rect" id="node5" href="$d6/d17/classstructural_1_1decorator_1_1_compressing_stream.html" title="{structural::decorator\l::CompressingStream\n||+ CompressingStream()\l+ PutInt()\l+ PutString()\l+ value()\l+ message()\l}" alt="" coords="245,388,405,539"/>
+</map>

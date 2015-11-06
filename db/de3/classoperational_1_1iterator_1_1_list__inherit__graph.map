@@ -1,0 +1,4 @@
+<map id="operational::iterator::List&lt; Item &gt;" name="operational::iterator::List&lt; Item &gt;">
+<area shape="rect" id="node3" href="$d6/dba/classoperational_1_1iterator_1_1_skip_list.html" title="{operational::iterator\l::SkipList\&lt; Item \&gt;\n||+ SkipList()\l+ SkipList()\l+ ~SkipList()\l+ CreateIterator()\l}" alt="" coords="13,579,147,715"/>
+<area shape="rect" id="node2" href="$d3/d40/classoperational_1_1iterator_1_1_list_interface.html" title="{operational::iterator\l::ListInterface\&lt; Item \&gt;\n||+ ~ListInterface()\l+ Count()\l+ Get()\l+ First()\l+ Last()\l+ Includes()\l+ Append()\l+ Prepend()\l+ Remove()\l+ RemoveAt()\land 6 more...\l}" alt="" coords="5,5,155,244"/>
+</map>

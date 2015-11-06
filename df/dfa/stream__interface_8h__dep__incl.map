@@ -1,0 +1,11 @@
+<map id="src/structural/src/decorator/stream_interface.h" name="src/structural/src/decorator/stream_interface.h">
+<area shape="rect" id="node2" href="$d2/dd2/stream__decorator_8h.html" title="src/structural/src\l/decorator/stream_decorator.h" alt="" coords="272,95,468,136"/>
+<area shape="rect" id="node9" href="$d2/d70/file__stream_8h.html" title="src/structural/src\l/decorator/file_stream.h" alt="" coords="553,95,712,136"/>
+<area shape="rect" id="node3" href="$d2/d75/ascii7__stream_8h.html" title="src/structural/src\l/decorator/ascii7_stream.h" alt="" coords="9,191,185,233"/>
+<area shape="rect" id="node6" href="$d9/d25/compressing__stream_8h.html" title="src/structural/src\l/decorator/compressing\l_stream.h" alt="" coords="436,184,595,240"/>
+<area shape="rect" id="node8" href="$d4/d77/stream__decorator_8cc.html" title="src/structural/src\l/decorator/stream_decorator.cc" alt="" coords="209,191,411,233"/>
+<area shape="rect" id="node4" href="$dd/d84/ascii7__stream_8cc.html" title="src/structural/src\l/decorator/ascii7_stream.cc" alt="" coords="5,295,188,337"/>
+<area shape="rect" id="node5" href="$d6/d1f/decorator__test_8cc.html" title="src/structural_tests\l/src/decorator/decorator\l_test.cc" alt="" coords="494,288,654,344"/>
+<area shape="rect" id="node7" href="$d4/ddd/compressing__stream_8cc.html" title="src/structural/src\l/decorator/compressing\l_stream.cc" alt="" coords="311,288,469,344"/>
+<area shape="rect" id="node10" href="$d7/d9a/file__stream_8cc.html" title="src/structural/src\l/decorator/file_stream.cc" alt="" coords="670,191,835,233"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="structural::bridge::WindowInterface" name="structural::bridge::WindowInterface">
+<area shape="rect" id="node2" href="$d5/d3d/classstructural_1_1bridge_1_1_window.html" title="{structural::bridge\l::Window\n||+ Window()\l+ ~Window()\l+ DrawRect()\l+ DrawText()\l# GetWindowImp()\l}" alt="" coords="97,175,226,325"/>
+<area shape="rect" id="node3" href="$d0/dbf/classstructural_1_1bridge_1_1_application_window.html" title="{structural::bridge\l::ApplicationWindow\n||+ ApplicationWindow()\l+ DrawText()\l+ DrawTitle()\l}" alt="" coords="5,381,157,502"/>
+<area shape="rect" id="node4" href="$dc/d25/classstructural_1_1bridge_1_1_icon_window.html" title="{structural::bridge\l::IconWindow\n||+ IconWindow()\l+ ~IconWindow()\l+ DrawText()\l+ DrawIcon()\l}" alt="" coords="181,373,301,509"/>
+</map>

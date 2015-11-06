@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$df/d1a/classoperational_1_1observer_1_1_clock_tick_observer.html" title="operational::observer\l::ClockTickObserver" alt="" coords="20,5,161,47"/>
+<area shape="rect" id="node2" href="$d3/d84/classoperational_1_1observer_1_1_analog_clock.html" title="operational::observer\l::AnalogClock" alt="" coords="224,5,365,47"/>
+<area shape="rect" id="node3" href="$d9/dd3/classoperational_1_1observer_1_1_digital_clock.html" title="operational::observer\l::DigitalClock" alt="" coords="224,71,365,112"/>
+<area shape="rect" id="node4" href="$d8/db9/classoperational_1_1observer_1_1_observer_widget_interface.html" title="operational::observer\l::ObserverWidgetInterface" alt="" coords="5,71,176,112"/>
+</map>

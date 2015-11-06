@@ -1,0 +1,8 @@
+<map id="operational::madiator::DialogDirectorInterface::WidgetChanged" name="operational::madiator::DialogDirectorInterface::WidgetChanged">
+<area shape="rect" id="node2" href="$df/d1e/classoperational_1_1madiator_1_1_list_box.html#a5d36ed4269913867a47aacc19d5a1e7e" title="operational::madiator\l::ListBox::Changed" alt="" coords="232,23,375,64"/>
+<area shape="rect" id="node4" href="$da/dd3/classoperational_1_1madiator_1_1_mediator_widget.html#a42d6d627d18ba26a9c47c911bdd191a0" title="operational::madiator\l::MediatorWidget::Changed" alt="" coords="213,120,393,161"/>
+<area shape="rect" id="node3" href="$df/d1e/classoperational_1_1madiator_1_1_list_box.html#aaeffbf7d3a93d543c037ba743c5c0a79" title="operational::madiator\l::ListBox::HandleMouse" alt="" coords="465,5,626,47"/>
+<area shape="rect" id="node5" href="$d7/d87/classoperational_1_1madiator_1_1_entry_field.html#aa8589bf22cc442cf305f769821d27669" title="operational::madiator\l::EntryField::HandleMouse" alt="" coords="457,71,633,112"/>
+<area shape="rect" id="node6" href="$d3/d5c/classoperational_1_1madiator_1_1_mediator_button.html#a131848edca98f1084f3edac0b4fcca8c" title="operational::madiator\l::MediatorButton::HandleMouse" alt="" coords="443,136,648,177"/>
+<area shape="rect" id="node7" href="$da/dd3/classoperational_1_1madiator_1_1_mediator_widget.html#ae3c18c9b8f8a66c4b5ccdfd184d37750" title="operational::madiator\l::MediatorWidget::HandleMouse" alt="" coords="441,201,649,243"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="structural::decorator::StreamInterface::PutInt" name="structural::decorator::StreamInterface::PutInt">
+<area shape="rect" id="node2" href="$da/dfb/classstructural_1_1decorator_1_1_a_s_c_i_i7_stream.html#a6f3a91b7c2efb645f2fafb3bc4b663ed" title="structural::decorator\l::ASCII7Stream::PutInt" alt="" coords="224,5,379,47"/>
+<area shape="rect" id="node3" href="$d6/d17/classstructural_1_1decorator_1_1_compressing_stream.html#ac6cd7d537a8e0cc65b2262483d2366e1" title="structural::decorator\l::CompressingStream::\lPutInt" alt="" coords="223,71,379,127"/>
+<area shape="rect" id="node4" href="$d6/de5/classstructural_1_1decorator_1_1_stream_decorator.html#a548e9c14cb499376205c0492aff4189a" title="structural::decorator\l::StreamDecorator::PutInt" alt="" coords="216,152,387,193"/>
+<area shape="rect" id="node5" href="$d5/dab/namespacestructuraltests.html#a3c9e335e527ae231d9f15f0459c9dc2c" title="structuraltests::TEST\l_CLASS" alt="" coords="229,217,374,259"/>
+</map>

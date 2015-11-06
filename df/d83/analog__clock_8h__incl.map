@@ -1,0 +1,11 @@
+<map id="src/operational/src/observer/analog_clock.h" name="src/operational/src/observer/analog_clock.h">
+<area shape="rect" id="node2" href="$de/d05/observer__widget__interface_8h.html" title="observer_widget_interface.h" alt="" coords="5,95,187,121"/>
+<area shape="rect" id="node3" href="$d0/d6a/clock__tick__observer_8h.html" title="clock_tick_observer.h" alt="" coords="227,319,373,345"/>
+<area shape="rect" id="node4" href="$d7/d97/clock__timer_8h.html" title="clock_timer.h" alt="" coords="262,95,362,121"/>
+<area shape="rect" id="node5" href="$d8/da8/clock__tick_8h.html" title="clock_tick.h" alt="" coords="351,169,443,196"/>
+<area shape="rect" id="node6" href="$d6/db3/clock__tick__interface_8h.html" title="clock_tick_interface.h" alt="" coords="363,244,511,271"/>
+<area shape="rect" id="node7" href="$da/d23/list_8h.html" title="../iterator/list.h" alt="" coords="536,244,643,271"/>
+<area shape="rect" id="node8" href="$d9/d71/list__iterator_8h.html" title="list_iterator.h" alt="" coords="497,319,594,345"/>
+<area shape="rect" id="node10" href="$dd/d8c/list__interface_8h.html" title="list_interface.h" alt="" coords="579,393,685,420"/>
+<area shape="rect" id="node9" href="$d6/da4/iterator__interface_8h.html" title="iterator_interface.h" alt="" coords="425,393,554,420"/>
+</map>

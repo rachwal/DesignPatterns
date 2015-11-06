@@ -1,0 +1,4 @@
+<map id="structural::bridge::WindowImp" name="structural::bridge::WindowImp">
+<area shape="rect" id="node2" href="$da/db5/classstructural_1_1bridge_1_1_p_m_window_imp.html" title="{structural::bridge\l::PMWindowImp\n||+ PMWindowImp()\l+ DeviceRect()\l+ DeviceText()\l+ text()\l}" alt="" coords="5,175,135,311"/>
+<area shape="rect" id="node3" href="$d1/da2/classstructural_1_1bridge_1_1_x_window_imp.html" title="{structural::bridge\l::XWindowImp\n||+ XWindowImp()\l+ DeviceText()\l+ DeviceRect()\l+ text()\l}" alt="" coords="159,175,277,311"/>
+</map>

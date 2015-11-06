@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['onclocktick',['OnClockTick',['../d3/d84/classoperational_1_1observer_1_1_analog_clock.html#ae0eee57dd3486083353bbff1789bfed4',1,'operational::observer::AnalogClock::OnClockTick()'],['../df/d1a/classoperational_1_1observer_1_1_clock_tick_observer.html#a4b3d07121b14ae22f2143ba7cc8a77b4',1,'operational::observer::ClockTickObserver::OnClockTick()'],['../d9/dd3/classoperational_1_1observer_1_1_digital_clock.html#a857f010196ef7443c48071e928ec6646',1,'operational::observer::DigitalClock::OnClockTick()']]],
+  ['open',['Open',['../d4/d12/classoperational_1_1command_1_1_command_document.html#afb358d57a91e4315d40a5d83a4344a01',1,'operational::command::CommandDocument::Open()'],['../d4/dfc/classoperational_1_1templatemethod_1_1_document_interface.html#a0ae755349cdb821faa48247c9c613fc5',1,'operational::templatemethod::DocumentInterface::Open()'],['../d4/dd8/classoperational_1_1templatemethod_1_1_sample_document.html#a77c219b55370ce3d117499112eeea2d1',1,'operational::templatemethod::SampleDocument::Open()']]],
+  ['opencommand',['OpenCommand',['../d8/d69/classoperational_1_1command_1_1_open_command.html#aab68949b1a8139560b4b2984cc2a0afb',1,'operational::command::OpenCommand']]],
+  ['opendocument',['OpenDocument',['../dd/dae/classoperational_1_1templatemethod_1_1_template_application.html#a8cd3a05eb94eeae68d6ed881e22e437f',1,'operational::templatemethod::TemplateApplication']]],
+  ['operation',['Operation',['../d2/dc3/classoperational_1_1strategy_1_1_strategy_context.html#ac2e5a735d077676ef5bb2e4d1a95aee4',1,'operational::strategy::StrategyContext']]],
+  ['operator_21_3d',['operator!=',['../d8/ded/namespacestructural_1_1composite.html#a5d86db5146a967ee3935766ef4254f34',1,'structural::composite']]],
+  ['operator_2a',['operator*',['../de/df8/classoperational_1_1iterator_1_1_iterator_ptr.html#aae74e23cd0e8b03fd6174f81a057bcf0',1,'operational::iterator::IteratorPtr::operator*()'],['../db/dc4/classstructural_1_1proxy_1_1_virtual_image_proxy.html#ab08a9d31ecb3ec6826f119a0d212446f',1,'structural::proxy::VirtualImageProxy::operator*()']]],
+  ['operator_2a_3d',['operator*=',['../d2/db2/classstructural_1_1commons_1_1_point.html#ad94a5ba4f64e8939bdb2d94fe737c4f2',1,'structural::commons::Point']]],
+  ['operator_2b_3d',['operator+=',['../d2/db2/classstructural_1_1commons_1_1_point.html#ae7044d2f3cfc325b3eb193210e70695a',1,'structural::commons::Point']]],
+  ['operator_2d',['operator-',['../d2/db2/classstructural_1_1commons_1_1_point.html#a01fd11a9810477c41ef1a9675d2dd8c3',1,'structural::commons::Point']]],
+  ['operator_2d_3d',['operator-=',['../d2/db2/classstructural_1_1commons_1_1_point.html#a5f54e4f921239bb57b5870b0f65924f9',1,'structural::commons::Point']]],
+  ['operator_2d_3e',['operator-&gt;',['../de/df8/classoperational_1_1iterator_1_1_iterator_ptr.html#a9025558928b6146cd19b4a9406ad944f',1,'operational::iterator::IteratorPtr::operator-&gt;()'],['../db/dc4/classstructural_1_1proxy_1_1_virtual_image_proxy.html#a48ced75a272db4ed068bad6dbffecfa9',1,'structural::proxy::VirtualImageProxy::operator-&gt;()']]],
+  ['operator_2f_3d',['operator/=',['../d2/db2/classstructural_1_1commons_1_1_point.html#a4c2ca523498ef03f671f318617057631',1,'structural::commons::Point']]],
+  ['operator_3d',['operator=',['../d5/df6/classoperational_1_1iterator_1_1_list.html#a1a80fdbe121fe3e8fcec698ea8d84832',1,'operational::iterator::List']]],
+  ['operator_3d_3d',['operator==',['../d8/ded/namespacestructural_1_1composite.html#a1a5a1ebcf095b8dbdd5c5374a8840244',1,'structural::composite::operator==()'],['../d3/dad/namespacestructural_1_1flyweight.html#a738e2e7c521b81d29edfd213b305e4cd',1,'structural::flyweight::operator==()']]],
+  ['orexp',['OrExp',['../d2/d75/classoperational_1_1interpreter_1_1_or_exp.html#aa7cc7fe0cce9f5e470a3a4e39a7d2818',1,'operational::interpreter::OrExp']]],
+  ['othersidefrom',['OtherSideFrom',['../df/d04/classcreational_1_1commons_1_1_door.html#a46f8cccec202009593cf6ce38c79bf89',1,'creational::commons::Door']]]
+];

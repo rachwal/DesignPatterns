@@ -1,0 +1,4 @@
+<map id="creational::commons::BombedWall" name="creational::commons::BombedWall">
+<area shape="rect" id="node2" href="$da/d9e/classcreational_1_1commons_1_1_wall.html" title="{creational::commons\l::Wall\n|# entered_\l|+ Wall()\l+ Wall()\l+ ~Wall()\l+ Clone()\l+ Enter()\l+ entered()\l}" alt="" coords="7,160,150,325"/>
+<area shape="rect" id="node3" href="$d6/dde/classcreational_1_1commons_1_1_map_site_interface.html" title="{creational::commons\l::MapSiteInterface\n||+ ~MapSiteInterface()\l+ Enter()\l}" alt="" coords="5,5,152,112"/>
+</map>
